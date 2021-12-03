@@ -8,7 +8,7 @@ export default {
     branch: 'master'
   },
   load_config_file: false,
-  media_folder: 'images',
+  media_folder: 'assets/images',
   site_url: `${window.location.protocol}//${window.location.host}`,
   display_url: `${window.location.protocol}//${window.location.host}`,
   show_preview_links: true,
