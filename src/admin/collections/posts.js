@@ -12,7 +12,7 @@ const posts = {
   label: 'Posts',
   label_singular: 'Post',
   description: 'Create or edit a post.',
-  folder: 'site/posts',
+  folder: 'src/posts',
   create: true,
   slug: '{{fields.slug}}',
   preview_path: 'posts/{{fields.slug}}',
