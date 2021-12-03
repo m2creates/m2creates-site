@@ -15,10 +15,8 @@
   "keywords": [
     "eleventy",
     "tailwindcss",
-    "netlify",
-    "dev",
-    "netlify",
-    "cms"
+    "netlify-dev",
+    "netlify-cms"
   ],
   "author": "m2creates",
   "license": "MIT",
