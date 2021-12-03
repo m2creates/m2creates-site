@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>{% if title %}{{ title }} | {% endif %}{{ site.name }}</title>
+
+    {% block meta %}
+    {# {% include "meta.njk" %} #}
+    {% endblock %}
+
+    {% block styles %}
+    <link rel="stylesheet" href="{{ '/assets/styles/styles.css' | url }}" />
+    {% endblock %}
+  </head>
+  <body>
+    <a class="visually-hidden" href="#main">Skip to content</a>
+
+    {# Site header #}
+    <header>
+      {# {% include "header.njk" %} #}
+    </header>
+
+    {# Main content #}
+    <main id="main" tabindex="-1">
+      {% block content %}
+      {{ content | safe }}
+      {% endblock %}
+    </main>
+
+    <footer>
+      {# {% include "footer.njk" %} #}
+    </footer>
+
+    {% block scripts %}
+    <script src="/assets/scripts/main.js" defer></script>
+    {% endblock %}
+
+  </body>
+</html>
