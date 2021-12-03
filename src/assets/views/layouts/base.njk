@@ -15,6 +15,12 @@
     {% block styles %}
     <link rel="stylesheet" href="{{ '/assets/styles/styles.css' | url }}" />
     {% endblock %}
+
+    {# Netlify Identity #}
+    {% if page.url === "/" %}
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js" defer></script>
+    {% endif %}
+    
   </head>
   <body>
     <a class="visually-hidden" href="#main">Skip to content</a>
@@ -35,7 +41,7 @@
       {# {% include "components/footer.njk" %} #}
     </footer>
 
-    {% block scripts %}
+    {% block scripts_body %}
     <script src="/assets/scripts/main.js" defer></script>
     {% endblock %}
 
