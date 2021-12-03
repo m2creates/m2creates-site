@@ -1,0 +1,33 @@
+{
+  "name": "m2creates-site",
+  "version": "0.0.1",
+  "description": "Personal website for m2creates.",
+  "main": ".eleventy.js",
+  "scripts": {
+    "dev": "cross-env ELEVENTY_ENV=development eleventy --serve",
+    "start": "npm run dev",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/m2creates/m2creates-site.git"
+  },
+  "keywords": [
+    "eleventy",
+    "tailwindcss",
+    "netlify",
+    "dev",
+    "netlify",
+    "cms"
+  ],
+  "author": "m2creates",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/m2creates/m2creates-site/issues"
+  },
+  "homepage": "https://github.com/m2creates/m2creates-site#readme",
+  "dependencies": {
+    "@11ty/eleventy": "^0.12.1",
+    "cross-env": "^7.0.3"
+  }
+}
