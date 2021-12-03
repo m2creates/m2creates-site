@@ -1,6 +1,6 @@
 {
   "name": "m2creates-site",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Personal website for m2creates.",
   "main": ".eleventy.js",
   "scripts": {
@@ -29,5 +29,8 @@
   "dependencies": {
     "@11ty/eleventy": "^0.12.1",
     "cross-env": "^7.0.3"
+  },
+  "devDependencies": {
+    "luxon": "^2.1.1"
   }
 }

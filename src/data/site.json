@@ -2,7 +2,7 @@
   "name": "m2creates",
   "description": "Let's Create!",
   "meta": {
-    "url": "https://void-unicorn.netlify.app/",
+    "url": "https://void-unicorn.netlify.app",
     "domain": "void-unicorn.netlify.app",
     "language": "en-US",
     "locale": "en"
@@ -12,18 +12,36 @@
     "avatar": "",
     "bio": "Equal parts coffee, creativity, and code. Let's create!"
   },
-  "social": {
-    "instagram": "@m2creates",
-    "twitter": "@m2creates",
-    "twitch": "@m2creates"
-  },
+  "social": [
+    {
+      "network": "twitter",
+      "handle": "@m2creates",
+      "url": "https://twitter.com/m2creates/",
+      "order": 1
+    },
+    {
+      "network": "instagram",
+      "handle": "@m2creates",
+      "url": "https://instagram.com/m2creates/",
+      "order": 2
+    },
+    {
+      "network": "twitch",
+      "handle": "@m2creates",
+      "url": "https://twitch.tv/m2creates/",
+      "order": 3
+    }
+  ],
   "email": {
     "general": "hello@melaniemagdalena.com",
     "privacy": "privacy@melaniemagdalena.com"
   },
   "brand": {
     "logo": "",
-    "favicon": ""
+    "favicon": "",
+    "colors": {
+      "pwa": "#ad0fb5"
+    }
   },
   "seo": {
     "image_card": "",

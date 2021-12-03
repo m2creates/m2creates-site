@@ -1,0 +1,26 @@
+{% set title = archive_title or title %}
+{% set metaDescription = seo.desc or site.description %}
+{% set metaImage = seo.image_card or site.seo.image_card %}
+
+<script type="application/ld+json">
+  {
+    "name":"{{ title }} | {{ site.name }}",
+    "description":"{{ metaDescription }}",
+    "author": {
+        "@type":"Person",
+        "name":"{{ site.author.name }}"
+    },
+    "@type":"WebSite",
+    "url":"{{ site.meta.url }}{{ page.url }}",
+    "image":"{{ site.meta.url }}{{ metaImage }}",
+    "headline":"{{ title }} | {{ site.name }}",
+    "@context":"http://schema.org"
+    "sameAs": [
+      {%- for network in site.social -%}
+      {%- if network.url != "" %}
+      "{{ network.url }}"{%- if not loop.last %},{%- endif %}
+      {%- endif %}
+      {%- endfor %}
+    ]
+  }
+</script>

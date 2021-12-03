@@ -1,13 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ site.meta.locale }}">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>{% if title %}{{ title }} | {% endif %}{{ site.name }}</title>
 
-    {% block meta %}
-    {# {% include "meta.njk" %} #}
+    {% include "components/meta.njk" %}
+
+    {% block schema %}
+    {% include "components/schema.njk" %}
     {% endblock %}
 
     {% block styles %}
@@ -19,7 +21,7 @@
 
     {# Site header #}
     <header>
-      {# {% include "header.njk" %} #}
+      {# {% include "components/header.njk" %} #}
     </header>
 
     {# Main content #}
@@ -30,7 +32,7 @@
     </main>
 
     <footer>
-      {# {% include "footer.njk" %} #}
+      {# {% include "components/footer.njk" %} #}
     </footer>
 
     {% block scripts %}

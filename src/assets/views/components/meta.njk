@@ -1,0 +1,85 @@
+{% set title = archive_title or title %}
+{% set metaTitle =  seo.title or title or site.name %}
+{% set metaDescription = seo.desc or site.description %}
+{% set metaImage = seo.image_card or site.seo.image_card %}
+{% set metaImageAlt = seo.image_card_alt or site.seo.image_card_alt %}
+
+{# Site #}
+<meta name="description" content="{{ metaDescription }}">
+<meta name="author" content="{{ site.author.name }}">
+<meta name="copyright" content="{{ site.author.name }}, {{ site.name }}">
+<meta name="theme-color" content="{{ site.brand.colors.pwa }}">
+<link rel="canonical" href="{{ site.meta.url }}{{ page.url }}">
+{%- if site.seo.google_verify %}
+<meta name="google-site-verification" content="{{ site.seo.google_verify }}">
+{%- endif %}
+{%- if site.seo.pinterest_verify %}
+<meta name="p:domain_verify" content="{{ site.seo.pinterest_verify }}">
+{%- endif %}
+
+{# Schema #}
+<meta itemprop="name" content="{{ metaTitle }}">
+<meta itemprop="description" content="{{ metaDescription }}">
+<meta itemprop="image" content="{{ site.meta.url }}{{ metaImage }}">
+
+{# Twitter #}
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="{{ site.social.twitter.handle }}">
+<meta name="twitter:title" content="{{ metaTitle }}">
+<meta name="twitter:description" content="{{ metaDescription }}">
+<meta name="twitter:creator" content="{{ site.social.twitter.handle }}">
+<meta name="twitter:image:src" content="{{ site.meta.url }}{{ metaImage }}">
+<meta name="twitter:image:alt" content="{{ metaImageAlt }}">
+
+{# Open Graph #}
+<meta property="og:title" content="{{ metaTitle }}">
+{%- if collections.posts %}
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="{{ page.date | dateToIso }}">
+{%- for tag in tags %}{%- if (tag != "post") and (tag != "page") %}
+<meta name="article:tag" content="{{ tag }}">{%- endif %}
+{%- endfor %}
+{%- else %}
+<meta property="og:type" content="website">
+{%- endif %}
+<meta property="og:url" content="{{ site.meta.url }}{{ page.url }}">
+<meta property="og:image" content="{{ site.meta.url }}{{ metaImage }}">
+<meta property="og:image:alt" content="{{ metaImageAlt }}">
+<meta property="og:description" content="{{ metaDescription }}">
+<meta name="og:site_name" content="{{ site.name }}">
+<meta property="og:locale" content="{{ site.meta.language }}">
+
+{# sameAs links #}
+{% for network in site.social %}
+{%- if network.url != "" %}
+<link href="{{ network.url }}" rel="me">
+{%- endif %}
+{%- endfor %}
+
+{# Feeds #}
+<link rel="alternate" type="application/rss+xml" href="{{ site.meta.url}}/rss.xml" title="{{ site.name }} RSS Feed">
+<link rel="alternate" type="application/atom+xml" href="{{ site.meta.url}}/atom.xml" title="{{ site.name }} Atom Feed">
+
+{# Icons #}
+<link rel="icon" type="image/ico" href="{{ site.brand.favicon }}">
+<link rel="apple-touch-icon" href="{{ site.brand.favicon }}">
+
+{# Service Worker #}
+<link rel="manifest" href="/site.webmanifest">
+
+{# Webmentions #}
+{%- if site.webmentions === "enable" %}
+<link rel="webmention" href="https://webmention.io/{{ site.meta.domain }}/webmention">
+<link rel="pingback" href="https://webmention.io/{{ site.meta.domain }}/xmlrpc">
+{%- endif %}
+
+{# Robots #}
+<meta name="robots" content="{{ site.robots.search_crawler }}">
+{%- if site.robots.pinterest === "disallow" %}
+<meta name="pinterest" content="nopin">
+<meta name="pinterest" content="nohover">
+<meta name="pinterest-rich-pin" content="false">
+{%- endif %}
+{%- if site.robots.twitter === "disallow" %}
+<meta name="twitter:dnt" content="on">
+{%- endif %}
