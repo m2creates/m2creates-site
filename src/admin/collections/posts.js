@@ -1,11 +1,11 @@
-import title from '@/partials/field_title';
-import slug from '@/partials/field_slug';
-import datePublish from '@/partials/field_datePublish';
-import dateMod from '@/partials/field_dateMod';
-import category from '@/partials/field_category';
-import tags from '@/partials/field_tags';
-import body from '@/partials/field_body';
-import seo from '@/partials/field_seo';
+import title from '../partials/field_title.js';
+import slug from '../partials/field_slug.js';
+import datePublish from '../partials/field_datePublish.js';
+import dateMod from '../partials/field_dateMod.js';
+import category from '../partials/field_category.js';
+import tags from '../partials/field_tags.js';
+import body from '../partials/field_body.js';
+import seo from '../partials/seo.js';
 
 const posts = {
   name: 'posts',
