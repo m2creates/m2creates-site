@@ -29,7 +29,6 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addCollection(collectionName, collections[collectionName])
   });
   console.groupEnd();
-  console.log("\n");
 
   /**
    * Echo the registered collections in the terminal
@@ -59,9 +58,12 @@ module.exports = function(eleventyConfig) {
   /**
    * Add passthrough copy from /src/config/passthroughs.js
    */
+  console.group("📑 Passthroughs (/src/config/passthroughs.js)");
   Object.keys(passthroughs).forEach((passthroughName) => {
+    console.log(" · " + passthroughName);
     eleventyConfig.addPassthroughCopy(passthroughs[passthroughName]())
   });
+  console.groupEnd();
 
   /**
    * Add watch targets from /src/config/watchtargets.js
