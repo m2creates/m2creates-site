@@ -4,6 +4,10 @@
  */
 
 module.exports = {
+  cms: function () {
+    return { 'src/admin': 'admin' }
+  },
+
   images: function () {
     return { 'src/assets/images': 'assets/images' }
   },
