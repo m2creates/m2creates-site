@@ -107,10 +107,13 @@ module.exports = function(eleventyConfig) {
     dir: {
       input: "src",
       output: "dist",
-      includes: 'assets/views',
-      layouts: 'assets/views/layouts',
       data: 'data',
+      includes: 'assets/views',
+      layouts: 'assets/views/layouts'
     },
-    templateFormats: ['njk', 'md', '11ty.js'],
+    passthroughFileCopy: true,
+    templateFormats: ['njk', 'md', 'html', '11ty.js'],
+    htmlTemplateEngine : 'njk',
+    markdownTemplateEngine : 'njk'
   };
 }
