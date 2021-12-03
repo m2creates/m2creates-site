@@ -12,7 +12,7 @@ const SeoPreview = createClass({
     const seo_desc = entry.getIn(['data', 'seo.desc'], null);
     const seo_image_card = entry.getIn(['data', 'seo.image_card'], null);
     const seo_image_card_alt = entry.getIn(['data', 'seo.image_card_alt'], null);
-    // const link_preview = '/posts/' + entry.getIn(['data', 'slug'], '');
+    const link_preview = '/posts/' + entry.getIn(['data', 'slug'], '');
 
     return html`
       <section class="seo">

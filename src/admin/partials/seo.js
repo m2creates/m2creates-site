@@ -32,6 +32,7 @@ const seo = {
       name: 'image_alt',
       widget: 'string',
       required: false,
+      hint: 'Describe this image for the visually impaired. How would you describe it with your eyes closed?'
     },
   ],
 }

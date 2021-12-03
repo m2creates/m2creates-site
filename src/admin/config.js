@@ -12,19 +12,12 @@ export default {
   site_url: `${window.location.protocol}//${window.location.host}`,
   display_url: `${window.location.protocol}//${window.location.host}`,
   show_preview_links: true,
+  slug: {
+    encoding: 'ascii',
+    clean_accents: true,
+    sanitize_replacement: '-'
+  },
   collections: [
     posts
   ]
 }
-
-// Import Previews
-import Post from './previews/post.js';
-// import Page from './previews/page.js';
-
-// Register Previews
-CMS.registerPreviewTemplate('post', Post);
-// CMS.registerPreviewTemplate('page', Page);
-
-// TODO: Register preview styles
-// CMS.registerPreviewStyle('../css/tailwind.min.css');
-CMS.registerPreviewStyle('./previews/inline.css');
