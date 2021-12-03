@@ -17,7 +17,7 @@ module.exports = function(eleventyConfig) {
   /**
    * Start pretty console output
    */
-  console.group("\n", "🛠 Building —");
+  console.group("\n", "🛠  Building —");
 
   /**
    * Echo the registered collections in the terminal
