@@ -12,7 +12,7 @@ const PostPreview = createClass({
       <main>
         <article class="prose prose-md">
           <h1>${entry.getIn(['data', 'title'], null)}</h1>
-          <div>${this.props.widgetFor("body")}</div>
+          <div>${this.props.widgetFor('body')}</div>
         </article>
       </main>
     `;
