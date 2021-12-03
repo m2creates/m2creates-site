@@ -27,4 +27,4 @@ CMS.registerPreviewTemplate('post', Post);
 
 // TODO: Register preview styles
 // CMS.registerPreviewStyle('../css/tailwind.min.css');
-// CMS.registerPreviewStyle('./previews/inline.css');
+CMS.registerPreviewStyle('./previews/inline.css');

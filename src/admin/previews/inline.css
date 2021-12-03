@@ -1,0 +1,291 @@
+/* SEO Labels */
+.preview-label {
+  position: relative;
+  margin: 1.75em 0 1em;
+}
+
+.preview-label span {
+  text-transform: uppercase;
+  position: relative;
+  background: #fff;
+  padding-right: 12px;
+  color: #18283E;
+  font-size: 0.8rem !important;
+  font-weight: 400;
+}
+
+.preview-label::before {
+  content: '';
+  position: absolute;
+  top: 15px;
+  right: 0;
+  width: 100%;
+  height: 1px;
+  background: #E0E7F1;
+}
+
+/* SEO Styles */
+.seo-search {
+  border-radius: 8px;
+  box-shadow: none;
+  display: block;
+  font-family: Arial, sans-serif;
+  font-size: 14px !important;
+  position: relative;
+  line-height: 20px;
+  margin: 0;
+  padding: 0;
+  width: 600px;
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+
+.seo-search>.title {
+  color: #1a0dab;
+  display: block;
+  font-size: 18px !important;
+  letter-spacing: normal;
+  line-height: 1.2;
+  margin-bottom: 0 !important;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.seo-search>.link {
+  color: #006621;
+  font-size: 14px !important;
+  letter-spacing: normal;
+  line-height: 20px;
+  margin: 0;
+  top: -2px;
+  position: relative;
+}
+
+.seo-search>.desc {
+  color: #545454;
+  font-size: 13px !important;
+  line-height: 1.4;
+  word-wrap: break-word;
+}
+
+.seo-card {
+  background-color: #ffffff;
+  border-color: #E1E8ED;
+  border-radius: 6px;
+  border-style: solid;
+  border-width: 1px;
+  display: block;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
+  margin-left: 0;
+  overflow: hidden;
+  position: relative;
+  -webkit-font-smoothing: antialiased;
+  width: 506px;
+}
+
+.seo-card>.image {
+  background-color: #E1E8ED;
+  border-style: solid;
+  border-color: #E1E8ED;
+  border-top-width: 0;
+  border-left-width: 0;
+  border-right-width: 0;
+  border-bottom-width: 1px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  height: 252px;
+  overflow: hidden;
+  position: relative;
+  width: 504px;
+}
+
+.seo-card>.image>img {
+  height: 100%;
+  left: 50%;
+  object-fit: cover;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+.seo-card>.text {
+  padding: 10.5px 14px;
+}
+
+.seo-card>.text>.title {
+  display: block;
+  font-size: 14px !important;
+  font-weight: bold;
+  letter-spacing: normal;
+  line-height: 18.2px;
+  margin: 0 !important;
+  max-height: 18.2px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.seo-card>.text>.desc {
+  display: block;
+  display: -webkit-box;
+  font-size: 14px !important;
+  height: 36.3906px;
+  letter-spacing: normal;
+  line-height: 18.2px;
+  margin-bottom: 0 !important;
+  max-height: 36.4px;
+  overflow: hidden;
+  margin-top: 4.52662px;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.seo-card>.text>.link {
+  color: #8899A6;
+  display: block;
+  font-size: 14px !important;
+  letter-spacing: normal;
+  line-height: 1.3125;
+  margin-bottom: 0 !important;
+  margin-top: 4.52662px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-transform: lowercase;
+  white-space: nowrap;
+}
+
+.seo-og {
+  background-color: #ffffff;
+  display: block;
+  font-size: 14px !important;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, '.SFNSText-Regular', sans-serif;
+  overflow: hidden;
+  position: relative;
+  -webkit-font-smoothing: subpixel-antialiased;
+  width: 500px;
+}
+
+.seo-og>.image {
+  border: 1px solid #dadde1;
+  height: 261px;
+  overflow: hidden;
+  position: relative;
+  width: 500px;
+}
+
+.seo-og>.image>img {
+  height: 100%;
+  left: 50%;
+  object-fit: cover;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+.seo-og>.text {
+  background: #f2f3f5;
+  border: 1px solid #dadde1;
+  border-top: none;
+  color: #1d2129;
+  padding: 10px 12px;
+}
+
+.seo-og>.text>.link {
+  background: #f2f3f5;
+  color: #606770;
+  direction: ltr;
+  display: block;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 12px !important;
+  height: 11px;
+  line-height: 11px;
+  margin-bottom: 0 !important;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  text-align: left;
+  text-overflow: ellipsis;
+  text-transform: uppercase;
+  user-select: none;
+  white-space: nowrap;
+  word-wrap: break-word;
+  -webkit-border-horizontal-spacing: 0;
+  -webkit-border-vertical-spacing: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+.seo-og>.text>.content {
+  background: #f2f3f5;
+  color: #4b4f56;
+  direction: ltr;
+  display: block;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 12px !important;
+  height: 46px;
+  line-height: 14.4px;
+  margin-top: 5px;
+  max-height: 46px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  text-align: left;
+  user-select: none;
+  word-wrap: break-word;
+  -webkit-border-horizontal-spacing: 0;
+  -webkit-border-vertical-spacing: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+.seo-og>.text>.content>.title {
+  background: #f2f3f5;
+  color: #1d2129;
+  direction: ltr;
+  display: inline;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 16px !important;
+  font-weight: 600;
+  height: auto;
+  letter-spacing: normal;
+  line-height: 20px;
+  margin-top: 5px;
+  text-align: left;
+  user-select: none;
+  white-space: normal;
+  width: auto;
+  word-wrap: break-word;
+  -webkit-border-horizontal-spacing: 0;
+  -webkit-border-vertical-spacing: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+.seo-og>.text>.content>.desc {
+  background: #f2f3f5;
+  color: #606770;
+  direction: ltr;
+  display: -webkit-box;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 14px !important;
+  height: 18px;
+  line-height: 20px;
+  margin-top: 3px;
+  max-height: 80px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  text-align: left;
+  text-overflow: ellipsis;
+  user-select: none;
+  white-space: normal;
+  word-break: break-word;
+  word-wrap: break-word;
+  -webkit-border-horizontal-spacing: 0;
+  -webkit-border-vertical-spacing: 0;
+  -webkit-box-orient: vertical;
+  -webkit-font-smoothing: antialiased;
+  -webkit-line-clamp: 1;
+}
