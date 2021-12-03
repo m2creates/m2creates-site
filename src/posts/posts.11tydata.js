@@ -1,5 +1,10 @@
 require('dotenv').config();
 
+/**
+ * Drafts
+ * @link https://dev.to/jkc_codes/creating-drafts-in-eleventy-1103
+ */
+
 const isDevEnv = process.env.ELEVENTY_ENV !== 'production';
 const todaysDate = new Date();
 
