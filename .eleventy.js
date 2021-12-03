@@ -10,7 +10,7 @@ const fs = require("fs");
 
 /**
  * Eleventy configuration
- * https://www.11ty.dev/docs/config/
+ * @link https://www.11ty.dev/docs/config/
  */
 module.exports = function(eleventyConfig) {
 
@@ -78,6 +78,7 @@ module.exports = function(eleventyConfig) {
 
   /**
    * Configure browsersync
+   * @link https://www.11ty.dev/docs/config/#override-browsersync-server-options
    */
   eleventyConfig.setBrowserSyncConfig({
     open: true,
