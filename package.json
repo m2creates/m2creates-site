@@ -1,10 +1,12 @@
 {
   "name": "m2creates-site",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "Personal website for m2creates.",
   "main": ".eleventy.js",
   "scripts": {
     "dev": "cross-env ELEVENTY_ENV=development eleventy --serve",
+    "production": "cross-env ELEVENTY_ENV=production eleventy",
+    "staging": "cross-env ELEVENTY_ENV=staging eleventy",
     "start": "npm run dev",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -26,7 +28,8 @@
   "homepage": "https://github.com/m2creates/m2creates-site#readme",
   "dependencies": {
     "@11ty/eleventy": "^0.12.1",
-    "cross-env": "^7.0.3"
+    "cross-env": "^7.0.3",
+    "dotenv": "^10.0.0"
   },
   "devDependencies": {
     "luxon": "^2.1.1"
