@@ -1,7 +1,8 @@
 const datePublish = {
   label: 'Publish Date',
   name: 'datePublish',
-  widget: 'datetime'
+  widget: 'datetime',
+  default: ''
 }
 
 export default datePublish

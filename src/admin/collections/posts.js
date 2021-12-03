@@ -1,10 +1,16 @@
-import title from '../partials/field_title.js';
-import slug from '../partials/field_slug.js';
-import datePublish from '../partials/field_datePublish.js';
-import dateMod from '../partials/field_dateMod.js';
-import category from '../partials/field_category.js';
-import tags from '../partials/field_tags.js';
-import body from '../partials/field_body.js';
+// Fields
+import body from '../partials/fields/body.js';
+import category from '../partials/fields/category.js';
+import dateMod from '../partials/fields/dateMod.js';
+import datePublish from '../partials/fields/datePublish.js';
+import draft from '../partials/fields/draft.js';
+import postStyle from '../partials/fields/postStyle.js';
+import slug from '../partials/fields/slug.js';
+import tags from '../partials/fields/tags.js';
+import title from '../partials/fields/title.js';
+
+// Partials
+import image from '../partials/image.js';
 import seo from '../partials/seo.js';
 
 const posts = {
@@ -44,25 +50,9 @@ const posts = {
     slug,
     datePublish,
     dateMod,
-    {
-      label: 'Post Style',
-      name: 'post_type',
-      widget: 'select',
-      options: [
-        {
-          label: 'Article',
-          value: 'article'
-        },
-        {
-          label: 'Podcast',
-          value: 'podcast'
-        },
-        {
-          label: 'Video',
-          value: 'video'
-        }
-      ]
-    },
+    draft,
+    postStyle,
+    image,
     category,
     tags,
     body,
