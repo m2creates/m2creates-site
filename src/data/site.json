@@ -1,0 +1,44 @@
+{
+  "name": "m2creates",
+  "description": "Let's Create!",
+  "meta": {
+    "url": "https://void-unicorn.netlify.app/",
+    "domain": "void-unicorn.netlify.app",
+    "language": "en-US",
+    "locale": "en"
+  },
+  "author": {
+    "name": "Melanie E Magdalena",
+    "avatar": "",
+    "bio": "Equal parts coffee, creativity, and code. Let's create!"
+  },
+  "social": {
+    "instagram": "@m2creates",
+    "twitter": "@m2creates",
+    "twitch": "@m2creates"
+  },
+  "email": {
+    "general": "hello@melaniemagdalena.com",
+    "privacy": "privacy@melaniemagdalena.com"
+  },
+  "brand": {
+    "logo": "",
+    "favicon": ""
+  },
+  "seo": {
+    "image_card": "",
+    "image_card_alt": "m2creates logo",
+    "google_verify": "",
+    "pinterest_verify": ""
+  },
+  "search_engine": "https://duckduckgo.com/",
+  "robots": {
+    "pinterest": "allow",
+    "twitter": "disallow",
+    "search_crawler": "follow"
+  },
+  "analytics": {
+    "provider": "fathom",
+    "site_id": ""
+  }
+}
