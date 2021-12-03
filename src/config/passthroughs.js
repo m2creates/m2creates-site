@@ -4,11 +4,20 @@
  */
 
 module.exports = {
-  images: function () {
-    return { 'src/assets/images': 'assets/images' }
+  admin: function () {
+    return { 'src/admin': 'admin' }
   },
 
   fonts: function () {
     return { 'src/assets/fonts': 'assets/fonts' }
+  },
+
+  images: function () {
+    return { 'src/assets/images': 'assets/images' }
+  },
+
+  netlify_cms: function () {
+    return { './node_modules/netlify-cms-app/dist/netlify-cms-app.js': 'admin/cms.js' }
   }
+
 }

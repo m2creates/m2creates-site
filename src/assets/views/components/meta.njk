@@ -1,8 +1,8 @@
 {% set title = archive_title or title %}
 {% set metaTitle =  seo.title or title or site.name %}
 {% set metaDescription = seo.desc or site.description %}
-{% set metaImage = seo.image_card or site.seo.image_card %}
-{% set metaImageAlt = seo.image_card_alt or site.seo.image_card_alt %}
+{% set metaImage = seo.image_url or image.url or site.seo.image_card %}
+{% set metaImageAlt = seo.image_alt or image.alt  or site.seo.image_card_alt%}
 
 {# Site #}
 <meta name="description" content="{{ metaDescription }}">
