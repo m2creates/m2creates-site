@@ -1,6 +1,7 @@
 ---
 title: Hello world
 slug: /
+datePublish: 2021-12-03
 # seo:
 #   title:
 #   desc:

@@ -1,6 +1,8 @@
 ---
 title: Test SEO & Schema
 slug: test-page
+date: Last Modified
+datePublish: 2021-12-01
 seo:
   title: Test page with custom title
   desc: Test page with custom seo description
