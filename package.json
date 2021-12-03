@@ -1,6 +1,6 @@
 {
   "name": "m2creates-site",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "description": "Personal website for m2creates.",
   "main": ".eleventy.js",
   "scripts": {
