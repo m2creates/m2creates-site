@@ -5,7 +5,7 @@ import posts from './collections/posts.js';
 export default {
   backend: {
     name: 'git-gateway',
-    branch: 'master'
+    branch: 'main'
   },
   load_config_file: false,
   media_folder: 'assets/images',
