@@ -1,0 +1,7 @@
+{% macro Button(label='My button', type='button', padding='p-4', fontSize='text-base') %}
+	<button type="{{ type }}" class="{{ padding }} {{ fontSize }}">{{ label }}</button>
+{% endmacro %}
+
+{% if isStorybook %}
+	{{ Button(label, type, padding, fontSize) }}
+{% endif %}
