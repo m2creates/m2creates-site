@@ -1,5 +1,6 @@
 /**
  * Storybook - Design System
+ * @link https://storybook.js.org/docs/html/configure/overview
  * 
  * Creating stories
  * @link https://storybook.js.org/docs/react/essentials/controls#configuration
