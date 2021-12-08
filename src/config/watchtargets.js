@@ -6,5 +6,9 @@
 module.exports = {
   assets: function () {
     return "./src/assets";
+  },
+
+  tailwind: function () {
+    return "./tailwind.config.js";
   }
 }

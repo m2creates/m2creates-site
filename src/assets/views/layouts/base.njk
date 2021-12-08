@@ -12,18 +12,26 @@
     {% include "components/schema.njk" %}
     {% endblock %}
 
+    {% if app.environment === "production" %}
+    <link rel="stylesheet" href="{{ site.meta.url }}/assets/tailwind.css" />
+    {% else %}
+    <link rel="stylesheet" href="/assets/tailwind.css" />
+    {% endif %}
+
     {% block styles %}
-    <link rel="stylesheet" href="{{ '/assets/styles/styles.css' | url }}" />
     {% endblock %}
 
     {# Netlify Identity #}
     {% if page.url === "/" %}
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js" defer></script>
     {% endif %}
+
+    {% block scripts_head %}
+    {% endblock %}
     
   </head>
   <body>
-    <a class="visually-hidden" href="#main">Skip to content</a>
+    <a class="sr-skip-link" href="#main">Skip to content</a>
 
     {# Site header #}
     <header>
@@ -31,9 +39,9 @@
     </header>
 
     {# Main content #}
-    <main id="main" tabindex="-1">
+    <main id="main" tabindex="-1" class="p-8">
       {% block content %}
-      {{ content | safe }}
+      <div class="prose">{{ content | safe }}</div>
       {% endblock %}
     </main>
 
@@ -42,7 +50,7 @@
     </footer>
 
     {% block scripts_body %}
-    <script src="/assets/scripts/main.js" defer></script>
+    {# <script src="/assets/scripts/main.js" defer></script> #}
     {% endblock %}
 
   </body>
