@@ -1,14 +1,14 @@
 /**
  * Storybook - Design System
  * @link https://storybook.js.org/docs/html/configure/overview
- * 
+ *
  * Creating stories
  * @link https://storybook.js.org/docs/react/essentials/controls#configuration
  * @link https://storybook.js.org/docs/react/writing-stories/args
  * @link https://storybook.js.org/docs/react/api/argtypes
  * @link https://storybook.js.org/docs/react/writing-docs/doc-blocks#customizing
  * @link https://storybook.js.org/tutorials/design-systems-for-developers/react/en/document/
- * 
+ *
  */
 
 module.exports = {
