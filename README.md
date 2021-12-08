@@ -152,3 +152,44 @@ Build a **production** version of Storybook.
 ```bash
 npm run build:sb
 ```
+
+## Reading List
+
+The following resources assisted in the creation of my site!
+
+### General
+
+- About the [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0-beta.2/) specification
+
+### Componentizing with Nunjucks
+
+- [Nunjucks templating features](https://mozilla.github.io/nunjucks/templating.html) (general documentation)
+- ["Flexible components in Eleventy with Nunjucks macros" by Iain Bean](https://iainbean.com/posts/2020/flexible-components-in-eleventy-with-nunjucks-macros/) is a comprehensive guide to macros with plenty of examples.
+- ["Using parameters in your eleventy includes with nunjucks macros" by Thomas Michael Semmler](https://helloyes.dev/blog/2021/using-parameters-in-your-eleventy-includes-with-nunjucks-macros/) showcases a parameter approach for macros. I haven't figured out how to use this and keep args in stories functioning.
+
+### Working with Storybook
+
+- On using nunjucks as a valid component format... [This buried issue and reply](https://github.com/storybookjs/storybook/issues/5506#issuecomment-680955689) was open on my phone for about six months until I finally got around to setting up Storybook on an 11ty project. Radum, thank you for sharing your knowledge.
+  - **IMPORTANT**: You have to use version `^2.*` for the loader, not `^3.*` because Storybook uses Webpack 4. I only wasted an hour of my life with errors cuz I failed to read the nice notice on the loader's README. :face_palm:
+- Nunjucks-ifying: [eleventy-starter-storybook](https://github.com/MKlblangenois/eleventy-starter-storybook) is a great proof-of-concept for how to use njk components in stories. Plus it has [a cool macro output](https://github.com/MKlblangenois/eleventy-starter-storybook/blob/master/src/_includes/components/atoms/buttons/button.njk) that is [only used in the story](https://github.com/MKlblangenois/eleventy-starter-storybook/blob/master/src/stories/Button.stories.js#L7)!
+- [tailwind-ui-alpinejs-storybook](https://github.com/ylsideas/tailwind-ui-alpinejs-storybook) has a [great visual for **how** to add Tailwind and Alpine](https://github.com/ylsideas/tailwind-ui-alpinejs-storybook/blob/master/.storybook/preview.js) to Storybook and have the thing actually work.
+
+### Edit and Preview everything with Netlify CMS
+
+Manual initialization:
+
+- ["Consolidating Netlify CMS" by Zach Schnackel](https://zslabs.com/articles/consolidating-netlify-cms) is a quick introduction to Manual Initialization for Netlify CMS, instead of using YAML.
+- ["DRY Netlify CMS config with Manual Initialization" by Wojciech Kałużny](https://mrkaluzny.com/blog/dry-netlify-cms-config-with-manual-initialization/) has great examples for how to create and use partials for collections.
+- ["Splitting huge NetlifyCMS config.yml file to multiple JS files" by Ilias Trichopoulos](https://www.iliascreates.com/blog/post/splitting-netlifycms-config-to-multiple-js-files/) has more complex examples of partials. I haven't gone this deep yet... but it's an option.
+
+Customizing the preview pane:
+
+- [Official documentation](https://www.netlifycms.org/docs/customization/) by Netlify CMS
+- Inspiration, plus **how** to "query" data from the widgets so it shows up the preview: [eleventy-netlify-boilerplate](https://github.com/danurbanowicz/eleventy-netlify-boilerplate/tree/master/admin/preview-templates) and [spacebook](https://github.com/broeker/spacebook/tree/main/admin/preview-templates)
+
+Make your own widgets and editor components:
+
+- [Offical documentation](https://www.netlifycms.org/docs/custom-widgets/) by Netlify CMS
+- ["Master Netlify CMS: custom editor components" by Monica Norris](https://www.neotericdesign.com/articles/editor-components-with-netlify-cms/) explains how to make a custom Editor Component for video (Hugo-focused).
+- ["Creating Custom Netlify Editor Components" by Lukas Murdock](https://lukasmurdock.com/custom-netlify-editor-component/) is an example of how to make a blockquote Editor Component.
+- ["Styling custom Netlify CMS widgets is confusing" by Dave Meyer](https://todayilearned.io/til/styling-netlify-cms-widgets-is-confusing) expands on the official documentation to explain how to load stylesheets explictly into widgets and preview components.
