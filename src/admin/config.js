@@ -1,6 +1,6 @@
 // Import Collections
 import posts from './collections/posts.js';
-// import pages from './collections/pages.js';
+import pages from './collections/pages.js';
 
 export default {
   backend: {
@@ -18,6 +18,7 @@ export default {
     sanitize_replacement: '-'
   },
   collections: [
-    posts
+    posts,
+    pages,
   ]
 }
