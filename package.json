@@ -10,12 +10,14 @@
     "site:dev": "cross-env ELEVENTY_ENV=development eleventy",
     "site:staging": "cross-env ELEVENTY_ENV=staging eleventy",
     "site:prod": "cross-env ELEVENTY_ENV=production eleventy",
+    "build:sb": "build-storybook -o dist/storybook -s dist/assets --quiet",
     "build:dev": "npm-run-all --parallel css:full site:dev",
     "build:staging": "npm-run-all --parallel css:purge site:staging",
     "build:prod": "npm-run-all --parallel css:purge site:prod",
     "watch:css": "cross-env TAILWIND_ENV=development postcss src/assets/styles/tailwind.css --o dist/assets/tailwind.css --watch",
     "watch:dev": "cross-env ELEVENTY_ENV=development eleventy --serve",
     "start": "npm-run-all --parallel watch:css watch:dev",
+    "start:sb": "start-storybook -p 6006 -s src/assets --quiet",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -49,6 +51,17 @@
     "tailwindcss": "^2.2.19"
   },
   "devDependencies": {
-    "luxon": "^2.1.1"
+    "@babel/core": "^7.16.0",
+    "@storybook/addon-a11y": "^6.4.8",
+    "@storybook/addon-actions": "^6.4.8",
+    "@storybook/addon-essentials": "^6.4.8",
+    "@storybook/addon-links": "^6.4.8",
+    "@storybook/addons": "^6.4.8",
+    "@storybook/html": "^6.4.8",
+    "@storybook/theming": "^6.4.8",
+    "babel-loader": "^8.2.3",
+    "luxon": "^2.1.1",
+    "simple-nunjucks-loader": "^2.0.3",
+    "storybook-dark-mode": "^1.0.8"
   }
 }
