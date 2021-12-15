@@ -1,6 +1,7 @@
 // Import Collections
 import posts from './collections/posts.js';
 import pages from './collections/pages.js';
+import settings from './collections/settings.js';
 
 export default {
   backend: {
@@ -20,5 +21,6 @@ export default {
   collections: [
     posts,
     pages,
+    settings
   ]
 }
