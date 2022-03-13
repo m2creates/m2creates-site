@@ -1,4 +1,5 @@
 {
-  "layout": "base.njk",
-  "permalink": "/posts/{{ slug }}/index.html"
+  "layout": "post.njk",
+  "permalink": "/posts/{{ slug }}/index.html",
+  "displayDateUpdate": false
 }

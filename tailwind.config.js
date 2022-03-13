@@ -1,21 +1,14 @@
 module.exports = {
-  important: true,
-  future: {
-    removeDeprecatedGapUtilities: true,
-    purgeLayersByDefault: true,
-  },
-  purge: {
-    enabled: false,
-  },
-  darkMode: 'class',
-  theme: {
-    container: {
-      center: true,
-    },
-  }, 
-  variants: {},
-  plugins: [
+	important: true,
+	content: ['./src/**/*.{js,html,md,njk}'],
+	darkMode: 'class',
+	theme: {
+		container: {
+			center: true,
+		},
+	},
+	plugins: [
     require('@tailwindcss/typography'),
-    require('@tailwindcss/forms'),
+    require('@tailwindcss/forms')
   ],
-}
+};

@@ -153,6 +153,80 @@ Build a **production** version of Storybook.
 npm run build:sb
 ```
 
+***
+
+## Filters
+
+### Content
+
+| Filter       | Description                              | Example/Usage                  |
+|--------------|------------------------------------------|--------------------------------|
+| content      | markdown body of a collection item       | `{{ content }}`                |
+| raw          | allows processing njk within markdown    | `{{ content | raw }}`          |
+| readingTime  | calculates time to read, i.e. `content`  | `{{ content | readingTime }}`  |
+
+### Dates
+
+| Filter       | Description                              | Example/Usage                             |
+|--------------|------------------------------------------|-------------------------------------------|
+| date         | default unformatted date                 | `{{ date }}`                              |
+| iso          | display date in ISO format               | `{{ date | iso }}`                        |
+| readableDate | display date in 'dd MMMM yyyy' format    | `{{ date | readableDate }}`               |
+| readableDate custom  | or set a custom format           | `{{ date | readableDate('yyyy-LL-dd') }}` |
+| toIso        | Used in meta for published time          | `{{ date | dateToIso }}`                  |
+| toRFC2822    | For RSS Feed                             | `{{ date | toRFC2822 }}`                  |
+
+***
+
+## Macros & Shortcodes
+
+### Image
+
+[Shortcode](https://github.com/m2creates/m2creates-site/tree/main/src/assets/views/components/figure/image.js): Add an image to a page or post with `alt` text, caption, and image credit.
+
+| Parameter | Value                                                                            |
+|-----------|----------------------------------------------------------------------------------|
+| url       | /path/to/the/image (required)                                                    |
+| alt       | alt text (required, unless it is decoration only)                                |
+| credit*    | image credit (optional)                                                          |
+| caption   | describe the image in a caption (optional)                                       |
+| fit       | default: `cover`; additional values are `contain`, `fill`, `scale-down`, `none`) |
+
+Example Usage:
+
+```njk
+<!-- Example input -->
+{% Image {
+  src: 'https://images.unsplash.com/photo-1500754088824-ce0582cfe45f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1776&q=80',
+  alt: 'Latern Fest',
+  caption: 'Lift off at Lantern Fest 2015',
+  fit: 'contain'
+} %}
+```
+
+```html
+<!-- Example output -->
+<figure class="mb-8 media max-w-screen">
+  <img src="https://images.unsplash.com/photo-1500754088824-ce0582cfe45f?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1776&amp;q=80" alt="Latern Fest" class="object-contain mb-3 aspect-w-4 aspect-h-3">
+  <figcaption>Lift off at Lantern Fest 2015</figcaption>
+</figure>
+```
+
+### Link
+
+```njk
+<!-- Example input -->
+{% ExternalLink {
+  url: 'https://google.com',
+  text: 'External Link via shortcode'
+} %}
+```
+
+```html
+<!-- Example output -->
+<a class="external-link" href="https://google.com" title="Open external link in new tab" target="_blank" rel="noopener">External Link via shortcode</a>
+```
+
 ## Reading List
 
 The following resources assisted in the creation of my site!

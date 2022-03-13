@@ -28,6 +28,13 @@ module.exports = {
       suppressMilliseconds: true
     })
   },
+  
+  /**
+   * Convert Date from ISO
+   */
+  fromIso: function(timestamp) {
+    return DateTime.fromISO(timestamp, { zone: 'America/Chicago' }).toJSDate();
+  },
 
   /**
    * Readable Date
@@ -47,18 +54,12 @@ module.exports = {
     return DateTime.fromJSDate(date, { zone: 'America/Chicago' }).toFormat(format);
   },
 
-  /**
-   * Convert Date from ISO
-   */
-  fromIso: function(timestamp) {
-    return DateTime.fromISO(timestamp, { zone: 'America/Chicago' }).toJSDate();
-  },
 
   /**
    * Convert Date to ISO
    * Used in meta for published time
    */
-  dateToIso: function(dateObj) {
+  toIso: function(dateObj) {
     return DateTime.fromJSDate(dateObj).toISO({ includeOffset: true, suppressMilliseconds: true});
   },
 
@@ -67,6 +68,6 @@ module.exports = {
    */
   toRFC2822: function(date) {
     return DateTime.fromJSDate(date).toRFC2822();
-  }
+  },
 
 }
