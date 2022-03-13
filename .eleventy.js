@@ -4,6 +4,13 @@ const filters = require('./src/config/filters');
 const passthroughs = require('./src/config/passthroughs');
 const plugins = require('./src/config/plugins');
 const shortcodes = require('./src/config/shortcodes');
+
+const inputDir = 'src/assets/views';
+const componentsDir = `${inputDir}//components`;
+const Button = require(`./${componentsDir}/button/button.js`);
+const ExternalLink = require(`./${componentsDir}/link/link-external.js`);
+const Image = require(`./${componentsDir}/figure/image.js`);
+
 const watchtargets = require('./src/config/watchtargets');
 
 const fs = require("fs");
@@ -44,9 +51,16 @@ module.exports = function(eleventyConfig) {
   /**
    * Add shortcodes from /src/config/shortcodes.js
    */
-  Object.keys(shortcodes).forEach((shortcodeName) => {
-    eleventyConfig.addShortcode(shortcodeName, shortcodes[shortcodeName]);
-  });
+  // console.group('🧩 Shortcodes (/src/config/shortcodes.js)');
+  // Object.keys(shortcodes).forEach((shortcodeName) => {
+  //   console.log(' · ' + shortcodeName);
+  //   eleventyConfig.addShortcode(shortcodeName, shortcodes[shortcodeName]);
+  // });
+  // console.groupEnd();
+
+  eleventyConfig.addShortcode('Image', Image);
+	eleventyConfig.addShortcode('Button', Button);
+  eleventyConfig.addShortcode('ExternalLink', ExternalLink);
 
   /**
    * Add filters from /src/config/filters.js

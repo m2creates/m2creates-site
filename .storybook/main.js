@@ -12,7 +12,7 @@
  */
 
 module.exports = {
-	stories: ['../src/**/*.stories.@(js|jsx|md|mdx)'],
+	stories: ['../src/assets/**/*.stories.@(js|jsx|md|mdx)'],
 	addons: [
 		'@storybook/addon-a11y', // https://storybook.js.org/addons/@storybook/addon-a11y
 		'@storybook/addon-essentials', // https://storybook.js.org/addons/tag/essentials

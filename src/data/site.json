@@ -40,6 +40,8 @@
     "logo": "",
     "favicon": "",
     "colors": {
+      "primary": "purple",
+      "accent": "pink",
       "pwa": "#ad0fb5"
     }
   },

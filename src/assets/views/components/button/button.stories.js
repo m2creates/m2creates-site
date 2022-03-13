@@ -11,11 +11,11 @@ export default {
 	},
 	argTypes: {
 		// If component is macro
-		// isStorybook: {
-		// 	control: false,
-		// 	description: 'Only used to display Macro in preview',
-		// 	type: { default: true },
-		// },
+		isStorybook: {
+			control: false,
+			description: 'Only used to display Macro in preview',
+			type: { default: true },
+		},
 		label: {
 			description: 'Replaces `{{ label }}` with custom text.',
 			table: {

@@ -4,5 +4,8 @@
  */
 
 module.exports = {
-  // Plugins
+  readingTime: function (eleventyConfig) {
+    let plugin = require('eleventy-plugin-reading-time');
+    eleventyConfig.addPlugin(plugin);
+  }
 }

@@ -1,0 +1,54 @@
+{% extends "layouts/base.njk" %}
+
+{% block content %}
+
+<article class="py-12 mx-auto prose prose-md lg:prose-lg">
+
+  <!-- Post title -->
+  <h1 class="mt-0 mb-3 text-3xl font-extrabold break-normal md:text-5xl">{{ title }}</h1>
+
+  <!-- Meta -->
+  <p class="text-sm md:text-base text-{{ brand.colors.accent }}-600 dark:text-{{ brand.colors.main }}-100 font-bold uppercase">
+    
+    <!-- Author -->
+    <span>By {{ site.author.name }}</span>
+    <span class="px-1 text-{{ brand.colors.main }}-900 dark:text-{{ brand.colors.main }}-100">/</span>
+    
+    <!-- Dates -->
+    {% if displayDateUpdate %}
+      <time datetime="{{ datePublish }}" itemProp="datePublished">{{ datePublish | readableDate }}</time>{% if date != datePublish %} • Updated: <time datetime="{{ date }}" itemProp="dateUpdated">{{ page.date | readableDate }}</time>{% endif %}
+    {% else %}
+      <time datetime="{{ datePublish }}" itemProp="datePublished">{{ datePublish | readableDate }}</time>
+    {% endif %}
+    <span class="px-1 text-{{ brand.colors.main }}-900 dark:text-{{ brand.colors.main }}-100">/</span>
+    
+    <!-- Reading time -->
+    <span class="uppercase">{{ content | readingTime }} read</span>
+    
+    <!-- TODO: Categories -->
+    {# {% if category %}
+    <span class="px-1 text-{{ brand.colors.main }}-900 dark:text-{{ brand.colors.main }}-100">/</span>
+      <span class="category">
+        {% set catUrl %}/category/{{ category | slug }}/{% endset %}
+        <a href="{{ catUrl | url }}" rel="category" class="no-underline">{{ category }}</a>
+      </span>
+    {% endif %} #}
+  </p>
+
+  <!-- TLDR -->
+  <p class="tldr">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Vestibulum id ligula porta felis euismod semper. Curabitur blandit tempus porttitor.</p>
+
+  <!-- Featured Image/Poster -->
+  <figure class="mb-8 max-w-screen">
+    <img src="{{ image.url }}" alt="{{ image.alt }}" class="object-cover mb-3 aspect-w-4 aspect-h-3"/>
+    {% if image.credit %}
+    <figcaption><span>Image credit: {{ image.credit }}</span></figcaption>
+    {% endif %}
+  </figure>
+
+  <!-- Content -->
+  {{ content | safe }}
+
+</article>
+
+{% endblock %}
