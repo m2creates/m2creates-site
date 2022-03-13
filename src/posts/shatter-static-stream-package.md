@@ -5,7 +5,7 @@ slug: shatter-static-stream-package
 date: Last Modified
 datePublish: 2019-01-19
 image:
-  url: /images/shatter-promo.png
+  url: /images/shatter-promo.jpg
   alt: Shatter, static stream package Figma template
   credit: Designed by m2creates for Ship Saturday
 seo:
@@ -13,7 +13,7 @@ seo:
     ✨ Shatter - Static Stream Package
   desc: For Ship Saturday by Shipstreams, I built a static stream package for OBS in Figma.
   image:
-    url: /images/shatter-promo.png
+    url: /images/shatter-promo.jpg
     alt: Shatter, static stream package Figma template
 tags:
   - twitch
@@ -35,7 +35,7 @@ Shatter is an origami-esque polygon design for OBS/Xsplit built with Figma which
 - Panel templates and a Banner image for your Twitch profile
 - Offline background for your broadcast profile (such as Twitch)
 
-![Shatter preview](/images/shatter-content.jpeg "Shatter preview")
+![Shatter preview](/images/shatter-content.jpg "Shatter preview")
 
 **Why Figma?** Figma is web-based making it ideal for anyone who doesn't have OS-dictated software. It also has a free tier so you don't need to dump money into something for *just one thing*. (But if you love it, please consider supporting them by upgrading to a paid account :D)
 
