@@ -36,15 +36,19 @@
   </p>
 
   <!-- TLDR -->
-  <p class="tldr">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Vestibulum id ligula porta felis euismod semper. Curabitur blandit tempus porttitor.</p>
+  {% if tldr %}
+  <p class="tldr">{{ tldr }}</p>
+  {% endif %}
 
   <!-- Featured Image/Poster -->
+  {% if image.url %}
   <figure class="mb-8 max-w-screen">
     <img src="{{ image.url }}" alt="{{ image.alt }}" class="object-cover mb-3 aspect-w-4 aspect-h-3"/>
     {% if image.credit %}
     <figcaption><span>Image credit: {{ image.credit }}</span></figcaption>
     {% endif %}
   </figure>
+  {% endif %}
 
   <!-- Content -->
   {{ content | safe }}

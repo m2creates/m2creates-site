@@ -13,7 +13,11 @@ module.exports = {
   },
 
   images: function () {
-    return { 'src/assets/images': 'assets/images' }
+    return { 'src/assets/images': 'images' }
+  },
+
+  redirects: function () {
+    return { 'src/generate/_redirects': '_redirects' }
   }
 
 }

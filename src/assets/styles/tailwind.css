@@ -123,6 +123,15 @@
     margin-top: 2rem;
   }
 
+  /* Override list style for prose with no padding or list item symbol */
+  /* TODO: drop the important by moving this lower, most likely */
+  .list {
+    @apply list-none pl-0 !important;
+  }
+  .list > li {
+    @apply pl-0;
+  }
+
   /*
   * Breakout Utility
   * Use full width regardless of parent

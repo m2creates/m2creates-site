@@ -37,8 +37,8 @@
     "privacy": "privacy@melaniemagdalena.com"
   },
   "brand": {
-    "logo": "",
-    "favicon": "",
+    "logo": "/images/logo_512.png",
+    "favicon": "/images/logo_512.png",
     "colors": {
       "primary": "purple",
       "accent": "pink",
@@ -46,8 +46,10 @@
     }
   },
   "seo": {
-    "image_card": "",
-    "image_card_alt": "m2creates logo",
+    "image": {
+      "url": "/images/m2creates-banner.jpg",
+      "alt": "m2creates logo"
+    },
     "google_verify": "",
     "pinterest_verify": ""
   },
@@ -59,6 +61,7 @@
   },
   "analytics": {
     "provider": "fathom",
-    "site_id": ""
+    "fathom_id": "SDXTREOF",
+    "fathom_url": "https://fancyrat.melaniemagdalena.com/script.js"
   }
 }

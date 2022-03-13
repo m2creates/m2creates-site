@@ -1,8 +1,8 @@
-{% set title = archive_title or title %}
+{% set title = title or site.name %}
 {% set metaTitle =  seo.title or title or site.name %}
 {% set metaDescription = seo.desc or site.description %}
-{% set metaImage = seo.image_url or image.url or site.seo.image_card %}
-{% set metaImageAlt = seo.image_alt or image.alt  or site.seo.image_card_alt%}
+{% set metaImage = seo.image.url or image.url or site.seo.image.url %}
+{% set metaImageAlt = seo.image.alt or image.alt or site.seo.image.alt %}
 
 {# Site #}
 <meta name="description" content="{{ metaDescription }}">
@@ -57,15 +57,15 @@
 {%- endfor %}
 
 {# Feeds #}
-<link rel="alternate" type="application/rss+xml" href="{{ site.meta.url}}/rss.xml" title="{{ site.name }} RSS Feed">
-<link rel="alternate" type="application/atom+xml" href="{{ site.meta.url}}/atom.xml" title="{{ site.name }} Atom Feed">
+{# <link rel="alternate" type="application/rss+xml" href="{{ site.meta.url}}/rss.xml" title="{{ site.name }} RSS Feed"> #}
+{# <link rel="alternate" type="application/atom+xml" href="{{ site.meta.url}}/atom.xml" title="{{ site.name }} Atom Feed"> #}
 
 {# Icons #}
 <link rel="icon" type="image/ico" href="{{ site.brand.favicon }}">
 <link rel="apple-touch-icon" href="{{ site.brand.favicon }}">
 
 {# Service Worker #}
-<link rel="manifest" href="/site.webmanifest">
+{# <link rel="manifest" href="/site.webmanifest"> #}
 
 {# Webmentions #}
 {%- if site.webmentions === "enable" %}

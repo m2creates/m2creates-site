@@ -4,11 +4,15 @@
  */
 
 module.exports = {
-  posts: function (collection) {
-      return collection.getFilteredByGlob("src/posts/*.md")
-  },
+	posts: function (collection) {
+		return collection.getFilteredByGlob('src/posts/*.md');
+	},
 
-  pages: function (collection) {
-    return collection.getFilteredByGlob("src/pages/*.md")
-  }
-}
+	pages: function (collection) {
+		return collection.getFilteredByGlob('src/pages/*.md');
+	},
+
+	projects: function (collection) {
+		return collection.getFilteredByGlob('src/projects/*.md');
+	},
+};

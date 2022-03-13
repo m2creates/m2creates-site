@@ -1,0 +1,27 @@
+{% extends "layouts/base.njk" %}
+
+{% block content %}
+
+<article class="py-12 mx-auto prose prose-md lg:prose-lg">
+
+  <!-- Post title -->
+  <h1 class="mt-0 mb-3 text-3xl font-extrabold break-normal md:text-5xl">{{ title }}</h1>
+
+  <!-- Meta -->
+  <p class="text-sm md:text-base text-{{ brand.colors.accent }}-600 dark:text-{{ brand.colors.main }}-100 font-bold uppercase">
+    
+    <!-- Byline -->
+    <span>{{ subtitle }}</span>
+
+  </p>
+
+  {{ content | safe }}
+
+  <!-- Latest Posts -->
+  <h2 class="mt-0 mb-3 text-xl font-semibold break-normal md:text-3xl">Latest Posts</h2>
+  {% set postslist = posts %}
+  {% include "components/list/list-posts.njk" %}
+
+</article>
+
+{% endblock %}
