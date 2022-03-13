@@ -12,11 +12,7 @@
     {% include "components/schema.njk" %}
     {% endblock %}
 
-    {% if app.environment === "production" %}
-    <link rel="stylesheet" href="{{ site.meta.url }}/assets/tailwind.css" />
-    {% else %}
     <link rel="stylesheet" href="/assets/tailwind.css" />
-    {% endif %}
 
     {% block styles %}
     {% endblock %}
