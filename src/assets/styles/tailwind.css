@@ -132,6 +132,10 @@
     @apply pl-0;
   }
 
+  .prose :where(code):not(:where([class~="not-prose"] *)) {
+    @apply text-white;
+  }
+
   /*
   * Breakout Utility
   * Use full width regardless of parent
