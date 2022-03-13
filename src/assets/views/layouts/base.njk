@@ -21,6 +21,11 @@
     {% block styles %}
     {% endblock %}
 
+    {% if site.analytics.provider === "fathom" %}
+    {# Fathom Analytics #}
+    <script src="{{ site.analytics.fathom_url }}" site="{{ site.analytics.fathom_id }}" honor-dnt="true" defer></script>
+    {% endif %}
+
     {# Netlify Identity #}
     {% if page.url === "/" %}
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js" defer></script>

@@ -7,5 +7,10 @@ module.exports = {
   readingTime: function (eleventyConfig) {
     let plugin = require('eleventy-plugin-reading-time');
     eleventyConfig.addPlugin(plugin);
+  },
+
+  rss: function (eleventyConfig) {
+    let plugin = require('@11ty/eleventy-plugin-rss');
+    eleventyConfig.addPlugin(plugin);
   }
 }

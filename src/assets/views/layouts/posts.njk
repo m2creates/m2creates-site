@@ -1,0 +1,15 @@
+{% extends "layouts/base.njk" %}
+
+{% block content %}
+
+<article class="py-12 mx-auto prose prose-md lg:prose-lg">
+
+  <!-- Post title -->
+  <h1 class="mt-0 mb-3 text-3xl font-extrabold break-normal md:text-5xl">{{ title }}</h1>
+
+  {% set postslist = posts %}
+  {% include "components/list/list-posts.njk" %}
+
+</article>
+
+{% endblock %}

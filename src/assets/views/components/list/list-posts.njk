@@ -1,0 +1,13 @@
+<ul class="list">
+{%- for post in collections.posts -%}
+  <li>
+    <a href="{{ post.url }}" class="font-bold underline underline-offset-1">{{ post.data.title }}</a>
+    {% if displayDateUpdate %}
+      <time datetime="{{ post.data.datePublish }}" itemProp="datePublished">{{  post.data.datePublish | readableDate }}</time>{% if post.data.date != datePublish %} • Updated: <time datetime="{{ post.data.date }}" itemProp="dateUpdated">{{ page.date | readableDate }}</time>{% endif %}
+    {% else %}
+      <time datetime="{{  post.data.datePublish }}" itemProp="datePublished">{{  post.data.datePublish | readableDate }}</time>
+    {% endif %}
+    
+  </li>
+{%- endfor -%}
+</ul>

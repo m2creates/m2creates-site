@@ -8,13 +8,14 @@ image:
   alt: Dozens of paper lanterns light up the night sky.
   credit: m2creates via Unsplash
 seo:
-  title: Sample page
-  desc: Just a sample page
-  # image_url:
-  # image_alt:
+  title: Sample page for testing
+  desc: Just a sample page used to test post elements and layouts. Contains Latin.
+  image:
+    url:
+    alt:
 ---
 
-I am a sample post.
+I am a sample post featuring some custom 11ty shortcodes. This post is also an example of the layout. It will eventually be deleted once there are some real posts to enjoy!
 
 Nullam quis risus eget urna mollis ornare vel eu leo. Nulla vitae elit libero, a pharetra augue. Nulla vitae elit libero, a pharetra augue. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Cras mattis consectetur purus sit amet fermentum.
 
