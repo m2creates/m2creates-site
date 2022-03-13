@@ -162,19 +162,19 @@ npm run build:sb
 | Filter       | Description                              | Example/Usage                  |
 |--------------|------------------------------------------|--------------------------------|
 | content      | markdown body of a collection item       | `{{ content }}`                |
-| raw          | allows processing njk within markdown    | `{{ content | raw }}`          |
-| readingTime  | calculates time to read, i.e. `content`  | `{{ content | readingTime }}`  |
+| raw          | allows processing njk within markdown    | `{{ content \| raw }}`          |
+| readingTime  | calculates time to read, i.e. `content`  | `{{ content \| readingTime }}`  |
 
 ### Dates
 
 | Filter       | Description                              | Example/Usage                             |
 |--------------|------------------------------------------|-------------------------------------------|
 | date         | default unformatted date                 | `{{ date }}`                              |
-| iso          | display date in ISO format               | `{{ date | iso }}`                        |
-| readableDate | display date in 'dd MMMM yyyy' format    | `{{ date | readableDate }}`               |
-| readableDate custom  | or set a custom format           | `{{ date | readableDate('yyyy-LL-dd') }}` |
-| toIso        | Used in meta for published time          | `{{ date | dateToIso }}`                  |
-| toRFC2822    | For RSS Feed                             | `{{ date | toRFC2822 }}`                  |
+| iso          | display date in ISO format               | `{{ date \| iso }}`                        |
+| readableDate | display date in 'dd MMMM yyyy' format    | `{{ date \| readableDate }}`               |
+| readableDate custom  | or set a custom format           | `{{ date \| readableDate('yyyy-LL-dd') }}` |
+| toIso        | Used in meta for published time          | `{{ date \| toIso }}`                  |
+| toRFC2822    | For RSS Feed                             | `{{ date \| toRFC2822 }}`                  |
 
 ***
 
