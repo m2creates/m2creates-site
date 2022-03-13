@@ -6,8 +6,8 @@
   "scripts": {
     "debug": "DEBUG=* npx eleventy",
     "css:full": "cross-env TAILWIND_ENV=development postcss src/assets/styles/tailwind.css --o dist/assets/tailwind.css",
-    "css:purge": "cross-env TAILWIND_ENV=production postcss src/assets/styles/tailwind.css --o dist/assets/tailwind.min.css",
-    "css:sb": "cross-env TAILWIND_ENV=production postcss src/assets/styles/tailwind.css --o .storybook/tailwind.min.css",
+    "css:purge": "cross-env TAILWIND_ENV=production postcss src/assets/styles/tailwind.css --o dist/assets/tailwind.css",
+    "css:sb": "cross-env TAILWIND_ENV=production postcss src/assets/styles/tailwind.css --o .storybook/tailwind.css",
     "site:dev": "cross-env ELEVENTY_ENV=development eleventy",
     "site:staging": "cross-env ELEVENTY_ENV=staging eleventy",
     "site:prod": "cross-env ELEVENTY_ENV=production eleventy",
