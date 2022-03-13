@@ -14,6 +14,9 @@ seo:
   image:
     url:
     alt:
+catalog:
+  type: 
+  company: 
 ---
 
 Image shortcode
