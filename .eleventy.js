@@ -3,13 +3,14 @@ const collections = require('./src/config/collections');
 const filters = require('./src/config/filters');
 const passthroughs = require('./src/config/passthroughs');
 const plugins = require('./src/config/plugins');
-const shortcodes = require('./src/config/shortcodes');
+//const shortcodes = require('./src/config/shortcodes');
 
 const inputDir = 'src/assets/views';
-const componentsDir = `${inputDir}//components`;
+const componentsDir = `${inputDir}/components`;
 const Button = require(`./${componentsDir}/button/button.js`);
 const ExternalLink = require(`./${componentsDir}/link/link-external.js`);
 const Image = require(`./${componentsDir}/figure/image.js`);
+const YouTube = require(`./${componentsDir}/embed/youtube.js`);
 
 const watchtargets = require('./src/config/watchtargets');
 
@@ -51,23 +52,25 @@ module.exports = function(eleventyConfig) {
   /**
    * Add shortcodes from /src/config/shortcodes.js
    */
-  // console.group('🧩 Shortcodes (/src/config/shortcodes.js)');
+  console.group('🧩 Shortcodes (/src/config/shortcodes.js)');
   // Object.keys(shortcodes).forEach((shortcodeName) => {
   //   console.log(' · ' + shortcodeName);
   //   eleventyConfig.addShortcode(shortcodeName, shortcodes[shortcodeName]);
   // });
-  // console.groupEnd();
-
-  eleventyConfig.addShortcode('Image', Image);
-	eleventyConfig.addShortcode('Button', Button);
-  eleventyConfig.addShortcode('ExternalLink', ExternalLink);
+    eleventyConfig.addShortcode('Image', Image);
+		eleventyConfig.addShortcode('Button', Button);
+		eleventyConfig.addShortcode('ExternalLink', ExternalLink);
+    eleventyConfig.addShortcode('YouTube', YouTube);
+  console.groupEnd();
 
   /**
    * Add filters from /src/config/filters.js
    */
+  console.group('🔍 Filters (/src/config/filters.js)');
   Object.keys(filters).forEach((filterName) => {
     eleventyConfig.addFilter(filterName, filters[filterName]);
   });
+  console.groupEnd();
 
   /**
    * Add passthrough copy from /src/config/passthroughs.js
@@ -82,9 +85,11 @@ module.exports = function(eleventyConfig) {
   /**
    * Add watch targets from /src/config/watchtargets.js
    */
+  console.group('👀 Watchtargets (/src/config/watchtargets.js)');
   Object.keys(watchtargets).forEach((watchtargetName) => {
     eleventyConfig.addWatchTarget(watchtargets[watchtargetName]())
   });
+  console.groupEnd();
 
   /**
    * End pretty console output
