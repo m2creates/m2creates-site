@@ -2,17 +2,17 @@
  * Add Eleventy shortcodes here
  * @link https://www.11ty.dev/docs/shortcodes/
  */
-
-const inputDir = 'src/assets/views';
-const componentsDir = `${inputDir}/components`;
-
 module.exports = {
-	// button: function (eleventyConfig) {
-	// 	const button = require(`./${componentsDir}/button/button.js`);
-	// 	eleventyConfig.addShortcode('Button', button);
-	// },
-	// image: function (eleventyConfig) {
-	// 	const image = require(`./${componentsDir}/figure/image.js`);
-	// 	eleventyConfig.addShortcode('Image', image);
-	// },
+	Button: function shortcode() {
+		const Button = require('./src/assets/views/components/button/button.js');
+		return Button;
+	},
+	ExternalLink: function shortcode() {
+		let shortcode = require('./src/assets/views/components/link/link-external.js');
+		return shortcode;
+	},
+	Image: function shortcode() {
+		const Image = require('./src/assets/views/components/figure/image.js');
+		return Image;
+	}
 };

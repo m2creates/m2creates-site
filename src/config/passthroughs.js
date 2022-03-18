@@ -23,4 +23,9 @@ module.exports = {
 	scripts: function () {
 		return { 'src/assets/scripts': 'assets/scripts' };
 	},
+
+	styles: function () {
+		// Remove tailwind.css from this
+		return { 'src/assets/styles': 'assets/styles' };
+	},
 };

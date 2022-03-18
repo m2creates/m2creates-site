@@ -15,6 +15,10 @@
 
     <link rel="stylesheet" href="/assets/tailwind.css" />
 
+    {% if blocks.css === 'youtube' %}
+    <link rel="stylesheet" href="/assets/styles/lite-youtube.css" />
+    {% endif %}
+
     {% block styles %}
     {% endblock %}
 
@@ -29,6 +33,11 @@
     {# Netlify Identity #}
     {% if page.url === "/" %}
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js" defer></script>
+    {% endif %}
+
+    {# Web Components #}
+    {% if blocks.js === 'youtube' %}
+    <script src="/assets/scripts/lite-youtube.js" defer/></script>
     {% endif %}
 
     {% block scripts_head %}
