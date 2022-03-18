@@ -24,8 +24,8 @@ module.exports = {
 		return { 'src/assets/scripts': 'assets/scripts' };
 	},
 
-	styles: function () {
-		// Remove tailwind.css from this
-		return { 'src/assets/styles': 'assets/styles' };
-	},
+	// styles: function () {
+	// 	// Remove tailwind.css from this
+	// 	return { 'src/assets/styles': 'assets/styles' };
+	// },
 };
