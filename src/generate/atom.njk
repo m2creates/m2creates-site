@@ -23,7 +23,7 @@ eleventyExcludeFromCollections: true
 	<entry>
 		<title>{{ post.data.title }}</title>
 		<link rel="alternate" href="{{ absolutePostUrl }}"/>
-		<updated>{{ post.date | rssDate }}</updated>
+		<updated>{{ post.data.datePublish | toRFC3339 }}</updated>
 		<id>{{ absolutePostUrl }}</id>
 		{%- if post.data.tags %}{%- for tag in post.data.tags %}{%- if tag != "post" %}
 		<category term="{{ tag }}"/>
