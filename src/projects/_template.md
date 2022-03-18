@@ -17,6 +17,8 @@ seo:
 catalog:
   type: 
   company: 
+permalink: false
+eleventyExcludeFromCollections: true
 ---
 
 Image shortcode
