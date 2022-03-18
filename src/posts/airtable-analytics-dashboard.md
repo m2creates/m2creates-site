@@ -5,9 +5,9 @@ tldr: >-
 slug: airtable-analytics-hub
 date: Last Modified
 datePublish: 2021-08-07
-blocks:
-  css: youtube
-  js: youtube
+# blocks:
+#   css: youtube
+#   js: youtube
 comments:
   tweet: 1423888996975972356
 image:
