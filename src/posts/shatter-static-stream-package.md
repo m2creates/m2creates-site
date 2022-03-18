@@ -1,6 +1,6 @@
 ---
 title: >-
-  ✨ Shatter - Static Stream Package
+  Shatter - Static Stream Package
 slug: shatter-static-stream-package
 date: Last Modified
 datePublish: 2019-01-19
@@ -95,7 +95,3 @@ Once your desired frames are selected, choose **2x** and **PNG** from the **Expo
 ![Export your frames](/images/figma-2x-export.png "Export frames at 2x for PNG")
 
 By exporting at 2X resolution, your images will scale down to a *crisp* output on both your broadcasting software and Twitch's upload UI.
-
----
-
-Thanks for reading! If this template helped you, consider [buying me a coffee](https://www.buymeacoffee.com/m2)!
