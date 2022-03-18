@@ -7,7 +7,7 @@ eleventyExcludeFromCollections: true
 <item>{{collections.all.length}}</item>
 {%- for item in collections.all %}
 {%- if item.url !== false %}
-{%- set lastmod = item.date or item.datePublish %}
+{%- set lastmod = item.date %}
   <url>
     <loc>{{site.meta.url}}{{ item.url }}</loc>
     <lastmod>{{ lastmod | readableDate('yyyy-LL-dd') }}</lastmod>
