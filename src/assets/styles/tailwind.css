@@ -4,6 +4,17 @@
 
 @layer base {
 
+  :root {
+    /* BMAC Branding */
+    --bmac-yellow: #ffde02;
+    --bmac-purple: #bd60ff;
+    --bmac-blue: #5f7fff;
+    --bmac-green: #41dca5;
+    --bmac-red: #ff605f;
+
+    --buymeacoffee: var(--bmac-purple);
+  }
+
   html,
   body {
     width: 100%;
@@ -122,6 +133,10 @@
 
 @layer components {
 
+  article {
+    @apply w-full;
+  }
+
   /*
   * Markdown Formatting
   * (Tailwind Typography .prose Additions)
@@ -146,13 +161,22 @@
   .list > li {
     @apply pl-0;
   }
-
   .prose :where(code):not(:where([class~="not-prose"] *)) {
     @apply text-white;
   }
 
   .dark .prose a {
     @apply text-white;
+  }
+
+  .bmac {
+    @apply text-white py-4 px-5;
+  }
+
+  /* Nuke margins */
+  .prose .list p,
+  .prose .bmac p {
+    @apply m-0;
   }
 
   /*
@@ -166,6 +190,15 @@
     right: 50%;
     margin-left: -50vw;
     margin-right: -50vw;
+  }
+
+  .breakout-medium {
+    width: 80vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -40vw;
+    margin-right: -40vw;
   }
 
   /*

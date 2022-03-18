@@ -2,7 +2,7 @@
 
 {% block content %}
 
-<article class="">
+<article>
 
   <!-- Post title -->
   <h1 class="mt-0 mb-3 text-3xl font-extrabold break-normal md:text-5xl">{{ title }}</h1>
@@ -45,13 +45,15 @@
   <figure class="mb-8 max-w-screen">
     <img src="{{ image.url }}" alt="{{ image.alt }}" class="object-cover mb-3 aspect-w-4 aspect-h-3"/>
     {% if image.credit %}
-    <figcaption><span>Image credit: {{ image.credit }}</span></figcaption>
+    <figcaption><span>{{ image.credit }}</span></figcaption>
     {% endif %}
   </figure>
   {% endif %}
 
   <!-- Content -->
   {{ content | safe }}
+
+  {% include "components/BuyMeACoffee/BuyMeACoffee.njk" %}
 
 </article>
 
