@@ -1,0 +1,10 @@
+<footer class="flex items-center justify-between w-full pb-8 mx-auto">
+  <p>&#169; 2011-2022 m2creates &#8226; Melanie E Magdalena</p>
+  <nav>
+    <ul class="flex gap-4">
+      {% for item in navigation.footer %}
+      <li class="py-2"><a href="{{ item.href }}">{{ item.text }}</a></li>
+      {% endfor %}
+    </ul>
+  </nav>
+</footer>
