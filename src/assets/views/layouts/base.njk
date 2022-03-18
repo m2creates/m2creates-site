@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>{% if title %}{{ title }} | {% endif %}{{ site.name }}</title>
+    {% set metaTitle = seo.title or title %}
+    <title>{% if metaTitle %}{{ metaTitle }} | {% endif %}{{ site.name }}</title>
 
     {% include "components/meta.njk" %}
 
@@ -16,6 +17,9 @@
 
     {% block styles %}
     {% endblock %}
+
+    {# Dark Mode Handler #}
+    <script>(localStorage.getItem('darkMode') === 'true') && document.documentElement.classList.add('dark');</script>
 
     {% if site.analytics.provider === "fathom" %}
     {# Fathom Analytics #}
@@ -31,25 +35,22 @@
     {% endblock %}
     
   </head>
-  <body>
+  <body class="flex flex-col min-h-screen px-8 mx-auto max-w-prose dark:bg-slate-900 dark:text-white">
     <a class="sr-skip-link" href="#main">Skip to content</a>
 
     {# Site header #}
-    <header>
-      {# {% include "components/header.njk" %} #}
-    </header>
+    {% include "partials/header.njk" %}
 
     {# Main content #}
-    <main id="main" tabindex="-1" class="p-8">
+    <main id="main" tabindex="-1" class="flex flex-grow flex-shrink-0 w-full py-8 mx-auto prose prose-md lg:prose-lg">
       {% block content %}
-      <div class="prose">{{ content | safe }}</div>
+      {{ content | safe }}
       {% endblock %}
     </main>
 
-    <footer>
-      {# {% include "components/footer.njk" %} #}
-    </footer>
+    {% include "partials/footer.njk" %}
 
+    <script src="/assets/scripts/colorToggle.js" defer></script>
     {% block scripts_body %}
     {# <script src="/assets/scripts/main.js" defer></script> #}
     {% endblock %}

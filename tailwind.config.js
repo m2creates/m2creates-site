@@ -1,5 +1,5 @@
 module.exports = {
-	important: true,
+	important: false,
 	content: ['./src/**/*.{js,html,md,njk}'],
 	darkMode: 'class',
 	theme: {
@@ -8,7 +8,7 @@ module.exports = {
 		},
 	},
 	plugins: [
-    require('@tailwindcss/typography'),
-    require('@tailwindcss/forms')
-  ],
+		require('@tailwindcss/typography'),
+		require('@tailwindcss/forms')
+	],
 };

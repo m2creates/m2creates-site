@@ -1,0 +1,28 @@
+<header class="flex items-center justify-between w-full pt-8 mx-auto">
+  {# Branding #}
+  <a href="/"><img src="{{ site.brand.logo }}" alt="Logo" class="w-8 h-8" /></a>
+
+  <div class="flex gap-4">
+  {# Nav Links #}
+  <nav>
+    <ul class="flex gap-4">
+      {% for item in navigation.header %}
+      <li class="py-2"><a href="{{ item.href }}">{{ item.text }}</a></li>
+      {% endfor %}
+    </ul>
+  </nav>
+  {# Color Scheme toggle #}
+  <button id="colorToggle" class="js-color-toggle" role="switch" aria-checked="false">
+    {# Light (Sun) Icon #}
+    <svg class="w-4 h-4 icon-light" role="img" aria-hidden="true">
+      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/images/icons/icon-library.svg#sun"></use>
+    </svg>
+
+    {# Dark (Moon) Icon #}
+    <svg class="w-4 h-4 icon-dark" role="img" aria-hidden="true">
+      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/images/icons/icon-library.svg#moon"></use>
+    </svg>
+  </button>
+  </div>
+
+</header>
