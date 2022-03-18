@@ -10,6 +10,7 @@ links:
     discord:
     reddit:
     quora:
+favorite:
 type:
   - 
 key:
