@@ -18,6 +18,9 @@
     {% block styles %}
     {% endblock %}
 
+    {# Dark Mode Handler #}
+    <script>(localStorage.getItem('darkMode') === 'true') && document.documentElement.classList.add('dark');</script>
+
     {% if site.analytics.provider === "fathom" %}
     {# Fathom Analytics #}
     <script src="{{ site.analytics.fathom_url }}" site="{{ site.analytics.fathom_id }}" honor-dnt="true" defer></script>
