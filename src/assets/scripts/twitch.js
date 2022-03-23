@@ -116,18 +116,18 @@ class TwitchEmbed extends HTMLElement {
 		// https://stackoverflow.com/q/64959723/89484
 
     if (this.videoType === 'clip') {
-      iframeEl.src = `https://clips.twitch.tv/embed/${encodeURIComponent(
-        this.videoId
-      )}?${params.toString()}&parent=${this.videoParent}`;
-    } else if (this.videoType === 'collection') {
-      iframeEl.src = `https://player.twitch.tv/?collection=${encodeURIComponent(
-        this.videoId
-      )}?${params.toString()}&parent=${this.videoParent}`;
-    } else {
-      iframeEl.src = `https://player.twitch.tv/?video=${encodeURIComponent(
+			iframeEl.src = `https://clips.twitch.tv/embed?clip=${encodeURIComponent(
+				this.videoId
+			)}?${params.toString()}&parent=${this.videoParent}`;
+		} else if (this.videoType === 'collection') {
+			iframeEl.src = `https://player.twitch.tv/?collection=${encodeURIComponent(
+				this.videoId
+			)}?${params.toString()}&video=videoId&parent=${this.videoParent}`;
+		} else {
+			iframeEl.src = `https://player.twitch.tv/?video=${encodeURIComponent(
 				this.videoId
 			)}?${params.toString()}&parent=${this.videoParent}&autoplay=false`;
-    }
+		}
 		
 		this.append(iframeEl);
 
