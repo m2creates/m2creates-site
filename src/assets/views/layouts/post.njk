@@ -1,5 +1,17 @@
 {% extends "layouts/base.njk" %}
 
+{% block styles %}
+{% if blocks.css === 'youtube' %}
+<link rel="stylesheet" href="/assets/styles/lite-youtube.css" />
+{% endif %}
+{% endblock %}
+
+{% block scripts_body %}
+{% if blocks.js === 'youtube' %}
+<script src="/assets/scripts/lite-youtube.js" defer></script>
+{% endif %}
+{% endblock %}
+
 {% block content %}
 
 <article>

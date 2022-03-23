@@ -10,7 +10,7 @@ const componentsDir = `${inputDir}/components`;
 const Button = require(`./${componentsDir}/button/button.js`);
 const ExternalLink = require(`./${componentsDir}/link/link-external.js`);
 const Image = require(`./${componentsDir}/figure/image.js`);
-//const YouTube = require(`./${componentsDir}/embed/youtube.js`);
+const YouTube = require(`./${componentsDir}/embed/youtube.js`);
 
 const watchtargets = require('./src/config/watchtargets');
 
@@ -58,9 +58,9 @@ module.exports = function(eleventyConfig) {
   //   eleventyConfig.addShortcode(shortcodeName, shortcodes[shortcodeName]);
   // });
     eleventyConfig.addShortcode('Image', Image);
-		eleventyConfig.addShortcode('Button', Button);
-		eleventyConfig.addShortcode('ExternalLink', ExternalLink);
-    //eleventyConfig.addShortcode('YouTube', YouTube);
+	  eleventyConfig.addShortcode('Button', Button);
+    eleventyConfig.addShortcode('ExternalLink', ExternalLink);
+    eleventyConfig.addNunjucksShortcode('YouTube', YouTube);
   console.groupEnd();
 
   /**
