@@ -8,12 +8,20 @@ image:
   url:
   alt: 
   credit: 
+# blocks:
+#   css: youtube
+#   js: youtube
+# comments:
+#   tweet: 
+#   polywork: 
 seo:
   title:
   desc:
   image:
     url:
     alt:
+permalink: false
+eleventyExcludeFromCollections: true
 ---
 
 Image shortcode

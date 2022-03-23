@@ -1,13 +1,13 @@
 ---
 title: >-
-  🌤 Weather App Dashboard
+  Weather App Dashboard
 slug: uplabs-challenge-weather-app-dashboard
 date: Last Modified
 datePublish: 2018-01-28
 image:
   url: /images/weather-app-preview.png
   alt: Final screenshot of my weather app named Forecast It
-  credit: m2creates
+  credit: When it worked, this is what my weather app looked like!
 seo:
   title: >-
     🌤 Weather App Dashboard
@@ -51,7 +51,3 @@ The final “design” touches were flexbox, [Material Palette](http://materialp
 This simple web app probably won’t win any major design awards, but this challenge gave me a new context to experiment in using APIs, JavaScript, (initially convoluted) icon mapping, and real-time data feeds. Now I need to tie in Airtable to complete my obsession. Perhaps I’ll calculate lunar cycles and astronomical events so my dashboard can remind me to take advantage of clear night skies for amateur astrophotography. 🚀
 
 Until the next experiment, I hope this post-build brain dump was mildly entertaining and/or educational if you decide to build a weather app.
-
----
-
-Thanks for reading! If this helped you, consider [buying me a coffee](https://www.buymeacoffee.com/m2)!

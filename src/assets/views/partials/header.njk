@@ -1,18 +1,18 @@
-<header class="flex items-center justify-between w-full pt-8 mx-auto">
+<header class="flex flex-wrap items-center justify-between w-full pt-8 mx-auto">
   {# Branding #}
-  <a href="/"><img src="{{ site.brand.logo }}" alt="Logo" class="w-8 h-8" /></a>
+  <a href="/" class="flex items-center flex-shrink-0 gap-2 font-semibold underline-none"><img src="{{ site.brand.logo }}" alt="Logo" class="w-8 h-8" />m2creates</a>
 
-  <div class="flex gap-4">
+  <div class="flex flex-wrap gap-x-4">
   {# Nav Links #}
   <nav>
-    <ul class="flex gap-4">
+    <ul class="flex flex-wrap gap-x-4">
       {% for item in navigation.header %}
-      <li class="py-2"><a href="{{ item.href }}">{{ item.text }}</a></li>
+      <li><a href="{{ item.href }}" class="p-2">{{ item.text }}</a></li>
       {% endfor %}
     </ul>
   </nav>
   {# Color Scheme toggle #}
-  <button id="colorToggle" class="js-color-toggle" role="switch" aria-checked="false">
+  <button id="colorToggle" class="js-color-toggle" role="switch" aria-checked="false" aria-label="Toggle color mode">
     {# Light (Sun) Icon #}
     <svg class="w-4 h-4 icon-light" role="img" aria-hidden="true">
       <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/images/icons/icon-library.svg#sun"></use>

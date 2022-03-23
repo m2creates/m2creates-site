@@ -11,6 +11,12 @@ module.exports = {
 		return util.inspect(obj);
 	},
 
+	// Limit
+	/**
+	 * TODO: format this
+	 * eleventyConfig.addNunjucksFilter('limit', (arr, limit) => arr.slice(0, limit));
+	 */
+
 	// Dates via Luxon
 	/**
 	 * Format a date. See readableDate for example.
