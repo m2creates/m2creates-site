@@ -23,4 +23,8 @@ module.exports = {
 	scripts: function () {
 		return { 'src/assets/scripts': 'assets/scripts' };
 	},
+
+	styles: function () {
+		return { 'src/assets/styles': 'assets/styles' };
+	},
 };
