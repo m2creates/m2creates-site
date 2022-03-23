@@ -1,4 +1,4 @@
-lite-youtube {
+youtube-embed {
   background-color: #000;
   position: relative;
   display: block;
@@ -11,7 +11,7 @@ lite-youtube {
 }
 
 /* gradient */
-lite-youtube::before {
+youtube-embed::before {
   content: '';
   display: block;
   position: absolute;
@@ -28,13 +28,13 @@ lite-youtube::before {
 /* responsive iframe with a 16:9 aspect ratio
     thanks https://css-tricks.com/responsive-iframes/
 */
-lite-youtube::after {
+youtube-embed::after {
   content: "";
   display: block;
   padding-bottom: calc(100% / (16 / 9));
 }
 
-lite-youtube>iframe {
+youtube-embed>iframe {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -44,7 +44,7 @@ lite-youtube>iframe {
 }
 
 /* play button */
-lite-youtube>.lty-playbtn {
+youtube-embed>.lty-playbtn {
   display: block;
   width: 68px;
   height: 48px;
@@ -62,28 +62,18 @@ lite-youtube>.lty-playbtn {
   border: none;
 }
 
-lite-youtube:hover>.lty-playbtn,
-lite-youtube .lty-playbtn:focus {
+youtube-embed:hover>.lty-playbtn,
+youtube-embed .lty-playbtn:focus {
   filter: none;
 }
 
 /* Post-click styles */
-lite-youtube.lyt-activated {
+youtube-embed.lyt-activated {
   cursor: unset;
 }
 
-lite-youtube.lyt-activated::before,
-lite-youtube.lyt-activated>.lty-playbtn {
+youtube-embed.lyt-activated::before,
+youtube-embed.lyt-activated>.lty-playbtn {
   opacity: 0;
   pointer-events: none;
-}
-
-.lyt-visually-hidden {
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
 }
