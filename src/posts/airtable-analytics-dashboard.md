@@ -64,9 +64,7 @@ Airtable's web clipper can speed this up! When you post, clip the thing so you c
 
 See this quick video (it has no audio) of how the web clipper works.
 
-<div style="position: relative; padding-bottom: 62.5%; height: 0;"><iframe width="560" height="315"
-src="https://www.youtube-nocookie.com/embed/ASMutu0ALMc"
-title="Using Airtable as an Analytics Hub: LinkedIn Web Clipper - New Post" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+{% YouTube { id: 'ASMutu0ALMc', title: 'Using Airtable as an Analytics Hub: LinkedIn Web Clipper - New Post' } %}
 
 When you do remember, clip it again! And use an automation to update the source record.
 
@@ -78,9 +76,7 @@ Tada, you have personal LinkedIn post stats!
 
 Here's a brief video illustrating this process and how I have configured my automation.
 
-<div style="position: relative; padding-bottom: 62.5%; height: 0;"><iframe width="560" height="315"
-src="https://www.youtube-nocookie.com/embed/ULoXTeb3gkQ"
-title="Using Airtable as an Analytics Hub: LinkedIn with Web Clipper & Automations - Update Post Stats" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+{% YouTube { id: 'ULoXTeb3gkQ', title: 'Using Airtable as an Analytics Hub: LinkedIn with Web Clipper & Automations - Update Post Stats' } %}
 
 Put it all together! I wrote a little formula that trims the tweet/post date down to YYYY-MM. This gets calculated for every record automagically.
 
