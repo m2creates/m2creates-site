@@ -100,7 +100,3 @@ Once your desired frames are selected, choose **2x** and **PNG** from the **Expo
 ![Export your frames](/images/figma-2x-export.png "Export frames at 2x for PNG")
 
 By exporting at 2X resolution, your images will scale down to a *crisp* output on both your broadcasting software and Twitch's upload UI.
-
-## Watch the Ship Saturday broadcast
-
-{% Twitch { id: '0WkbOP5xexWgGw', title: 'Project: Shatter [Ship Saturday]', type: 'collection', thumbnail: 'shatter-content.jpg'} %}
