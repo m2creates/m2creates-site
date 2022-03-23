@@ -4,6 +4,9 @@ title: >-
 slug: shatter-static-stream-package
 date: Last Modified
 datePublish: 2019-01-19
+blocks:
+  css: twitch
+  js: twitch
 image:
   url: /images/shatter-promo.jpg
   alt: Shatter, static stream package Figma template
@@ -38,6 +41,8 @@ Shatter is an origami-esque polygon design for OBS/Xsplit built with Figma which
 ![Shatter preview](/images/shatter-content.jpg "Shatter preview")
 
 **Why Figma?** Figma is web-based making it ideal for anyone who doesn't have OS-dictated software. It also has a free tier so you don't need to dump money into something for *just one thing*. (But if you love it, please consider supporting them by upgrading to a paid account :D)
+
+{% Twitch { id: 'HeartlessPoorRaisinPlanking', title: 'Figma Twitch Overlay Recap', type: 'clip', thumbnail: 'shatter-content.jpg'} %}
 
 ## Get Shatter
 
@@ -95,3 +100,7 @@ Once your desired frames are selected, choose **2x** and **PNG** from the **Expo
 ![Export your frames](/images/figma-2x-export.png "Export frames at 2x for PNG")
 
 By exporting at 2X resolution, your images will scale down to a *crisp* output on both your broadcasting software and Twitch's upload UI.
+
+## Watch the Ship Saturday broadcast
+
+{% Twitch { id: '0WkbOP5xexWgGw', title: 'Project: Shatter [Ship Saturday]', type: 'collection', thumbnail: 'shatter-content.jpg'} %}

@@ -14,7 +14,7 @@
 class LiteYTEmbed extends HTMLElement {
 	connectedCallback() {
 		this.videoId = this.getAttribute('videoid');
-    this.videoTitle = this.getAttribute('videotitle');
+    this.videoTitle = this.getAttribute('title');
 
 		let playBtnEl = this.querySelector('.lty-playbtn');
 		// A label for the button takes priority over a [playlabel] attribute on the custom-element
@@ -45,7 +45,7 @@ class LiteYTEmbed extends HTMLElement {
 		}
 		if (!playBtnEl.textContent) {
 			const playBtnLabelEl = document.createElement('span');
-			playBtnLabelEl.className = 'lyt-visually-hidden';
+			playBtnLabelEl.className = 'visually-hidden';
 			playBtnLabelEl.textContent = this.playLabel;
 			playBtnEl.append(playBtnLabelEl);
 		}
@@ -133,4 +133,4 @@ class LiteYTEmbed extends HTMLElement {
 	}
 }
 // Register custom element
-customElements.define('lite-youtube', LiteYTEmbed);
+customElements.define('youtube-embed', LiteYTEmbed);

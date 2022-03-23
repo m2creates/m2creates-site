@@ -16,6 +16,7 @@ const purgecss = require('@fullhuman/postcss-purgecss')({
 		'object-fill',
 		'object-scale-down',
 		'object-none',
+		'visually-hidden',
 	],
 	// Include any special characters you're using in this regular expression
 	defaultExtractor: (content) => content.match(/[\w-/:]+(?<!:)/g) || [],
