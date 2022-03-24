@@ -21,10 +21,10 @@ module.exports = {
 	},
 
 	scripts: function () {
-		return { 'src/assets/scripts': 'assets/scripts' };
+		return { 'src/assets/scripts/webcomponents': 'assets/scripts' };
 	},
 
 	styles: function () {
-		return { 'src/assets/styles': 'assets/styles' };
+		return { 'src/assets/styles/webcomponents': 'assets/styles' };
 	},
 };

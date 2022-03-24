@@ -1,23 +1,5 @@
 {% extends "layouts/base.njk" %}
 
-{% block styles %}
-{% if blocks.css === 'youtube' %}
-<link rel="stylesheet" href="/assets/styles/youtube.css" />
-{% endif %}
-{% if blocks.css === 'twitch' %}
-<link rel="stylesheet" href="/assets/styles/twitch.css" />
-{% endif %}
-{% endblock %}
-
-{% block scripts_body %}
-{% if blocks.js === 'youtube' %}
-<script src="/assets/scripts/youtube.js" defer></script>
-{% endif %}
-{% if blocks.js === 'twitch' %}
-<script src="/assets/scripts/twitch.js" defer></script>
-{% endif %}
-{% endblock %}
-
 {% block content %}
 
 <article>

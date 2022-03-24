@@ -7,8 +7,7 @@ slug: shatter-static-stream-package
 date: Last Modified
 datePublish: 2019-01-19
 blocks:
-  css: twitch
-  js: twitch
+  - twitch
 image:
   url: /images/shatter-promo.jpg
   alt: Shatter, static stream package Figma template

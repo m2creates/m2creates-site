@@ -15,10 +15,6 @@
 
     <link rel="stylesheet" href="/assets/tailwind.css" />
 
-    {% if blocks.css === 'youtube' %}
-    <link rel="stylesheet" href="/assets/styles/lite-youtube.css" />
-    {% endif %}
-
     {% block styles %}
     {% endblock %}
 
@@ -26,7 +22,6 @@
     <script>(localStorage.getItem('darkMode') === 'true') && document.documentElement.classList.add('dark');</script>
 
     {% if site.analytics.provider === "fathom" %}
-    {# Fathom Analytics #}
     <script src="{{ site.analytics.fathom_url }}" site="{{ site.analytics.fathom_id }}" honor-dnt="true" defer></script>
     {% endif %}
 
@@ -36,12 +31,10 @@
     {% endif %}
 
     {# Web Components #}
-    {% if blocks.js === 'youtube' %}
-    <script src="/assets/scripts/lite-youtube.js" defer/></script>
-    {% endif %}
-
-    {% block scripts_head %}
-    {% endblock %}
+    {% for webcomponent in blocks %}
+    <link rel="stylesheet" href="/assets/styles/{{ webcomponent }}-embed.css" />
+    <script src="/assets/scripts/{{ webcomponent }}-embed.js" defer/></script>
+    {% endfor %}
     
   </head>
   <body class="flex flex-col min-h-screen px-8 mx-auto max-w-prose dark:bg-slate-900 dark:text-white">
@@ -60,9 +53,6 @@
     {% include "partials/footer.njk" %}
 
     <script src="/assets/scripts/colorToggle.js" defer></script>
-    {% block scripts_body %}
-    {# <script src="/assets/scripts/main.js" defer></script> #}
-    {% endblock %}
 
   </body>
 </html>
