@@ -18,7 +18,11 @@ seo:
   desc: Let's create... an analytics dashboard for Twitter, LinkedIn, etc. with Airtable.
   image:
     url: /images/airtable-hub-reports.jpg
-    alt: Analytics overview in Airtable Hub 
+    alt: Analytics overview in Airtable Hub
+tags:
+  - analytics
+uses:
+  - airtable
 ---
 
 Why? I honestly don't know (yet)... but it's cool! And built with Airtable of course.

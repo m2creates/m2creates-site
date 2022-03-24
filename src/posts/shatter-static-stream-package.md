@@ -19,8 +19,10 @@ seo:
     url: /images/shatter-promo.jpg
     alt: Shatter, static stream package Figma template
 tags:
-  - twitch
   - design
+  - challenge
+uses:
+  - figma
 ---
 
 **The challenge:** Ship something for [Ship Saturday](https://shipstreams.com/events/ship-saturday) by [Shipstreams](https://shipstreams.com/)!

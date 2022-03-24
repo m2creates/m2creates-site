@@ -20,6 +20,10 @@ seo:
   image:
     url: /images/xcode-simulator-step-5.png
     alt: melaniemagdalena.com as seen on iOS Safari simulator
+tags:
+  - debugging
+uses:
+  - xcode simulator
 ---
 
 If you're like me and don’t have an iOS device, you can use Xcode Simulator to view and debug mobile Safari from your Mac.

@@ -19,7 +19,8 @@ seo:
     alt: Final screenshot of my weather app named Forecast It
 tags:
   - api
-  - javascript
+  - design
+  - challenge
 ---
 
 **The challenge:** make a [weather app dashboard](https://www.uplabs.com/challenges/weather-app-challenge). **My goal:** make a weather app dashboard that *actually* tells me the weather.
