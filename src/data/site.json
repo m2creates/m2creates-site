@@ -40,8 +40,8 @@
     "logo": "/images/logo_512.png",
     "favicon": "/images/logo_512.png",
     "colors": {
-      "primary": "purple",
-      "accent": "pink",
+      "primary": "#780696",
+      "accent": "#e418d1",
       "pwa": "#ad0fb5"
     }
   },
