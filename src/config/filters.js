@@ -11,11 +11,15 @@ module.exports = {
 		return util.inspect(obj);
 	},
 
-	// Limit
 	/**
-	 * TODO: format this
-	 * eleventyConfig.addNunjucksFilter('limit', (arr, limit) => arr.slice(0, limit));
+	 * Limit the amount of items returned from a collection
+	 * 
+	 * usage/example:
+	 * {% set posts = collections.posts | limit(3) %}
 	 */
+	limit: function (arr, limit) {
+		return arr.slice(0, limit);
+	},
 
 	/**
 	 * Dates via Luxon
