@@ -14,7 +14,7 @@
     "url":"{{ site.meta.url }}{{ page.url }}",
     "image":"{{ site.meta.url }}{{ metaImage }}",
     "headline":"{{ title }} | {{ site.name }}",
-    "@context":"http://schema.org"
+    "@context":"http://schema.org",
     "sameAs": [
       {%- for network in site.social -%}
       {%- if network.url != "" %}
