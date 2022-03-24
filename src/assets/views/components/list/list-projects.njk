@@ -1,0 +1,11 @@
+<ul class="w-full list">
+{%- for post in posts -%}
+  <li class="flex flex-col">
+    <div class="flex flex-wrap justify-between md:flex-nowrap">
+      <a href="{{ post.data.showcase.link }}" class="underline underline-offset-1" target="_blank">{{ post.data.title }}</a>
+      <p class="flex-shrink-0">{{ post.data.datePublish | format('dd LLL yyyy') }}</p>
+    </div>
+    {% if post.data.tldr %}<p class="mt-0"><em>{{ post.data.tldr | safe }}</em></p>{% endif %}
+  </li>
+{%- endfor -%}
+</ul>
