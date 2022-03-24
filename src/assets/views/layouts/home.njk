@@ -18,9 +18,8 @@
   {{ content | safe }}
 
   <!-- Latest Posts -->
-  <h2 class="mt-0 mb-3 text-xl font-semibold break-normal md:text-3xl">Latest Posts</h2>
-  {# TODO: limit posts to last X amount #}
-  {% set postslist = posts %}
+  <h2 class="mb-3 text-xl font-semibold break-normal md:text-3xl">Latest Posts</h2>
+  {% set posts = collections.posts | limit(5) %}
   {% include "components/list/list-posts.njk" %}
 
 </article>
