@@ -189,9 +189,12 @@
     @apply text-white;
   }
 
-  .prose a:hover,
-  .prose :where(a:hover):not([class~="bmac"]) {
+  .prose a:hover {
     color: var(--color-secondary);
+  }
+
+  .prose a.bmac:hover {
+    @apply text-white;
   }
 
   /* Nuke margins */
