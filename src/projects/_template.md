@@ -17,6 +17,13 @@ seo:
 catalog:
   type: 
   company: 
+featured: 
+priority: 
+showcase:
+  image:
+    url: 
+    alt: 
+  link: 
 permalink: false
 eleventyExcludeFromCollections: true
 ---

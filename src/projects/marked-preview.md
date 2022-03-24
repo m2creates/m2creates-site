@@ -1,7 +1,7 @@
 ---
 title: Marked Preview
 date: Last Modified
-datePublish:
+datePublish: 2020-09-18
 image:
   url: /images/project-marked-preview.gif
   alt: Airtable application that displays formatted Markdown

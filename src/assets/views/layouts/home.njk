@@ -4,23 +4,21 @@
 
 <article>
 
-  <!-- Post title -->
+  <!-- Intro -->
   <h1 class="mt-0 mb-3 text-3xl font-extrabold break-normal md:text-5xl">{{ title }}</h1>
+  <p class="text-sm font-bold uppercase md:text-base">{{ subtitle }}</p>
 
-  <!-- Meta -->
-  <p class="text-sm md:text-base text-{{ brand.colors.accent }}-600 dark:text-{{ brand.colors.main }}-100 font-bold uppercase">
-    
-    <!-- Byline -->
-    <span>{{ subtitle }}</span>
-
-  </p>
-
+  <!-- pages/index.md -->
   {{ content | safe }}
 
+  <!-- Featured Projects -->
+  <h2 class="mb-3 text-xl font-semibold break-normal md:text-3xl">Featured Projects</h2>
+  {% set posts = collections.projectsFeatured %}
+  {% include "components/list/list-projects.njk" %}
+
   <!-- Latest Posts -->
-  <h2 class="mt-0 mb-3 text-xl font-semibold break-normal md:text-3xl">Latest Posts</h2>
-  {# TODO: limit posts to last X amount #}
-  {% set postslist = posts %}
+  <h2 class="mb-3 text-xl font-semibold break-normal md:text-3xl">Latest Posts</h2>
+  {% set posts = collections.posts | limit(5) %}
   {% include "components/list/list-posts.njk" %}
 
 </article>

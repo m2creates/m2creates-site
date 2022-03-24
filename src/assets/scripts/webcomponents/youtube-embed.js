@@ -14,7 +14,7 @@
 class LiteYTEmbed extends HTMLElement {
 	connectedCallback() {
 		this.videoId = this.getAttribute('videoid');
-    this.videoTitle = this.getAttribute('title');
+    this.videoTitle = this.getAttribute('videotitle');
 
 		let playBtnEl = this.querySelector('.lty-playbtn');
 		// A label for the button takes priority over a [playlabel] attribute on the custom-element
@@ -24,13 +24,8 @@ class LiteYTEmbed extends HTMLElement {
 			'Play';
 
 		/**
-		 * Lo, the youtube placeholder image!  (aka the thumbnail, poster image, etc)
-		 *
+		 * Placeholder image - use the video thumbnail from YouTube
 		 * See https://github.com/paulirish/lite-youtube-embed/blob/master/youtube-thumbnail-urls.md
-		 *
-		 * TODO: Do the sddefault->hqdefault fallback
-		 *       - When doing this, apply referrerpolicy (https://github.com/ampproject/amphtml/pull/3940)
-		 * TODO: Consider using webp if supported, falling back to jpg
 		 */
 		if (!this.style.backgroundImage) {
 			this.style.backgroundImage = `url("https://i.ytimg.com/vi/${this.videoId}/hqdefault.jpg")`;
@@ -56,14 +51,8 @@ class LiteYTEmbed extends HTMLElement {
 		});
 
 		// Once the user clicks, add the real iframe and drop our play button
-		// TODO: In the future we could be like amp-youtube and silently swap in the iframe during idle time
-		//   We'd want to only do this for in-viewport or near-viewport ones: https://github.com/ampproject/amphtml/pull/5003
 		this.addEventListener('click', this.addIframe);
 	}
-
-	// // TODO: Support the the user changing the [videoid] attribute
-	// attributeChangedCallback() {
-	// }
 
 	/**
 	 * Add a <link rel={preload | preconnect} ...> to the head
@@ -96,11 +85,11 @@ class LiteYTEmbed extends HTMLElement {
 		LiteYTEmbed.addPrefetch('preconnect', 'https://www.google.com');
 
 		// Not certain if these ad related domains are in the critical path. Could verify with domain-specific throttling.
-		LiteYTEmbed.addPrefetch(
-			'preconnect',
-			'https://googleads.g.doubleclick.net'
-		);
-		LiteYTEmbed.addPrefetch('preconnect', 'https://static.doubleclick.net');
+		// LiteYTEmbed.addPrefetch(
+		// 	'preconnect',
+		// 	'https://googleads.g.doubleclick.net'
+		// );
+		// LiteYTEmbed.addPrefetch('preconnect', 'https://static.doubleclick.net');
 
 		LiteYTEmbed.preconnected = true;
 	}
@@ -116,13 +105,10 @@ class LiteYTEmbed extends HTMLElement {
 		const iframeEl = document.createElement('iframe');
 		iframeEl.width = 560;
 		iframeEl.height = 315;
-		// No encoding necessary as [title] is safe. https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html#:~:text=Safe%20HTML%20Attributes%20include
 		iframeEl.title = this.videoTitle;
 		iframeEl.allow =
 			'accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture';
 		iframeEl.allowFullscreen = true;
-		// AFAIK, the encoding here isn't necessary for XSS, but we'll do it only because this is a URL
-		// https://stackoverflow.com/q/64959723/89484
 		iframeEl.src = `https://www.youtube-nocookie.com/embed/${encodeURIComponent(
 			this.videoId
 		)}?${params.toString()}`;

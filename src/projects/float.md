@@ -1,11 +1,20 @@
 ---
 title: Float
+tldr: >-
+  Browser extension for collecting system info, such as browser and OS.
 date: Last Modified
-datePublish:
+datePublish: 2019-04-20
 image:
   url: /images/project-float.jpeg
   alt: Browser extension with system info
   credit:
+featured: true
+priority: 2
+showcase:
+  image:
+    url: /images/project-float.jpeg
+    alt: Browser extension with system info
+  link: https://chrome.google.com/webstore/detail/float/hkhljbibhbcjlljfmijbbjhphnjkngic
 catalog:
   type: side-project
 ---

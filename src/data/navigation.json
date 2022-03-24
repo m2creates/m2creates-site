@@ -2,15 +2,15 @@
   "header": [
     {
       "text": "Blog",
-      "href": "/posts"
+      "href": "/posts/"
     },
     {
       "text": "Projects",
-      "href": "/projects"
+      "href": "/projects/"
     },
     {
       "text": "About",
-      "href": "/about"
+      "href": "/about/"
     }
   ],
   "footer": [

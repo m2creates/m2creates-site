@@ -4,20 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    {% set metaTitle = seo.title or title %}
-    <title>{% if metaTitle %}{{ metaTitle }} | {% endif %}{{ site.name }}</title>
+    <title>{% if seo.title %}{{ seo.title }}{% else %}{{ title }} | {{ site.name }}{% endif %}</title>
 
     {% include "components/meta.njk" %}
-
-    {% block schema %}
     {% include "components/schema.njk" %}
-    {% endblock %}
 
     <link rel="stylesheet" href="/assets/tailwind.css" />
-
-    {% if blocks.css === 'youtube' %}
-    <link rel="stylesheet" href="/assets/styles/lite-youtube.css" />
-    {% endif %}
+    <style>
+      :root {
+        --color-primary: {{ site.brand.colors.primary }};
+        --color-secondary: {{ site.brand.colors.accent }};
+      }
+    </style>
 
     {% block styles %}
     {% endblock %}
@@ -26,7 +24,6 @@
     <script>(localStorage.getItem('darkMode') === 'true') && document.documentElement.classList.add('dark');</script>
 
     {% if site.analytics.provider === "fathom" %}
-    {# Fathom Analytics #}
     <script src="{{ site.analytics.fathom_url }}" site="{{ site.analytics.fathom_id }}" honor-dnt="true" defer></script>
     {% endif %}
 
@@ -36,12 +33,10 @@
     {% endif %}
 
     {# Web Components #}
-    {% if blocks.js === 'youtube' %}
-    <script src="/assets/scripts/lite-youtube.js" defer/></script>
-    {% endif %}
-
-    {% block scripts_head %}
-    {% endblock %}
+    {% for webcomponent in blocks %}
+    <link rel="stylesheet" href="/assets/styles/{{ webcomponent }}-embed.css" />
+    <script src="/assets/scripts/{{ webcomponent }}-embed.js" defer/></script>
+    {% endfor %}
     
   </head>
   <body class="flex flex-col min-h-screen px-8 mx-auto max-w-prose dark:bg-slate-900 dark:text-white">
@@ -60,9 +55,6 @@
     {% include "partials/footer.njk" %}
 
     <script src="/assets/scripts/colorToggle.js" defer></script>
-    {% block scripts_body %}
-    {# <script src="/assets/scripts/main.js" defer></script> #}
-    {% endblock %}
 
   </body>
 </html>

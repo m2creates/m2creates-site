@@ -1,13 +1,12 @@
 ---
 title: Using Airtable as an Analytics Hub
 tldr: >-
-  Let's create... an analytics dashboard with Airtable for Twitter, LinkedIn, and more.
+  How I built my analytics dashboard with Airtable for Twitter, LinkedIn, and more.
 slug: airtable-analytics-hub
 date: Last Modified
 datePublish: 2021-08-07
 blocks:
-  css: youtube
-  js: youtube
+  - youtube
 comments:
   tweet: 1423888996975972356
 image:
@@ -19,7 +18,11 @@ seo:
   desc: Let's create... an analytics dashboard for Twitter, LinkedIn, etc. with Airtable.
   image:
     url: /images/airtable-hub-reports.jpg
-    alt: Analytics overview in Airtable Hub 
+    alt: Analytics overview in Airtable Hub
+tags:
+  - analytics
+uses:
+  - airtable
 ---
 
 Why? I honestly don't know (yet)... but it's cool! And built with Airtable of course.

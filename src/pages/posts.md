@@ -15,10 +15,10 @@ seo:
     alt:
 pagination:
   data: collections.posts
-  size: 12
+  size: 20
   alias: posts
   addAllPagesToCollections: true
+permalink: "posts/{% if pagination.pageNumber > 0 %}page-{{ pagination.pageNumber + 1 }}/{% endif %}index.html"
 layout: posts.njk
 collection: posts
-permalink: "posts/{% if pagination.pageNumber > 0 %}page-{{ pagination.pageNumber + 1 }}/{% endif %}index.html"
 ---

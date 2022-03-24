@@ -1,16 +1,16 @@
 ---
 title: >-
-  Shatter - Static Stream Package
+  #ShipSaturday: The Making of Shatter - Static Stream Package
+tldr: >-
+  I learned how to use Figma live by making a graphics pack for OBS.
 slug: shatter-static-stream-package
 date: Last Modified
 datePublish: 2019-01-19
 blocks:
-  css: twitch
-  js: twitch
+  - twitch
 image:
   url: /images/shatter-promo.jpg
   alt: Shatter, static stream package Figma template
-  credit: Designed by m2creates for Ship Saturday
 seo:
   title: >-
     ✨ Shatter - Static Stream Package
@@ -19,8 +19,10 @@ seo:
     url: /images/shatter-promo.jpg
     alt: Shatter, static stream package Figma template
 tags:
-  - twitch
   - design
+  - challenge
+uses:
+  - figma
 ---
 
 **The challenge:** Ship something for [Ship Saturday](https://shipstreams.com/events/ship-saturday) by [Shipstreams](https://shipstreams.com/)!
@@ -42,7 +44,7 @@ Shatter is an origami-esque polygon design for OBS/Xsplit built with Figma which
 
 **Why Figma?** Figma is web-based making it ideal for anyone who doesn't have OS-dictated software. It also has a free tier so you don't need to dump money into something for *just one thing*. (But if you love it, please consider supporting them by upgrading to a paid account :D)
 
-{% Twitch { id: 'HeartlessPoorRaisinPlanking', title: 'Figma Twitch Overlay Recap', type: 'clip', thumbnail: 'shatter-content.jpg'} %}
+{% Twitch { id: 'HeartlessPoorRaisinPlanking', title: 'Figma Twitch Overlay Recap', type: 'clip', thumbnail: 'shatter-content.jpg' } %}
 
 ## Get Shatter
 

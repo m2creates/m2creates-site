@@ -2,7 +2,7 @@
 title: >-
   CNM MILE: The History of New Mexico
 date: Last Modified
-datePublish:
+datePublish: 2015-09-01
 image:
   url: /images/portfolio-cnm-mile.png
   alt: Various pages from the book

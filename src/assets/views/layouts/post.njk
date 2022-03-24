@@ -1,23 +1,5 @@
 {% extends "layouts/base.njk" %}
 
-{% block styles %}
-{% if blocks.css === 'youtube' %}
-<link rel="stylesheet" href="/assets/styles/youtube.css" />
-{% endif %}
-{% if blocks.css === 'twitch' %}
-<link rel="stylesheet" href="/assets/styles/twitch.css" />
-{% endif %}
-{% endblock %}
-
-{% block scripts_body %}
-{% if blocks.js === 'youtube' %}
-<script src="/assets/scripts/youtube.js" defer></script>
-{% endif %}
-{% if blocks.js === 'twitch' %}
-<script src="/assets/scripts/twitch.js" defer></script>
-{% endif %}
-{% endblock %}
-
 {% block content %}
 
 <article>
@@ -26,31 +8,29 @@
   <h1 class="mt-0 mb-3 text-3xl font-extrabold break-normal md:text-5xl">{{ title }}</h1>
 
   <!-- Meta -->
-  <p class="text-sm md:text-base text-{{ brand.colors.accent }}-600 dark:text-{{ brand.colors.main }}-100 font-bold uppercase">
+  <p class="text-sm font-bold uppercase md:text-base">
     
     <!-- Author -->
     <span>By {{ site.author.name }}</span>
-    <span class="px-1 text-{{ brand.colors.main }}-900 dark:text-{{ brand.colors.main }}-100">/</span>
-    
-    <!-- Dates -->
-    {% if displayDateUpdate %}
-      <time datetime="{{ datePublish }}" itemProp="datePublished">{{ datePublish | readableDate }}</time>{% if date != datePublish %} • Updated: <time datetime="{{ date }}" itemProp="dateUpdated">{{ page.date | readableDate }}</time>{% endif %}
-    {% else %}
-      <time datetime="{{ datePublish }}" itemProp="datePublished">{{ datePublish | readableDate }}</time>
-    {% endif %}
-    <span class="px-1 text-{{ brand.colors.main }}-900 dark:text-{{ brand.colors.main }}-100">/</span>
-    
-    <!-- Reading time -->
-    <span class="uppercase">{{ content | readingTime }} read</span>
-    
-    <!-- TODO: Categories -->
-    {# {% if category %}
-    <span class="px-1 text-{{ brand.colors.main }}-900 dark:text-{{ brand.colors.main }}-100">/</span>
-      <span class="category">
-        {% set catUrl %}/category/{{ category | slug }}/{% endset %}
-        <a href="{{ catUrl | url }}" rel="category" class="no-underline">{{ category }}</a>
+    <span class="px-1" aria-hidden="true">/</span>
+
+    <!-- Taxonomies -->
+    {% if tags or categories or uses %}
+      <span>Tagged: 
+      {% set separator = joiner(',') %}
+      {# TODO: link the taxonomies: /tags/{{tag}}, /categories/{{category}}, /uses/{{item}} #}
+      {%- for tag in tags %}{{ separator() }} {{ tag }}{% endfor %}
+      {%- for category in categories %}{{ separator() }} {{ category }}{% endfor %}
+      {%- for item in uses %}{{ separator() }} {{ item }}{% endfor %}
       </span>
-    {% endif %} #}
+      <span class="px-1" aria-hidden="true">/</span>
+    {% endif %}
+
+    <!-- Reading time -->
+    <span>{{ content | readingTime }} read</span>
+    <span class="px-1" aria-hidden="true">/</span>
+    <!-- Dates -->
+    <time datetime="{{ datePublish }}" itemProp="datePublished">Published: {{ datePublish | format('dd LLL yyyy') }}</time>{% if date != datePublish %} <span aria-hidden="true">•</span> <time datetime="{{ date }}" itemProp="dateUpdated">Updated: {{ page.date | format('dd LLL yyyy') }}</time>{% endif %}
   </p>
 
   <!-- TLDR -->

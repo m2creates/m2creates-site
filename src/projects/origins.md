@@ -1,7 +1,7 @@
 ---
 title: Origins
 date: Last Modified
-datePublish:
+datePublish: 2012-03-21
 image:
   url: /images/project-origins.png
   alt: Landing page for knowyourorigins.org

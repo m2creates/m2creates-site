@@ -11,35 +11,22 @@ module.exports = {
 		return util.inspect(obj);
 	},
 
-	// Limit
 	/**
-	 * TODO: format this
-	 * eleventyConfig.addNunjucksFilter('limit', (arr, limit) => arr.slice(0, limit));
+	 * Limit the amount of items returned from a collection
+	 * 
+	 * usage/example:
+	 * {% set posts = collections.posts | limit(3) %}
 	 */
+	limit: function (arr, limit) {
+		return arr.slice(0, limit);
+	},
 
-	// Dates via Luxon
 	/**
+	 * Dates via Luxon
 	 * Format a date. See readableDate for example.
 	 */
 	format: function (date, format) {
 		return DateTime.fromJSDate(date).toFormat(String(format));
-	},
-
-	/**
-	 * Get date in ISO
-	 */
-	iso: function (date) {
-		return DateTime.fromJSDate(date).toISO({
-			includeOffset: false,
-			suppressMilliseconds: true,
-		});
-	},
-
-	/**
-	 * Convert Date from ISO
-	 */
-	fromIso: function (timestamp) {
-		return DateTime.fromISO(timestamp, { zone: 'America/Chicago' }).toJSDate();
 	},
 
 	/**
@@ -60,6 +47,23 @@ module.exports = {
 		return DateTime.fromJSDate(date, { zone: 'America/Chicago' }).toFormat(
 			format
 		);
+	},
+
+	/**
+	 * Get date in ISO
+	 */
+	iso: function (date) {
+		return DateTime.fromJSDate(date).toISO({
+			includeOffset: false,
+			suppressMilliseconds: true,
+		});
+	},
+
+	/**
+	 * Convert Date from ISO
+	 */
+	fromIso: function (timestamp) {
+		return DateTime.fromISO(timestamp, { zone: 'America/Chicago' }).toJSDate();
 	},
 
 	/**
@@ -86,4 +90,5 @@ module.exports = {
 	toRFC3339: function (date) {
 		return DateTime.fromJSDate(date).toISO();
 	},
+
 };

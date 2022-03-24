@@ -1,7 +1,7 @@
 ---
 title: Archinia
 date: Last Modified
-datePublish:
+datePublish: 2018-01-17
 image:
   url: /images/portfolio-archinia.png
   alt: Website landing page on various device screens
