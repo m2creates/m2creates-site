@@ -24,5 +24,17 @@ module.exports = {
 			});
 	},
 
+	projectsFeatured: function (collection) {
+		const projects = collection
+			.getFilteredByGlob('src/projects/*.md')
+			.filter(function (item) {
+				// Side-step tags and do your own filtering
+				return 'featured' in item.data;
+			});
+
+		return projects.sort(function (a, b) {
+			// return b.data.priority - a.data.priority; // sort by priority - descending
+			return a.data.priority - b.data.priority; // sort by date - ascending
+		});
 	},
 };
