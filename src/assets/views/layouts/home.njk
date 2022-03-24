@@ -4,17 +4,11 @@
 
 <article>
 
-  <!-- Post title -->
+  <!-- Intro -->
   <h1 class="mt-0 mb-3 text-3xl font-extrabold break-normal md:text-5xl">{{ title }}</h1>
+  <p class="text-sm font-bold uppercase md:text-base">{{ subtitle }}</p>
 
-  <!-- Meta -->
-  <p class="text-sm md:text-base text-{{ brand.colors.accent }}-600 dark:text-{{ brand.colors.main }}-100 font-bold uppercase">
-    
-    <!-- Byline -->
-    <span>{{ subtitle }}</span>
-
-  </p>
-
+  <!-- pages/index.md -->
   {{ content | safe }}
 
   <!-- Featured Projects -->
