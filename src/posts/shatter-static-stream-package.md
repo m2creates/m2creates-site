@@ -44,7 +44,7 @@ Shatter is an origami-esque polygon design for OBS/Xsplit built with Figma which
 
 **Why Figma?** Figma is web-based making it ideal for anyone who doesn't have OS-dictated software. It also has a free tier so you don't need to dump money into something for *just one thing*. (But if you love it, please consider supporting them by upgrading to a paid account :D)
 
-{% Twitch { id: 'HeartlessPoorRaisinPlanking', title: 'Figma Twitch Overlay Recap', type: 'clip', thumbnail: 'shatter-content.jpg'} %}
+{% Twitch { id: 'HeartlessPoorRaisinPlanking', title: 'Figma Twitch Overlay Recap', type: 'clip', thumbnail: 'shatter-content.jpg' } %}
 
 ## Get Shatter
 
