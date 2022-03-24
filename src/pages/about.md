@@ -18,8 +18,9 @@ seo:
 ---
 
 I'm on a mission to create a web for everyone by:
-• blending accessibility, inclusivity, and usability
-• into web experiences, digital media, and automated systems
+
+- blending accessibility, inclusivity, and usability
+- into web experiences, digital media, and automated systems
 
 I have a Bachelor's of Science in Anthropology – concentrated in Archaeology with a minor in Earth and Planetary Science – aka I have a piece of paper to dig up dead peoples' trash 😉. Anthropology is probably the most useful degree to learn about how people not only think, but how they interact with the world around them.
 
@@ -31,4 +32,10 @@ I'm self-taught in digital media, design strategy, development, and accessibilit
 
 ## Now
 
-During the never-ending pandemic, I've logically started a fourth(?) venture: [**Somehow Qualified**](https://somehowqualified.com/). It will be the home for [**Stream Sites**](https://streamsites.xyz/) and other indie content creator experiments we come up with.
+📹 [Streaming web development and graphic design on Twitch](https://twitch.tv/m2creates) every Tuesday, Thursday and Saturday around 8PM CDT (GMT-5).
+
+😭 [Migrating off G Suite free legacy edition](https://support.google.com/a/answer/2855120?hl=en) to plain old Gmail/Google Drive before May 2022. Reassigning Drive permissions can best be described as "death by a thousand cuts."
+
+📖 Reading _Side Hustle: From Idea to Income in 27 Days_ by Chris Guillebeau.
+
+🚀 Working on [Stream Sites](https://streamsites.xyz/).
