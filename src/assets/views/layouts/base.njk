@@ -4,14 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    {% set metaTitle = seo.title or title %}
-    <title>{% if metaTitle %}{{ metaTitle }} | {% endif %}{{ site.name }}</title>
+    <title>{% if seo.title %}{{ seo.title }}{% else %}{{ title }} | {{ site.name }}{% endif %}</title>
 
     {% include "components/meta.njk" %}
-
-    {% block schema %}
     {% include "components/schema.njk" %}
-    {% endblock %}
 
     <link rel="stylesheet" href="/assets/tailwind.css" />
     <style>
