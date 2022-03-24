@@ -4,14 +4,13 @@ eleventyExcludeFromCollections: true
 ---
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<item>{{collections.all.length}}</item>
 {%- for item in collections.all %}
-{%- if item.url !== false %}
-{%- set lastmod = item.date %}
+  {%- if item.url !== false %}
+  {%- set lastmod = item.date %}
   <url>
     <loc>{{site.meta.url}}{{ item.url }}</loc>
     <lastmod>{{ lastmod | readableDate('yyyy-LL-dd') }}</lastmod>
   </url>
-{%- endif %}
+  {%- endif %}
 {%- endfor %}
 </urlset>
