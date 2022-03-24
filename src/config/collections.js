@@ -16,6 +16,13 @@ module.exports = {
 	},
 
 	projects: function (collection) {
-		return collection.getFilteredByGlob('src/projects/*.md');
+		return collection
+			.getFilteredByGlob('src/projects/*.md')
+			.sort(function (a, b) {
+				return b.data.datePublish - a.data.datePublish; // sort by date - descending
+				//return a.data.datePublish - b.data.datePublish; // sort by date - ascending
+			});
+	},
+
 	},
 };
