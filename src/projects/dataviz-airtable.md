@@ -1,11 +1,22 @@
 ---
 title: Data Viz for Airtable
+tldr: >-
+  Browser extension for new tabs displaying Airtable data as a chart
 date: Last Modified
-datePublish:
+datePublish: 2018-11-17
 image:
   url: /images/project-dataviz-airtable.png
   alt: Browser extension for new tabs displaying Airtable data as a chart
-  credit:
+featured: true
+priority: 3
+showcase:
+  image:
+    url: /images/project-dataviz-airtable.png
+    alt: Browser extension for new tabs displaying Airtable data as a chart
+  link: https://dataviz-airtable.carrd.co/
+filters:
+  - BuildInPublic
+  - Chrome Extension
 catalog:
   type: side-project
 ---

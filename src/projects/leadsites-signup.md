@@ -1,7 +1,7 @@
 ---
 title: LeadSites Sign Up + Pricing
 date: Last Modified
-datePublish:
+datePublish: 2018-08-01
 image:
   url: /images/portfolio-leadsites-signup.png
   alt: Various pages from the book

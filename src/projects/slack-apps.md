@@ -1,7 +1,7 @@
 ---
 title: Various Slack Apps
 date: Last Modified
-datePublish:
+datePublish: 2018-03-13
 image:
   url: /images/project-slack-commands.gif
   alt: >-

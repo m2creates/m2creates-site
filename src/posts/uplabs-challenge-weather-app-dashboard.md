@@ -1,6 +1,8 @@
 ---
 title: >-
   Weather App Dashboard
+tldr: >-
+  For UpLabs weather app challenge, I designed a dashboard with simpleWeather.js that told the week's forecast.
 slug: uplabs-challenge-weather-app-dashboard
 date: Last Modified
 datePublish: 2018-01-28

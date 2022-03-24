@@ -1,7 +1,7 @@
 ---
 title: Miscellaneous
 date: Last Modified
-datePublish:
+datePublish: 2019-03-10
 image:
   url: /images/project-misc.png
   alt: 

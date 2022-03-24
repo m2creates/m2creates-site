@@ -1,6 +1,8 @@
 ---
 title: >-
-  Shatter - Static Stream Package
+  #ShipSaturday: The Making of Shatter - Static Stream Package
+tldr: >-
+  I learned how to use Figma live by making a graphics pack for OBS.
 slug: shatter-static-stream-package
 date: Last Modified
 datePublish: 2019-01-19

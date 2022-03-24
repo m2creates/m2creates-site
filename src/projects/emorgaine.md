@@ -2,7 +2,7 @@
 title: >-
   E-Morgaine & The Ruby Bird
 date: Last Modified
-datePublish:
+datePublish: 2013-09-30
 image:
   url: /images/portfolio-emorgaine.jpeg
   alt: Landing page

@@ -1,7 +1,7 @@
 ---
 title: The Congressional Hunger Center
 date: Last Modified
-datePublish:
+datePublish: 2019-11-01
 image:
   url: /images/portfolio-hunger-center.jpeg
   alt: Leland fellowship landing page

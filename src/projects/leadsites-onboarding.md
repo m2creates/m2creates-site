@@ -1,7 +1,7 @@
 ---
 title: LeadSites Onboarding
 date: Last Modified
-datePublish:
+datePublish: 2018-09-01
 image:
   url: /images/portfolio-leadsites-onboarding.png
   alt: Onboarding dashboard screen
