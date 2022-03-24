@@ -2,12 +2,8 @@
 {%- for post in collections.posts -%}
   <li class="flex flex-col">
     <div class="flex flex-wrap justify-between md:flex-nowrap">
-    <a href="{{ post.url }}" class="underline underline-offset-1">{{ post.data.title }}</a>
-    {% if displayDateUpdate %}
-      <time datetime="{{ post.data.datePublish }}" itemProp="datePublished">{{  post.data.datePublish | readableDate }}</time>{% if post.data.date != datePublish %} • Updated: <time datetime="{{ post.data.date }}" itemProp="dateUpdated">{{ page.date | readableDate }}</time>{% endif %}
-    {% else %}
-      <time datetime="{{  post.data.datePublish }}" itemProp="datePublished">{{  post.data.datePublish | readableDate }}</time>
-    {% endif %}
+      <a href="{{ post.url }}" class="underline underline-offset-1">{{ post.data.title }}</a>
+      <time class="flex-shrink-0" datetime="{{  post.data.datePublish }}" itemProp="datePublished">{{  post.data.datePublish | readableDate }}</time>
     </div>
     {% if post.data.tldr %}<p class="mt-0"><em>{{ post.data.tldr | safe }}</em></p>{% endif %}
   </li>
