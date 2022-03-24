@@ -12,7 +12,6 @@ blocks:
 image:
   url: /images/shatter-promo.jpg
   alt: Shatter, static stream package Figma template
-  credit: Designed by m2creates for Ship Saturday
 seo:
   title: >-
     ✨ Shatter - Static Stream Package
