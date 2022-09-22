@@ -41,12 +41,13 @@ I only recommend products I use and love. If you sign up for any of these tools 
 ## Usability Meets Design
 
 - Paper & Pencil
-- Flowmapp
-- Figma
 - Affinity Photo
 - Affinity Designer
 - Affinity Publisher
 - PhotoPea
+- Flowmapp
+- Penpot
+- Figma
 - ImageOptim
 - iMovie
 - DaVinci Resolve
@@ -59,7 +60,7 @@ I only recommend products I use and love. If you sign up for any of these tools 
 - Markdown
 - SVG
 - JavaScript
-- Node
+- Node.js
 - GitHub / GitLab
 - Codepen
 - Netlify

@@ -1,7 +1,7 @@
 <ul class="w-full list">
 {%- for post in posts -%}
-  <li class="flex flex-col">
-    <div class="flex flex-wrap justify-between md:flex-nowrap gap-x-4">
+  <li class="flex flex-col pb-2">
+    <div class="flex flex-nowrap justify-between gap-x-4 mb-1">
       <a href="{{ post.url }}">{{ post.data.title }}</a>
       <time class="flex-shrink-0" datetime="{{  post.data.datePublish }}" itemProp="datePublished">{{ post.data.datePublish | format('dd LLL yyyy') }}</time>
     </div>
