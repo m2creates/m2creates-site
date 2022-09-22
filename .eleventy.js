@@ -60,8 +60,8 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addShortcode("Image", Image);
   eleventyConfig.addShortcode("Button", Button);
   eleventyConfig.addShortcode("ExternalLink", ExternalLink);
-  eleventyConfig.addNunjucksShortcode("YouTube", YouTube);
-  eleventyConfig.addNunjucksShortcode("Twitch", Twitch);
+  eleventyConfig.addShortcode("YouTube", YouTube);
+  eleventyConfig.addShortcode("Twitch", Twitch);
   console.groupEnd();
 
   /**

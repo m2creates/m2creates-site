@@ -6,11 +6,13 @@ tldr: >-
 slug: shatter-static-stream-package
 date: Last Modified
 datePublish: 2019-01-19
-blocks:
-  - twitch
 image:
   url: /images/shatter-promo.jpg
   alt: Shatter, static stream package Figma template
+blocks:
+  - twitch
+comments:
+  polywork: https://poly.work/m2creates/highlights/mrqPUZvb
 seo:
   title: >-
     ✨ Shatter - Static Stream Package
@@ -30,6 +32,8 @@ uses:
 I put out a poll on Friday to see what I should create and a Twitch stream package won! In a comment, [Dave Craige](https://twitter.com/davecraige) asked if I'd tried out [Figma](https://www.figma.com/) yet - which I had, but hadn't given it much love since I tend to hop into code... It's faster for me to write CSS than fight software to draw a button. Since my new project would involve designing graphics, I started from scratch in Figma to design what would become **Shatter**.
 
 > Update (2022-03-13): I'm a terrible person and miscloned Shatter when I set up my own stuff... so it is very pink and purple, themed for me, and a whole lot less shattery now. But feel free to still use this as a starting point for your stream!
+
+{% Twitch { id: '0WkbOP5xexWgGw', type: 'collection', title: 'Project: Shatter [Ship Saturday]', thumbnail: 'https://static-cdn.jtvnw.net/cf_vods/d2nvs31859zcd8/a16daa79e340800357c7_eli_archgirl_32268743152_1085421880/thumb/custom-45341f1f-72f0-4c76-9ed4-1b2628cf7f31-320x180.jpeg' } %}
 
 ## Meet Shatter
 

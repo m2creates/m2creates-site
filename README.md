@@ -227,6 +227,69 @@ Example Usage:
 <a class="external-link" href="https://google.com" title="Open external link in new tab" target="_blank" rel="noopener">External Link via shortcode</a>
 ```
 
+### Videos
+
+Enable additional CSS and Scripts under `blocks` in a post's YAML. Options available: `youtube`, `twitch`.
+
+```yml
+# List the webcomponent blocks to load on this page
+blocks:
+  - youtube
+  - twitch
+```
+
+#### YouTube
+
+```njk
+<!-- Example input: YouTube -->
+{% YouTube {
+  id: 'UO2gTHLwzSg',
+  title: 'BuiltOnAir [All Things Airtable] S03:E08 - Melanie Magdalena, Digital Consultant'
+} %}
+```
+
+```html
+<!-- Example output: YouTube -->
+<youtube-embed 
+  videoid="UO2gTHLwzSg"
+  videotitle="BuiltOnAir [All Things Airtable] S03:E08 - Melanie Magdalena, Digital Consultant"
+  style="background-image: url('https://i.ytimg.com/vi/UO2gTHLwzSg/hqdefault.jpg');">
+    <a href="https://youtube-nocookie.com/watch?v=UO2gTHLwzSg" class="lty-playbtn">
+      <span class="visually-hidden">Play: BuiltOnAir [All Things Airtable] S03:E08 - Melanie Magdalena, Digital Consultant</span>
+    </a>
+</youtube-embed>
+```
+
+#### Twitch
+
+```njk
+<!-- Example input: Twitch -->
+{% Twitch {
+  id: '0WkbOP5xexWgGw',
+  title: 'Project: Shatter [Ship Saturday]',
+  type: 'collection',
+  thumbnail: '[optional, has fallback]'
+} %}
+```
+
+```html
+<!-- Example output: Twitch -->
+<twitch-embed
+  videoid="0WkbOP5xexWgGw"
+  videotitle="Project: Shatter [Ship Saturday]"
+  videotype="collection" 
+  class="twitch-playbtn"
+  style="${ thumbnail && `background-image:url('/images/${thumbnail}')`};">
+    ${(() => {
+      if (type === 'clip') {return `<a href="https://clips.twitch.tv/embed?clip=${id}">`}
+      else if (type === 'collection') {return `<a href="https://player.twitch.tv/?collection=${id}">`}
+      else {return `<a href="https://player.twitch.tv/?video=${id}">`}}
+    )()}
+      <span class="visually-hidden">Play ${title}</span>
+    </a>
+</twitch-embed>
+```
+
 ## Reading List
 
 The following resources assisted in the creation of my site!
