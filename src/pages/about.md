@@ -32,10 +32,8 @@ I'm self-taught in digital media, design strategy, development, and accessibilit
 
 ## Now
 
-📹 [Streaming web development and graphic design on Twitch](https://twitch.tv/m2creates) every Tuesday, Thursday and Saturday around 8PM CDT (GMT-5).
-
-😭 [Migrating off G Suite free legacy edition](https://support.google.com/a/answer/2855120?hl=en) to plain old Gmail/Google Drive before May 2022. Reassigning Drive permissions can best be described as "death by a thousand cuts."
-
-📖 Reading _Side Hustle: From Idea to Income in 27 Days_ by Chris Guillebeau.
-
 🚀 Working on [Stream Sites](https://streamsites.xyz/).
+
+## Previously
+
+[Explore my highlights](/highlights).

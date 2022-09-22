@@ -24,13 +24,11 @@ If you want to support my projects, [**buy me a coffee**](https://www.buymeacoff
 
 {% for project in collections.projects %}
 {% if project.data.catalog.type === "side-project" %}
-<section class="flex flex-col items-start my-2 md:gap-8 md:flex-row-reverse">
-<div class="w-full md:w-2/3">
-<h3 class="mt-0 mb-1">{{ project.data.title }}</h3>
+<section class="my-2 w-full">
+<h3 class="mt-0">{{ project.data.title }}</h3>
 {{ project.templateContent | safe }}
-</div>
-<figure class="w-full mt-0 media md:w-1/3">
-  <img src="{{ project.data.image.url }}" alt="{{ project.data.image.alt }}" class="object-contain mb-3 aspect-w-4 aspect-h-3">
+<figure class="w-full mt-0 pb-2 media border-b border-solid">
+  <img src="{{ project.data.image.url }}" alt="{{ project.data.image.alt }}" class="object-contain mb-3 aspect-w-4 aspect-h-3 max-h-128 mx-auto">
   {% if project.data.image.credit %}
   <figcaption>{{ project.data.image.caption }}</figcaption>
   {% endif %}
@@ -51,13 +49,11 @@ I am a proud unicorn learning everyday so I can create the best solution for the
 
 {% for project in collections.projects %}
 {% if project.data.catalog.type === "portfolio" %}
-<section class="flex flex-col items-start my-2 md:gap-8 md:flex-row-reverse">
-<div class="w-full md:w-2/3">
-<h3 class="mt-0 mb-1">{{ project.data.title }}</h3>
+<section class="my-2 w-full">
+<h3 class="mt-0">{{ project.data.title }}</h3>
 {{ project.templateContent | safe }}
-</div>
-<figure class="w-full mt-0 media md:w-1/3">
-  <img src="{{ project.data.image.url }}" alt="{{ project.data.image.alt }}" class="object-contain mb-3 aspect-w-4 aspect-h-3">
+<figure class="w-full mt-0 pb-2 media border-b border-solid">
+  <img src="{{ project.data.image.url }}" alt="{{ project.data.image.alt }}" class="object-contain mb-3 aspect-w-4 aspect-h-3 max-h-128 mx-auto">
   {% if project.data.image.credit %}
   <figcaption>{{ project.data.image.caption }}</figcaption>
   {% endif %}
