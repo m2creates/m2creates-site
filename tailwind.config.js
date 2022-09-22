@@ -10,6 +10,13 @@ module.exports = {
       maxHeight: {
         128: "32rem",
       },
+      typography: (theme) => ({
+        DEFAULT: {
+          css: {
+            maxWidth: "80ch",
+          },
+        },
+      }),
     },
   },
   plugins: [require("@tailwindcss/typography"), require("@tailwindcss/forms")],
