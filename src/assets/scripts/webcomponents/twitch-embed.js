@@ -79,15 +79,15 @@ class TwitchEmbed extends HTMLElement {
     if (this.videoType === "clip") {
       iframeEl.src = `https://clips.twitch.tv/embed?clip=${encodeURIComponent(
         this.videoId
-      )}&parent=${this.videoParent}&autoplay=false`;
+      )}&parent=${this.videoParent}&autoplay=true`;
     } else if (this.videoType === "collection") {
       iframeEl.src = `https://player.twitch.tv/?collection=${encodeURIComponent(
         this.videoId
-      )}&video=videoId&parent=${this.videoParent}`;
+      )}&video=videoId&parent=${this.videoParent}&autoplay=true`;
     } else {
       iframeEl.src = `https://player.twitch.tv/?video=${encodeURIComponent(
         this.videoId
-      )}&parent=${this.videoParent}&autoplay=false`;
+      )}&parent=${this.videoParent}&autoplay=true`;
     }
 
     this.append(iframeEl);
