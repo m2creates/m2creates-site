@@ -12,6 +12,7 @@ const ExternalLink = require(`./${componentsDir}/link/link-external.js`);
 const Image = require(`./${componentsDir}/figure/image.js`);
 const YouTube = require(`./${componentsDir}/embed/youtube.js`);
 const Twitch = require(`./${componentsDir}/embed/twitch.js`);
+const Transistor = require(`./${componentsDir}/embed/transistor.js`);
 
 const watchtargets = require("./src/config/watchtargets");
 
@@ -53,7 +54,7 @@ module.exports = function (eleventyConfig) {
    * Add shortcodes from /src/config/shortcodes.js
    */
   console.group("🧩  Shortcodes (/src/config/shortcodes.js)");
-  // Object.keys(shortcodes).forEach((shortcodeName) => {
+  // Object.keys(shortcodes).forEach((shortcodeName) => {eleventyConfig.addShortcode("Twitch", Twitch);eleventyConfig.addShortcode("Twitch", Twitch);
   //   console.log(' · ' + shortcodeName);
   //   eleventyConfig.addShortcode(shortcodeName, shortcodes[shortcodeName]);
   // });
@@ -62,6 +63,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addShortcode("ExternalLink", ExternalLink);
   eleventyConfig.addShortcode("YouTube", YouTube);
   eleventyConfig.addShortcode("Twitch", Twitch);
+  eleventyConfig.addShortcode("Transistor", Transistor);
   console.groupEnd();
 
   /**
