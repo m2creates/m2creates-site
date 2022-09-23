@@ -27,8 +27,4 @@ seo:
 
 {% YouTube { id: 'UO2gTHLwzSg', title: 'BuiltOnAir [All Things Airtable] S03:E08 - Melanie Magdalena, Digital Consultant' } %}
 
-{% ExternalLink { url: 'https://www.youtube.com/watch?v=UO2gTHLwzSg', text: 'Watch the episode on YouTube', title: 'opens in new tab, watch full episode on youtube.com' } %}
-
-<iframe width="100%" height="180" frameborder="no" scrolling="no" seamless src="https://share.transistor.fm/e/f44edcde"></iframe>
-
-{% ExternalLink { url: 'https://share.transistor.fm/s/f44edcde', text: 'Listen to the podcast episode on Transitor', title: 'opens in new tab, listen to full episode on Transitor.fm' } %}
+{% Transistor { id: 'f44edcde', title: 'BuiltOnAir [All Things Airtable] S03:E08 - Melanie Magdalena, Digital Consultant' } %}

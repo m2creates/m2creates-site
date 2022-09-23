@@ -33,8 +33,6 @@ I put out a poll on Friday to see what I should create and a Twitch stream packa
 
 > Update (2022-03-13): I'm a terrible person and miscloned Shatter when I set up my own stuff... so it is very pink and purple, themed for me, and a whole lot less shattery now. But feel free to still use this as a starting point for your stream!
 
-{% Twitch { id: '0WkbOP5xexWgGw', type: 'collection', title: 'Project: Shatter [Ship Saturday]', thumbnail: 'https://static-cdn.jtvnw.net/cf_vods/d2nvs31859zcd8/a16daa79e340800357c7_eli_archgirl_32268743152_1085421880/thumb/custom-45341f1f-72f0-4c76-9ed4-1b2628cf7f31-320x180.jpeg' } %}
-
 ## Meet Shatter
 
 Shatter is an origami-esque polygon design for OBS/Xsplit built with Figma which includes:
@@ -48,7 +46,7 @@ Shatter is an origami-esque polygon design for OBS/Xsplit built with Figma which
 
 **Why Figma?** Figma is web-based making it ideal for anyone who doesn't have OS-dictated software. It also has a free tier so you don't need to dump money into something for *just one thing*. (But if you love it, please consider supporting them by upgrading to a paid account :D)
 
-{% Twitch { id: 'HeartlessPoorRaisinPlanking', title: 'Figma Twitch Overlay Recap', type: 'clip', thumbnail: 'shatter-content.jpg' } %}
+{% Twitch { id: 'HeartlessPoorRaisinPlanking', title: 'Figma Twitch Overlay Recap', type: 'clip', thumbnail: '/images/shatter-content.jpg' } %}
 
 ## Get Shatter
 
@@ -106,3 +104,7 @@ Once your desired frames are selected, choose **2x** and **PNG** from the **Expo
 ![Export your frames](/images/figma-2x-export.png "Export frames at 2x for PNG")
 
 By exporting at 2X resolution, your images will scale down to a *crisp* output on both your broadcasting software and Twitch's upload UI.
+
+## Watch the broadcast
+
+{% Twitch { id: '0WkbOP5xexWgGw', type: 'collection', title: 'Project: Shatter [Ship Saturday]', thumbnail: 'https://static-cdn.jtvnw.net/cf_vods/d2nvs31859zcd8/a16daa79e340800357c7_eli_archgirl_32268743152_1085421880/thumb/custom-45341f1f-72f0-4c76-9ed4-1b2628cf7f31-320x180.jpeg' } %}
