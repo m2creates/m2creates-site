@@ -5,6 +5,15 @@ require('dotenv').config();
  * @link https://dev.to/jkc_codes/creating-drafts-in-eleventy-1103
  */
 
+let data = {
+  layout: "post.njk",
+  permalink: "/posts/{{ slug }}/index.html"
+};
+    
+if(process.env.NODE_ENV === "production") {
+	data.date = "git Last Modified";
+}
+
 const isDevEnv = process.env.ELEVENTY_ENV !== 'production';
 const todaysDate = new Date();
 
@@ -16,6 +25,7 @@ function showDraft(data) {
 
 module.exports = function() {
     return {
+        data,
         eleventyComputed: {
             eleventyExcludeFromCollections: function(data) {
                 if(showDraft(data)) {
