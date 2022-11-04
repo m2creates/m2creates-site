@@ -1,4 +1,5 @@
 {
   "layout": "post.njk",
-  "permalink": "/posts/{{ slug }}/index.html"
+  "permalink": "/posts/{{ slug }}/index.html",
+  "date": "git Last Modified"
 }
