@@ -1,11 +1,11 @@
 <ul class="w-full list">
 {%- for post in posts -%}
-  <li class="flex flex-col pb-2">
+  <li class="h-entry flex flex-col pb-2">
     <div class="flex flex-nowrap justify-between gap-x-4 mb-1">
-      <a href="{{ post.url }}">{{ post.data.title }}</a>
-      <time class="flex-shrink-0" datetime="{{  post.data.datePublish }}" itemProp="datePublished">{{ post.data.datePublish | format('dd LLL yyyy') }}</time>
+      <a href="{{ post.url }}" class="u-url" rel="bookmark"><span class="p-name">{{ post.data.title }}</span></a>
+      <time class="dt-published flex-shrink-0" datetime="{{  post.data.datePublish | iso }}" itemProp="datePublished">{{ post.data.datePublish | format('dd LLL yyyy') }}</time>
     </div>
-    {% if post.data.tldr %}<p class="mt-0"><em>{{ post.data.tldr | safe }}</em></p>{% endif %}
+    {% if post.data.tldr %}<p class="p-summary mt-0"><em>{{ post.data.tldr | safe }}</em></p>{% endif %}
   </li>
 {%- endfor -%}
 </ul>
