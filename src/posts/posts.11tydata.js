@@ -6,12 +6,11 @@ require('dotenv').config();
  */
 
 let data = {
-  layout: "post.njk",
-  permalink: "/posts/{{ slug }}/index.html"
+  layout: "post.njk"
 };
     
 if(process.env.NODE_ENV === "production") {
-	data.date = "git Last Modified";
+  data.date = "git Last Modified";
 }
 
 const isDevEnv = process.env.ELEVENTY_ENV !== 'production';
