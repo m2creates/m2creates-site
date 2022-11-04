@@ -4,7 +4,7 @@
   @ref microformats2 http://microformats.org/wiki/microformats2
   @ref me http://microformats.org/wiki/rel-me
   @ref IndieAuth https://indieauth.com/setup
-  @ref validate/test h-card https://indiewebify.me/validate-h-card/
+  @ref validate/test https://indiewebify.me/validate-h-card/
 #}
 
 <div class="h-card">
@@ -14,7 +14,8 @@
   <data class="url u-url u-uid" value="{{ site.meta.url | safe }}"></data>
   <data class="photo u-photo" value="{{ site.meta.url | safe }}{{ site.author.avatar }}"></data>
   <data class="logo u-logo" value="{{ site.meta.url | safe }}{{ site.brand.logo }}"></data>
-  <data class="p-note" value="{{ site.author.bio }}"></data>
+  <data class="u-pronoun" value="{{ site.author.pronouns.link | safe }}"></data>
+  <data class="p-note" value="{{ site.author.bio }} ({{ site.author.pronouns.text }})"></data>
 
   <ul class="flex justify-center">
     {% for link in site.social %}
