@@ -57,12 +57,12 @@
   <div class="text-sm font-bold uppercase md:text-base">
     <p>Written by <a class="h-card" href="{{ site.meta.url | safe }}"><span class="p-author">{{ site.author.name }}</span></a> 
       <span class="px-1" aria-hidden="true">/</span>
-      <a class="u-url" href="{{ site.meta.url | safe }}{{ url }}">Permalink</a>
+      <a class="u-url" href="{{ site.meta.url | safe }}{{ url }}" rel="bookmark">Permalink</a>
     </p>
     {% if tags %}
     <p>Tags:
       {# TODO: link the taxonomies: /tags/{{tag}} #}
-      {% for tag in tags %} <span aria-hidden="true">#</span><span class="p-category" rel="tag">{{ tag | lower }}</span>{% endfor %}
+      {% for tag in tags %} <span aria-hidden="true">#</span><span class="p-category" rel="category tag">{{ tag | lower }}</span>{% endfor %}
     </p>
     {% endif %}
   </div>
