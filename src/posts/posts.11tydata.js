@@ -5,12 +5,6 @@ require('dotenv').config();
  * @link https://dev.to/jkc_codes/creating-drafts-in-eleventy-1103
  */
 
-let data = {};
-    
-if(process.env.NODE_ENV === "production") {
-  data.date = "git Last Modified";
-}
-
 const isDevEnv = process.env.ELEVENTY_ENV !== 'production';
 const todaysDate = new Date();
 
@@ -38,6 +32,11 @@ module.exports = function() {
                 }
                 else {
                     return false;
+                }
+            },
+            date: function(data) {
+                if(process.env.NODE_ENV === "production") {
+                  data.date = "git Last Modified";
                 }
             }
         }
