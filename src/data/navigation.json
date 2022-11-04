@@ -19,6 +19,10 @@
       "href": "/analytics"
     },
     {
+      "text": "RSS",
+      "href": "/rss.xml"
+    },
+    {
       "text": "Sitemap",
       "href": "/sitemap.xml"
     }
