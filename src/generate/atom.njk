@@ -22,9 +22,9 @@ eleventyExcludeFromCollections: true
 	{% set absolutePostUrl %}{{ post.url | url | absoluteUrl(site.url) }}{% endset %}
 	<entry>
 		<title>{{ post.data.title }}</title>
-		<link rel="alternate" href="{{ absolutePostUrl }}"/>
+		<link rel="alternate" href="{{ site.meta.url }}{{ absolutePostUrl }}"/>
 		<updated>{{ post.data.datePublish | toRFC3339 }}</updated>
-		<id>{{ absolutePostUrl }}</id>
+		<id>{{ site.meta.url }}{{ absolutePostUrl }}</id>
 		{%- if post.data.tags %}{%- for tag in post.data.tags %}{%- if tag != "post" %}
 		<category term="{{ tag }}"/>
 		{%- endif %}{%- endfor %}{%- endif %}
