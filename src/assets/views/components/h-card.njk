@@ -14,7 +14,7 @@
   <data class="photo u-photo" value="{{ site.meta.url | safe }}{{ site.author.avatar }}"></data>
   <data class="logo u-logo" value="{{ site.meta.url | safe }}{{ site.brand.logo }}"></data>
 
-  <ul>
+  <ul class="flex justify-center">
     {% for link in site.social %}
     <li>
       <a href="{{ link.url | safe }}" title="{{ link.network }}" aria-label="{{ link.network }}" rel="me noopener noreferrer" target="_blank" class="url p-url inline-block p-2">
