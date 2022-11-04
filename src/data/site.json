@@ -12,7 +12,7 @@
     "avatar": "/images/avatar-256.jpg",
     "bio": "Equal parts coffee, creativity, and code. Let's create!",
     "pronouns": {
-      "text": "she/her"
+      "text": "she/her",
       "link": "https://pronoun.is/she",
       "nominative": "she",
       "oblique": "her",
