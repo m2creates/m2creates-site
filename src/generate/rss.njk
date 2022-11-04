@@ -19,12 +19,12 @@ eleventyExcludeFromCollections: true
 		<height>144</height>
 	</image>
 	{%- for post in collections.posts %}
-	{% set absolutePostUrl %}{{ post.url | url | absoluteUrl(site.url) }}{% endset %}
+	{% set absolutePostUrl %}{{ post.url | url | absoluteUrl(site.meta.url) }}{% endset %}
 	<item>
 		<title>{{ post.data.title }}</title>
-		<link>{{ site.meta.url }}{{ absolutePostUrl }}</link>
+		<link>{{ absolutePostUrl }}</link>
 		<pubDate>{{ post.data.datePublish | toRFC2822 }}</pubDate>
-    <guid isPermaLink="true">{{ site.meta.url }}{{ absolutePostUrl }}</guid>
+    <guid isPermaLink="true">{{ absolutePostUrl }}</guid>
     <dc:creator>{{ site.author.name }}</dc:creator>
     {%- if post.data.tags %}{%- for tag in post.data.tags %}{%- if tag != "post" %}
 		<category>{{ tag }}</category>
