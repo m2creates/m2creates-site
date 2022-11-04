@@ -14,22 +14,39 @@
   },
   "social": [
     {
-      "network": "twitter",
+      "network": "Twitter",
       "handle": "@m2creates",
-      "url": "https://twitter.com/m2creates/",
-      "order": 1
+      "url": "https://twitter.com/m2creates/"
     },
     {
-      "network": "instagram",
-      "handle": "@m2creates",
-      "url": "https://instagram.com/m2creates/",
-      "order": 2
+      "network": "Mastodon",
+      "handle": "@m2creates@mastodon.social",
+      "url": "https://mastodon.social/@m2creates"
     },
     {
-      "network": "twitch",
+      "network": "Instagram",
       "handle": "@m2creates",
-      "url": "https://twitch.tv/m2creates/",
-      "order": 3
+      "url": "https://www.instagram.com/m2creates/"
+    },
+    {
+      "network": "Twitch",
+      "handle": "@m2creates",
+      "url": "https://www.twitch.tv/m2creates/"
+    },
+    {
+      "network": "Youtube",
+      "handle": "@m2creates",
+      "url": "https://www.youtube.com/@m2creates"
+    },
+    {
+      "network": "GitHub",
+      "handle": "@m2creates",
+      "url": "https://github.com/m2creates"
+    },
+    {
+      "network": "Polywork",
+      "handle": "@m2creates",
+      "url": "https://www.polywork.com/m2creates"
     }
   ],
   "email": {
