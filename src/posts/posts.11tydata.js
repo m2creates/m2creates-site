@@ -5,9 +5,7 @@ require('dotenv').config();
  * @link https://dev.to/jkc_codes/creating-drafts-in-eleventy-1103
  */
 
-let data = {
-  layout: "post.njk"
-};
+let data = {};
     
 if(process.env.NODE_ENV === "production") {
   data.date = "git Last Modified";
