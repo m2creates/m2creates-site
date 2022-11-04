@@ -15,7 +15,7 @@
     <span>Uses:
       {% set separator = joiner(',') %}
       {# TODO: link the taxonomies: /uses/{{item}} #}
-      {%- for item in uses %}{{ separator() }} <span class="p-category">{{ item }}}</span>{% endfor %}
+      {%- for item in uses %}{{ separator() }} <span class="p-category">{{ item }}</span>{% endfor %}
     </span>
     <span class="px-1" aria-hidden="true">/</span>
     {% endif %}
@@ -55,7 +55,7 @@
   
   <!-- Meta -->
   <div class="text-sm font-bold uppercase md:text-base">
-    <p>Written by <a class="h-card" href="{{ site.meta.url | safe }}"><span class="p-author">{{ site.author.name }}</span></a> 
+    <p>Written by <a class="p-author h-card" href="{{ site.meta.url | safe }}" rel="author">{{ site.author.name }}</a> 
       <span class="px-1" aria-hidden="true">/</span>
       <a class="u-url" href="{{ site.meta.url | safe }}{{ url }}" rel="bookmark">Permalink</a>
     </p>
