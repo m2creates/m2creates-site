@@ -16,7 +16,6 @@ function showDraft(data) {
 
 module.exports = function() {
     return {
-        data,
         eleventyComputed: {
             eleventyExcludeFromCollections: function(data) {
                 if(showDraft(data)) {
