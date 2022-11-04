@@ -22,9 +22,9 @@ eleventyExcludeFromCollections: true
 	{% set absolutePostUrl %}{{ post.url | url | absoluteUrl(site.url) }}{% endset %}
 	<item>
 		<title>{{ post.data.title }}</title>
-		<link>{{ absolutePostUrl }}</link>
+		<link>{{ site.meta.url }{{ absolutePostUrl }}</link>
 		<pubDate>{{ post.data.datePublish | toRFC2822 }}</pubDate>
-    <guid isPermaLink="true">{{ absolutePostUrl }}</guid>
+    <guid isPermaLink="true">{{ site.meta.url }{{ absolutePostUrl }}</guid>
     <dc:creator>{{ site.author.name }}</dc:creator>
     {%- if post.data.tags %}{%- for tag in post.data.tags %}{%- if tag != "post" %}
 		<category>{{ tag }}</category>
