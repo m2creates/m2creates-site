@@ -227,6 +227,106 @@ Example Usage:
 <a class="external-link" href="https://google.com" title="Open external link in new tab" target="_blank" rel="noopener">External Link via shortcode</a>
 ```
 
+### Videos
+
+Enable additional CSS and Scripts under `blocks` in a post's YAML. Options available: `youtube`, `twitch`.
+
+```yml
+# List the webcomponent blocks to load on this page
+blocks:
+  - youtube
+  - twitch
+```
+
+#### YouTube
+
+```njk
+<!-- Example input: YouTube -->
+{% YouTube {
+  id: 'UO2gTHLwzSg',
+  title: 'BuiltOnAir [All Things Airtable] S03:E08 - Melanie Magdalena, Digital Consultant'
+} %}
+```
+
+```html
+<!-- Example output: YouTube -->
+<youtube-embed 
+  videoid="UO2gTHLwzSg"
+  videotitle="BuiltOnAir [All Things Airtable] S03:E08 - Melanie Magdalena, Digital Consultant"
+  style="background-image: url('https://i.ytimg.com/vi/UO2gTHLwzSg/hqdefault.jpg');">
+    <a href="https://youtube-nocookie.com/watch?v=UO2gTHLwzSg" class="lty-playbtn">
+      <span class="visually-hidden">Play: BuiltOnAir [All Things Airtable] S03:E08 - Melanie Magdalena, Digital Consultant</span>
+    </a>
+</youtube-embed>
+<a
+  href="https://youtube-nocookie.com/watch?v=UO2gTHLwzSg"
+  title="opens in new tab, watch 'BuiltOnAir [All Things Airtable] S03:E08 - Melanie Magdalena, Digital Consultant' on youtube-nocookie.com"
+  target="_blank">
+  Watch on YouTube
+</a>
+```
+
+#### Twitch
+
+```njk
+<!-- Example input: Twitch -->
+{% Twitch {
+  id: '0WkbOP5xexWgGw',
+  title: 'Project: Shatter [Ship Saturday]',
+  type: 'collection',
+  thumbnail: '[optional, has fallback]'
+} %}
+```
+
+```html
+<!-- Example output: Twitch -->
+<twitch-embed
+  videoid="0WkbOP5xexWgGw"
+  videotitle="Project: Shatter [Ship Saturday]"
+  videotype="collection"
+  class="twitch-playbtn mb-2" style="background-image:url('https://static-cdn.jtvnw.net/cf_vods/d2nvs31859zcd8/a16daa79e340800357c7_eli_archgirl_32268743152_1085421880/thumb/custom-45341f1f-72f0-4c76-9ed4-1b2628cf7f31-320x180.jpeg')">
+      <a href="https://www.twitch.tv/collections/0WkbOP5xexWgGw">
+          <span class="visually-hidden">Play Project: Shatter [Ship Saturday]</span>
+      </a>
+</twitch-embed>
+<a href="https://www.twitch.tv/collections/0WkbOP5xexWgGw"
+  title="opens in new tab, watch collection 'Project: Shatter [Ship Saturday]' on twitch.tv"
+  target="_blank">
+  Watch collection on Twitch
+</a>
+```
+
+### Other Embedded Media
+
+#### Transistor 
+
+```njk
+<!-- Example input: Transistor -->
+{% Transistor {
+  id: 'f44edcde',
+  title: 'BuiltOnAir [All Things Airtable] S03:E08 - Melanie Magdalena, Digital Consultant'
+} %}
+```
+
+```html
+<!-- Example output: Transistor -->
+<iframe
+    width="100%"
+    height="180"
+    frameborder="no"
+    scrolling="no"
+    seamless
+    class="mb-2"
+    src="https://share.transistor.fm/e/f44edcde"
+></iframe>
+<a
+  href="https://share.transistor.fm/s/f44edcde"
+  title="opens in new tab, listen to 'BuiltOnAir [All Things Airtable] S03:E08 - Melanie Magdalena, Digital Consultant' on transistor.fm"
+  target="_blank">
+  Listen on Transistor
+</a>
+```
+
 ## Reading List
 
 The following resources assisted in the creation of my site!
