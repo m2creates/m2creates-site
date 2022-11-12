@@ -13,7 +13,7 @@ image:
 blocks: 
   - youtube
 comments:
-  tweet: https://twitter.com/m2creates/status/1186293060554166272?s=20&t=xY0Rxt_STAuaJNZ29cCtAQ
+  twitter: https://twitter.com/m2creates/status/1186293060554166272?s=20&t=xY0Rxt_STAuaJNZ29cCtAQ
   polywork: https://poly.work/m2creates/highlights/dyUwo91v
 seo:
   title: Built on Air - Season 3, Episode 8

@@ -2,7 +2,7 @@
 title: 
 tldr:
 slug:
-date: Last Modified
+date: git Last Modified
 datePublish:
 image:
   url:

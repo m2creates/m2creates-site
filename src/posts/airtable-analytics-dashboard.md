@@ -8,7 +8,7 @@ datePublish: 2021-08-07
 blocks:
   - youtube
 comments:
-  tweet: 1423888996975972356
+  twitter: 1423888996975972356
 image:
   url: /images/airtable-hub-reports.jpg
   alt: Airtable Hub reports view

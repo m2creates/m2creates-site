@@ -12,7 +12,7 @@ image:
 #   css: youtube
 #   js: youtube
 # comments:
-#   tweet: 
+#   twitter: 
 #   polywork: 
 seo:
   title: Debug iOS Safari with Xcode Simulator and Web Inspector
