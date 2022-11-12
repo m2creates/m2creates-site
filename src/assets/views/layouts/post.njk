@@ -2,56 +2,70 @@
 
 {% block content %}
 
-<article>
+<article class="h-entry">
 
   <!-- Post title -->
-  <h1 class="mt-0 mb-3 text-3xl font-extrabold break-normal md:text-5xl">{{ title }}</h1>
+  <h1 class="p-name mt-0 mb-3 text-3xl font-extrabold break-normal md:text-5xl">{{ title }}</h1>
 
   <!-- Meta -->
   <p class="text-sm font-bold uppercase md:text-base">
-    
-    <!-- Author -->
-    <span>By {{ site.author.name }}</span>
-    <span class="px-1" aria-hidden="true">/</span>
-
-    <!-- Taxonomies -->
-    {% if tags or categories or uses %}
-      <span>Tagged: 
+  
+    <!-- Uses -->
+    {% if uses %}
+    <span>Uses:
       {% set separator = joiner(',') %}
-      {# TODO: link the taxonomies: /tags/{{tag}}, /categories/{{category}}, /uses/{{item}} #}
-      {%- for tag in tags %}{{ separator() }} {{ tag }}{% endfor %}
-      {%- for category in categories %}{{ separator() }} {{ category }}{% endfor %}
-      {%- for item in uses %}{{ separator() }} {{ item }}{% endfor %}
-      </span>
-      <span class="px-1" aria-hidden="true">/</span>
+      {# TODO: link the taxonomies: /uses/{{item}} #}
+      {%- for item in uses %}{{ separator() }} <span class="p-category">{{ item }}</span>{% endfor %}
+    </span>
+    <span class="px-1" aria-hidden="true">/</span>
     {% endif %}
-
+    
     <!-- Reading time -->
     <span>{{ content | readingTime }} read</span>
     <span class="px-1" aria-hidden="true">/</span>
+    
     <!-- Dates -->
-    <time datetime="{{ datePublish }}" itemProp="datePublished">Published: {{ datePublish | format('dd LLL yyyy') }}</time>{% if date != datePublish %} <span aria-hidden="true">•</span> <time datetime="{{ date }}" itemProp="dateUpdated">Updated: {{ page.date | format('dd LLL yyyy') }}</time>{% endif %}
+    <time datetime="{{ datePublish | iso }}" itemProp="datePublished" class="dt-published">Published: {{ datePublish | format('dd LLL yyyy') }}</time>{% if date != datePublish %} <span aria-hidden="true">•</span> <time datetime="{{ page.date | iso }}" itemProp="dateUpdated" class="dt-updated">Updated: {{ page.date | format('dd LLL yyyy') }}</time>{% endif %}
+    
   </p>
 
   <!-- TLDR -->
   {% if tldr %}
-  <p class="tldr">{{ tldr }}</p>
+  <p class="p-summary tldr">{{ tldr }}</p>
   {% endif %}
+  
+  <div class="e-content">
 
-  <!-- Featured Image/Poster -->
-  {% if image.url %}
-  <figure class="mb-8 max-w-screen">
-    <img src="{{ image.url }}" alt="{{ image.alt }}" class="object-cover mb-3 aspect-w-4 aspect-h-3"/>
-    {% if image.credit %}
-    <figcaption><span>{{ image.credit }}</span></figcaption>
+    <!-- Featured Image/Poster -->
+    {% if image.url %}
+    <figure class="mb-8 max-w-screen">
+      <img src="{{ image.url }}" alt="{{ image.alt }}" class="object-cover mb-3 aspect-w-4 aspect-h-3"/>
+      {% if image.credit %}
+      <figcaption><span>{{ image.credit }}</span></figcaption>
+      {% endif %}
+    </figure>
     {% endif %}
-  </figure>
-  {% endif %}
 
-  <!-- Content -->
-  {{ content | safe }}
+    <!-- Content -->
+    {{ content | safe }}
+  
+  </div>
 
   {% include "components/BuyMeACoffee/BuyMeACoffee.njk" %}
+  
+  <!-- Meta -->
+  <div class="text-sm font-bold uppercase md:text-base">
+    <p>Written by <a class="p-author h-card no-underline" href="{{ site.meta.url | safe }}" rel="author">{{ site.author.name }}</a> 
+      <span class="px-1" aria-hidden="true">/</span>
+      <a class="u-url" href="{{ site.meta.url | safe }}{{ page.url }}" rel="bookmark">Permalink</a>
+    </p>
+    {% if tags %}
+    <p>Tags:
+      {# TODO: link the taxonomies: /tags/{{tag}} #}
+      {% for tag in tags %} <span aria-hidden="true">#</span><span class="p-category" rel="category tag">{{ tag | lower }}</span>{% endfor %}
+    </p>
+    {% endif %}
+  </div>
 
 </article>
 

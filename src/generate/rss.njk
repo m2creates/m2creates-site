@@ -19,7 +19,7 @@ eleventyExcludeFromCollections: true
 		<height>144</height>
 	</image>
 	{%- for post in collections.posts %}
-	{% set absolutePostUrl %}{{ post.url | url | absoluteUrl(site.url) }}{% endset %}
+	{% set absolutePostUrl %}{{ post.url | url | absoluteUrl(site.meta.url) }}{% endset %}
 	<item>
 		<title>{{ post.data.title }}</title>
 		<link>{{ absolutePostUrl }}</link>

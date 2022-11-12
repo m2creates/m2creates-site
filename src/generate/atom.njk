@@ -19,7 +19,7 @@ eleventyExcludeFromCollections: true
 	<icon>{{ site.brand.favicon }}</icon>
 	<logo>{{ site.brand.logo }}</logo>
 	{%- for post in collections.posts %}
-	{% set absolutePostUrl %}{{ post.url | url | absoluteUrl(site.url) }}{% endset %}
+	{% set absolutePostUrl %}{{ post.url | url | absoluteUrl(site.meta.url) }}{% endset %}
 	<entry>
 		<title>{{ post.data.title }}</title>
 		<link rel="alternate" href="{{ absolutePostUrl }}"/>
