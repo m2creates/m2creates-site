@@ -13,6 +13,7 @@ const Image = require(`./${componentsDir}/figure/image.js`);
 const YouTube = require(`./${componentsDir}/embed/youtube.js`);
 const Twitch = require(`./${componentsDir}/embed/twitch.js`);
 const Transistor = require(`./${componentsDir}/embed/transistor.js`);
+const UpLabs = require(`./${componentsDir}/callout/uplabs.js`);
 
 const watchtargets = require("./src/config/watchtargets");
 
@@ -64,6 +65,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addShortcode("YouTube", YouTube);
   eleventyConfig.addShortcode("Twitch", Twitch);
   eleventyConfig.addShortcode("Transistor", Transistor);
+  eleventyConfig.addShortcode('UpLabs', UpLabs);
   console.groupEnd();
 
   /**
