@@ -7,20 +7,19 @@ slug: built-on-air-podcast-0308
 date: Last Modified
 datePublish: 2019-10-21
 image:
-  url:
-  alt: 
-  credit: 
+  url: /images/built-on-air-episode.jpeg
+  alt: Built on Air - Season 3, Episode 8 with Melanie Magdalena, Digital Consultant
 blocks: 
   - youtube
 comments:
-  twitter: https://twitter.com/m2creates/status/1186293060554166272?s=20&t=xY0Rxt_STAuaJNZ29cCtAQ
+  twitter: https://twitter.com/m2creates/status/1186293060554166272
   polywork: https://poly.work/m2creates/highlights/dyUwo91v
 seo:
   title: Built on Air - Season 3, Episode 8
   desc: In this episode, I showcase an Airtable base created to calculate student assessment scores; and detail how I get data in the right spots.
   image:
-    url:
-    alt:
+    url: /images/built-on-air-episode.jpeg
+    alt: Built on Air - Season 3, Episode 8 with Melanie Magdalena, Digital Consultant
 ---
 
 [Read the shownotes on Built on Air's website.](https://builtonair.com/builtonair-s03e08-melanie-magdalena-digital-consultant/)
