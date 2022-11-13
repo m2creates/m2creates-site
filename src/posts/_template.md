@@ -2,7 +2,7 @@
 title: 
 tldr:
 slug:
-date: Last Modified
+date: git Last Modified
 datePublish:
 image:
   url:
@@ -12,14 +12,20 @@ image:
 #   css: youtube
 #   js: youtube
 # comments:
-#   tweet: 
+#   twitter: 
+#   codepen:
 #   polywork: 
+#   linkedin: 
+#   uplabs:
 seo:
   title:
   desc:
   image:
     url:
     alt:
+# category:
+# tags:
+# uses:
 permalink: false
 eleventyExcludeFromCollections: true
 ---

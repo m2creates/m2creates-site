@@ -5,7 +5,7 @@
 <article class="h-entry">
 
   <!-- Post title -->
-  <h1 class="p-name mt-0 mb-3 text-3xl font-extrabold break-normal md:text-5xl">{{ title }}</h1>
+  <h1 class="mt-0 mb-3 text-3xl font-extrabold break-normal p-name md:text-5xl">{{ title }}</h1>
 
   <!-- Meta -->
   <p class="text-sm font-bold uppercase md:text-base">
@@ -25,7 +25,7 @@
     <span class="px-1" aria-hidden="true">/</span>
     
     <!-- Dates -->
-    <time datetime="{{ datePublish | iso }}" itemProp="datePublished" class="dt-published">Published: {{ datePublish | format('dd LLL yyyy') }}</time>{% if date != datePublish %} <span aria-hidden="true">•</span> <time datetime="{{ page.date | iso }}" itemProp="dateUpdated" class="dt-updated">Updated: {{ page.date | format('dd LLL yyyy') }}</time>{% endif %}
+    <time datetime="{{ datePublish | iso }}" itemProp="datePublished" class="dt-published">Published: {{ datePublish | format('dd LLL yyyy') }}</time>{#{% if date != datePublish %} <span aria-hidden="true">•</span> <time datetime="{{ page.date | iso }}" itemProp="dateUpdated" class="dt-updated">Updated: {{ page.date | format('dd LLL yyyy') }}</time>{% endif %}#}
     
   </p>
 
@@ -55,7 +55,7 @@
   
   <!-- Meta -->
   <div class="text-sm font-bold uppercase md:text-base">
-    <p>Written by <a class="p-author h-card no-underline" href="{{ site.meta.url | safe }}" rel="author">{{ site.author.name }}</a> 
+    <p>Written by <a class="no-underline p-author h-card" href="{{ site.meta.url | safe }}" rel="author">{{ site.author.name }}</a> 
       <span class="px-1" aria-hidden="true">/</span>
       <a class="u-url" href="{{ site.meta.url | safe }}{{ page.url }}" rel="bookmark">Permalink</a>
     </p>

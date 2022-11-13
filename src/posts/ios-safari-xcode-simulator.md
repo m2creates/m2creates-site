@@ -8,22 +8,18 @@ image:
   url: /images/xcode-simulator-step-5.png
   alt: melaniemagdalena.com as seen on iOS Safari simulator
   credit: 
-# blocks:
-#   css: youtube
-#   js: youtube
-# comments:
-#   tweet: 
-#   polywork: 
 seo:
   title: Debug iOS Safari with Xcode Simulator and Web Inspector
   desc: How I debug CSS for iOS Safari on my MacBook Pro.
   image:
     url: /images/xcode-simulator-step-5.png
     alt: melaniemagdalena.com as seen on iOS Safari simulator
+category:
+  - testing
 tags:
   - debugging
 uses:
-  - xcode simulator
+  - Xcode Simulator
 ---
 
 If you're like me and don’t have an iOS device, you can use Xcode Simulator to view and debug mobile Safari from your Mac.

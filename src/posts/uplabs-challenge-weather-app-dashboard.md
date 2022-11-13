@@ -4,12 +4,16 @@ title: >-
 tldr: >-
   For UpLabs weather app challenge, I designed a dashboard with simpleWeather.js that told the week's forecast.
 slug: uplabs-challenge-weather-app-dashboard
-date: Last Modified
+date: git Last Modified
 datePublish: 2018-01-28
 image:
   url: /images/weather-app-preview.png
   alt: Final screenshot of my weather app named Forecast It
   credit: When it worked, this is what my weather app looked like!
+comments:
+  twitter: https://twitter.com/m2creates/status/957864453311119360
+  codepen: https://codepen.io/m2creates/details/ypdemZ
+  uplabs: https://www.uplabs.com/posts/what-s-the-weather-right-now/
 seo:
   title: >-
     🌤 Weather App Dashboard
@@ -17,11 +21,19 @@ seo:
   image:
     url: /images/weather-app-preview.png
     alt: Final screenshot of my weather app named Forecast It
+category:
+  - app
 tags:
   - api
   - design
   - challenge
+uses:
+  - HTML5
+  - CSS3
+  - JavaScript
 ---
+
+{% UpLabs { title: 'Weather App Challenge', prompt: 'Rethink a Weather App dashboard for iOS, Android, VR or Web.', challengers: '373', results: 'https://www.uplabs.com/challenges/weather-app-challenge/results', submission: 'https://www.uplabs.com/posts/what-s-the-weather-right-now/', placement: 'Honorable mention' } %}
 
 **The challenge:** make a [weather app dashboard](https://www.uplabs.com/challenges/weather-app-challenge). **My goal:** make a weather app dashboard that *actually* tells me the weather.
 
