@@ -1,6 +1,7 @@
 ---
 title: Projects
-tldr: I learn by experimenting.
+tldr: >-
+  Digital design across the spectrum: websites, publications, courseware, and iconography.
 slug: projects
 date: Last Modified
 datePublish: 2022-03-12
@@ -18,7 +19,7 @@ seo:
 
 ## Showcase
 
-<iframe class="airtable-embed" src="https://airtable.com/embed/shrxjEnqi3tlE3nSU?backgroundColor=pink&viewControls=on" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>
+<iframe class="airtable-embed breakout-medium" src="https://airtable.com/embed/shrxjEnqi3tlE3nSU?backgroundColor=pink&viewControls=on" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>
 
 ## Side Projects
 
