@@ -16,6 +16,10 @@ seo:
     alt:
 ---
 
+## Showcase
+
+<iframe class="airtable-embed" src="https://airtable.com/embed/shrxjEnqi3tlE3nSU?backgroundColor=pink&viewControls=on" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>
+
 ## Side Projects
 
 Side projects are my way of testing out new concepts/strategies and bringing to life some of my very own ideas! Some become Ventures of their own. Others get dusty over time. But they all teach me something I can use in the future.
