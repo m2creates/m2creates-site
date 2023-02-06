@@ -57,7 +57,7 @@ I love [traveling](https://nomadlist.com/@m2creates/) and photographing my adven
 **2015**
 
 - 🖥 Developed [Media Labs](http://cnmmedialabs.weebly.com/) for Distance Learning faculty
-- 📊 Presented: [Beyond PoisonPoint - Enhancing Your Course with Multimedia](https://docs.google.com/presentation/d/1xGeghGaBP0TooMFLBO3OZxNneyJTJZBuNfscouBBuhw/pub?start=false&loop=false&delayms=60000&slide=id.ga29e59d1f_0_1419) + [Augmented Video - It's More Than Pressing Play](https://docs.google.com/presentation/d/13YfJ_E2To6QcvksQtz3snkbjVf2COsilOvHtlHQHm_Y/pub?start=false&loop=false&delayms=60000&slide=id.g35f391192_00)
+- 📊 Presented: [Beyond PoisonPoint - Enhancing Your Course with Multimedia](https://docs.google.com/presentation/d/1-NeR98AnMEmS5sn5UUerR-AgqCk90TgubXU-VV0gkGE/pub?start=false&loop=false&delayms=60000&slide=id.ga29e59d1f_0_1419) + [Augmented Video - It's More Than Pressing Play](https://docs.google.com/presentation/d/13YfJ_E2To6QcvksQtz3snkbjVf2COsilOvHtlHQHm_Y/pub?start=false&loop=false&delayms=60000&slide=id.g35f391192_00)
 
 **2014**
 
