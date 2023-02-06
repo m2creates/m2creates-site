@@ -1,5 +1,6 @@
 ---
-title: Aquatic Apes: True or False?
+title: >-
+  Aquatic Apes: True or False?
 slug: aquatic-apes-true-or-false
 datePublish: 2011-01-12
 archive: http://www.melaniemagdalena.com/blog-my-archaeolife/-aquatic-apes-true-or-false
