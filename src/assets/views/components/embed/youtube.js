@@ -4,12 +4,12 @@ module.exports = ({ id, title = "YouTube Video" } = {}) => `
     videotitle="${title}"
     class="mb-2"
     style="background-image: url('https://i.ytimg.com/vi/${id}/hqdefault.jpg');">
-        <a href="https://youtube-nocookie.com/watch?v=${id}" class="lty-playbtn">
+        <a href="https://www.youtube-nocookie.com/watch?v=${id}" class="lty-playbtn">
             <span class="visually-hidden">Play: ${title}</span>
         </a>
   </youtube-embed>
   <a
-    href="https://youtube-nocookie.com/watch?v=${id}"
+    href="https://www.youtube-nocookie.com/watch?v=${id}"
     title="opens in new tab, watch '${title}' on youtube-nocookie.com"
     target="_blank">
         Watch on YouTube
