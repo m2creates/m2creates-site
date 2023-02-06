@@ -32,7 +32,7 @@ If you want to support my projects, [**buy me a coffee**](https://www.buymeacoff
 <section class="my-2 w-full">
 <h3 class="mt-0">{{ project.data.title }}</h3>
 {{ project.templateContent | safe }}
-<figure class="w-full mt-0 pb-2 media border-b border-solid">
+<figure class="w-full mt-0 pb-4 media">
   <img src="{{ project.data.image.url }}" alt="{{ project.data.image.alt }}" class="object-contain mb-3 aspect-w-4 aspect-h-3 max-h-128 mx-auto">
   {% if project.data.image.credit %}
   <figcaption>{{ project.data.image.caption }}</figcaption>
@@ -57,7 +57,7 @@ I am a proud unicorn learning everyday so I can create the best solution for the
 <section class="my-2 w-full">
 <h3 class="mt-0">{{ project.data.title }}</h3>
 {{ project.templateContent | safe }}
-<figure class="w-full mt-0 pb-2 media border-b border-solid">
+<figure class="w-full mt-0 pb-4 media">
   <img src="{{ project.data.image.url }}" alt="{{ project.data.image.alt }}" class="object-contain mb-3 aspect-w-4 aspect-h-3 max-h-128 mx-auto">
   {% if project.data.image.credit %}
   <figcaption>{{ project.data.image.caption }}</figcaption>
