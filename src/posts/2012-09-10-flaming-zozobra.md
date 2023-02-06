@@ -3,6 +3,8 @@ title: Flaming Zozobra
 slug: flaming-zozobra
 datePublish: 2012-09-10
 legacyUrl: http://www.melaniemagdalena.com/blog-my-archaeolife/flaming-zozobra
+blocks:
+  - youtube
 ---
 
 The most anticipated event in the southwest is the annual Fiestas de Santa Fe, held the first weekend in September. For the past 300 years Santa Fe hosts a 3 day festival that began in 1712 to celebrate an expedition by Don Diego de Vargas, who re-conquered the territory of New Mexico.  
