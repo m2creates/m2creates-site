@@ -4,11 +4,9 @@
     <p class="px-2 mb-0 text-sm"><a href="{{ pagination.href.previous }}">Previous</a></p>
   {% endif %}
   {%- for pageEntry in pagination.pages %}
-    {%- if not loop.last %}
       <p class="px-2 mb-0 text-sm">
         <a href="{{ pagination.hrefs[ loop.index0 ] }}" {% if page.url == pagination.hrefs[ loop.index0 ] %}aria-current="page" class="no-underline border-none"{% endif %}>{{ loop.index }}</a>
       </p>
-    {% endif %}
   {%- endfor %}
   {% if pagination.href.next %}
     <p class="px-2 mb-0 text-sm"><a href="{{ pagination.href.next }}">Next</a></p>
