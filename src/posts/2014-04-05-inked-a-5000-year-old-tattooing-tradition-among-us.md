@@ -4,6 +4,8 @@ title: >-
 slug: inked-a-5000-year-old-tattooing-tradition-among-us
 datePublish: 2014-04-05
 legacyUrl: http://www.melaniemagdalena.com/thoughts/inked-a-5000-year-old-tattooing-tradition-among-us
+blocks:
+  - youtube
 ---
 
 Presented by Melanie E Magdalena, University of New Mexico, Department of Anthropology for the [AGSU Conference](https://drive.google.com/file/d/11BDqLz1iF4PDC5d4lKLDu5BrDxzV8Z4X/view) at UNM.
