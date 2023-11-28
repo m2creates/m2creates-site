@@ -2,8 +2,9 @@
 title: >-
   “Science of Food” - Adult Night at Explora
 slug: science-of-food-adult-night-at-explora
-datePublish: 2012-9-21
+datePublish: 2012-09-21
 legacyUrl: http://www.melaniemagdalena.com/blog-my-archaeolife/-science-of-food-adult-night-at-explora
+post_type: article
 ---
 
 Before Explora, I had not been to a children’s museum in over ten years.

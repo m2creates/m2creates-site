@@ -4,6 +4,7 @@ title: >-
 slug: finding-america-seeking-new-paleolithic-paradigms-dennis-stanford
 datePublish: 2012-10-04
 legacyUrl: http://www.melaniemagdalena.com/blog-my-archaeolife/-finding-america-seeking-new-paleolithic-paradigms-by-dr-dennis-stanford-curator-of-archaeology-smithsonian
+post_type: article
 ---
 
 Dr. Dennis Stanford's focus of study is on the origins of people in the New World and the means by which they arrived. He believes that people of Solutrean decent crossed the Atlantic ice while following seal migration and ended up in the Americas. Since Alaskan artifacts resemble microblade weaponry from Siberia, a migration from Beringia probably occurred, though he believes this was at a later time since they date to 14,000 years ago and the Solutrean-style Atlantic Coast artifacts discovered in Miles Point, Maryland at 21,000 years ago.  

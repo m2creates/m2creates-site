@@ -11,6 +11,7 @@ tags:
   - essay
 git:
   filepath: 2010-05-12-sea-otters-enhydra-lutris
+post_type: article
 ---
 
 Sea otters, the smallest marine mammal, are listed in Appendix I of CITES as endangered. They inhabit the Northern coastal areas of the Pacific Ocean along near-shore rock or soft-bottom coastal waters and in dense kelp forests. Sea otters live 15-20 years and are an average 4.5 feet long, though some grow up to 6 feet in length. Males weigh 70-90 pounds and females 40-60 pounds. Their marine environment required them to evolve certain skeletal, dental, and pelage adaptations.

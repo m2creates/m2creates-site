@@ -22,13 +22,24 @@ const pages = {
 	create: true,
 	slug: '{{fields.slug}}',
 	preview_path: '{{fields.slug}}',
-	sortableFields: ['title', 'datePublish'],
+	summary: '{{title}}',
+	sortable_fields: {
+		fields: [
+			'commit_date',
+			'datePublish',
+			'title',
+		],
+		default: {
+			field: 'commit_date',
+			direction: 'Descending',
+		},
+	},
 	view_filters: [
 		{
 			label: 'Drafts',
 			field: 'draft',
 			pattern: 'true',
-		}
+		},
 	],
 	fields: [
 		title,

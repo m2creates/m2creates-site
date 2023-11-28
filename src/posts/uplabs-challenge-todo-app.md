@@ -32,6 +32,7 @@ uses:
   - HTML5
   - CSS3
   - VueJS
+post_type: article
 ---
 
 {% UpLabs { title: "To-Do App Challenge", prompt: "Design a friendly and engaging To-Do app for mobile or web.", challengers: '293', results: 'https://www.uplabs.com/challenges/todo-app-challenge/results', submission: 'https://www.uplabs.com/posts/list-it', placement: 'Honorable mention' } %}

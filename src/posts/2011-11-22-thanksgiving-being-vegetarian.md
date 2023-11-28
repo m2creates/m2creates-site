@@ -4,11 +4,16 @@ title: >-
 slug: thanksgiving-being-vegetarian
 datePublish: 2011-11-22
 legacyUrl: http://www.melaniemagdalena.com/blog-my-archaeolife/thanksgiving-being-vegetarian
+post_type: article
 ---
 
 As a Thanksgiving tribute, who traditionally has turkey for dinner? And at a broader scope, how about meat on a daily to semi-daily basis? Turkey is a genetically enhanced poultry with antibiotics and estrogenic hormones that in the long run, not only turkey but other genetically modified animal products as well, pollute the soil and increase the risk of breast and reproductive cancers (Weil). Wanda Embar explains the commercial turkey as, “Altered to grow twice as fast, become twice as large, have white feathers and abnormally large breasts. All these changes have caused serious health problems like collapsed lungs, swollen joints, crippled feet and heart attacks. Commercial turkeys are also unable to reproduce naturally and are artificially inseminated instead.” Debeaked turkey with their toes trimmed are raised in an overcrowded shed in a warehouse and slaughtered 14-21 weeks old, depending on how enhanced they are. Maintaining an animal product free diet not only increases your chances of being healthier, but also decreases the impact of animal agriculture on our earth, air, and water supplies with a substantial knock-out of important global warming factors.  
   
-Glancing at the familiar food pyramid (Figure 1) a balanced diet consists of 6-11 servings of grains, 3-5 servings of vegetables, 2-4 servings of fruit, 2-3 servings of protein, 2-3 servings of dairy, and sparing intake of fats, oils and sweets. Switching to a vegetarian pyramid (Figure 2) there are 6-11 servings of grains, 3-5 servings vegetables, 2-4 of fruit, 2-3 servings of dairy/fortified foods, 2-3 servings of protein, and sparing intake of fats, oils, and sweets. Where’s the difference? There is simply no intake of animal meats. However, other than the health risks from genetic enhancements for animal growth animal agriculture also have a damaging impact on the Earth.  
+Glancing at the familiar food pyramid a balanced diet consists of 6-11 servings of grains, 3-5 servings of vegetables, 2-4 servings of fruit, 2-3 servings of protein, 2-3 servings of dairy, and sparing intake of fats, oils and sweets.
+
+Switching to a vegetarian pyramid there are 6-11 servings of grains, 3-5 servings vegetables, 2-4 of fruit, 2-3 servings of dairy/fortified foods, 2-3 servings of protein, and sparing intake of fats, oils, and sweets.
+
+Where’s the difference? There is simply no intake of animal meats. However, other than the health risks from genetic enhancements for animal growth animal agriculture also have a damaging impact on the Earth.  
 
 Vegetarianism spurred in the early 1800s with Reverend William Cowherd and his sermon quoting _Genesis 9:3_, “And God said, every moving thing that liveth shall be meat for you: even as the green herb I have given you all things, but the flesh, with the life thereof, which is the blood thereof, shall ye not eat” (Antrobus). This sermon given to the congregation of a small chapel in Salford, Sweden was the beginning of abstinence from meat.  
   

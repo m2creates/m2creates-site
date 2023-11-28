@@ -32,6 +32,7 @@ uses:
   - HTML5
   - CSS3
   - JavaScript
+post_type: article
 ---
 
 My calculator is featured in UpLab's [Mobile calculator apps](https://www.uplabs.com/collections/mobile-calculator-apps) collection and was chosen as "Best of the Day" on 03 August 2017.

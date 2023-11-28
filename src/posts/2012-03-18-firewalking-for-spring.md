@@ -5,6 +5,7 @@ datePublish: 2012-03-18
 legacyUrl: http://www.melaniemagdalena.com/blog-my-archaeolife/firewalking-for-spring
 blocks:
   - youtube
+post_type: video
 ---
 
 Spring is upon us with the equinox only days away - it's time to discover balance in our lives. Yesterday was a fascinating day, one I would like to define as an Experimental Anthropology Day.  

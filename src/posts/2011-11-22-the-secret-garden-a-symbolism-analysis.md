@@ -3,6 +3,7 @@ title: The Secret Garden, a symbolism analysis
 slug: the-secret-garden-a-symbolism-analysis
 datePublish: 2011-11-22
 legacyUrl: http://www.melaniemagdalena.com/thoughts/the-secret-garden-a-symbolism-analysis
+post_type: article
 ---
 
 Dorothea Brooking’s _The Secret Garden_ takes place deep within Misselthwaite Manor, where the Secret Garden draws Mary Lennox and Collin Craven together to discover the healing power of nature. Mary finds herself in conflict with her subconscious – she is a sick orphan child – and with servants who she considers as lesser beings. In addition, everything at Misselthwaite Manor is locked and there are many secrets that no one will share with Mary. Brooking’s _The Secret Garden_ implies that often children are forced to mature at a young age. Brooking also suggests that the loss of a loved one can cause much sadness.  

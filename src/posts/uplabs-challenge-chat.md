@@ -29,6 +29,7 @@ tags:
   - material design
 uses:
   - Adobe Illustrator
+post_type: article
 ---
 
 {% UpLabs { title: "Chat Interaction Challenge", prompt: "Design a friendly and engaging Chat Interaction UI for mobile or web.", challengers: '240', results: 'https://www.uplabs.com/challenges/chat-interaction-challenge/results', submission: 'https://www.uplabs.com/posts/material-chat-for-android', placement: 'Honorable mention' } %}

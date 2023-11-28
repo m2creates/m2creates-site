@@ -9,6 +9,7 @@ catalog:
   course: topics-archaelogical-field-methods
 tags:
   - book-summary
+post_type: article
 ---
 
 The following is a summarized version of Stewart's _Archaeology: Basic Field Methods_ prepared for my Academic Cooperative course at Austin Community College and first field session in Belize (Summer 2011). For convenience, here is the  book citation:  

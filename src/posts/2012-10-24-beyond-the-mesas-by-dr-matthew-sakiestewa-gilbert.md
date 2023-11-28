@@ -4,6 +4,7 @@ title: >-
 slug: beyond-the-mesas-matthew-sakiestewa-gilbert
 datePublish: 2012-10-24
 legacyUrl: http://www.melaniemagdalena.com/blog-my-archaeolife/-beyond-the-mesas-by-dr-matthew-sakiestewa-gilbert
+post_type: article
 ---
 
 As a young child, Dr. Gilbert lived in Albuquerque. His father, a PhD in Education, “academized” him starting at a young age. He job-shadowed his father in college and decided he wanted to teach when he grew up. In 2006, Dr. Gilbert was finishing up his dissertation on Hopi boarding schools at the University of California-Riverside. (He had enrolled to study European Medieval history, originally, to become a German historian.)  

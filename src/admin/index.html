@@ -3,61 +3,29 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Netlify CMS</title>
+    <title>Content Management</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <!-- Authentication: Netlify Identity -->
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/@staticcms/app@^3.0.0/dist/main.css" />
     <style>
-    :root {
-      --cms-primary: rgb(58, 105, 199);
-      --cms-gray: rgb(223, 223, 227);
-      --cms-text-dark: rgb(49, 61, 62);
-    }
-    /* Modify sidebar: from https://github.com/netlify/netlify-cms/issues/1040#issuecomment-427533565 */
-    aside {
-      padding: 6px 0 12px !important;
-    }
-    aside h2 {
-      margin-top: 12px !important;
-      font-size: 22px !important;
-      line-height: 37px !important;
-    }
-    aside a span {
-      display: inline-flex !important;
-      justify-content: center;
-      align-items: center;
-    }
-    aside a span svg {
-      display: none !important;
-    }
-    aside a span::before {
-      font-family: "Font Awesome 5 Free";
-      font-size: 1rem;
-      font-weight: 900;
-    }
-    /* Sidebar Icons */
-    aside a[href="#/collections/posts"] span::before {
-      content: "\f304";
-    }
-    aside a[href="#/collections/pages"] span::before {
-      content: "\f15c";
-    }
-    aside a[href="#/collections/settings"] span::before {
-      content: "\f085";
-    }
+      .CMS_Button_root { text-transform: uppercase; font-size: 0.75rem; }
+      .CMS_WidgetList_field-wrapper, .CMS_Field_no-padding, .CMS_WidgetObject_root { padding-bottom: 0.75rem; }
+      .CMS_WidgetFileImage_content, .CMS_WidgetFileImage_empty-content { padding-bottom: 0; }
+      .CMS_WidgetObject_expand { align-items: center; }
+      .CMS_TextArea_input { font-weight: 400; }
+      [data-testid="label"] { text-transform: uppercase; }
     </style>
   </head>
   <body>
     <script>
       window.CMS_MANUAL_INIT = true;
     </script>
-    <script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js" defer></script>
-    <script type="module" src="/admin/previews/index.js" defer></script>
+    <script src="https://unpkg.com/@staticcms/app@^3.0.0/dist/static-cms-app.js"></script>
     <script type="module">
       // Config
-      const { CMS, initCMS: init } = window;
       import config from '/admin/config.js';
-      init({config});
+      window.CMS.init({config});
     </script>
     <script>
       if (window.netlifyIdentity) {

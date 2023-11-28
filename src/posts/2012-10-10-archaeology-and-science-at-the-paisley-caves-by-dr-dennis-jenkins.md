@@ -4,6 +4,7 @@ title: >-
 slug: archaeology-and-science-at-the-paisley-caves-dennis-jenkins
 datePublish: 2012-10-10
 legacyUrl: http://www.melaniemagdalena.com/blog-my-archaeolife/-archaeology-and-science-at-the-paisley-caves-by-dr-dennis-jenkins-university-of-oregon
+post_type: article
 ---
 
 Dr. Dennis Jenkins works at the Paisley Caves in Oregon, the location of the oldest human remains in the Western Hemisphere (12,000-14,600 cal. BP). His dates come from human corpolites buried beneath rockfalls and multiple sediment layers. DNA samples say these coprolites are Siberian. From the artifacts recovered, not one shows evidence of Clovis technology. Hand stones recovered show evidence that these possible first Americans were a broad range of foragers and not primarily meat eaters.  

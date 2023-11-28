@@ -31,6 +31,7 @@ tags:
   - material design
 uses:
   - Adobe Illustrator
+post_type: article
 ---
 
 {% UpLabs { title: "The MaterialUp Challenge", prompt: "Let's rethink the on-boarding experience on Android!", challengers: '273', results: 'https://www.uplabs.com/challenges/the-materialup-challenge/results', submission: 'https://www.uplabs.com/posts/material-github-for-android', placement: 'Runner Up' } %}

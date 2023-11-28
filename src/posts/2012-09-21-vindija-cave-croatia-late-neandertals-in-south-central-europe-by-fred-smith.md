@@ -4,6 +4,7 @@ title: >-
 slug: vindija-cave-croatia-late-neandertals-in-south-central-europe-fred-smith
 datePublish: 2012-09-21
 legacyUrl: http://www.melaniemagdalena.com/blog-my-archaeolife/-vindija-cave-croatia-late-neandertals-in-south-central-europe-by-fred-smith-loyola-university-a-specialized-seminar
+post_type: article
 ---
 
 The second part of Dr. Fred Smith’s talk was a specialized seminar about his work in Vindija Cave. During this seminar, Dr. Smith used his morphological research and studies of Neandertal morphological diversity to support his Assimilation Model. Recently, the academic world decided that Neandertals went extinct by hybridization (also known as assimilation…). This seminar was indeed specialized: I learned I know practically nothing about human anatomy (and even less about Neandertal anatomy) but managed to understand bits and pieces.

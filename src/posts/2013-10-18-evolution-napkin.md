@@ -3,6 +3,7 @@ title: Evolution Of The Napkin
 slug: evolution-of-the-napkin
 datePublish: 2013-10-18
 legacyUrl: http://www.melaniemagdalena.com/blog-my-archaeolife/evolution-of-the-napkin
+post_type: article
 ---
 
 Who hasn't used a napkin?  

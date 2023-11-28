@@ -31,6 +31,7 @@ uses:
   - HTML5
   - CSS3
   - JavaScript
+post_type: article
 ---
 
 {% UpLabs { title: 'Weather App Challenge', prompt: 'Rethink a Weather App dashboard for iOS, Android, VR or Web.', challengers: '373', results: 'https://www.uplabs.com/challenges/weather-app-challenge/results', submission: 'https://www.uplabs.com/posts/what-s-the-weather-right-now/', placement: 'Honorable mention' } %}

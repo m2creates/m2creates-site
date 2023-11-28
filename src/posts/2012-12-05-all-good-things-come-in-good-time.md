@@ -3,6 +3,7 @@ title: All Good Things Come in Good Time
 slug: all-good-things-come-in-good-time
 datePublish: 2012-12-05
 legacyUrl: http://www.melaniemagdalena.com/blog-my-archaeolife/all-good-things-come-in-good-time
+post_type: article
 ---
 
 **_The following is my nominated essay by the Center For A Public Anthropology which led to my [award in Public Anthropology](https://drive.google.com/file/d/1u6e6c8Lwon9mzuPHBT6ekGvoRjSHlLII/view) in 2012. This letter was sent to Congress to address legislation changes for the Belmont Report and their effects on the field of anthropology and anthropologists. Only 20 students were selected from the University of New Mexico._**
