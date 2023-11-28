@@ -1,7 +1,6 @@
 // Fields
 import blocks from '../partials/fields/blocks.js';
 import body from '../partials/fields/body.js';
-import category from '../partials/fields/category.js';
 import dateMod from '../partials/fields/dateMod.js';
 import datePublish from '../partials/fields/datePublish.js';
 import draft from '../partials/fields/draft.js';

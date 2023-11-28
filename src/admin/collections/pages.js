@@ -1,10 +1,8 @@
 // Fields
 import body from '../partials/fields/body.js';
-import category from '../partials/fields/category.js';
 import dateMod from '../partials/fields/dateMod.js';
 import datePublish from '../partials/fields/datePublish.js';
 import draft from '../partials/fields/draft.js';
-import postStyle from '../partials/fields/postStyle.js';
 import slug from '../partials/fields/slug.js';
 import tags from '../partials/fields/tags.js';
 import title from '../partials/fields/title.js';
@@ -24,11 +22,7 @@ const pages = {
 	preview_path: '{{fields.slug}}',
 	summary: '{{title}}',
 	sortable_fields: {
-		fields: [
-			'commit_date',
-			'datePublish',
-			'title',
-		],
+		fields: ['commit_date', 'datePublish', 'title'],
 		default: {
 			field: 'commit_date',
 			direction: 'Descending',
@@ -47,13 +41,16 @@ const pages = {
 		datePublish,
 		dateMod,
 		draft,
-		postStyle,
 		image,
-		category,
 		tags,
 		body,
 		seo,
 	],
+	editor: {
+		preview: true,
+		frame: true,
+		size: 'half',
+	},
 };
 
 export default pages;
