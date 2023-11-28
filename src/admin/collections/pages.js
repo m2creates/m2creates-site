@@ -22,7 +22,11 @@ const pages = {
 	preview_path: '{{fields.slug}}',
 	summary: '{{title}}',
 	sortable_fields: {
-		fields: ['commit_date', 'datePublish', 'title'],
+		fields: [
+			'commit_date',
+			'datePublish',
+			'title',
+		],
 		default: {
 			field: 'commit_date',
 			direction: 'Descending',
