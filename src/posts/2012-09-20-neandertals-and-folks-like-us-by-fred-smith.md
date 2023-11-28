@@ -4,6 +4,7 @@ title: >-
 slug: neandertals-and-folks-like-us-fred-smith
 datePublish: 2012-09-20
 legacyUrl: http://www.melaniemagdalena.com/blog-my-archaeolife/-neandertals-and-folks-like-us-by-fred-smith-loyola-university
+post_type: article
 ---
 
 The _Journal of Anthropological Research_ invited Dr. Fred Smith, expert in Neandertal biology, to UNM to discuss his thoughts and reasoning about Neandertals and their relation to modern humans. When I studied Neandertals in physical anthropology two years ago, I learned that they were short, stalky proto-humans incapable of speech. A few months earlier, the Neandertal Genome was completed and the world found out that 1-4% of our modern DNA came from Neandertals.

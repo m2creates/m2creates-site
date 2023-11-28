@@ -25,6 +25,7 @@ tags:
   - challenge
 uses:
   - figma
+post_type: article
 ---
 
 **The challenge:** Ship something for [Ship Saturday](https://shipstreams.com/events/ship-saturday) by [Shipstreams](https://shipstreams.com/)!

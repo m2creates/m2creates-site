@@ -4,6 +4,7 @@ title: >-
 slug: modeling-agricultural-potential-chaco-core-during-bonito-phase-predictive-geospatial-approach-wetherbee-bryan-dorshow
 datePublish: 2012-10-18
 legacyUrl: http://www.melaniemagdalena.com/blog-my-archaeolife/-modeling-agricultural-potential-in-the-chaco-core-during-the-bonito-phase-a-predictive-geospatial-approach-by-wetherbee-bryan-dorshow-university-of-new-mexico
+post_type: article
 ---
 
 Geospatial modeling of ancient landscapes has the potential to assist archaeologists in the predictive modeling realm. This predictive scientific research builds a series of layers based on different criteria of a landscape. A composite map shows the good areas and bad areas for whatever the archaeologist is searching for.  

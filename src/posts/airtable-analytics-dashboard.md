@@ -21,6 +21,7 @@ seo:
     alt: Analytics overview in Airtable Hub
 tags:
   - analytics
+  - dashboard
 uses:
   - airtable
 ---

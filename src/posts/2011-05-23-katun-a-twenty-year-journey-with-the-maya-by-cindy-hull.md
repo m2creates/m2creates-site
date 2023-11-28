@@ -9,6 +9,7 @@ catalog:
   course: academic-cooperative-ethnohistory
 tags:
   - book-summary
+post_type: article
 ---
 
 The following is a summarized version of Hull's _Katun: A Twenty-Year Journey with the Maya_ for use as a reference in my Belizean Ethnoarchaeology studies. For your convenience, here is the formal book citation:  

@@ -4,6 +4,7 @@ title: >-
 slug: quen-santo-revisited-james-brady
 datePublish: 2012-09-17
 legacyUrl: http://www.melaniemagdalena.com/blog-my-archaeolife/-an-admiring-look-at-19th-century-scholarship-in-the-21st-century-quen-santo-revisited-by-james-brady
+post_type: article
 ---
 
 In Santa Fe, New Mexico, I had the unique opportunity to listen to James Brady discuss his research in Quen Santo (Huehuetenango, Guatemala). Interestingly enough, I learned that Eduard Seler was responsible for the original research of the cave system. With the technology Seler had available, he did an excellent job at documenting the area even if his worldview skewed his thoughts away from an accurate interpretation. I did not know that during the time of the original research Europeans generally interpreted cave sites as “primitive” and associated them with “Stone Age people.”

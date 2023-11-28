@@ -24,6 +24,7 @@ category:
   - podcast
 uses:
   - airtable
+post_type: podcast
 ---
 
 > Welcome to BuiltOnAir, a podcast and video series about all things Airtable. Each episode, we talk with someone active in the Airtable community to discuss their experiences and showcase an interesting way they’ve used Airtable in their work.<br><br>In this episode, I speak with Melanie Magdalena: scientist, creator, web-designer, developer, and self-proclaimed unicorn. Melanie works with nonprofits and entrepreneurs to simplify their workflows using no code solutions. After kicking off her career in archaeology, life took her in a different direction and she started using her technological knowledge to build platforms to help her day-to-day work life.<br><br>In today’s episode, Melanie showcases a base she created to calculate the scores of student assessments; and details an extremely creative way to get the data she needs in the right spots.

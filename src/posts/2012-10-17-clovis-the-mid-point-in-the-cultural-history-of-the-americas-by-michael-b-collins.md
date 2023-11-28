@@ -4,6 +4,7 @@ title: >-
 slug: clovis-mid-point-in-cultural-history-americas-michael-collins
 datePublish: 2012-10-17
 legacyUrl: http://www.melaniemagdalena.com/blog-my-archaeolife/-clovis-the-mid-point-in-the-cultural-history-of-the-americas-by-michael-b-collins-texas-state-university
+post_type: article
 ---
 
 According to Michael B Collins, ancient archaeological sites can be divided into seven groups based on technological types present in the archaeological record.  

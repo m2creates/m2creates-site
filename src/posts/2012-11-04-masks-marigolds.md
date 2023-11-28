@@ -6,6 +6,7 @@ datePublish: 2012-11-04
 legacyUrl: http://www.melaniemagdalena.com/blog-my-archaeolife/masks-marigolds
 blocks:
   - youtube
+post_type: video
 ---
 
 El Dia de los Muertos (or the Day of the Dead in English)... no the dead do not rise from their graves nor do zombies roam the streets. This tradition began long ago in Mexico as a day dedicated to honoring those who have passed on from this world. It is a day for happiness and celebration while everyone remembers their loved ones for who they were.  

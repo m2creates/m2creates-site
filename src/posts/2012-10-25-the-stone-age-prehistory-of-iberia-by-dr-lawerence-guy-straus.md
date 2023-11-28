@@ -4,6 +4,7 @@ title: >-
 slug: the-stone-age-prehistory-of-iberia-lawerence-guy-straus
 datePublish: 2012-10-25
 legacyUrl: http://www.melaniemagdalena.com/blog-my-archaeolife/-the-stone-age-prehistory-of-iberia-by-dr-lawerence-guy-straus-unm-universidad-de-cantabria
+post_type: article
 ---
 
 There are currently 150 years of Iberian Stone Age Research. It began in the 1860s at Portuguese cave sites through federally funded systematic archaeological research. Research came to a screeching halt when the Spanish Civil War began.

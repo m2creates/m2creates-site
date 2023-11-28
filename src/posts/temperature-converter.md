@@ -24,6 +24,7 @@ uses:
   - HTML5
   - CSS3
   - JavaScript
+post_type: article
 ---
 
 I coded a little web app that is the result of trying out Traversy Media's [Weight Converter](https://www.youtube.com/watch?v=7l-ZAuU8TXc&lc=Ugh2dPfb471R8ngCoAEC) homework assignment. I added additional flair by following his video on [Animated Icons](https://www.youtube.com/watch?v=XP-MRCUPZao).

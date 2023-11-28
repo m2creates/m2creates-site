@@ -4,6 +4,7 @@ title: >-
 slug: how-cooking-made-us-human-richard-wrangham
 datePublish: 2012-11-20
 legacyUrl: http://www.melaniemagdalena.com/blog-my-archaeolife/-how-cooking-made-us-human-by-dr-richard-wrangham
+post_type: article
 ---
 
 Cooking is a human universal and most societies cook dinner. Levi-Strauss (1969) said cooking is biologically unimportant (it is conventional wisdom and symbolic). Darwin (1871) said the discovery of fire was probably the greatest ever made (after language) and dates from before the dawn of history.

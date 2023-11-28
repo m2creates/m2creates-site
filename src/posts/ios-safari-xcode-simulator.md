@@ -20,6 +20,7 @@ tags:
   - debugging
 uses:
   - Xcode Simulator
+post_type: article
 ---
 
 If you're like me and don’t have an iOS device, you can use Xcode Simulator to view and debug mobile Safari from your Mac.

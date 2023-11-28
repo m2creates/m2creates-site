@@ -3,6 +3,7 @@ title: Banned Gaza Children’s Art Exhibit Comes to UNM
 slug: banned-gaza-childrens-art-exhibit-comes-to-unm
 datePublish: 2012-09-14
 legacyUrl: http://www.melaniemagdalena.com/blog-my-archaeolife/-banned-gaza-childrens-art-exhibit-comes-to-unm
+post_type: article
 ---
 
 The children of Gaza are living in a war zone. The exhibit at UNM was a collection of drawings by children for the age of 7 to 14. These children experienced “Operation Cast Lead” — the 23 day bombardment and invasion of Gaza during December 2008 and January 2009. The drawings come from six Gaza communities, and each one depicts the trauma of living in the war zone, the death, and violence witnessed by children and how they interpreted the slaughter of their friends, families, and other citizens of Gaza.

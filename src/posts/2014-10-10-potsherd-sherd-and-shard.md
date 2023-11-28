@@ -3,6 +3,7 @@ title: Potsherd, Sherd, and Shard
 slug: potsherd-sherd-and-shard
 datePublish: 2014-10-10
 legacyUrl: http://www.melaniemagdalena.com/blog-my-archaeolife/potsherd-sherd-and-shard
+post_type: article
 ---
 
 The word _sherd_ comes from “potsherd,” a piece of a broken brittle substance of ceramic nature, most typically earthen pottery in an archaeological context._Shard_ is used to refer to glass-like fragments, such as obsidian, porcelain, glass, or other glassy substances, non-exclusive to an archaeological context. Rather than sherd and shard being interchangeable, each refers to a distinct type of broken, brittle substance. Additionally, sherd most commonly refers to Native American pottery, whereas shard is used in a European context.

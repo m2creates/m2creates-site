@@ -10,6 +10,7 @@ catalog:
 tags:
   - research
   - essay
+post_type: article
 ---
 
 Elaine Morgan defends  the idea that man evolved from aquatic apes. She reintroduces Alister Hardy’s hypothesis that humans were more aquatic in the past. From her video on TED begins with a rejection of the Savannah Hypothesis regarding fossilized pollen as proof humans were wandering around on two legs before the savannah ecosystem came into existence. Before this clarification bipedalty was strictly savannah behavior. The Aquatic Ape Hypothesis states our hairless nature evolved from our ancestors that lived in water. The fat layer we have is inside the skin and would be our form of blubber compared to other aquatic mammals, excluding the sea otter. Our streamlined bodies are ideal for water and only aquatic mammals and humans have the ability to vocalize due to our conscious control of breath.

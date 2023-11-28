@@ -4,6 +4,7 @@ title: >-
 slug: sightseeing-the-end-of-the-world-or-everything-you-are-dying-to-ask-about-2012-quetzil-castaeda
 datePublish: 2012-10-19
 legacyUrl: http://www.melaniemagdalena.com/blog-my-archaeolife/-sightseeing-the-end-of-the-world-or-everything-you-are-dying-to-ask-about-2012-by-dr-quetzil-castaeda-indiana-university
+post_type: article
 ---
 
 This lecture was focused on three goals: the difference between Maya and Mayan, the mystery of the Maya, and what 2012 phenomena (or meme) is truly all about.  

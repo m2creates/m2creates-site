@@ -4,6 +4,7 @@ title: >-
 slug: nmac-2012-chuska-chaco-puebloan-relationships-san-juan-basin
 datePublish: 2012-11-10
 legacyUrl: http://www.melaniemagdalena.com/blog-my-archaeolife/-nmac-2012-fall-conference-chuska-and-chaco-puebloan-relationships-across-the-san-juan-basin
+post_type: article
 ---
 
 **1) “A New Look at the Old Data: Ceramic Trends in the Chuska Valley” by Lori Stephens Reed**
