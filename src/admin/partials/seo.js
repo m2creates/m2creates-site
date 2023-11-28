@@ -3,7 +3,7 @@ const seo = {
   name: 'seo',
   widget: 'object',
   collapsed: true,
-  summary: 'Customize how this shows up on social media (e.g. Twitter) and search results (e.g. Google).',
+  hint: 'Customize how this shows up on social media (e.g. Twitter) and search results (e.g. Google).',
   fields: [
     {
       label: 'SEO Title',
