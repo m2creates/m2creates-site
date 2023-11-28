@@ -14,7 +14,7 @@ const PostPreviewCard = ({ widgetsFor, entry }) => {
 		},
 		h(
 			'div',
-			{ style: { flex: '1' } },
+			{ style: { flex: '1', maxHeight: '186px' } },
 			h('img', {
 				src: widgetsFor('image').data.url,
 				style: {
@@ -73,7 +73,7 @@ const PostPreviewCard = ({ widgetsFor, entry }) => {
 const PostDraftFieldPreview = ({ value }) => {
 	return h('span', {}, value === true ? 'Draft' : 'Published');
 };
-// USES: AIRTABLE / 2 MIN READ / PUBLISHED: 07 AUG 2021
+
 const PostPreview = ({ entry, widgetFor, widgetsFor }) => {
 	return h(
 		'div',
@@ -110,5 +110,5 @@ const PostPreview = ({ entry, widgetFor, widgetsFor }) => {
 export {
 	PostPreviewCard,
 	PostDraftFieldPreview,
-  PostPreview
+	PostPreview,
 };

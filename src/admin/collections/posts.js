@@ -1,4 +1,5 @@
 // Fields
+import blocks from '../partials/fields/blocks.js';
 import body from '../partials/fields/body.js';
 import category from '../partials/fields/category.js';
 import dateMod from '../partials/fields/dateMod.js';
@@ -54,7 +55,7 @@ const posts = {
 		},
 	],
 	summary: '{{title}}',
-	summary_fields: ['title', 'datePublish', 'draft'],
+	summary_fields: ['datePublish', 'title', 'draft'],
 	fields: [
 		title,
 		slug,
@@ -63,11 +64,11 @@ const posts = {
 		draft,
 		postStyle,
 		image,
-		category,
 		tags,
 		uses,
 		tldr,
 		body,
+    blocks,
 		seo,
 	],
 	editor: {
