@@ -20,6 +20,12 @@ CMS.registerPreviewCard('posts', PostPreviewCard, () => 300);
 CMS.registerFieldPreview('posts', 'draft', PostDraftFieldPreview);
 CMS.registerPreviewTemplate('posts', PostPreview);
 
+import {
+	PagePreview,
+} from './previews/page.js';
+
+CMS.registerPreviewTemplate('pages', PagePreview);
+
 // EXPORT
 export default {
 	backend: {
