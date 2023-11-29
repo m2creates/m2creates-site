@@ -19,7 +19,6 @@
     "watch:css": "cross-env TAILWIND_ENV=development postcss src/assets/styles/tailwind.css --o dist/assets/tailwind.css --watch",
     "watch:dev": "cross-env ELEVENTY_ENV=development eleventy --serve",
     "start": "npm-run-all --parallel watch:css watch:dev admin",
-    "start:sb": "start-storybook -p 6006 -s src/assets --quiet",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
