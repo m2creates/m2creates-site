@@ -8,7 +8,7 @@
   <nav>
     <ul class="flex flex-wrap gap-x-4">
       {% for item in navigation.header %}
-      <li><a href="{{ item.href }}" class="p-2" {% if currentUrl === item.href %}aria-current="page"{% endif %}>{{ item.text }}</a></li>
+      <li class="py-2"><a href="{{ item.href }}" {% if currentUrl === item.href %}aria-current="page"{% endif %}>{{ item.text }}</a></li>
       {% endfor %}
     </ul>
   </nav>

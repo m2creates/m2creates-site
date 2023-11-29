@@ -2,10 +2,10 @@
 
   {% include "components/h-card.njk" %}
 
-  <div class="flex flex-col-reverse md:flex-row flex-wrap items-center justify-between">
+  <div class="flex flex-col-reverse flex-wrap items-center justify-between md:flex-row">
     <p>&#169; 2011-2023 m2creates &#8226; Melanie E Magdalena</p>
     <nav>
-      <ul class="flex gap-4">
+      <ul class="flex flex-wrap gap-x-4">
         {% for item in navigation.footer %}
         <li class="py-2"><a href="{{ item.href }}">{{ item.text }}</a></li>
         {% endfor %}
