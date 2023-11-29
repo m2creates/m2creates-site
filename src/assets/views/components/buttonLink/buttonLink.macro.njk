@@ -1,7 +1,3 @@
 {% macro ButtonLink(label='My button', href='', padding='p-4', fontSize='text-base') %}
 	<button href="{{ href }}" class="{{ padding }} {{ fontSize }}">{{ label }}</a>
 {% endmacro %}
-
-{% if isStorybook %}
-	{{ ButtonLink(label, href, padding, fontSize) }}
-{% endif %}
