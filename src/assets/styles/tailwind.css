@@ -67,7 +67,7 @@
     @apply p-2;
   }
 
-  .js-color-toggle:hover {
+  .js-color-toggle:hover, .url:hover {
     background-color: var(--color-secondary, #000);
     border-radius: 50%;
     color: #fff;
@@ -142,6 +142,7 @@
   header nav a:hover,
   footer nav a:hover,
   [aria-current="page"]:not([class~="border-none"]) {
+    color: var(--color-secondary, #000);
     border-bottom: 4px solid var(--color-secondary, #000);
   }
 }
