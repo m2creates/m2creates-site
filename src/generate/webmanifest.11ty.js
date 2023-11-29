@@ -16,6 +16,7 @@ class WebAppManifest {
 					src: data.site.brand.favicon,
 					type: 'image/png',
 					sizes: '512x512',
+					purpose: 'any maskable',
 				},
 			],
 			theme_color: data.site.brand.colors.pwa,
