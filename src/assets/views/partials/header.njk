@@ -1,14 +1,14 @@
 {% set currentUrl = page.url %}
-<header class="flex flex-wrap items-center justify-between w-full pt-8 mx-auto">
+<header class="flex flex-wrap items-center justify-between w-full gap-2 pt-8 mx-auto">
   {# Branding #}
   <a href="/" class="flex items-center flex-shrink-0 gap-2 font-semibold border-none underline-none"{% if currentUrl === '/' %}aria-current="page"{% endif %}><img src="{{ site.brand.logo }}" alt="Logo" class="w-8 h-8" />m2creates</a>
 
-  <div class="flex flex-wrap items-center gap-x-4">
+  <div class="flex flex-wrap items-center gap-4">
   {# Nav Links #}
   <nav>
     <ul class="flex flex-wrap gap-x-4">
       {% for item in navigation.header %}
-      <li><a href="{{ item.href }}" class="p-2" {% if currentUrl === item.href %}aria-current="page"{% endif %}>{{ item.text }}</a></li>
+      <li class="py-2"><a href="{{ item.href }}" {% if currentUrl === item.href %}aria-current="page"{% endif %}>{{ item.text }}</a></li>
       {% endfor %}
     </ul>
   </nav>
