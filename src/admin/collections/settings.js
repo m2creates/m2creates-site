@@ -10,7 +10,7 @@ const settings = {
 	},
 	files: [
 		{
-			label: 'Site, Author, Social, Branding, SEO',
+			label: 'Site Settings (Global)',
 			name: 'site',
 			file: 'src/data/site.json',
 			preview: false,
@@ -32,6 +32,7 @@ const settings = {
 					label: 'Meta',
 					name: 'meta',
 					widget: 'object',
+					collapsed: true,
 					hint: 'Define your site meta information.',
 					fields: [
 						{
@@ -64,6 +65,8 @@ const settings = {
 					label: 'Author',
 					name: 'author',
 					widget: 'object',
+					collapsed: true,
+					hint: 'All about you!',
 					fields: [
 						{
 							label: 'Name',
@@ -93,8 +96,10 @@ const settings = {
 				},
 				{
 					label: 'Social',
+					label_singular: 'Network',
 					name: 'social',
 					widget: 'list',
+					collapsed: true,
 					hint: 'Your social networks across the web.',
 					fields: [
 						{
@@ -115,18 +120,13 @@ const settings = {
 							widget: 'string',
 							hint: 'Link to your profile.',
 						},
-						{
-							label: 'Order',
-							name: 'order',
-							widget: 'number',
-							hint: 'Organize your links by priority, where 1 places it first in the list.',
-						},
 					],
 				},
 				{
 					label: 'Email',
 					name: 'email',
 					widget: 'object',
+					collapsed: true,
 					hint: 'Contact information for people to reach you in general or via your privacy policy.',
 					fields: [
 						{
@@ -148,7 +148,8 @@ const settings = {
 					label: 'Brand',
 					name: 'brand',
 					widget: 'object',
-					hint: 'Contact information for people to reach you in general or via your privacy policy.',
+					collapsed: true,
+					hint: 'Add your graphics and color.',
 					fields: [
 						{
 							label: 'Logo',
@@ -194,26 +195,30 @@ const settings = {
 					label: 'SEO',
 					name: 'seo',
 					widget: 'object',
+					collapsed: true,
 					hint: 'Customize your default SEO settings for robots.',
 					fields: [
 						{
-							label: 'Featured Image',
-							name: 'image_card',
-							widget: 'image',
-							media_library: {
-								config: {
-									multiple: false,
+							label: 'Share Image',
+							name: 'image',
+							widget: 'object',
+							collapsed: true,
+							hint: 'Add a hero image to your post/page.',
+							fields: [
+								{
+									label: 'Image',
+									name: 'url',
+									widget: 'image',
+									required: false,
 								},
-							},
-							required: false,
-							hint: 'A default image for sharing on Twitter/Facebook.',
-						},
-						{
-							label: 'Featured Image Alt Text',
-							name: 'image_card_alt',
-							widget: 'string',
-							required: false,
-							hint: "Describe the site image for those who can't see it.",
+								{
+									label: 'Image Alt',
+									name: 'alt',
+									widget: 'string',
+									hint: 'Describe this image for the visually impaired. How would you describe it with your eyes closed?',
+									required: false,
+								},
+							],
 						},
 						{
 							label: 'Google Verification',
@@ -259,6 +264,7 @@ const settings = {
 					label: 'Robots',
 					name: 'robots',
 					widget: 'object',
+					collapsed: true,
 					hint: 'Control how robots interact with your content. The defaults are privacy focused.',
 					fields: [
 						{
