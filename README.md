@@ -1,43 +1,32 @@
 # m2creates gets JAMstacked
 
-My personal website powered by a NEAT stack:
+My personal website powered by:
 
-- [**N**etlify CMS](https://netlifycms.org/docs) with:
-  - [manual initialization](https://www.netlifycms.org/docs/beta-features/#manual-initialization)
-  - custom previews
-- [**E**leventy](https://11ty.dev/docs) (aka 11ty) with:
-  - plugins TBD
-- [**A**lpineJS]([https://](https://alpinejs.dev/start-here)) for sprinkles of JS-powered interactivity
-- [**T**ailwindCSS](https://tailwindcss.com/docs) for styling with:
+- [Eleventy](https://11ty.dev/docs) (aka 11ty) with:
+  - [eleventy-plugin-rss](https://www.11ty.dev/docs/plugins/rss/): a pack of plugins for generating an RSS feed (actually an Atom feed, but who’s counting) using the Nunjucks templating engine.
+  - [eleventy-plugin-reading-time](https://github.com/johanbrook/eleventy-plugin-reading-time): provides a template tag which prints the number of minutes or seconds required to read the given text.
+- [TailwindCSS](https://tailwindcss.com/docs) for styling with:
   - [postcss](https://tailwindcss.com/docs/using-with-preprocessors#using-post-css-as-your-preprocessor) for preprocessing
   - [@tailwindcss-typography](https://github.com/tailwindlabs/tailwindcss-typography) to "autostyle" markdown
   - [@tailwindcss-forms](https://github.com/tailwindlabs/tailwindcss-forms) to beautify form elements
-
-And an integrated Design System:
-
-- [Storybook (HTML)](https://storybook.js.org/docs/html/get-started/introduction) on Webpack 4 with:
-  - [simple-nunjucks-loader](https://www.npmjs.com/package/simple-nunjucks-loader) (v2.*)
+- [Static CMS](https://www.staticcms.org/docs/) with:
+  - [manual initialization](https://www.staticcms.org/docs/add-to-your-site-cdn#configuration)
+  - [custom previews](https://www.staticcms.org/docs/custom-previews)
 
 ## Structure Overview
 
 ```text
 example.com                     # → Root of your project
 |
-├── .storybook/                 # → Config: Storybook (https://storybook.js.org/docs/html/get-started/introduction)
-│   ├── main.js                 # → Register addons and configure additional webpack loaders
-│   ├── manager.js              # → Configure Storybook>Global UI
-│   ├── preview.js              # → Configure the theme and layout for Storybook>Docs preview
-│   └── theme.js                # → Style the Storybook theme (https://storybook.js.org/docs/html/configure/theming)
-|
 ├── src/                        # → Source directory
 │   │
-│   ├── admin/                  # → Netlify CMS
+│   ├── admin/                  # → Static CMS
 │   │   ├── collections/
 │   │   ├── partials/
-│   │   │   └── fields/
+│   │   │   └── fields/         # → Configure fields used in multiple places a single time (i.e. Hero Image)
 │   │   ├── previews/
 │   │   │   └── index.js        # → Register preview templates and styles
-│   │   ├── config.js           # → Manual initialization (https://www.netlifycms.org/docs/beta-features/#manual-initialization)
+│   │   ├── config.js           # → Manual initialization (https://www.staticcms.org/docs/add-to-your-site-cdn#configuration)
 │   │   └── index.html
 │   │
 │   ├── assets/                 # → Site assets
@@ -49,10 +38,10 @@ example.com                     # → Root of your project
 │   │   │
 │   │   └── views/              # → Templatize with nunjucks!
 │   │       ├── components/     # → Each component has a folder with a base njk component, njk macro, and story.
-│   │       |   └── component/
+│   │       |   └── component/  # → 3 possible flavors, depending on how/what it's used for
+│   │       |       ├── component.js
 │   │       |       ├── component.njk
-│   │       |       ├── component.macro.njk
-│   │       |       └── component.stories.js
+│   │       |       └── component.macro.njk
 │   │       |
 │   │       ├── layouts/        # → Combine partials and components (e.g. pages)
 │   │       └── partials/       # → Combine components (e.g. navigation)
@@ -75,16 +64,16 @@ example.com                     # → Root of your project
 │   │
 │   └── posts                   # → Add "posts" collection items here
 │       ├── index.md            # → Default index page
-│       ├── posts.11tydata.js   # → Calculate if posts are drafts and shouldn't be published
+│       ├── posts.11tydata.js   # → Calculate if posts are drafts and skip publishing
 │       └── posts.json          # → Shared posts attributes
 │
 ├── .eleventy.js                # → Configure: Eleventy
 ├── .gitignore                  # → Ignores all the node stuff that doesn't need to take up space on GitHub
 ├── LICENSE                     # → Project license (for example: MIT)
 ├── netlify.toml                # → Netlify deployment and plugin configuration (optional)
-├── package.json                # → Your project's metadata, dependencies, etc.
+├── package.json                # → Your project's metadata, dependencies, etc. for Node.js to do its thing
 ├── postcss.config.js           # → Configure: PostCSS
-├── README.md                   # → Your project's readme (this file you're reading!)
+├── README.md                   # → This file you're reading!
 └── tailwind.config.js          # → Configure: TailwindCSS
 ```
 
@@ -101,29 +90,17 @@ npm install
 
 ### Watching with Live Reload
 
-After installing, you can run the BrowserSync server and view the site as you edit it.
+After installing, run the site with [live reload](https://www.11ty.dev/docs/dev-server/) and a [local backend](https://www.staticcms.org/docs/local-backend).
 
 ```bash
-npm run watch:dev
-```
-
-You can also watch only CSS for changes.
-
-```bash
-npm run watch:css
-```
-
-***
-
-After installing, you can to run the storybook server and view the components you'll create.
-
-```bash
-npm run watch:sb
+npm start
 ```
 
 ### Building
 
-Build a **production** version of the site (1) with purged and minified CSS and (2) no drafts.
+Build a **production** version of the site (1) with clean CSS and (2) no drafts.
+
+This is the [build command for Netlify](https://docs.netlify.com/configure-builds/overview/#set-the-build-command).
 
 ```bash
 npm run build:prod
@@ -131,7 +108,7 @@ npm run build:prod
 
 ***
 
-Build a **staging** version of the site (1) with purged and minified CSS and (2) include all drafts. I use this for [Netlify Deploy Previews](https://docs.netlify.com/site-deploys/overview/#deploy-preview-controls) so I can proof my drafts but with lean styles.
+Build a **staging** version of the site (1) with clean CSS and (2) include all drafts. I use this for [Netlify Deploy Previews](https://docs.netlify.com/site-deploys/overview/#deploy-preview-controls) so I can proof my drafts but with lean styles.
 
 ```bash
 npm run build:staging
@@ -143,14 +120,6 @@ Build a **development** version of the site (1) without purging CSS and (2) incl
 
 ```bash
 npm run build:dev
-```
-
-***
-
-Build a **production** version of Storybook.
-
-```bash
-npm run build:sb
 ```
 
 ***
@@ -343,27 +312,34 @@ The following resources assisted in the creation of my site!
 
 ### Working with Storybook
 
+> I removed Storybook... but here's my reading list from when I got it working.
+
 - On using nunjucks as a valid component format... [This buried issue and reply](https://github.com/storybookjs/storybook/issues/5506#issuecomment-680955689) was open on my phone for about six months until I finally got around to setting up Storybook on an 11ty project. Radum, thank you for sharing your knowledge.
   - **IMPORTANT**: You have to use version `^2.*` for the loader, not `^3.*` because Storybook uses Webpack 4. I only wasted an hour of my life with errors cuz I failed to read the nice notice on the loader's README. :face_palm:
 - Nunjucks-ifying: [eleventy-starter-storybook](https://github.com/MKlblangenois/eleventy-starter-storybook) is a great proof-of-concept for how to use njk components in stories. Plus it has [a cool macro output](https://github.com/MKlblangenois/eleventy-starter-storybook/blob/master/src/_includes/components/atoms/buttons/button.njk) that is [only used in the story](https://github.com/MKlblangenois/eleventy-starter-storybook/blob/master/src/stories/Button.stories.js#L7)!
 - [tailwind-ui-alpinejs-storybook](https://github.com/ylsideas/tailwind-ui-alpinejs-storybook) has a [great visual for **how** to add Tailwind and Alpine](https://github.com/ylsideas/tailwind-ui-alpinejs-storybook/blob/master/.storybook/preview.js) to Storybook and have the thing actually work.
 
-### Edit and Preview everything with Netlify CMS
+### CMS
+
+> This site started with Netlify CMS which was renamed to Decap CMS with new maintainers. I switched to the actively developed fork Static CMS due do its MOBILE support (since v3.0.0)! I've decided to keep the running log of resources for Netlify CMS because they did help me at one point in time :)
 
 Manual initialization:
 
-- ["Consolidating Netlify CMS" by Zach Schnackel](https://zslabs.com/articles/consolidating-netlify-cms) is a quick introduction to Manual Initialization for Netlify CMS, instead of using YAML.
-- ["DRY Netlify CMS config with Manual Initialization" by Wojciech Kałużny](https://mrkaluzny.com/blog/dry-netlify-cms-config-with-manual-initialization/) has great examples for how to create and use partials for collections.
-- ["Splitting huge NetlifyCMS config.yml file to multiple JS files" by Ilias Trichopoulos](https://www.iliascreates.com/blog/post/splitting-netlifycms-config-to-multiple-js-files/) has more complex examples of partials. I haven't gone this deep yet... but it's an option.
+- [Netlify CMS] ["Consolidating Netlify CMS" by Zach Schnackel](https://zslabs.com/articles/consolidating-netlify-cms) is a quick introduction to Manual Initialization for Netlify CMS, instead of using YAML.
+- [Netlify CMS] ["DRY Netlify CMS config with Manual Initialization" by Wojciech Kałużny](https://mrkaluzny.com/blog/dry-netlify-cms-config-with-manual-initialization/) has great examples for how to create and use partials for collections.
+- [Netlify CMS] ["Splitting huge NetlifyCMS config.yml file to multiple JS files" by Ilias Trichopoulos](https://www.iliascreates.com/blog/post/splitting-netlifycms-config-to-multiple-js-files/) has more complex examples of partials. I haven't gone this deep yet... but it's an option.
 
 Customizing the preview pane:
 
-- [Official documentation](https://www.netlifycms.org/docs/customization/) by Netlify CMS
-- Inspiration, plus **how** to "query" data from the widgets so it shows up the preview: [eleventy-netlify-boilerplate](https://github.com/danurbanowicz/eleventy-netlify-boilerplate/tree/master/admin/preview-templates) and [spacebook](https://github.com/broeker/spacebook/tree/main/admin/preview-templates)
+- [Official documentation](https://www.staticcms.org/docs/custom-previews) by Static CMS - they are [functional components](https://www.staticcms.org/docs/decap-migration-guide#custom-previews) now
+- [Decap CMS] [Official documentation](https://www.decapcms.org/docs/customization/)
+- [Netlify CMS] Inspiration, plus **how** to "query" data from the widgets so it shows up the preview: [eleventy-netlify-boilerplate](https://github.com/danurbanowicz/eleventy-netlify-boilerplate/tree/master/admin/preview-templates) and [spacebook](https://github.com/broeker/spacebook/tree/main/admin/preview-templates)
 
 Make your own widgets and editor components:
 
-- [Offical documentation](https://www.netlifycms.org/docs/custom-widgets/) by Netlify CMS
-- ["Master Netlify CMS: custom editor components" by Monica Norris](https://www.neotericdesign.com/articles/editor-components-with-netlify-cms/) explains how to make a custom Editor Component for video (Hugo-focused).
-- ["Creating Custom Netlify Editor Components" by Lukas Murdock](https://lukasmurdock.com/custom-netlify-editor-component/) is an example of how to make a blockquote Editor Component.
-- ["Styling custom Netlify CMS widgets is confusing" by Dave Meyer](https://todayilearned.io/til/styling-netlify-cms-widgets-is-confusing) expands on the official documentation to explain how to load stylesheets explictly into widgets and preview components.
+- [Official documentation](https://www.staticcms.org/docs/custom-widgets) by Static CMS - they are [functional components](https://www.staticcms.org/docs/decap-migration-guide#custom-widgets) now
+- [Official documentation: Editor Shortcodes with Preview](https://www.staticcms.org/docs/widget-markdown#shortcodes) by Static CMS 
+- [Decap CMS] [Offical documentation](https://www.decapcms.org/docs/custom-widgets/)
+- [Netlify CMS] ["Master Netlify CMS: custom editor components" by Monica Norris](https://www.neotericdesign.com/articles/editor-components-with-netlify-cms/) explains how to make a custom Editor Component for video (Hugo-focused).
+- [Netlify CMS] ["Creating Custom Netlify Editor Components" by Lukas Murdock](https://lukasmurdock.com/custom-netlify-editor-component/) is an example of how to make a blockquote Editor Component.
+- [Netlify CMS] ["Styling custom Netlify CMS widgets is confusing" by Dave Meyer](https://todayilearned.io/til/styling-netlify-cms-widgets-is-confusing) expands on the official documentation to explain how to load stylesheets explictly into widgets and preview components.
