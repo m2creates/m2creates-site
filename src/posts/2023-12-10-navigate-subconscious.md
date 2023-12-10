@@ -11,7 +11,6 @@ image:
   url: /images/tangle-yarn-kier-in-sight-archives-unsplash.jpeg
   alt: >-
     A grayscale image of tangled yarn, symbolizing the complex and intertwined nature of thoughts within the subconscious mind. The monochromatic tones highlight the yarn's intricate patterns and knots, visually representing the journey of unraveling and understanding one's inner thoughts and feelings through introspection.
-  credit: Photo by Kier in Sight Archives, Unsplash
 seo:
   title: >-
     7 Techniques to Navigate the Universe of Your Subconscious Mind
