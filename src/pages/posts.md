@@ -1,6 +1,8 @@
 ---
-title: Posts
-slug: posts
+title: A Blog of Mindful Musings
+tldr: >-
+  A never-ending study of how we use space: in our minds, on our screens, and in real life. Lessons in anthropology, working for the web, and mindful self-discovery.
+slug: blog
 date: Last Modified
 datePublish: 2022-03-12
 image:
@@ -8,11 +10,12 @@ image:
   alt: Dozens of paper lanterns light up the night sky.
   credit: m2creates via Unsplash
 seo:
-  title: Posts
-  desc: Read the latest blog posts
-  image:
-    url:
-    alt:
+  title: >-
+    Mindful Musings | Blog
+  desc: >-
+    A never-ending study of how we use space: in our minds, on our screens, and in real life. Lessons in anthropology, working for the web, and mindful self-discovery.
+  url:
+  alt:
 pagination:
   data: collections.posts
   size: 20
