@@ -1,19 +1,19 @@
 ---
 title: Link in bio
-tldr:
+# tldr:
 slug: linkinbio
-date: Last Modified
+date: git Last Modified
 datePublish: 2022-03-12
-image:
-  url:
-  alt: 
-  credit: 
+# image:
+#   url:
+#   alt: 
+#   credit: 
 seo:
   title: Link in bio
   desc: All my links in one spot
-  image: 
-    url:
-    alt:
+  # image: 
+  #   url:
+  #   alt:
 eleventyExcludeFromCollections: true
 ---
 

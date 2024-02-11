@@ -3,7 +3,12 @@ title: >-
   Aquatic Apes: True or False?
 slug: aquatic-apes-true-or-false
 datePublish: 2011-01-12
-archive: http://www.melaniemagdalena.com/blog-my-archaeolife/-aquatic-apes-true-or-false
+seo:
+  title: >-
+    Aquatic Apes: True or False?
+  desc: >-
+    Did humans evolve from aquatic apes? Elaine Morgan thinks so.
+  archive: http://www.melaniemagdalena.com/blog-my-archaeolife/-aquatic-apes-true-or-false
 catalog:
   parent: academic
   course: life-on-earth
@@ -21,8 +26,7 @@ John Moore has personally taken apart and dissected every claim Elaine Morgan ha
   
 My personal opinion is that Elaine Morgan and John Moore have too many contradictory facts to say the Aquatic Ape Hypothesis is true. I find myself inclined to believe that Algis Kuliukas has a point. We share similarities with apes and some aquatic animals. Perhaps we simply spend more time beside water, on coasts, and then moved to the savannahs after experiencing some type of a selective pressure. Philip Tobias suggested this idea as “Waterside Hypothesis of Human Evolution”.  I do not believe we were ever truly “aquatic apes” because the facts just do not add up. The lack of fossil evidence in the ocean eliminates that idea; however if we think back to the ice age the shores receded and perhaps those fossils we need for the shore dwelling humans are in those sediments at the bottom of the sea today.
   
-  
-References:  
+## References
 
 - Kuliukas, Algis. _River Apes._ Algis Kuliukas, 2007. Web. 05 December 2010.([http://www.riverapes.com](https://web.archive.org/web/20141004201154/http://www.riverapes.com/))
 - Moore, Jim. _Aquatic Ape Theory (AAT): Sink or Swim?_ Jim Moore, 2010. Web. 04 December 2010. ([http://www.aquaticape.org](https://web.archive.org/web/20141004201154/http://www.aquaticape.org/))

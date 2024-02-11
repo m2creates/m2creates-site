@@ -1,14 +1,14 @@
 ---
 title: >-
   Uses
-tldr:
+# tldr:
 slug: uses
-date: Last Modified
+date: git Last Modified
 datePublish: 2022-03-12
-image:
-  url:
-  alt: 
-  credit: 
+# image:
+#   url:
+#   alt: 
+#   credit: 
 seo:
   title: Uses
   desc: Tools I use
