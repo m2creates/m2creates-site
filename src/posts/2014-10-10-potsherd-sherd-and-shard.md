@@ -1,5 +1,7 @@
 ---
 title: Potsherd, Sherd, and Shard
+tldr: >-
+  Linguistics is weird, and fun.
 slug: potsherd-sherd-and-shard
 datePublish: 2014-10-10
 legacyUrl: http://www.melaniemagdalena.com/blog-my-archaeolife/potsherd-sherd-and-shard
