@@ -21,7 +21,7 @@ pagination:
   size: 20
   alias: posts
   addAllPagesToCollections: true
-permalink: "posts/{% if pagination.pageNumber > 0 %}page-{{ pagination.pageNumber + 1 }}/{% endif %}index.html"
+permalink: "blog/{% if pagination.pageNumber > 0 %}page-{{ pagination.pageNumber + 1 }}/{% endif %}index.html"
 layout: posts.njk
 collection: posts
 ---
