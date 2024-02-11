@@ -23,7 +23,7 @@ layout: home.njk
 
 I'm Melanie Magdalena, aka M2, and I create things.
 
-I'm on a mission to create a web for everyone by blending accessibility, inclusivity, and usability into web experiences, digital media, and automated systems. [Learn more about me](/about) or [explore my highlights](/highlights/).
+I'm on a mission to create a web for everyone by blending accessibility, inclusivity, and usability into web experiences, digital media, and automated systems. [Learn more about me](/about/) or [explore my highlights](/highlights/).
 
 I've **shipped** some cool stuff alongside my **side projects**. [View Project list](/projects/).
 
