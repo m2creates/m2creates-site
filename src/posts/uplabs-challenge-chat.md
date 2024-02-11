@@ -58,6 +58,6 @@ In addition to Adobe Illustrator, I used the following resources:
 - ["speech bubble" by Icons8](https://icons8.com/icon/42245/speech-bubble) as the chat app "logo"
 - [Material Icons by Google](https://m1.material.io/resources/sticker-sheets-icons.html#sticker-sheets-icons-product-icons)
 - [Emoji by Emojipedia](https://emojipedia.org/google/)
-- Unsplash photos by [Melanie Magdalena (me!)](https://unsplash.com/photos/KpBAYMNf9Tw), [Ivana Cajina](https://unsplash.com/photos/_7LbC5J-jw4), [Ante Samarzija](https://unsplash.com/photos/kll4Y1o2ZVg), [Nathan Lindahl](https://unsplash.com/photos/9CmeP_E4NRg), [Brooke Cagle](https://unsplash.com/photos/7iTE5rhI6lc), [Joe Gardner](https://unsplash.com/photos/fdVz5ylhg4I), [Bree Bigelow](https://unsplash.com/photos/9pv2NMKmP7w), and [Omar Lopez](https://unsplash.com/photos/e5pqjD85NRg).
+- Unsplash photos by [Melanie Magdalena (me!)](https://unsplash.com/photos/KpBAYMNf9Tw), [Ivana Cajina](https://unsplash.com/photos/_7LbC5J-jw4), [Ante Samarzija](https://unsplash.com/@antesamarzija), [Nathan Lindahl](https://web.archive.org/web/20170709221430/https://unsplash.com/photos/9CmeP_E4NRg), [Brooke Cagle](https://unsplash.com/photos/7iTE5rhI6lc), [Joe Gardner](https://web.archive.org/web/20170703053416/https://unsplash.com/photos/fdVz5ylhg4I), [Bree Bigelow](https://unsplash.com/photos/9pv2NMKmP7w), and [Omar Lopez](https://unsplash.com/photos/e5pqjD85NRg).
 
 You can [download the .AI file](https://www.uplabs.com/posts/material-chat-for-android) from UpLabs (made with Adobe Illustrator CS6).
