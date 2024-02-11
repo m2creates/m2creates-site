@@ -106,5 +106,8 @@ dist
 # Local Netlify folder
 .netlify
 
+# DS_Store
+.DS_Store
+
 # Project drafts
 src/resume

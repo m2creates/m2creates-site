@@ -36,8 +36,11 @@
 /cs-cnm-mile https://drive.google.com/file/d/1ohApFhBU5AXSLqtQmcDeu6Ta9r2gwjm3/view?usp=sharing
 /cs-leadsites-signup https://drive.google.com/file/d/1soHsPGkoEJlohbELT1BZk-k5wFuMX4CN/view?usp=sharing
 /cs-leadsites-onboarding https://drive.google.com/file/d/1ksmDOj3BdlTaulkSMs_mmhGvoPn2ID2v/view?usp=sharing
-### Old Blog
+### Old blog
 /blog-my-archaeolife/evolution-of-the-napkin /posts/evolution-of-the-napkin/
 /thoughts/evolution-of-the-napkin /posts/evolution-of-the-napkin/
 /thoughts/inked-a-5000-year-old-tattooing-tradition-among-us /posts/inked-a-5000-year-old-tattooing-tradition-among-us/
 /thoughts/potsherd-sherd-and-shard /posts/potsherd-sherd-and-shard/
+### New blog
+/posts/* /:splat
+/posts/ /blog/

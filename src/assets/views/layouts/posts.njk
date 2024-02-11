@@ -5,7 +5,12 @@
 <article class="h-feed">
 
   <!-- Post title -->
-  <h1 class="p-name mt-0 mb-3 text-3xl font-extrabold break-normal md:text-5xl">{{ title }}</h1>
+  <h1 class="mt-0 mb-3 text-3xl font-extrabold break-normal p-name md:text-5xl">{{ title }}</h1>
+
+  <!-- TLDR -->
+  {% if tldr %}
+  <p class="p-summary tldr">{{ tldr }}</p>
+  {% endif %}
 
   {% set postslist = posts %}
   {% include "components/list/list-posts.njk" %}

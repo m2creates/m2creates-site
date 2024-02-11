@@ -24,6 +24,7 @@ tags:
   - dashboard
 uses:
   - airtable
+post_type: article
 ---
 
 Why? I honestly don't know (yet)... but it's cool! And built with Airtable of course.

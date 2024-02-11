@@ -13,16 +13,18 @@ image:
     A grayscale image of tangled yarn, symbolizing the complex and intertwined nature of thoughts within the subconscious mind. The monochromatic tones highlight the yarn's intricate patterns and knots, visually representing the journey of unraveling and understanding one's inner thoughts and feelings through introspection.
 seo:
   title: >-
-    7 Techniques to Navigate the Universe of Your Subconscious Mind
+    7 Techniques to Navigate Your Subconscious Mind
   desc: >-
-    Explore your inner world with techniques like affirmations, meditation, free association, daydreaming, creativity, good sleep, and trusting instincts for deep personal growth and well-being.
+    Boost personal growth with affirmations, meditation, daydreaming, creativity, good sleep, and trusting instincts.
   image:
     url: /images/tangle-yarn-kier-in-sight-archives-unsplash.jpeg
     alt: A grayscale image of tangled yarn, symbolizing the complex and intertwined nature of thoughts within the subconscious mind. The monochromatic tones highlight the yarn's intricate patterns and knots, visually representing the journey of unraveling and understanding one's inner thoughts and feelings through introspection.
-category: mindfulness
+category:
+  - mindfulness
 tags:
   - mindfulness
   - introspection
+post_type: article
 ---
 
 In today's digital era, we often overlook the importance of introspection and understanding our subconscious mind. This oversight can disconnect us from our deepest desires and potential.
