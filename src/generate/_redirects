@@ -43,3 +43,4 @@
 /thoughts/potsherd-sherd-and-shard /posts/potsherd-sherd-and-shard/
 ### New blog
 /posts/* /:splat
+/posts/ /blog/
