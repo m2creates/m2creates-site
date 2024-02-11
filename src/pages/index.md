@@ -2,7 +2,7 @@
 title: >-
   Let's Create
 subtitle: >-
-  Equal parts coffee, creativity, and code.
+  The musings of a neurodivergent millennial anthropologist, discovering mindfulness in urban exploration, and surviving late-stage capitalism with digital marketing.
 slug: /
 date: Last Modified
 datePublish: 2022-01-01
@@ -14,7 +14,7 @@ seo:
   title: >-
     m2creates • Creating digital experiences remotely
   desc: >-
-    The home of m2creates - equal parts coffee, creativity, and code.
+    The musings of a neurodivergent millennial anthropologist, discovering mindfulness in urban exploration, and surviving late-stage capitalism with digital marketing.
   image: 
     url:
     alt:
