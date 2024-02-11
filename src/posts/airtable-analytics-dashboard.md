@@ -15,7 +15,7 @@ image:
   credit: The Report table aggregates info from all the other tables.
 seo:
   title: Using Airtable as an Analytics Hub
-  desc: Let's create... an analytics dashboard for Twitter, LinkedIn, etc. with Airtable.
+  desc: Discover how to build an analytics dashboard using Airtable, plus practical tips for tracking social media stats (like Twitter/ LinkedIn).
   image:
     url: /images/airtable-hub-reports.jpg
     alt: Analytics overview in Airtable Hub

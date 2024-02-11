@@ -36,4 +36,4 @@ I'm self-taught in digital media, design strategy, development, and accessibilit
 
 ## Previously
 
-[Explore my highlights](/highlights).
+[Explore my highlights](/highlights/).
