@@ -14,6 +14,7 @@ seo:
   image: 
     url:
     alt:
+eleventyExcludeFromCollections: true
 ---
 
 <ul class="list">
