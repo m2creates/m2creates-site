@@ -25,11 +25,6 @@ category:
 tags:
   - language
 post_type: article
-seo:
-  title: >-
-    Potsherd, Sherd, and Shard
-  desc: >-
-    Explore the subtle differences between potsherds, sherds, and shards, and their unique archaeological contexts.
 ---
 
 The word _sherd_ comes from “potsherd,” a piece of a broken brittle substance of ceramic nature, most typically earthen pottery in an archaeological context.
