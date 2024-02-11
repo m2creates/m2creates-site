@@ -2,7 +2,7 @@
 title: >-
   Etymology: Online
 tldr: >-
-  Wouldn't being "online" actually be "offline" these days? 🤔 
+  Wouldn't being "online" actually be "offline" these days?
 slug: etymology-online
 datePublish: 2014-10-03
 legacyUrl: http://www.melaniemagdalena.com/blog-my-archaeolife/etymology-online
