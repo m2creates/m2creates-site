@@ -23,10 +23,12 @@ layout: home.njk
 
 I'm Melanie Magdalena, aka M2, and I create things.
 
-I'm on a mission to create a web for everyone by blending accessibility, inclusivity, and usability into web experiences, digital media, and automated systems. [Learn more about me](/about/) or [explore my highlights](/highlights/).
+I'm currently creating blog posts about mindfulness, [far too many images for Pinterest](https://www.pinterest.com/m2creates), and [random crafts](https://tiktok.com/@m2creates).
 
-I've **shipped** some cool stuff alongside my **side projects**. [View Project list](/projects/).
+[Learn more about me](/about/) or [explore my highlights](/highlights/).
 
-I'm always adding to my **toolbox** for no-code solutions, digital design, front-end development and more! [View my Uses list](/uses/).
+[I've also worked on some projects](/projects/) over the years.
 
-This website is under construction and #BuiltInPublic. [Join me on Twitch](https://twitch.tv/m2creates) to follow along, or [follow me on Twitter](https://twitter.com/m2creates) for snapshots.
+I'm always adding goodies to [my toolbox](/uses/) for digital marketing, website building, and other useful things (that typically have a free plan). Plus hardware, of course. I need to add my crafting supplies to that list at some point...
+
+This website is permanently under construction and proudly #BuiltInPublic. Pardon the dust!
