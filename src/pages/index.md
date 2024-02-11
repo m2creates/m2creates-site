@@ -4,20 +4,16 @@ title: >-
 subtitle: >-
   The musings of a neurodivergent millennial anthropologist, discovering mindfulness in urban exploration, and surviving late-stage capitalism with digital marketing.
 slug: /
-date: Last Modified
+date: git Last Modified
 datePublish: 2022-01-01
-image:
-  url: 
-  alt: 
-  credit: 
 seo:
   title: >-
     m2creates • Let's create space for everyone
   desc: >-
     The musings of a neurodivergent millennial anthropologist, discovering mindfulness in urban exploration, and surviving late-stage capitalism with digital marketing.
-  image: 
-    url:
-    alt:
+  # image: 
+  #   url:
+  #   alt:
 layout: home.njk
 ---
 

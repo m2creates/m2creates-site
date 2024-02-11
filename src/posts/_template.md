@@ -29,6 +29,7 @@ seo:
 # uses:
 permalink: false
 eleventyExcludeFromCollections: true
+post_type: article
 ---
 
 Image shortcode

@@ -3,18 +3,18 @@ title: Projects
 tldr: >-
   Digital design across the spectrum: websites, publications, courseware, and iconography.
 slug: projects
-date: Last Modified
+date: git Last Modified
 datePublish: 2022-03-12
-image:
-  url:
-  alt: 
-  credit: 
-seo:
-  title:
-  desc:
-  image:
-    url:
-    alt:
+# image:
+#   url:
+#   alt: 
+#   credit: 
+# seo:
+#   title:
+#   desc:
+#   image:
+#     url:
+#     alt:
 ---
 
 ## Showcase
@@ -29,11 +29,11 @@ If you want to support my projects, [**buy me a coffee**](https://www.buymeacoff
 
 {% for project in collections.projects %}
 {% if project.data.catalog.type === "side-project" %}
-<section class="my-2 w-full">
+<section class="w-full my-2">
 <h3 class="mt-0">{{ project.data.title }}</h3>
 {{ project.templateContent | safe }}
-<figure class="w-full mt-0 pb-4 media">
-  <img src="{{ project.data.image.url }}" alt="{{ project.data.image.alt }}" class="object-contain mb-3 aspect-w-4 aspect-h-3 max-h-128 mx-auto">
+<figure class="w-full pb-4 mt-0 media">
+  <img src="{{ project.data.image.url }}" alt="{{ project.data.image.alt }}" class="object-contain mx-auto mb-3 aspect-w-4 aspect-h-3 max-h-128">
   {% if project.data.image.credit %}
   <figcaption>{{ project.data.image.caption }}</figcaption>
   {% endif %}
@@ -54,11 +54,11 @@ I am a proud unicorn learning everyday so I can create the best solution for the
 
 {% for project in collections.projects %}
 {% if project.data.catalog.type === "portfolio" %}
-<section class="my-2 w-full">
+<section class="w-full my-2">
 <h3 class="mt-0">{{ project.data.title }}</h3>
 {{ project.templateContent | safe }}
-<figure class="w-full mt-0 pb-4 media">
-  <img src="{{ project.data.image.url }}" alt="{{ project.data.image.alt }}" class="object-contain mb-3 aspect-w-4 aspect-h-3 max-h-128 mx-auto">
+<figure class="w-full pb-4 mt-0 media">
+  <img src="{{ project.data.image.url }}" alt="{{ project.data.image.alt }}" class="object-contain mx-auto mb-3 aspect-w-4 aspect-h-3 max-h-128">
   {% if project.data.image.credit %}
   <figcaption>{{ project.data.image.caption }}</figcaption>
   {% endif %}

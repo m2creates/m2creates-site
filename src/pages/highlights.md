@@ -3,18 +3,18 @@ title: >-
   Highlights
 tldr: 
 slug: highlights
-date: Last Modified
+date: git Last Modified
 datePublish: 2022-03-12
-image:
-  url:
-  alt: 
-  credit: 
+# image:
+#   url:
+#   alt: 
+#   credit: 
 seo:
   title: Highlights
   desc: A timeline of select highlights.
-  image: 
-    url:
-    alt:
+  # image: 
+  #   url:
+  #   alt:
 ---
 
 I love [traveling](https://nomadlist.com/@m2creates/) and photographing my adventures. My journey is sprinkled with presentations, awards, and events. Here are some miscellaneous highlights I'm rather fond of and/or helped shape where I am at today:
