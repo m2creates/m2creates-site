@@ -1,6 +1,6 @@
 ---
 title: >-
-  Let's Create
+  Let's create space for everyone
 subtitle: >-
   The musings of a neurodivergent millennial anthropologist, discovering mindfulness in urban exploration, and surviving late-stage capitalism with digital marketing.
 slug: /
@@ -12,7 +12,7 @@ image:
   credit: 
 seo:
   title: >-
-    m2creates • Creating digital experiences remotely
+    m2creates • Let's create space for everyone
   desc: >-
     The musings of a neurodivergent millennial anthropologist, discovering mindfulness in urban exploration, and surviving late-stage capitalism with digital marketing.
   image: 
