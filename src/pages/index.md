@@ -1,6 +1,6 @@
 ---
 title: >-
-  Let's create space for everyone
+  Always be creating
 subtitle: >-
   The musings of a neurodivergent millennial anthropologist, discovering mindfulness in urban exploration, and surviving late-stage capitalism with digital marketing.
 slug: /
