@@ -1,15 +1,15 @@
 ---
 title: >-
-  “Sightseeing the End of the World! Or, Everything You are Dying to Ask about 2012” 
+  “Sightseeing the End of the World! Or, Everything You are Dying to Ask about 2012” with Dr. Quetzil Castañeda
 tldr: >-
-  Discover the truth behind 2012's Maya mysteries! Dr. Castañeda debunks myths, explores Maya culture, and plans an epic end-of-cycle journey!
+  Discover the truth behind 2012's Maya mysteries! Dr. Castañeda debunks myths and explores Maya culture; plus my plans for an epic end-of-cycle journey!
 slug: sightseeing-the-end-of-the-world-or-everything-you-are-dying-to-ask-about-2012-quetzil-castaeda
 datePublish: 2012-10-19
 seo:
   title: >-
-    Uncovering the Maya Mysteries: Beyond the 2012 Phenomenon with Dr. Quetzil Castañeda
+    “Sightseeing the End of the World! Or, Everything You are Dying to Ask about 2012” with Dr. Quetzil Castañeda
   desc: >-
-    Unravel the myths of the Maya with Dr. Quetzil Castañeda. From language nuances to 2012's misconceptions, embark on a cultural and historical exploration.
+    Discover the truth behind 2012's Maya mysteries! Dr. Castañeda debunks myths and explores Maya culture; plus my plans for an epic end-of-cycle journey!
   image:
     url:
     alt:
@@ -50,6 +50,6 @@ The non-physical Maya calendar was used to record important dates in Maya histor
 
 My question is: who decided that it was appropriate to rename the Aztec Sun Stone as the Maya calendar? And who decided that deceiving the world with it was appropriate?
 
-My 2012 plans are slightly different. I will be taking advantage of the Cycles of Time symposium at Uxmal during the “end of the world” and trekking across the Yucatan and into northern Belize with Dr. Susan Milbrath afterwards.
+My 2012 plans are slightly different. I will be taking advantage of the Cycles of Time symposium at Uxmal during the “end of the world” and trekking across the Yucatan peninsula and into northern Belize with Dr. Susan Milbrath afterwards.
 
 No, the world is not ending. But what better way to spend the beginning of a new Maya cycle than with the modern Maya of today?
