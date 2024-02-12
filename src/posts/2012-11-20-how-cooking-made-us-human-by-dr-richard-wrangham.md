@@ -2,7 +2,7 @@
 title: >-
   Fueling Evolution: The Transformative Power of Cooking in Human History
 tldr: >-
-  🔥 Discover how cooking revolutionized human evolution. From Darwin's views on fire's significance to Levi-Strauss's take on cooking's symbolism, delve into how cooked food's energy benefits shaped our bodies and culture.
+  Discover how cooking revolutionized human evolution. From Darwin's views on fire's significance to Levi-Strauss's take on cooking's symbolism, delve into how cooked food's energy benefits shaped our bodies and culture.
 slug: how-cooking-made-us-human-richard-wrangham
 datePublish: 2012-11-20
 seo:

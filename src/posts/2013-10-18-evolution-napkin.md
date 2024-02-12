@@ -1,7 +1,7 @@
 ---
 title: Evolution of the Napkin
 tldr: >-
-  🍽️ Think napkins are just for spills? Think again! Dive into the surprising history of this everyday item and see how it shaped dining, culture, and even the environment. Your view of the dinner table will never be the same!
+  Think napkins are just for spills? Think again! Dive into the surprising history of this everyday item and see how it shaped dining, culture, and even the environment. Your view of the dinner table will never be the same!
 slug: evolution-of-the-napkin
 datePublish: 2013-10-18
 seo:

@@ -2,7 +2,7 @@
 title: >-
   All Good Things Come in Good Time - A Letter to U.S. Congress
 tldr: >-
-  🔍 Ethical Dilemmas in Anthropology: Explore this award-winning essay on balancing research freedom with ethical standards. Discover how IRBs and government regulations impact the delicate study of human subjects and shape the future of anthropology. 
+  Ethical Dilemmas in Anthropology: Explore this award-winning essay on balancing research freedom with ethical standards. Discover how IRBs and government regulations impact the delicate study of human subjects and shape the future of anthropology. 
 slug: all-good-things-come-in-good-time
 datePublish: 2012-12-05
 seo:
