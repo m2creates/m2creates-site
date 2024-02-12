@@ -12,6 +12,7 @@
     <ul class="flex flex-row flex-wrap my-0 text-sm leading-normal list-none gap-x-4 postmeta md:text-base">
       <!-- Reading time -->
       <li>{{ content | readingTime }} read</li>
+      <span class="px-1" aria-hidden="true">//</span>
       <!-- Dates -->
       <li><time datetime="{{ datePublish | iso }}" itemProp="datePublished" class="dt-published">Published: {{ datePublish | format('dd LLL yyyy') }}</time>{% if date != datePublish %} <span aria-hidden="true">•</span> <time datetime="{{ page.date | iso }}" itemProp="dateUpdated" class="dt-updated">Updated: {{ page.date | format('dd LLL yyyy') }}</time>{% endif %}</li>
     </ul>
@@ -60,14 +61,12 @@
       <ul class="flex flex-row flex-wrap text-sm leading-normal list-none gap-x-4 postmeta md:text-base">
 
         <!-- Author -->
-        <li class="">
-          Written by <a class="p-author h-card" href="{{ site.meta.url | safe }}/about/" rel="author">{{ site.author.name }}</a>
-        </li>
+        <li>Written by <a class="p-author h-card" href="{{ site.meta.url | safe }}/about/" rel="author">{{ site.author.name }}</a></li>
+
+        <li><span class="px-1" aria-hidden="true">//</span></li>
 
         <!-- Permalink -->
-        <li class="">
-          <a class="u-url" href="{{ site.meta.url | safe }}{{ page.url }}" rel="bookmark">Permalink</a>
-        </li>
+        <li><a class="u-url" href="{{ site.meta.url | safe }}{{ page.url }}" rel="bookmark">Permalink</a></li>
       </ul>
 
       <!-- Taxonomies -->
