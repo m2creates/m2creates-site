@@ -1,6 +1,8 @@
 ---
 title: >-
   Echoes of Ancient Iberia: Tracing Human Evolution Through Millennia
+tldr: >-
+  Explore 150 years of Iberian Stone Age research, tracing human evolution from Homo antecessor to Homo sapiens, and uncovering fascinating insights into ancient life and culture.
 slug: the-stone-age-prehistory-of-iberia-lawerence-guy-straus
 datePublish: 2012-10-25
 seo:
