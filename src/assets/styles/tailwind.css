@@ -236,6 +236,14 @@
     width: 1px;
   }
 
+  .postmeta {
+    padding-left: 0!important;
+  }
+
+  .postmeta > li {
+    padding-left: 0!important;
+  }
+
 }
 
 @layer utilities {
