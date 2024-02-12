@@ -190,7 +190,9 @@
     @apply text-white;
   }
 
-  .prose a:hover {
+  .prose a:hover, .prose a:active, .prose a:focus, .prose a:focus-within,
+  .prose a:hover em, .prose a:active em, .prose a:focus em, .prose a:focus-within em,
+  .prose a:hover::after, .prose a:active::after, .prose a:focus::after, .prose a:focus-within::after {
     color: var(--color-secondary);
   }
 
@@ -245,8 +247,8 @@
   }
 
   /* External links */
-  article a[href^="http"]::after,
-  article a[href^="https://"]::after {
+  /* .prose a[href^="http"]::after,
+  .prose a[href^="https://"]::after {
     content: "";
     width: 0.65em;
     height: 0.65em;
@@ -256,11 +258,13 @@
     background-repeat: no-repeat;
     background-size: contain;
     display: inline-block;
+    color: var(--color-secondary);
+    fill: var(--color-secondary);
   }
 
   article a[href^="https://melaniemagdalena.com"]::after {
     display: none !important;
-  }
+  } */
 
 }
 
