@@ -1,21 +1,27 @@
 ---
 title: Evolution of the Napkin
 tldr: >-
-  Think napkins are just for spills? Think again! Dive into the surprising history of this everyday item and see how it shaped dining, culture, and even the environment. Your view of the dinner table will never be the same!
+  🍽️ Think napkins are just for spills? Think again! Dive into the surprising history of this everyday item and see how it shaped dining, culture, and even the environment. Your view of the dinner table will never be the same!
 slug: evolution-of-the-napkin
 datePublish: 2013-10-18
-legacyUrl: http://www.melaniemagdalena.com/blog-my-archaeolife/evolution-of-the-napkin
-post_type: article
 seo:
   title: >-
     Evolution of the Napkin
   desc: >-
     Explore the evolution of the napkin from ancient times to modern-day varieties, and its cultural and environmental significance.
+  # image:
+  #   url:
+  #   alt:
+  legacyUrl: http://www.melaniemagdalena.com/blog-my-archaeolife/evolution-of-the-napkin
+# category:
+# tags:
+# uses:
+post_type: article
 ---
 
 Who hasn't used a napkin?  
   
-Everyone uses SOMETHING to clean him or her hands during and/or after a meal. A napkin is a piece of cloth for wiping the mouth and fingers, usually a small square piece of cloth or tissue paper used at meals. Napkins are essential today in dining around the world; however, they were not always available. Throughout history napkins have evolved to meet peoples' needs.
+Everyone uses SOMETHING to clean him or her hands during and/or after a meal. A napkin is a [piece of cloth for wiping the mouth and fingers](https://en.wikipedia.org/wiki/Napkin), usually a small square piece of cloth or tissue paper used at meals. Napkins are essential today in dining around the world; however, they were not always available. Throughout history napkins have evolved to meet peoples' needs.
 
 Beginning with a lump of dough, napkins slowly evolved into new forms. In ancient Greece, Spartans used lumps of dough to wipe their hands at the dinner table. In Rome, two types of cloth napkins began to surface. The first napkin was called a _sudaria_, a pocket-sized handkerchief used for blotting the brow. The second, called a _maapae_, was a large cloth used to cover the surface of where the individuals eating were seated. They were also used to wipe mouths and for wrapping up leftover food to take home. Then suddenly during the Middle Ages, cloth napkins vanished and anything and everything was used for cleaning mouths and fingertips alike.
 
@@ -44,11 +50,11 @@ Limiting the use of paper napkins minimizes environmental waste, and using napki
 
 Napkins have become essential for dining and are used by almost everyone. Starting with the Greeks with dough, moving to Rome with the first cloth napkins, and evolving from tablecloths to personal napkins that are nowadays even from recyclable material is the evolution of the napkin. Napkins are essential today in dining around the world; however, they were not always available so throughout history, napkins have evolved to suit people accordingly. Different sizes of napkins are used in different types of meals, and different materials are used to make them. They have colors and some even have elaborate patterns and designs.
 
-Napkins are an art of their own class. They can each resemble whatever a dinner host has in mind and are the perfect final touch to make every table look magnificent. 
+Napkins are an art of their own class. They can each resemble whatever a dinner host has in mind and are the perfect final touch to make every table look magnificent.
 
-References:  
+## References
 
-* Drachenfels, Suzanne Von. “Napkins: A Brief History.” _Foodreference._ N.p., 2010. Web. 27 October 2010.
-* Moore, LJ. “Who invented the dinner napkin?” _Answerbag._ Livestrong, 2010. Web. 27 October 2010.
-* Murphy, Claudia Quigley. _The History Of The Art Of Tablesetting - Ancient And Modern._ USA: Church Press, 2009.
-* Slutsky, Abby. “What year were paper napkins invented?” _eHow._ N.p., 2010. Web. 27 October 2010.
+- Drachenfels, Suzanne Von. [“Napkins: A Brief History.”](<https://www.foodreference.com/html/art-history-napkins-729.html> _Foodreference._ N.p., 2010. Web. 27 October 2010.
+- Moore, LJ. “Who invented the dinner napkin?” _Answerbag._ Livestrong, 2010. Web. 27 October 2010.
+- Murphy, Claudia Quigley. [_The History Of The Art Of Tablesetting - Ancient And Modern._](https://archive.org/details/historyofartofta00murp/page/n7/mode/2up) USA: Church Press, 2009.
+- Slutsky, Abby. “What year were paper napkins invented?” _eHow._ N.p., 2010. Web. 27 October 2010. Moved to: <https://www.theclassroom.com/what-year-were-paper-napkins-invented-13636169.html>

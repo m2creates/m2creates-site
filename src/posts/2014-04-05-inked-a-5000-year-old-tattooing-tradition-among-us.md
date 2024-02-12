@@ -5,15 +5,21 @@ tldr: >-
   From ancient symbols and cultural rites to modern expressions of identity and art. [Plus a 12-minute video from my AGSU presentation!]
 slug: inked-a-5000-year-old-tattooing-tradition-among-us
 datePublish: 2014-04-05
-legacyUrl: http://www.melaniemagdalena.com/thoughts/inked-a-5000-year-old-tattooing-tradition-among-us
 blocks:
   - youtube
-post_type: video
 seo:
   title: >-
     Inked: A 5,000 Year Old Tattooing Tradition Among Us
   desc: >-
-    Delve into the ancient art of tattooing with me, tracing its 5,000-year journey across cultures and meanings.
+    Take a look at the ancient art of tattooing with me, tracing its 5,000-year journey across cultures and meanings.
+  image:
+    url:
+    alt:
+  legacyUrl: http://www.melaniemagdalena.com/thoughts/inked-a-5000-year-old-tattooing-tradition-among-us
+# category:
+# tags:
+# uses:
+post_type: video
 ---
 
 Presented by Melanie E Magdalena (me!) from the University of New Mexico's Department of Anthropology, 'Inked: A 5,000 Year Old Tradition' is a thought-provoking exploration presented at the [AGSU Conference](https://drive.google.com/file/d/11BDqLz1iF4PDC5d4lKLDu5BrDxzV8Z4X/view). This 12-minute journey delves into the world of tattoos - a form of body adornment rich in history and diverse in meaning. From being personal status symbols to declarations of love, from forms of punishment to religious amulets, tattoos have adorned human bodies and spirits across various cultures for over five millennia. This post aims to unfold the story of Inked, reflecting on how tattoos have been both praised and disdained, and what they reveal about our society.

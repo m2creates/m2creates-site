@@ -1,16 +1,30 @@
 ---
-title: All Good Things Come in Good Time
+title: >-
+  All Good Things Come in Good Time - A Letter to U.S. Congress
+tldr: >-
+  🔍 Ethical Dilemmas in Anthropology: Explore this award-winning essay on balancing research freedom with ethical standards. Discover how IRBs and government regulations impact the delicate study of human subjects and shape the future of anthropology. 
 slug: all-good-things-come-in-good-time
 datePublish: 2012-12-05
-legacyUrl: http://www.melaniemagdalena.com/blog-my-archaeolife/all-good-things-come-in-good-time
+seo:
+  title: >-
+    All Good Things Come in Good Time - A Letter to U.S. Congress
+  desc: >-
+    Award-winning essay on ethical anthropology research, exploring IRB roles and the balance of government oversight in human studies.
+  # image:
+  #   url:
+  #   alt:
+  legacyUrl: http://www.melaniemagdalena.com/blog-my-archaeolife/all-good-things-come-in-good-time
+# category:
+# tags:
+# uses:
 post_type: article
 ---
 
-**_The following is my nominated essay by the Center For A Public Anthropology which led to my [award in Public Anthropology](https://drive.google.com/file/d/1u6e6c8Lwon9mzuPHBT6ekGvoRjSHlLII/view) in 2012. This letter was sent to Congress to address legislation changes for the Belmont Report and their effects on the field of anthropology and anthropologists. Only 20 students were selected from the University of New Mexico._**
+**_The following is my nominated essay by the Center For A Public Anthropology which led to my [award in Public Anthropology](https://drive.google.com/file/d/1u6e6c8Lwon9mzuPHBT6ekGvoRjSHlLII/view) in 2012. This letter was sent to U.S. Congress to address legislation changes for the Belmont Report and their effects on the field of anthropology and anthropologists. Only 20 students were selected from the University of New Mexico._**
 
 Good intentions - what does it mean to have good intentions? In anthropology we strive to conduct research in an ethical manner that does not harm the people we study. Ethnographic research, the field study of cultures, is an effective way to understand other people beyond our personal worldviews. Unfortunately, anthropologists have not always conducted ethical research.
 
-In 1974, the Belmont Report was created in order to prevent unethical research such as the Guatemala Syphilis Experiment and the Yanomami blood samples. The Common Rule of 1991 was a refined version of the Belmont Report that founded Institutional Review Boards (IRBs) which now manage all human research requests. These federally mandated protocols are an acceptable way to prevent unethical human research. At the same time, however, IRBs can take a very long time to approve projects that are actually exempt from their protocols.
+In 1974, [the Belmont Report](https://en.wikipedia.org/wiki/Belmont_Report) was created in order to prevent unethical research such as the [Guatemala Syphilis Experiment](https://en.wikipedia.org/wiki/Guatemala_syphilis_experiments) and the [Yanomami blood samples](https://en.wikipedia.org/wiki/Yanomami#Controversies). [The Common Rule of 1991](https://en.wikipedia.org/wiki/Common_Rule) was a refined version of the Belmont Report that founded [Institutional Review Boards (IRBs)](https://en.wikipedia.org/wiki/Institutional_review_board) which now manage all human research requests. These federally mandated protocols are an acceptable way to prevent unethical human research. At the same time, however, IRBs can take a very long time to approve projects that are actually exempt from their protocols.
 
 Many people are concerned about the amount of control the government should have over research on humans. Medically speaking, federally mandated rules should be followed so that the human research subjects are protected. Any person involved in a medical experiment should be fully aware of all the risks involved and be a voluntary subject. Right now IRBs are responsible for making sure research includes informed consent and voluntary subjects.
 
