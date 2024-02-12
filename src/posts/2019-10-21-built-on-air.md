@@ -20,7 +20,6 @@ seo:
     url: /images/built-on-air-episode.jpeg
     alt: Built on Air - Season 3, Episode 8 with Melanie Magdalena, Digital Consultant
 category:
-  - podcast
 uses:
   - airtable
 post_type: podcast

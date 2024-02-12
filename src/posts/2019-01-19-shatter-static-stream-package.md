@@ -19,6 +19,7 @@ seo:
   image:
     url: /images/shatter-promo.jpg
     alt: Shatter, static stream package Figma template
+category:
 tags:
   - design
   - challenge

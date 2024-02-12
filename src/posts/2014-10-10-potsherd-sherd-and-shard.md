@@ -19,8 +19,7 @@ seo:
     url: /images/potsherds-at-lamanai.jpg
     alt: Two potsherds found during a walkabout at Lamanai, Belize. 
   legacyUrl: http://www.melaniemagdalena.com/blog-my-archaeolife/potsherd-sherd-and-shard
-category:
-  - anthropology
+category: anthropology
 tags:
   - language
 post_type: article
@@ -41,3 +40,5 @@ If I break my ceramic, clay flower pot and pick up all the pieces, the pieces ar
 If I am lazy, all the broken pieces end up being mostly left alone, and site formation processes kick in, the archaeologist who digs them up in the future has sherds, or potsherds, because they came from a clay pot.
 
 If I break a glass beer bottle today and pick up the pieces, or leave them for the archaeologists of the future to find: the pieces of the broken glass beer bottle are shards.
+
+[Here's what the dictionary has to say.](https://dictionary.cambridge.org/dictionary/english/potsherd)

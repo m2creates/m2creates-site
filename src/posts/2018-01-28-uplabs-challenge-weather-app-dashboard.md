@@ -21,7 +21,6 @@ seo:
     url: /images/weather-app-preview.png
     alt: Final screenshot of my weather app named Forecast It
 category:
-  - app
 tags:
   - api
   - design

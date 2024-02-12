@@ -23,9 +23,8 @@ seo:
     alt: >-
       Onboarding flow for GitHub, featuring 3 step pagination after logging in: 1) Track issues and pull requests. 2) Catch up on follows and stars. 3) Manage and update projects. After going through the flow, all options are accessible via a navigation pane on the left side of the app.
 category:
-  - ui
 tags:
-  - design
+  - ui
   - challenge
   - material design
 uses:

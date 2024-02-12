@@ -21,8 +21,8 @@ seo:
     url: /images/material-calculator.jpeg
     alt: Basic calculator with buttons for numbers 0-9, clear, plus, minus, multiply, divide, and equals.
 category:
-  - ui
 tags:
+  - ui
   - calculator
   - design
   - material design

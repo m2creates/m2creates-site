@@ -17,6 +17,7 @@ seo:
   image:
     url: /images/temperature-converter.jpeg
     alt: An input is offered for each temperature version. The value is automatically converted to the other two formats.
+category:
 tags:
   - self-teaching
 uses:

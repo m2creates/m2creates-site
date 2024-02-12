@@ -22,9 +22,8 @@ seo:
     url: /images/experiment-list-it.jpeg
     alt: The to-do list app offers an input to enter your task, the ability to visually cross off a task which changes the progress percentage, and the option to delete a task from the list.
 category:
-  - ui
 tags:
-  - design
+  - ui
   - challenge
   - material design
 uses:

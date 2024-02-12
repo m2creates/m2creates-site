@@ -18,6 +18,7 @@ seo:
   image:
     url: /images/airtable-hub-reports.jpg
     alt: Analytics overview in Airtable Hub
+category:
 tags:
   - analytics
   - dashboard

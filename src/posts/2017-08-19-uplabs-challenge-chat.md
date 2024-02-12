@@ -21,9 +21,8 @@ seo:
     url: /images/material-chat.jpeg
     alt: A chat app with threads, group chats, and direct messages with implied web and SMS support.
 category:
-  - ui
 tags:
-  - design
+  - ui
   - challenge
   - material design
 uses:

@@ -14,7 +14,6 @@ seo:
     url: /images/xcode-simulator-step-5.png
     alt: melaniemagdalena.com as seen on iOS Safari simulator
 category:
-  - testing
 tags:
   - debugging
 uses:
