@@ -20,7 +20,7 @@ seo:
 post_type: article
 ---
 
-In “The Stone Age Prehistory of Iberia” by Dr. Lawerence Guy Straus (UNM, Universidad de Cantabria), he shares insights from his research into the lives and evolution of our ancient ancestors.
+In “The Stone Age Prehistory of Iberia”, Dr. Lawerence Guy Straus (UNM, Universidad de Cantabria) shares insights from his research into the lives and evolution of our ancient ancestors.
 
 There are currently 150 years of Iberian Stone Age Research. It began in the 1860s at Portuguese cave sites through federally funded systematic archaeological research. Research came to a screeching halt when the Spanish Civil War began.
 
