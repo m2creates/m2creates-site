@@ -25,7 +25,7 @@
     <span class="px-1" aria-hidden="true">/</span>
     
     <!-- Dates -->
-    <time datetime="{{ datePublish | iso }}" itemProp="datePublished" class="dt-published">Published: {{ datePublish | format('dd LLL yyyy') }}</time>{#{% if date != datePublish %} <span aria-hidden="true">•</span> <time datetime="{{ page.date | iso }}" itemProp="dateUpdated" class="dt-updated">Updated: {{ page.date | format('dd LLL yyyy') }}</time>{% endif %}#}
+    <time datetime="{{ datePublish | iso }}" itemProp="datePublished" class="dt-published">Published: {{ datePublish | format('dd LLL yyyy') }}</time>{% if date != datePublish %} <span aria-hidden="true">•</span> <time datetime="{{ page.date | iso }}" itemProp="dateUpdated" class="dt-updated">Updated: {{ page.date | format('dd LLL yyyy') }}</time>{% endif %}
     
   </p>
 
