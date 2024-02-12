@@ -38,21 +38,22 @@
   "dependencies": {
     "@11ty/eleventy": "^2.0.0",
     "@11ty/eleventy-plugin-rss": "^1.1.2",
-    "@tailwindcss/aspect-ratio": "^0.4.2",
-    "@tailwindcss/forms": "^0.5.7",
-    "@tailwindcss/typography": "^0.5.10",
-    "autoprefixer": "^10.4.16",
     "cross-env": "^7.0.3",
     "cssnano": "^5.1.14",
     "eleventy-plugin-reading-time": "0.0.1",
     "luxon": "^2.1.1",
     "npm-run-all": "^4.1.5",
-    "postcss": "^8.4.31",
-    "postcss-cli": "^9.0.2",
-    "tailwindcss": "^3.3.5"
+    "postcss-cli": "^9.0.2"
   },
   "devDependencies": {
+    "@tailwindcss/aspect-ratio": "^0.4.2",
+    "@tailwindcss/forms": "^0.5.7",
+    "@tailwindcss/line-clamp": "^0.4.4",
+    "@tailwindcss/typography": "^0.5.10",
+    "autoprefixer": "^10.4.17",
     "dotenv": "^10.0.0",
-    "simple-nunjucks-loader": "^2.0.3"
+    "postcss": "^8.4.35",
+    "simple-nunjucks-loader": "^2.0.3",
+    "tailwindcss": "^3.4.1"
   }
 }

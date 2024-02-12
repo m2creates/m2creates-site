@@ -1,6 +1,6 @@
 <ul class="w-full list">
 {%- for post in posts -%}
-  <li class="flex flex-col pb-2 h-entry">
+  <li class="flex flex-col py-3 h-entry">
     <div class="flex flex-col justify-between mb-1 sm:flex-row flex-nowrap gap-x-4">
       <a href="{{ post.url }}" class="u-url" rel="bookmark"><span class="p-name">{{ post.data.title }}</span></a>
       <time class="flex-shrink-0 dt-published" datetime="{{  post.data.datePublish | iso }}" itemProp="datePublished">{{ post.data.datePublish | format('dd LLL yyyy') }}</time>

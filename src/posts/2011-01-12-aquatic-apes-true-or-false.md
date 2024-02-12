@@ -28,5 +28,5 @@ My personal opinion is that Elaine Morgan and John Moore have too many contradic
   
 ## References
 
-- Kuliukas, Algis. _River Apes._ Algis Kuliukas, 2007. Web. 05 December 2010.([http://www.riverapes.com](https://web.archive.org/web/20141004201154/http://www.riverapes.com/))
-- Moore, Jim. _Aquatic Ape Theory (AAT): Sink or Swim?_ Jim Moore, 2010. Web. 04 December 2010. ([http://www.aquaticape.org](https://web.archive.org/web/20141004201154/http://www.aquaticape.org/))
+- Kuliukas, Algis. _River Apes._ Algis Kuliukas, 2007. Web. 05 December 2010.([http://www.riverapes.com](https://web.archive.org/web/20141111144413/http://www.riverapes.com/))
+- Moore, Jim. _Aquatic Ape Theory (AAT): Sink or Swim?_ Jim Moore, 2010. Web. 04 December 2010. ([http://www.aquaticape.org](https://web.archive.org/web/20141006160717/http://www.aquaticape.org/))

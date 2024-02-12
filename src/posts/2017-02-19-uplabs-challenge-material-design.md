@@ -4,7 +4,6 @@ title: >-
 tldr: >-
   UpLabs hosted a design challenge - in which I designed an onboarding flow for GitHub on Android. I focused on options like tracking issues and pull requests, your activity feed, and managing projects instead of editing code. At the end of the challenge, my project ranked in the top 10 out of 273 challengers!
 slug: uplabs-challenge-material-design
-date: git Last Modified
 datePublish: 2017-02-19
 image:
   url: /images/material-github.jpeg
@@ -24,9 +23,8 @@ seo:
     alt: >-
       Onboarding flow for GitHub, featuring 3 step pagination after logging in: 1) Track issues and pull requests. 2) Catch up on follows and stars. 3) Manage and update projects. After going through the flow, all options are accessible via a navigation pane on the left side of the app.
 category:
-  - ui
 tags:
-  - design
+  - ui
   - challenge
   - material design
 uses:

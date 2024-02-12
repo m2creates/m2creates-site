@@ -2,7 +2,6 @@
 title: Debug iOS Safari with Xcode Simulator and Web Inspector
 tldr: How I debug CSS for iOS Safari on my MacBook Pro.
 slug: debug-ios-safari-xcode-simulator
-date: Last Modified
 datePublish: 2020-06-15
 image:
   url: /images/xcode-simulator-step-5.png
@@ -15,7 +14,6 @@ seo:
     url: /images/xcode-simulator-step-5.png
     alt: melaniemagdalena.com as seen on iOS Safari simulator
 category:
-  - testing
 tags:
   - debugging
 uses:
@@ -123,7 +121,7 @@ Need more help?
 
 Other guides that may be helpful:
 
-* [Debugging Your iPhone Mobile Web App With Safari Dev Tools](https://medium.com/better-programming/debugging-your-iphone-mobile-web-app-using-safari-development-tools-71240657c487) by Matthew Croak on Medium \[Premium Article\]
+* [Debugging Your iPhone Mobile Web App With Safari Dev Tools](https://betterprogramming.pub/debugging-your-iphone-mobile-web-app-using-safari-development-tools-71240657c487) by Matthew Croak on Medium \[Premium Article\]
 * [How to Use Web Inspector to Debug Mobile Safari (iPhone or iPad)](https://appletoolbox.com/use-web-inspector-debug-mobile-safari/) by SK on Apple Toolbox
 
 ## Simulator Bonuses

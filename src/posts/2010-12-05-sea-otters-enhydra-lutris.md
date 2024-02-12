@@ -4,7 +4,6 @@ tldr: >-
   Dive into the intriguing life of sea otters, exploring their behaviors, diet, and vital ecological role, along with the conservation challenges they face.
 slug: sea-otters-enhydra-lutris
 draft: false
-date: git Last Modified
 datePublish: 2010-12-05
 image:
   url: /images/sea-otter-alaska.jpeg

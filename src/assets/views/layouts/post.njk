@@ -2,39 +2,46 @@
 
 {% block content %}
 
-<article class="h-entry">
+<article class="h-entry text-pretty">
 
-  <!-- Post title -->
+  <!-- Title -->
   <h1 class="mt-0 mb-3 text-3xl font-extrabold break-normal p-name md:text-5xl">{{ title }}</h1>
 
   <!-- Meta -->
-  <p class="text-sm font-bold uppercase md:text-base">
-  
-    <!-- Uses -->
-    {% if uses %}
-    <span>Uses:
+  <div class="py-2 not-prose">
+    <ul class="flex flex-row flex-wrap my-0 text-sm leading-normal list-none gap-x-4 postmeta md:text-base">
+      <!-- Reading time -->
+      <li>{{ content | readingTime }} read</li>
+      <span class="px-1" aria-hidden="true">//</span>
+      <!-- Dates -->
+      <li><time datetime="{{ datePublish | iso }}" itemProp="datePublished" class="dt-published">Published: {{ datePublish | format('dd LLL yyyy') }}</time>{% if date != datePublish %} <span aria-hidden="true">•</span> <time datetime="{{ page.date | iso }}" itemProp="dateUpdated" class="dt-updated">Updated: {{ page.date | format('dd LLL yyyy') }}</time>{% endif %}</li>
+    </ul>
+
+    <!-- Taxonomies -->
+    <div class="flex flex-row flex-wrap text-sm gap-x-4 md:text-base">
+      <!-- Category --> 
+      {% if category %}
+      {# TODO: link the taxonomies: /{{category}}/ #}
+      <p>Collection: <span class="p-category">{{ category | capitalize }}</span></p>
+      {% endif %}
+
+      <!-- Uses -->
+      {% if uses %}
+      <p>Uses:
       {% set separator = joiner(',') %}
       {# TODO: link the taxonomies: /uses/{{item}} #}
-      {%- for item in uses %}{{ separator() }} <span class="p-category">{{ item }}</span>{% endfor %}
-    </span>
-    <span class="px-1" aria-hidden="true">/</span>
-    {% endif %}
-    
-    <!-- Reading time -->
-    <span>{{ content | readingTime }} read</span>
-    <span class="px-1" aria-hidden="true">/</span>
-    
-    <!-- Dates -->
-    <time datetime="{{ datePublish | iso }}" itemProp="datePublished" class="dt-published">Published: {{ datePublish | format('dd LLL yyyy') }}</time>{#{% if date != datePublish %} <span aria-hidden="true">•</span> <time datetime="{{ page.date | iso }}" itemProp="dateUpdated" class="dt-updated">Updated: {{ page.date | format('dd LLL yyyy') }}</time>{% endif %}#}
-    
-  </p>
+      {%- for item in uses %}{{ separator() }} <span class="p-category">{{ item | capitalize }}</span>{% endfor %}
+      </p>
+      {% endif %}
+    </div>
+  </div>
 
   <!-- TLDR -->
   {% if tldr %}
-  <p class="p-summary tldr">{{ tldr }}</p>
+  <p class="text-xl p-summary tldr md:text-2xl">{{ tldr }}</p>
   {% endif %}
   
-  <div class="e-content">
+  <div class="pb-8 e-content">
 
     <!-- Featured Image/Poster -->
     {% if image.url %}
@@ -48,24 +55,33 @@
 
     <!-- Content -->
     {{ content | safe }}
-  
-  </div>
+
+    <!-- Meta -->
+    <div>
+      <ul class="flex flex-row flex-wrap text-sm leading-normal list-none gap-x-4 postmeta md:text-base">
+
+        <!-- Author -->
+        <li>Written by <a class="p-author h-card" href="{{ site.meta.url | safe }}/about/" rel="author">{{ site.author.name }}</a></li>
+
+        <li><span class="px-1" aria-hidden="true">//</span></li>
+
+        <!-- Permalink -->
+        <li><a class="u-url" href="{{ site.meta.url | safe }}{{ page.url }}" rel="bookmark">Permalink</a></li>
+      </ul>
+
+      <!-- Taxonomies -->
+      <div class="flex flex-row flex-wrap text-sm gap-x-4 md:text-base">
+        {% if tags %}
+        <p>Tags:
+        {# TODO: link the taxonomies: /tags/{{tag}} #}
+        {% for tag in tags %} <span aria-hidden="true">#</span><span class="p-category" rel="category tag">{{ tag | lower }}</span>{% endfor %}
+        </p>
+        {% endif %}
+      </div>
+    
+    </div>
 
   {% include "components/BuyMeACoffee/BuyMeACoffee.njk" %}
-  
-  <!-- Meta -->
-  <div class="text-sm font-bold uppercase md:text-base">
-    <p>Written by <a class="no-underline p-author h-card" href="{{ site.meta.url | safe }}" rel="author">{{ site.author.name }}</a> 
-      <span class="px-1" aria-hidden="true">/</span>
-      <a class="u-url" href="{{ site.meta.url | safe }}{{ page.url }}" rel="bookmark">Permalink</a>
-    </p>
-    {% if tags %}
-    <p>Tags:
-      {# TODO: link the taxonomies: /tags/{{tag}} #}
-      {% for tag in tags %} <span aria-hidden="true">#</span><span class="p-category" rel="category tag">{{ tag | lower }}</span>{% endfor %}
-    </p>
-    {% endif %}
-  </div>
 
 </article>
 

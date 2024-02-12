@@ -4,7 +4,6 @@ title: >-
 tldr: >-
   I learned how to use Figma live by making a graphics pack for OBS.
 slug: shatter-static-stream-package
-date: Last Modified
 datePublish: 2019-01-19
 image:
   url: /images/shatter-promo.jpg
@@ -20,6 +19,7 @@ seo:
   image:
     url: /images/shatter-promo.jpg
     alt: Shatter, static stream package Figma template
+category:
 tags:
   - design
   - challenge

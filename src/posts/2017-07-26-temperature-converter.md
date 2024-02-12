@@ -3,7 +3,6 @@ title: >-
   What's the Temp? JavaScript Challenge
 tldr: I learned how JavaScript does math by making a temperature converter.
 slug: temperature-converter
-date: git Last Modified
 datePublish: 2017-07-26
 image:
   url: /images/temperature-converter.jpeg
@@ -18,6 +17,7 @@ seo:
   image:
     url: /images/temperature-converter.jpeg
     alt: An input is offered for each temperature version. The value is automatically converted to the other two formats.
+category:
 tags:
   - self-teaching
 uses:

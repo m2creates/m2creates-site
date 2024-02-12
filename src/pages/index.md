@@ -10,7 +10,7 @@ seo:
   title: >-
     m2creates • Let's create space for everyone
   desc: >-
-    The musings of a neurodivergent millennial anthropologist, discovering mindfulness in urban exploration, and surviving late-stage capitalism with digital marketing.
+    The musings of a neurodivergent millennial anthropologist, discovering mindfulness in urban exploration, and surviving late-stage capitalism with marketing.
   # image: 
   #   url:
   #   alt:

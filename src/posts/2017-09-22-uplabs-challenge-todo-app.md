@@ -4,7 +4,6 @@ title: >-
 tldr: >-
   A to-do list web app that tracks your completion progress. You can add, check off, and delete tasks.
 slug: uplabs-challenge-todo-app
-date: git Last Modified
 datePublish: 2017-09-22
 image:
   url: /images/experiment-list-it.jpeg
@@ -23,9 +22,8 @@ seo:
     url: /images/experiment-list-it.jpeg
     alt: The to-do list app offers an input to enter your task, the ability to visually cross off a task which changes the progress percentage, and the option to delete a task from the list.
 category:
-  - ui
 tags:
-  - design
+  - ui
   - challenge
   - material design
 uses:
