@@ -3,7 +3,6 @@ title:
 tldr:
 slug:
 draft: true
-date: git Last Modified
 datePublish:
 image:
   url:

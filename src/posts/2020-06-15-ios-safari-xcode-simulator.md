@@ -2,7 +2,6 @@
 title: Debug iOS Safari with Xcode Simulator and Web Inspector
 tldr: How I debug CSS for iOS Safari on my MacBook Pro.
 slug: debug-ios-safari-xcode-simulator
-date: Last Modified
 datePublish: 2020-06-15
 image:
   url: /images/xcode-simulator-step-5.png

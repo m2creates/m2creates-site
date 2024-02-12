@@ -4,7 +4,6 @@ title: >-
 tldr: >-
   A to-do list web app that tracks your completion progress. You can add, check off, and delete tasks.
 slug: uplabs-challenge-todo-app
-date: git Last Modified
 datePublish: 2017-09-22
 image:
   url: /images/experiment-list-it.jpeg

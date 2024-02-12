@@ -4,7 +4,6 @@ title: >-
 tldr: >-
   A calculator, made with flexbox using Material Design Cyan+Teal, modeled after the ChromeOS Calculator.
 slug: daily-ui-calculator
-date: git Last Modified
 datePublish: 2017-08-02
 image:
   url: /images/material-calculator.jpeg

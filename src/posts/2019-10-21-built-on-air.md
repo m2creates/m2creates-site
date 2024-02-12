@@ -4,7 +4,6 @@ title: >-
 tldr: >-
   I was invited to Built on Air to showcase an Airtable base created to calculate student assessment scores; and explain how I get data in the right spots.
 slug: built-on-air-podcast-0308
-date: Last Modified
 datePublish: 2019-10-21
 image:
   url: /images/built-on-air-episode.jpeg

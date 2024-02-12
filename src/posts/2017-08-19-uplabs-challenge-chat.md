@@ -4,7 +4,6 @@ title: >-
 tldr: >-
   A material design for chat, inspired by the question: What if Signal, Google Hangouts, and Slack had a baby?
 slug: uplabs-challenge-chat
-date: git Last Modified
 datePublish: 2017-08-19
 image:
   url: /images/material-chat.jpeg

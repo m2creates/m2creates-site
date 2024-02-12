@@ -5,7 +5,6 @@ tldr: >-
   Embrace the art of introspection to navigate the rich landscape of your subconscious mind. Discover how techniques like positive affirmations, meditation, free association, daydream visualizations, creative hobbies, prioritizing sleep, and honoring your instincts can lead to profound personal growth and well-being.
 slug: navigate-subconscious
 draft: false
-date: git Last Modified
 datePublish: 2023-12-10
 image:
   url: /images/tangle-yarn-kier-in-sight-archives-unsplash.jpeg

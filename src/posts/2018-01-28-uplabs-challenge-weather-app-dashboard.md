@@ -4,7 +4,6 @@ title: >-
 tldr: >-
   For UpLabs weather app challenge, I designed a dashboard with simpleWeather.js that told the week's forecast.
 slug: uplabs-challenge-weather-app-dashboard
-date: git Last Modified
 datePublish: 2018-01-28
 image:
   url: /images/weather-app-preview.png

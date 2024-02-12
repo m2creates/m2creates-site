@@ -5,7 +5,6 @@ tldr: >-
   Linguistics is weird, and fun.
 slug: potsherd-sherd-and-shard
 draft: false
-date: git Last Modified
 datePublish: 2014-10-10
 image:
   url: /images/potsherds-at-lamanai.jpg
