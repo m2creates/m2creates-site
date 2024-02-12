@@ -55,7 +55,7 @@ In addition to Adobe Illustrator, I used the following resources:
 
 - ["speech bubble" by Icons8](https://icons8.com/icon/42245/speech-bubble) as the chat app "logo"
 - [Material Icons by Google](https://m1.material.io/resources/sticker-sheets-icons.html#sticker-sheets-icons-product-icons)
-- [Emoji by Emojipedia](https://emojipedia.org/google/)
-- Unsplash photos by [Melanie Magdalena (me!)](https://unsplash.com/photos/KpBAYMNf9Tw), [Ivana Cajina](https://unsplash.com/photos/_7LbC5J-jw4), [Ante Samarzija](https://unsplash.com/@antesamarzija), [Nathan Lindahl](https://web.archive.org/web/20170709221430/https://unsplash.com/photos/9CmeP_E4NRg), [Brooke Cagle](https://unsplash.com/photos/7iTE5rhI6lc), [Joe Gardner](https://web.archive.org/web/20170703053416/https://unsplash.com/photos/fdVz5ylhg4I), [Bree Bigelow](https://unsplash.com/photos/9pv2NMKmP7w), and [Omar Lopez](https://unsplash.com/photos/e5pqjD85NRg).
+- [Emoji by Emojipedia](https://emojipedia.org/google)
+- Unsplash photos by [Melanie Magdalena (me!)](https://unsplash.com/photos/paper-lantern-flying-above-sky-KpBAYMNf9Tw), [Ivana Cajina](https://unsplash.com/photos/man-leaning-on-brown-wall-_7LbC5J-jw4), [Ante Samarzija](https://unsplash.com/@antesamarzija), [Nathan Lindahl](https://web.archive.org/web/20170709221430/https://unsplash.com/photos/9CmeP_E4NRg), [Brooke Cagle](https://unsplash.com/photos/man-standing-on-road-between-sand-7iTE5rhI6lc), [Joe Gardner](https://web.archive.org/web/20170703053416/https://unsplash.com/photos/fdVz5ylhg4I), [Bree Bigelow](https://unsplash.com/photos/woman-sit-on-bench-facing-on-concrete-wall-9pv2NMKmP7w), and [Omar Lopez](https://unsplash.com/photos/woman-sitting-on-rock-in-forest-e5pqjD85NRg).
 
 You can [download the .AI file](https://www.uplabs.com/posts/material-chat-for-android) from UpLabs (made with Adobe Illustrator CS6).

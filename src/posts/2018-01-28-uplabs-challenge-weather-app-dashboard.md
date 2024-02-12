@@ -58,7 +58,7 @@ Just because something has the logic you mean doesn’t mean it’s easy to “i
 
 You’ll notice the live version has a 5-day forecast though I mentioned it had 10 when I began. For me, the weather 10 days from now is pointless. Weather is variable and changes frequently. I opted to hide everything beyond 5 days for simplicity and better accuracy.
 
-The final “design” touches were flexbox, [Material Palette](http://materialpalette.com/) colors, good ol’ Lato with Material Icon support, and responsiveness.
+The final “design” touches were flexbox, [Material Palette](https://materialpalette.com/) colors, good ol’ Lato with Material Icon support, and responsiveness.
 
 ![Final screenshot of weather app called Forecast It](/images/weather-app-preview.png "Screenshot of Forecast It")
 

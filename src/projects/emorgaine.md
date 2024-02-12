@@ -12,7 +12,7 @@ catalog:
   company: E-Morgaine
 ---
 
-Check out [E-Morgaine](https://emorgaine.com/) and [The Ruby Bird](https://therubybird.org/).
+Check out [E-Morgaine](https://www.emorgaine.com/) and [The Ruby Bird](https://therubybird.org/).
 
 Web & Graphic Design
 

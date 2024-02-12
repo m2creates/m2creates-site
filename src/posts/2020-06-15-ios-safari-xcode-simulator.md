@@ -121,7 +121,7 @@ Need more help?
 
 Other guides that may be helpful:
 
-* [Debugging Your iPhone Mobile Web App With Safari Dev Tools](https://medium.com/better-programming/debugging-your-iphone-mobile-web-app-using-safari-development-tools-71240657c487) by Matthew Croak on Medium \[Premium Article\]
+* [Debugging Your iPhone Mobile Web App With Safari Dev Tools](https://betterprogramming.pub/debugging-your-iphone-mobile-web-app-using-safari-development-tools-71240657c487) by Matthew Croak on Medium \[Premium Article\]
 * [How to Use Web Inspector to Debug Mobile Safari (iPhone or iPad)](https://appletoolbox.com/use-web-inspector-debug-mobile-safari/) by SK on Apple Toolbox
 
 ## Simulator Bonuses

@@ -42,17 +42,17 @@ I love [traveling](https://nomadlist.com/@m2creates/) and photographing my adven
 **2018**
 
 - 🏎 Blessed by the gigabit: Google Fiber
-- 🌙 [Trifecta: Super Blue Blood Moon Total Eclipse](https://unsplash.com/photos/qfW2R0n6CfY) @ Albuquerque, NM
+- 🌙 [Trifecta: Super Blue Blood Moon Total Eclipse](https://unsplash.com/photos/red-moon-qfW2R0n6CfY) @ Albuquerque, NM
 
 **2017**
 
 - 🌑 [Great American Total Solar Eclipse](https://unsplash.com/photos/Xi2JSoG4-aw) @ North Platte, NE
-- 📷 ["Illuminate"](https://unsplash.com/photos/KpBAYMNf9Tw) - First photo featured in Unsplash + added to the [Mac App](https://unsplash.com/wallpaper#mac-app)
+- 📷 ["Illuminate"](https://unsplash.com/photos/paper-lantern-flying-above-sky-KpBAYMNf9Tw) - First photo featured in Unsplash + added to the [Mac App](https://unsplash.com/wallpapers#mac-app)
 
 **2016**
 
 - 🏅 Award: NAPW VIP Woman of the Year - Multimedia
-- 📣 Featured in NAPW's [*Women 360: Member Spotlight*](http://blog.napw.com/april-13-2016-member-spotlight/#melanie?ref=m2/)
+- 📣 Featured in NAPW's [*Women 360: Member Spotlight*](https://web.archive.org/web/20230607170739/http://blog.napw.com/april-13-2016-member-spotlight/)
 
 **2015**
 
