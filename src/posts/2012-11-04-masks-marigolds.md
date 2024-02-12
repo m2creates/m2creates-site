@@ -1,9 +1,19 @@
 ---
 title: >-
   Masks & Marigolds
+tldr: >-
 slug: masks-and-marigolds
 datePublish: 2012-11-04
-legacyUrl: http://www.melaniemagdalena.com/blog-my-archaeolife/masks-marigolds
+seo:
+  title:
+  desc:
+  image:
+    url:
+    alt:
+  legacyUrl: http://www.melaniemagdalena.com/blog-my-archaeolife/masks-marigolds
+# category:
+# tags:
+# uses:
 blocks:
   - youtube
 post_type: video
