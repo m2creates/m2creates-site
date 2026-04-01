@@ -1,0 +1,124 @@
+{
+  "terms": [
+    {
+      "term": "ABC Segmentation",
+      "category": "supply-chain",
+      "definition": "A method of classifying inventory by value and velocity — A items are high-value or high-turnover, B items are mid-tier, C items are low. Determines how tightly to manage each tier. Named for the Pareto principle at its core.",
+      "context": "Portfolio Project 1"
+    },
+    {
+      "term": "Career Expansion",
+      "category": "career",
+      "definition": "The frame I use instead of \"career transition.\" My work across digital systems and physical operations shares a consistent throughline — spatial thinking, systems architecture, pattern recognition under constraint. Adding warehouse logistics is expansion of an existing capability set, not replacement of it.",
+      "context": "How I talk about my work"
+    },
+    {
+      "term": "Carrying Cost",
+      "category": "supply-chain",
+      "definition": "The total annual cost of holding one unit of inventory — storage, capital tied up, insurance, obsolescence risk, shrinkage. Usually expressed as a percentage of unit value (typically 20-30%). The hidden cost that makes over-ordering more expensive than it looks.",
+      "context": "Portfolio Project 5"
+    },
+    {
+      "term": "Cycle Count",
+      "category": "supply-chain",
+      "definition": "A rolling inventory audit method that counts a subset of SKUs on a rotating schedule rather than shutting down operations for a full physical count. Catches discrepancies faster and maintains continuous accuracy without the disruption of a wall-to-wall count.",
+      "context": "JuiceLand operations"
+    },
+    {
+      "term": "Fractional Operator",
+      "category": "career",
+      "definition": "A senior operator embedded part-time inside an organization — doing work that requires strategic judgment and implementation fluency, not just advisory input. The distinction from consulting is depth of execution: a fractional operator builds and runs systems, not just recommends them.",
+      "context": "m2creates / Deytah framing"
+    },
+    {
+      "term": "Information Architecture",
+      "category": "systems",
+      "definition": "The structural design of a shared information environment — how content is organized, labeled, and navigated. Sitemap logic, taxonomy decisions, naming conventions, and the question of what lives where and why. Precedes visual design. Controls whether a system is findable.",
+      "context": "CHC, MIT Innovation One"
+    },
+    {
+      "term": "Knowledge Problem",
+      "category": "theory",
+      "definition": "Hayek's argument that the information needed to coordinate economic activity is dispersed across individuals and cannot be fully aggregated by any central planner. Applied to supply chain: a central forecast is always working with less information than the distributed signals it replaces. Safety stock is one practical response.",
+      "context": "Portfolio Project 5 — Safety Stock essay"
+    },
+    {
+      "term": "Lead Time",
+      "category": "supply-chain",
+      "definition": "The elapsed time between placing a replenishment order and receiving usable stock. Includes supplier processing, transit, receiving, and putaway. The variable that, combined with demand uncertainty, determines how much safety stock is required. Shorter lead time = smaller buffer needed.",
+      "context": "Portfolio Projects 5, 1"
+    },
+    {
+      "term": "M-Shaped Operator",
+      "category": "career",
+      "definition": "A practitioner with deep expertise in two distinct domains plus the breadth to work across others. Extends the T-shaped generalist model. My two spikes: digital systems architecture and physical operations. The intersection — systems thinking applied to logistics — is where the most interesting problems live.",
+      "context": "How I describe my background"
+    },
+    {
+      "term": "Min/Max Par Level",
+      "category": "supply-chain",
+      "definition": "A simple replenishment rule: reorder when stock falls to the minimum; order up to the maximum. The floor and ceiling are set by experience, seasonality, and supplier lead time rather than statistical modeling — which makes it practical at small scale but brittle at volume.",
+      "context": "JuiceLand, CTFB"
+    },
+    {
+      "term": "Operational Impact",
+      "category": "operations",
+      "definition": "The section required on every portfolio case study that answers: what was the operational problem, and what changed after? Distinguishes a portfolio of work from a portfolio of deliverables. A system that works is not the point; a system that changed how an organization operates is.",
+      "context": "Portfolio framing principle"
+    },
+    {
+      "term": "OTIF",
+      "category": "supply-chain",
+      "definition": "On Time, In Full — a vendor performance metric measuring what percentage of orders arrived when promised and in the quantity ordered. A single metric that captures both reliability and accuracy. Shortfalls on either dimension are tracked separately to diagnose root cause: scheduling problem or fulfillment problem.",
+      "context": "Portfolio Project 4 — Vendor Scorecard"
+    },
+    {
+      "term": "Reorder Point",
+      "category": "supply-chain",
+      "definition": "The inventory level at which a replenishment order should be triggered. Calculated as (average daily demand × lead time) + safety stock. The signal that separates reactive ordering from planned replenishment.",
+      "context": "Portfolio Project 5"
+    },
+    {
+      "term": "Safety Stock",
+      "category": "supply-chain",
+      "definition": "A calculated buffer above expected demand that absorbs variability in both demand and supply. Sized using demand standard deviation, lead time, and a Z-score corresponding to a target service level. Not a guess — a statistically defensible hedge against the things you cannot forecast.",
+      "context": "Portfolio Project 5"
+    },
+    {
+      "term": "Service Level",
+      "category": "supply-chain",
+      "definition": "The target probability of not stocking out during a replenishment cycle — typically expressed as a percentage (e.g., 95%). Higher service levels require larger safety stock buffers. The decision of what service level to target is a business decision, not a technical one: it weighs the cost of buffer against the cost of stockout.",
+      "context": "Portfolio Project 5"
+    },
+    {
+      "term": "Spatial Thinking",
+      "category": "systems",
+      "definition": "The cognitive habit of understanding systems by reasoning about how their parts are arranged in relation to each other — not just what the parts are, but where they sit, how they connect, and what happens when one moves. Shows up in GIS work, warehouse slotting, information architecture, and org design.",
+      "context": "Throughline across all my work"
+    },
+    {
+      "term": "Systems Architect",
+      "category": "systems",
+      "definition": "Someone who designs how components of a system relate to each other — not necessarily building every piece, but responsible for the logic that makes them work together. The person who decides what the pieces are before anyone builds them, and who holds the coherence of the whole.",
+      "context": "CHC, MIT, m2creates framing"
+    },
+    {
+      "term": "The Unseen Operator",
+      "category": "career",
+      "definition": "The person who makes systems run without appearing in the outputs. The designer of infrastructure that others depend on without noticing. Also the name of my writing series — an exploration of what operational work actually is, told from inside it.",
+      "context": "Field Notes series"
+    },
+    {
+      "term": "Throughline",
+      "category": "career",
+      "definition": "The consistent logic connecting apparently different kinds of work. My throughline is spatial and systems thinking — a way of understanding environments by mapping relationships between parts. The word that earns its place when a career looks varied on the surface.",
+      "context": "Career framing"
+    },
+    {
+      "term": "Z-Score",
+      "category": "supply-chain",
+      "definition": "A statistical multiplier applied in safety stock calculations that corresponds to a chosen service level. At 95% service level, Z = 1.65; at 99%, Z = 2.33. The mechanism by which a business decision (how often can we afford to stock out?) becomes a mathematical input.",
+      "context": "Portfolio Project 5"
+    }
+  ]
+}

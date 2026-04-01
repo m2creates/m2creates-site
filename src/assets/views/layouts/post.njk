@@ -1,89 +1,245 @@
 {% extends "layouts/base.njk" %}
 
+{%- set growthEmoji = { seedling: '🌱', budding: '🌿', evergreen: '🌳' } -%}
+{%- set growthNote = { seedling: 'Fresh observation, loosely held', budding: 'Argument forming, not yet complete', evergreen: 'Settled enough to stand on' } -%}
+{%- set threadLabel = { 'on-systems': 'On Systems', 'the-unseen-operator': 'The Unseen Operator', 'from-the-field': 'From the Field' } -%}
+
 {% block content %}
 
-<article class="h-entry text-pretty">
+{# ── Article body prose styles ── #}
+<style>
+  .article-body h2 {
+    font-family: 'Cormorant Garant', Georgia, serif;
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    font-weight: 300;
+    font-style: italic;
+    color: #1A1510;
+    margin: 2.5rem 0 1rem;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+  }
+  .article-body h3 {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.72rem;
+    font-weight: 400;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: #1C5B72;
+    margin: 2rem 0 0.75rem;
+  }
+  .article-body p { margin-bottom: 1.4rem; }
+  .article-body p:last-child { margin-bottom: 0; }
+  .article-body a {
+    color: #1C5B72;
+    text-decoration: underline;
+    text-decoration-color: #C9BCA9;
+    text-underline-offset: 3px;
+    transition: text-decoration-color 0.2s;
+  }
+  .article-body a:hover { text-decoration-color: #1C5B72; }
+  .article-body strong { color: #1A1510; font-weight: 600; }
+  .article-body em { font-style: italic; }
+  .article-body blockquote {
+    border-left: 2px solid #7a9e8e;
+    margin: 2rem 0;
+    padding: 0.5rem 0 0.5rem 1.5rem;
+    font-family: 'Cormorant Garant', Georgia, serif;
+    font-size: 1.2rem;
+    font-style: italic;
+    color: #1A1510;
+    line-height: 1.5;
+  }
+  .article-body ul,
+  .article-body ol {
+    margin: 1rem 0 1.4rem 1.5rem;
+  }
+  .article-body ul { list-style: disc; }
+  .article-body ol { list-style: decimal; }
+  .article-body li { margin-bottom: 0.4rem; }
+  .article-body hr {
+    border: none;
+    height: 1px;
+    background: linear-gradient(to right, transparent, #C9BCA9 20%, #C9BCA9 80%, transparent);
+    margin: 2.5rem 0;
+  }
+  .article-body code {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.85em;
+    background: #EDE5D4;
+    padding: 0.15em 0.4em;
+    border-radius: 2px;
+    color: #1A1510;
+  }
+  .article-body pre {
+    background: #1a2420;
+    color: #d8d2c4;
+    padding: 1.25rem 1.5rem;
+    overflow-x: auto;
+    margin: 1.5rem 0;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.85rem;
+    line-height: 1.7;
+  }
+  .article-body pre code {
+    background: none;
+    padding: 0;
+    color: inherit;
+  }
+</style>
 
-  <!-- Title -->
-  <h1 class="mt-0 mb-3 text-3xl font-extrabold break-normal p-name md:text-5xl">{{ title }}</h1>
+<article class="h-entry">
 
-  <!-- Meta -->
-  <div class="py-2 not-prose">
-    <ul class="flex flex-row flex-wrap my-0 text-sm leading-normal list-none gap-x-4 postmeta md:text-base">
-      <!-- Reading time -->
-      <li>{{ content | readingTime }} read</li>
-      <span class="px-1" aria-hidden="true">//</span>
-      <!-- Dates -->
-      <li><time datetime="{{ datePublish | iso }}" itemProp="datePublished" class="dt-published">Published: {{ datePublish | format('dd LLL yyyy') }}</time>
-      {# {% if date != datePublish %} <span aria-hidden="true">•</span> <time datetime="{{ page.date | iso }}" itemProp="dateUpdated" class="dt-updated">Updated: {{ page.date | format('dd LLL yyyy') }}</time>{% endif %} #}
-      </li>
-    </ul>
+  {# ══════════════════════════════════════════════════════════ #}
+  {# ARTICLE HERO                                               #}
+  {# ══════════════════════════════════════════════════════════ #}
+  <section class="relative px-6 overflow-hidden md:px-14 pt-28 pb-14"
+           aria-labelledby="article-heading">
 
-    <!-- Taxonomies -->
-    <div class="flex flex-row flex-wrap text-sm gap-x-4 md:text-base">
-      <!-- Category --> 
+    {# Back link #}
+    <div class="max-w-4xl mx-auto mb-10 h-enter d-1">
+      <p class="h-enter d-2 font-code text-[0.6rem] tracking-[0.2em] uppercase text-[#1C5B72] mb-5 max-w-3xl mx-auto">
+      {% if catalog.type == "portfolio" %}
+      <a href="/work/portfolio/"
+         class="font-code text-[0.6rem] tracking-[0.16em] uppercase text-[#7A6E65]
+                hover:text-[#1C5B72] transition-colors inline-flex items-center gap-2">
+        <span aria-hidden="true">←</span> Work / Portfolio
+      </a>
+      {% else %}
+      <a href="/the-garden/"
+         class="font-code text-[0.6rem] tracking-[0.16em] uppercase text-[#7A6E65]
+                hover:text-[#1C5B72] transition-colors inline-flex items-center gap-2">
+        <span aria-hidden="true">←</span> The Garden
+      </a>
+      {% endif %}
+
+      {# Category / thread label #}
       {% if category %}
-      {# TODO: link the taxonomies: /{{category}}/ #}
-      <p>Collection: <span class="p-category">{{ category | capitalize }}</span></p>
+        {% if thread %}• {{ threadLabel[thread] or thread }}{% endif %}
       {% endif %}
-
-      <!-- Uses -->
-      {% if uses %}
-      <p>Uses:
-      {% set separator = joiner(',') %}
-      {# TODO: link the taxonomies: /uses/{{item}} #}
-      {%- for item in uses %}{{ separator() }} <span class="p-category">{{ item | capitalize }}</span>{% endfor %}
       </p>
-      {% endif %}
     </div>
-  </div>
 
-  <!-- TLDR -->
-  {% if tldr %}
-  <p class="text-xl p-summary tldr md:text-2xl">{{ tldr }}</p>
-  {% endif %}
-  
-  <div class="pb-8 e-content">
+    {# Title #}
+    <h1 id="article-heading"
+        class="h-enter d-3 p-name font-display font-light italic leading-[1.08] text-[#1A1510] mb-7 max-w-3xl mx-auto"
+        style="font-size: clamp(2.2rem, 6vw, 4.2rem); letter-spacing: -0.01em;">
+      {{ title }}
+    </h1>
 
-    <!-- Featured Image/Poster -->
-    {% if image.url %}
-    <figure class="mb-8 max-w-screen">
-      <img src="{{ image.url }}" alt="{{ image.alt }}" class="object-cover mb-3"/>
-      {% if image.credit %}
-      <figcaption><span>{{ image.credit }}</span></figcaption>
-      {% endif %}
-    </figure>
+    {# TLDR / summary #}
+    {% if tldr %}
+    <p class="h-enter d-4 p-summary font-display text-[#4A4035] mb-8 max-w-3xl mx-auto"
+       style="font-size: clamp(1rem, 2vw, 1.3rem); letter-spacing: 0.01em;">
+      {{ tldr }}
+    </p>
     {% endif %}
 
-    <!-- Content -->
-    {{ content | safe }}
-
-    <!-- Meta -->
-    <div>
-      <ul class="flex flex-row flex-wrap text-sm leading-normal list-none gap-x-4 postmeta md:text-base">
-
-        <!-- Author -->
-        <li>Written by <a class="p-author h-card" href="{{ site.meta.url | safe }}/about/" rel="author">{{ site.author.name }}</a></li>
-
-        <li><span class="px-1" aria-hidden="true">//</span></li>
-
-        <!-- Permalink -->
-        <li><a class="u-url" href="{{ site.meta.url | safe }}{{ page.url }}" rel="bookmark">Permalink</a></li>
-      </ul>
-
-      <!-- Taxonomies -->
-      <div class="flex flex-row flex-wrap text-sm gap-x-4 md:text-base">
-        {% if tags %}
-        <p>Tags:
-        {# TODO: link the taxonomies: /tags/{{tag}} #}
-        {% for tag in tags %} <span aria-hidden="true">#</span><span class="p-category" rel="category tag">{{ tag | lower }}</span>{% endfor %}
-        </p>
-        {% endif %}
-      </div>
-    
+    {# Meta strip #}
+    <div class="h-enter d-5 flex flex-wrap items-center gap-x-5 gap-y-2 max-w-3xl mx-auto
+                font-code text-[0.6rem] tracking-[0.1em] uppercase text-[#7A6E65]">
+      {% if growth %}
+      <span
+        class="font-code text-[0.52rem] tracking-[0.1em] uppercase px-2 py-0.5 border rounded-sm flex-shrink-0
+          {% if growth == 'seedling' %}border-[#4a8c80] text-[#3d7569] bg-[#4a8c80]/[0.06]
+          {% elif growth == 'budding' %}border-[#8c6e3f] text-[#7a5e30] bg-[#8c6e3f]/[0.06]
+          {% elif growth == 'evergreen' %}border-[#2c5f4a] text-[#2c5f4a] bg-[#2c5f4a]/[0.06]
+          {% endif %}"
+        title="{{ growthNote[growth] }}"
+      >
+        {{ growthEmoji[growth] }} {{ growth }}
+      </span>
+      {% endif %}
+      {% if growth %}
+      <span aria-hidden="true" class="text-[#C9BCA9]">·</span>
+      {% endif %}
+      {% if datePublish %}
+      <time datetime="{{ datePublish | iso }}" class="dt-published">
+        {{ datePublish | format('dd LLL yyyy') }}
+      </time>
+      {% endif %}
+      {% if datePublish %}
+      <span aria-hidden="true" class="text-[#C9BCA9]">·</span>
+      {% endif %}
+      <span>{{ content | readingTime }} read</span>
+      {% if tags and tags.length %}
+      <span aria-hidden="true" class="text-[#C9BCA9]">·</span>
+      {% for tag in tags %}
+      <span class="p-category">#{{ tag | lower }}</span>
+      {% endfor %}
+      {% endif %}
     </div>
 
-  {% include "components/BuyMeACoffee/BuyMeACoffee.njk" %}
+  </section>
+
+  {# ── Divider ── #}
+  <hr class="border-none h-px bg-gradient-to-r from-transparent via-[#C9BCA9] to-transparent">
+
+  {# ══════════════════════════════════════════════════════════ #}
+  {# PROJECT LINKS BAR (portfolio items only)                   #}
+  {# ══════════════════════════════════════════════════════════ #}
+  {% include "partials/project-links.njk" %}
+
+  {# ══════════════════════════════════════════════════════════ #}
+  {# FEATURED IMAGE                                             #}
+  {# ══════════════════════════════════════════════════════════ #}
+  {% if image.url %}
+  <div class="max-w-5xl px-6 py-10 mx-auto md:px-14">
+    <figure>
+      <img src="{{ image.url }}"
+           alt="{{ image.alt }}"
+           class="object-cover w-full"
+           style="max-height: 520px;" />
+      {% if image.credit %}
+      <figcaption class="mt-3 font-code text-[0.58rem] tracking-wide text-[#7A6E65]">
+        {{ image.credit }}
+      </figcaption>
+      {% endif %}
+    </figure>
+  </div>
+  <hr class="border-none h-px bg-gradient-to-r from-transparent via-[#C9BCA9] to-transparent">
+  {% endif %}
+
+  {# ══════════════════════════════════════════════════════════ #}
+  {# ARTICLE CONTENT                                            #}
+  {# ══════════════════════════════════════════════════════════ #}
+  <section class="max-w-4xl px-6 py-16 mx-auto md:px-14 md:py-24 e-content">
+    <div class="article-body font-reading text-[1.05rem] leading-[1.85] text-[#4A4035]">
+      {{ content | safe }}
+    </div>
+  </section>
+
+  {# ── Divider ── #}
+  <hr class="border-none h-px bg-gradient-to-r from-transparent via-[#C9BCA9] to-transparent">
+
+  {# ══════════════════════════════════════════════════════════ #}
+  {# ARTICLE FOOTER                                             #}
+  {# ══════════════════════════════════════════════════════════ #}
+  <section class="flex flex-col max-w-4xl gap-4 px-6 py-10 mx-auto md:px-14 sm:flex-row sm:items-center sm:justify-between">
+
+    {# Back link #}
+    {% if catalog.type == "portfolio" %}
+    <a href="/work/portfolio/"
+       class="font-code text-[0.6rem] tracking-[0.16em] uppercase text-[#7A6E65]
+              hover:text-[#1C5B72] transition-colors inline-flex items-center gap-2">
+      <span aria-hidden="true">←</span> Back to Portfolio
+    </a>
+    {% else %}
+    <a href="/the-garden/"
+       class="font-code text-[0.6rem] tracking-[0.16em] uppercase text-[#7A6E65]
+              hover:text-[#1C5B72] transition-colors inline-flex items-center gap-2">
+      <span aria-hidden="true">←</span> Back to The Garden
+    </a>
+    {% endif %}
+
+    {# Permalink #}
+    <a class="u-url font-code text-[0.6rem] tracking-[0.1em] uppercase text-[#7A6E65]
+              hover:text-[#1C5B72] transition-colors"
+       href="{{ site.meta.url | safe }}{{ page.url }}"
+       rel="bookmark">
+      Permalink ↗
+    </a>
+
+  </section>
 
 </article>
 

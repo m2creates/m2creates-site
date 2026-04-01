@@ -9,7 +9,7 @@
 ### External redirects
 /analytics https://app.usefathom.com/share/sdxtreof/melaniemagdalena.com
 /stardew-valley-mods https://airtable.com/appGR9GuQT0TlBDnb/shrwN1FhD6Y6sguLT
-/twitter https://twitter.com/m2creates
+/twitter https://x.com/m2creates
 /mastodon https://mastodon.social/@m2creates
 /twitch https://www.twitch.tv/m2creates/about
 /youtube https://www.youtube.com/channel/UC79tKyGJiDzuN5fb-0ijb0Q
@@ -20,7 +20,6 @@
 /unsplash https://unsplash.com/@m2creates
 /pixelfed https://pixelfed.social/i/web/profile/494342322399754959
 /instagram https://www.instagram.com/m2creates
-/polywork https://www.polywork.com/m2creates
 /linkedin https://www.linkedin.com/mmagdalena
 /producthunt https://www.producthunt.com/@m2creates
 /nomadlist https://nomadlist.com/m2creates
@@ -31,9 +30,7 @@
 /gumroad https://m2creates.gumroad.com/
 /itch https://m2creates.itch.io/
 /wishlist https://www.amazon.com/hz/wishlist/ls/4O07S0KQIGHZ
-/onlyfans https://onlyfans.com/m2paysrent
 ### Portfolio/Case Studies
-/portfolio https://airtable.com/appmgm7s5tn2FhqDS/shrxjEnqi3tlE3nSU
 /cs-cnm-mile https://drive.google.com/file/d/1ohApFhBU5AXSLqtQmcDeu6Ta9r2gwjm3/view?usp=sharing
 /cs-leadsites-signup https://drive.google.com/file/d/1soHsPGkoEJlohbELT1BZk-k5wFuMX4CN/view?usp=sharing
 /cs-leadsites-onboarding https://drive.google.com/file/d/1ksmDOj3BdlTaulkSMs_mmhGvoPn2ID2v/view?usp=sharing
@@ -42,6 +39,16 @@
 /thoughts/evolution-of-the-napkin /posts/evolution-of-the-napkin/
 /thoughts/inked-a-5000-year-old-tattooing-tradition-among-us /posts/inked-a-5000-year-old-tattooing-tradition-among-us/
 /thoughts/potsherd-sherd-and-shard /posts/potsherd-sherd-and-shard/
+## Archive
+/debug-ios-safari-xcode-simulator /the-garden/ 301
+/shatter-static-stream-package /projects/ 301
+/uplabs-challenge-weather-app-dashboard /projects/ 301
+/uplabs-challenge-todo-app /projects/ 301
+/uplabs-challenge-chat /projects/ 301
+/daily-ui-calculator /projects/ 301
+/temperature-converter /projects/ 301
+/uplabs-challenge-material-design /projects/ 301
+/the-secret-garden-a-symbolism-analysis /the-garden/ 301
 ### New blog
 /posts/* /:splat
-/posts/ /blog/
+/posts/ /the-garden/ 301

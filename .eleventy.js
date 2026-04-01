@@ -141,7 +141,7 @@ module.exports = function (eleventyConfig) {
       layouts: "assets/views/layouts",
     },
     passthroughFileCopy: true,
-    templateFormats: ["njk", "md", "html", "11ty.js"],
+    templateFormats: ["njk", "md", "html", "11ty.js", "yaml"],
     htmlTemplateEngine: "njk",
     markdownTemplateEngine: "njk",
   };

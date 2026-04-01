@@ -1,8 +1,9 @@
 ---
 title: >-
   Uses
-# tldr:
-slug: uses
+tldr: >-
+  Every context demands different tools. These are the ones that made the cut — the stack I build with, the systems I run on, and the equipment I show up with.
+slug: about/uses
 date: git Last Modified
 datePublish: 2022-03-12
 # image:
@@ -30,20 +31,19 @@ I only recommend products I use and love. If you sign up for any of these tools 
 - TailwindCSS
 - PostCSS
 - Netlify
-- Netlify CMS
 
 ## Get Things Done
 
 - [Airtable](https://airtable.com/invite/r/FYbwl2F)
 - Loom
 - [Carrd](https://try.carrd.co/x9fwvcb8)
+- Looker Studio
+- Google Sheets
 
 ## Usability Meets Design
 
 - Paper & Pencil
-- Affinity Photo
-- Affinity Designer
-- Affinity Publisher
+- Affinity (Photo, Designer, Publisher)
 - PhotoPea
 - Flowmapp
 - Penpot
@@ -64,23 +64,17 @@ I only recommend products I use and love. If you sign up for any of these tools 
 - GitHub / GitLab
 - Codepen
 - Netlify
-- Glitch
-- Autocode
-- Heroku
 - [Digital Ocean](http://www.digitalocean.com/?refcode=2596167e2da2)
-- Netlify CMS
 
-## Broadcasting
+## Warehouse & Operations
 
-- OBS for macOS
-- Twitch
-- StreamElements
-- Kruiz Control
-- Sery Bot
-- iShowU Audio Capture
-- StreamBeats
+- Crunchtime
+- Toast POS
+- CERES (WMS)
+- Opendock
+- Samsara (TMS)
 
-## No Code & Biz Ops
+## Workflow & Biz Ops
 
 - Glide
 - Stripe
@@ -96,22 +90,35 @@ I only recommend products I use and love. If you sign up for any of these tools 
 - [Gusto](https://gusto.com/r/qTrLm/?utm_source=reflink)
 - Wave Accounting
 
-## Communicate with People
+## Broadcasting & Studio
+
+- OBS for macOS
+- Twitch
+- StreamElements
+- Kruiz Control
+- Sery Bot
+- iShowU Audio Capture
+- StreamBeats
+- [Austin Public](https://www.austinfilm.org/austin-public/about-austin-public/)
+
+## Communicate & Track
 
 - Telegram
 - Discord
-- Whereby
 - Slack
+- Asana
+- Trello
+- Plutio
 
 ---
 
 _I've replaced some of my tools over the years. Others, I end up using for other people but am not a fan. There are a few others on my radar that I'd like to try out some day (when there's a right fit and budget!) on projects._
 
-**Used in the Past:** Baremetrics, Mixpanel, PhantomBot, Timely, Hike, Zenkit, Webflow, InVision, Adobe Illustrator, Adobe Photoshop, Adobe InDesign, Adobe Premiere Pro, Front, Kartra
+**Used in the Past:** Baremetrics, Mixpanel, PhantomBot, Timely, Hike, Zenkit, Webflow, Netlify CMS, WordPress, InVision, Adobe Illustrator, Adobe Photoshop, Adobe InDesign, Adobe Premiere Pro, Front, Kartra, Memberium, Autocode, Heroku, Whereby
 
-**Infrequent / Not a Fan:** Infusionsoft by Keap, Coda, Notion, Jotform, Calendly, Streamlabs
+**Infrequent:** Infusionsoft by Keap, Coda, Notion, Jotform, Calendly, Streamlabs
 
-**Keeping an Eye On but Don't Use (Yet):** Forestry, Simple Analytics, Mode, Qlik, Ionic Studio, Memberstack, Gather Content, Help Scout
+**Keeping an Eye On but Don't Use (Yet):** Simple Analytics, Mode, Qlik, Ionic Studio, Memberstack, Gather Content, Help Scout
 
 ---
 

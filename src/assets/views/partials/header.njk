@@ -1,29 +1,23 @@
 {% set currentUrl = page.url %}
-<header class="flex flex-wrap items-center justify-between w-full gap-2 pt-8 mx-auto">
-  {# Branding #}
-  <a href="/" class="flex items-center flex-shrink-0 gap-2 font-semibold border-none underline-none"{% if currentUrl === '/' %}aria-current="page"{% endif %}><img src="{{ site.brand.logo }}" alt="Logo" class="w-8 h-8" />m2creates</a>
+{# ══════════════════════════════════════════════════════════ #}
+{# NAV                                                        #}
+{# ══════════════════════════════════════════════════════════ #}
+<header class="fixed top-0 left-0 right-0 z-50
+              flex items-center justify-between
+              px-6 md:px-14 py-4
+              bg-[#F5EFE3]/88 backdrop-blur-md
+              border-b border-[#C9BCA9]/50">
 
-  <div class="flex flex-wrap items-center gap-4">
-  {# Nav Links #}
-  <nav>
-    <ul class="flex flex-wrap gap-x-4">
-      {% for item in navigation.header %}
-      <li class="py-2"><a href="{{ item.href }}" {% if currentUrl === item.href %}aria-current="page"{% endif %}>{{ item.text }}</a></li>
-      {% endfor %}
+  <a href="/" class="font-code text-[0.65rem] tracking-[0.15em] uppercase text-[#7A6E65] hover:text-[#1C5B72] transition-colors">
+    Melanie E. Magdalena
+  </a>
+
+  <nav aria-label="Primary navigation">
+    <ul class="flex items-center gap-6 p-0 m-0 list-none md:gap-10">
+      <li><a href="/about/"        class="nav-link font-code text-[0.62rem] tracking-[0.14em] uppercase text-[#4A4035] hover:text-[#1C5B72] transition-colors">About</a></li>
+      <li><a href="/work/"        class="nav-link font-code text-[0.62rem] tracking-[0.14em] uppercase text-[#4A4035] hover:text-[#1C5B72] transition-colors">Work</a></li>
+      <li><a href="/the-garden/" class="nav-link font-code text-[0.62rem] tracking-[0.14em] uppercase text-[#4A4035] hover:text-[#1C5B72] transition-colors">The Garden</a></li>
     </ul>
   </nav>
-  {# Color Scheme toggle #}
-  <button id="colorToggle" class="js-color-toggle" role="switch" aria-checked="false" aria-label="Toggle color mode">
-    {# Light (Sun) Icon #}
-    <svg class="w-4 h-4 icon-light" role="img" aria-hidden="true">
-      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/images/icons/icon-library.svg#sun"></use>
-    </svg>
-
-    {# Dark (Moon) Icon #}
-    <svg class="w-4 h-4 icon-dark" role="img" aria-hidden="true">
-      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/images/icons/icon-library.svg#moon"></use>
-    </svg>
-  </button>
-  </div>
 
 </header>

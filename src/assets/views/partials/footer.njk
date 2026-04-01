@@ -1,15 +1,87 @@
-<footer class="w-full pb-8 mx-auto">
+{# ══════════════════════════════════════════════════════════ #}
+  {# FOOTER PORTALS                                             #}
+  {# ══════════════════════════════════════════════════════════ #}
+  <footer class="bg-[#EDE5D4] border-t border-[#C9BCA9] px-6 md:px-14 py-16">
 
-  {% include "components/h-card.njk" %}
+    {# <div class="grid grid-cols-2 gap-8 mb-16 sm:grid-cols-3 md:grid-cols-5">
 
-  <div class="flex flex-col-reverse flex-wrap items-center justify-between md:flex-row">
-    <p>&#169; 2011-2024 m2creates &#8226; Melanie E Magdalena</p>
-    <nav>
-      <ul class="flex flex-wrap gap-x-4">
-        {% for item in navigation.footer %}
-        <li class="py-2"><a href="{{ item.href }}">{{ item.text }}</a></li>
-        {% endfor %}
-      </ul>
-    </nav>
-  </div>
-</footer>
+      {% set portals = [
+        { label: "Photography",
+          href: "/outside/outside-is-free/",
+          note: "Outside is Free — an ongoing exploration of Austin's public land and green spaces" },
+        { label: "Field Notes",
+          href: "/field-notes/",
+          note: "Musings I've written down." },
+        { label: "Library",
+          href: "/library/",
+          note: "What I'm reading, what I've read, what's on the TBR" },
+        { label: "Stardew Valley Mods",
+          href: "/stardew-valley-mods",
+          note: "I mod a farming simulation because optimizing systems is what I do for fun too" },
+        { label: "Archive",
+          href: "/archive/",
+          note: "The record. Down the rabbit hole we go!" }
+      ] %}
+
+      {% for portal in portals %}
+      <div class="reveal reveal-d{{ loop.index }}">
+        <a href="{{ portal.href }}"
+           class="block no-underline group">
+          <p class="font-display italic text-[#1A1510] mb-1 group-hover:text-[#1C5B72] transition-colors"
+             style="font-size: 1.1rem;">
+            {{ portal.label }}
+          </p>
+          <p class="font-code text-[0.56rem] tracking-wide leading-relaxed text-[#7A6E65]">
+            {{ portal.note }}
+          </p>
+        </a>
+      </div>
+      {% endfor %}
+
+    </div> #}
+
+    <div class="flex flex-col sm:flex-row items-start sm:items-center
+                justify-between gap-4 pt-8 border-t border-[#C9BCA9]/50">
+      <p class="font-code text-[0.58rem] tracking-wider text-[#7A6E65]">
+        © 2011-2026 · Melanie E. Magdalena · Austin, TX · m2creates
+      </p>
+      <div class="flex gap-6">
+        <a href="https://linkedin.com/in/mmagdalena"
+           target="_blank" rel="noopener noreferrer"
+           class="font-code text-[0.58rem] tracking-wider text-[#7A6E65]
+                  hover:text-[#1C5B72] transition-colors">
+          LinkedIn ↗
+        </a>
+        <a href="https://threads.com/@m2creates"
+           target="_blank" rel="noopener noreferrer"
+           class="font-code text-[0.58rem] tracking-wider text-[#7A6E65]
+                  hover:text-[#1C5B72] transition-colors">
+          Threads ↗
+        </a>
+        <a href="https://unsplash.com/@m2creates"
+           target="_blank" rel="noopener noreferrer"
+           class="font-code text-[0.58rem] tracking-wider text-[#7A6E65]
+                  hover:text-[#1C5B72] transition-colors">
+          Unsplash ↗
+        </a>
+        <a href="https://github.com/m2creates"
+           target="_blank" rel="noopener noreferrer"
+           class="font-code text-[0.58rem] tracking-wider text-[#7A6E65]
+                  hover:text-[#1C5B72] transition-colors">
+          GitHub ↗
+        </a>
+        <a href="/colophon"
+           class="font-code text-[0.58rem] tracking-wider text-[#7A6E65]
+                  hover:text-[#1C5B72] transition-colors">
+          Colophon ↗
+        </a>
+        <a href="/sitemap.xml"
+           target="_blank" rel="noopener noreferrer"
+           class="font-code text-[0.58rem] tracking-wider text-[#7A6E65]
+                  hover:text-[#1C5B72] transition-colors">
+          Sitemap ↗
+        </a>
+      </div>
+    </div>
+
+  </footer>
