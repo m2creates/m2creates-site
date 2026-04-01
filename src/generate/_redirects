@@ -51,4 +51,6 @@
 /the-secret-garden-a-symbolism-analysis /the-garden/ 301
 ### New blog
 /posts/* /:splat
-/posts/ /the-garden/ 301
+/posts/ /the-garden
+/projects /work
+/projects/* /work
