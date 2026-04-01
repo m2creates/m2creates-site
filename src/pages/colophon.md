@@ -66,3 +66,13 @@ TailwindCSS because experimentation and commitment can stay separate until they 
 AlpineJS for the moments that actually need JavaScript. Sprinkles, not scaffolding. The goal is to see how far static can go before reaching for more — and it keeps going further than expected.
 
 Static web as a philosophy: less surface area, more control, nothing running that doesn't need to run. The constraint is the point.
+
+~ ~ ~
+
+This site uses a digital gardening approach to writing, borrowed from a long tradition of personal sites that treat published work as something tended rather than finished.
+
+Every post carries a growth stage indicating how developed it is. Seedlings are fresh observations, loosely held and subject to change. Budding posts have an argument forming but not yet complete. Evergreen posts are settled enough to stand on, though I still come back to them. I cycle through old seedlings. Sometimes months later. Sometimes years. What goes around comes around.
+
+Some posts also carry an assumed audience declaration at the top — one sentence naming who I'm actually writing for. This is a practice I borrowed from Maggie Appleton, who borrowed it from others before her. It isn't gatekeeping. It's an acknowledgment that writing for everyone at once produces writing that reaches no one. Declaring the audience frees me to be specific, and lets readers who aren't that person calibrate before they invest the time.
+
+Posts are sorted by thread, not by date. Chronology is the least interesting thing about an idea.
