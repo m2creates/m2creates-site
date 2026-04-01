@@ -72,7 +72,7 @@ image:
  
 next_project:
   name: Congressional Hunger Center
-  slug: work/congressional-hunger-center
+  slug: congressional-hunger-center
 ---
 
 The project started with a Drupal site going offline.
