@@ -13,6 +13,18 @@ module.exports = {
 			maxWidth: {
 				default: '80ch',
 			},
+			typography: {
+				DEFAULT: {
+					css: {
+						a: {
+							textDecoration: 'underline',
+							'&:hover': {
+								color: '#1C5B72',
+							},
+						},
+					},
+				},
+			},
 		},
 	},
 	plugins: [

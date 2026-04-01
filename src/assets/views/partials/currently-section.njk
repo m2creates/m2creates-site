@@ -1,0 +1,53 @@
+{# ══════════════════════════════════════════════════════════ #}
+{# CURRENTLY                                                  #}
+{# ══════════════════════════════════════════════════════════ #}
+<hr class="border-none h-px bg-gradient-to-r from-transparent via-[#C9BCA9] to-transparent">
+
+<section class="bg-[#18140F] px-6 md:px-14 py-20 md:py-28" aria-labelledby="currently-heading">
+
+  <div class="flex items-baseline justify-between mb-14">
+    <div class="flex items-center gap-3 mb-12">
+      <span class="live-dot block w-2 h-2 rounded-full bg-[#1C5B72]"
+              aria-label="Live status"></span>
+        <p class="font-code text-[0.58rem] tracking-[0.2em] uppercase text-[#7A6E65]">
+          Now
+        </p>
+    </div>
+    <a href="/about/highlights/"
+        class="font-code text-[0.6rem] tracking-[0.12em] uppercase text-[#7A6E65]
+              hover:text-[#1C5B72] transition-colors border-b border-[#C9BCA9]
+              hover:border-[#1C5B72]">
+      Explore highlights →
+    </a>
+  </div>
+
+  <div class="grid grid-cols-1 gap-6 md:grid-cols-2">
+
+    <div class="reveal reveal-d1 font-reading text-[1rem] leading-[1.8] text-[#7A6E65] mb-12">
+      <h2 id="currently-heading" class="reveal font-display font-light italic text-white leading-[1.1] mb-6" style="font-size: clamp(1.6rem, 3.5vw, 2.8rem);">
+        Adding physical systems fluency to a decade of digital operations work.
+      </h2>
+
+      <p>
+        <strong class="font-normal text-white">{{ currently.program.label }}</strong><br /> {{ currently.program.description }}
+      </p>
+    </div>
+
+    {% if currently.stream %}
+    <ul class="reveal reveal-d2 grid grid-cols-1 gap-px bg-[#2A2520]" role="list">
+      {% for item in currently.stream %}
+      <li class="bg-[#1E1910] p-6">
+        <p class="font-code text-[0.56rem] tracking-[0.16em] uppercase text-[#725e48] mb-3">{{ item.label }}</p>
+        <p class="font-reading text-[0.9rem] leading-[1.7] text-[#7A6E65]">
+          {{ item.item }}<br>
+          <span class="font-code text-[0.58rem] tracking-wide text-[#725e48]">
+            {{ item.tags }}
+          </span>
+        </p>
+      </li>
+      {% endfor %}
+    </ul>
+    {% endif %}
+
+  </div>
+</section>

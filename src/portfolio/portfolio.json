@@ -1,0 +1,7 @@
+{
+  "layout": "portfolio.njk",
+  "permalink": "/work/{{ slug }}/index.html",
+  "catalog": {
+    "type": "portfolio"
+  }
+}

@@ -1,0 +1,374 @@
+{% extends "layouts/base.njk" %}
+
+{% block styles %}
+<style>
+  /* ── PORTFOLIO-SPECIFIC PROSE STYLES ── */
+
+  .portfolio-body h2 {
+    font-family: 'Cormorant Garant', Georgia, serif;
+    font-size: clamp(1.5rem, 2.5vw, 2.1rem);
+    font-weight: 300;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+    color: #1A1510;
+    margin: 3rem 0 1rem;
+  }
+  .portfolio-body h2 em { font-style: italic; color: #1C5B72; }
+
+  /* h3 becomes a section label above h2 */
+  .portfolio-body h3 {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.6rem;
+    font-weight: 400;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: #8a8478;
+    margin: 3rem 0 0.5rem;
+  }
+
+  .portfolio-body p {
+    font-size: 1.0rem;
+    font-weight: 300;
+    line-height: 1.85;
+    color: #2e2a26;
+    margin-bottom: 1.25rem;
+  }
+  .portfolio-body p:last-child { margin-bottom: 0; }
+
+  .portfolio-body strong { font-weight: 500; color: #1A1510; }
+  .portfolio-body em { font-style: italic; }
+
+  .portfolio-body a {
+    color: #1C5B72;
+    text-decoration: underline;
+    text-decoration-color: #C9BCA9;
+    text-underline-offset: 3px;
+    transition: text-decoration-color 0.2s;
+  }
+  .portfolio-body a:hover { text-decoration-color: #1C5B72; }
+
+  /* Blockquote → pull quote */
+  .portfolio-body blockquote {
+    border-left: 2px solid #7a9e8e;
+    padding: 0.25rem 0 0.25rem 1.75rem;
+    margin: 2.5rem 0;
+  }
+  .portfolio-body blockquote p {
+    font-family: 'Cormorant Garant', Georgia, serif;
+    font-size: clamp(1.15rem, 2vw, 1.4rem);
+    font-weight: 300;
+    font-style: italic;
+    line-height: 1.5;
+    color: #1A1510;
+  }
+
+  .portfolio-body ul,
+  .portfolio-body ol {
+    margin: 1rem 0 1.4rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.75;
+    color: #2e2a26;
+  }
+  .portfolio-body ul { list-style: disc; }
+  .portfolio-body ol { list-style: decimal; }
+  .portfolio-body li { margin-bottom: 0.35rem; }
+
+  /* code / formula display */
+  .portfolio-body code {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.82em;
+    background: #EDE5D4;
+    padding: 0.15em 0.4em;
+    border-radius: 2px;
+    color: #1A1510;
+  }
+  .portfolio-body pre {
+    background: #1a2420;
+    color: #d8d2c4;
+    padding: 1.25rem 1.5rem;
+    overflow-x: auto;
+    margin: 1.5rem 0;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.82rem;
+    line-height: 1.7;
+  }
+  .portfolio-body pre code {
+    background: none;
+    padding: 0;
+    color: inherit;
+    font-size: inherit;
+  }
+
+  .portfolio-body hr {
+    border: none;
+    height: 1px;
+    background: #C9BCA9;
+    margin: 3rem 0;
+  }
+
+  /* Table (formula tables, spec tables) */
+  .portfolio-body table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 2rem 0;
+    font-size: 0.875rem;
+  }
+  .portfolio-body th {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.58rem;
+    font-weight: 500;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: #8a8478;
+    text-align: left;
+    padding: 0.6rem 1rem;
+    border-bottom: 1px solid #C9BCA9;
+    background: #EDE5D4;
+  }
+  .portfolio-body td {
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid rgba(200,191,176,0.4);
+    font-weight: 300;
+    line-height: 1.5;
+    vertical-align: top;
+    color: #2e2a26;
+  }
+  .portfolio-body td:first-child {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.78rem;
+    color: #0f9d58;
+    white-space: nowrap;
+  }
+</style>
+{% endblock %}
+
+{% block content %}
+
+{# ══════════════════════════════════════════════════════════ #}
+{# DARK HERO                                                  #}
+{# ══════════════════════════════════════════════════════════ #}
+<section class="bg-[#0f1614] relative overflow-hidden pt-20"
+         aria-labelledby="project-heading"
+         style="background-image: linear-gradient(rgba(200,191,176,0.03) 1px, transparent 1px),
+                                  linear-gradient(90deg, rgba(200,191,176,0.03) 1px, transparent 1px);
+                background-size: 48px 48px;">
+
+  <div class="relative max-w-6xl px-6 py-16 mx-auto md:px-14 md:py-20">
+
+    {# Breadcrumb #}
+    <div class="h-enter d-1 flex items-center gap-2 mb-10
+                font-code text-[0.58rem] tracking-[0.16em] uppercase
+                text-[rgba(245,242,237,0.35)]">
+      <a href="/work/" class="hover:text-[rgba(245,242,237,0.7)] transition-colors">Work</a>
+      <span class="text-[rgba(245,242,237,0.2)]">/</span>
+      <span>Portfolio</span>
+      <span class="text-[rgba(245,242,237,0.2)]">/</span>
+      <span>{{ title }}</span>
+    </div>
+
+    {# Meta tags row #}
+    <div class="flex flex-wrap items-center gap-3 h-enter d-2 mb-7">
+      {% if category %}
+      <span class="font-code text-[0.58rem] tracking-[0.14em] uppercase
+                   text-[#d4825c] border border-[rgba(212,130,92,0.3)] px-2.5 py-1 rounded-[2px]">
+        {{ category }}
+      </span>
+      {% endif %}
+      {% if tags %}
+      {% for tag in tags %}
+      <span class="font-code text-[0.58rem] tracking-[0.14em] uppercase
+                   text-[rgba(245,242,237,0.4)] border border-[rgba(245,242,237,0.12)]
+                   px-2.5 py-1 rounded-[2px]">
+        {{ tag }}
+      </span>
+      {% endfor %}
+      {% endif %}
+      {% if status == "complete" %}
+      <span class="font-code text-[0.58rem] tracking-[0.14em] uppercase
+                   text-[#8bc48b] border border-[rgba(139,196,139,0.3)] px-2.5 py-1 rounded-[2px]">
+        Complete
+      </span>
+      {% endif %}
+    </div>
+
+    {# Title #}
+    <h1 id="project-heading"
+        class="h-enter d-3 font-display font-light leading-[1.08] text-[#f5f2ed] mb-5 max-w-3xl"
+        style="font-size: clamp(2.2rem, 5vw, 4rem); letter-spacing: -0.02em;">
+      {{ title | safe }}
+    </h1>
+
+    {# Subline / tldr #}
+    {% if tldr %}
+    <p class="h-enter d-4 font-display font-light italic text-[rgba(245,242,237,0.5)]
+              leading-relaxed mb-14 max-w-2xl"
+       style="font-size: clamp(1rem, 1.8vw, 1.2rem);">
+      {{ tldr }}
+    </p>
+    {% endif %}
+
+    {# Specs grid — driven by frontmatter specs array #}
+    {% if specs and specs.length %}
+    <div class="h-enter d-5 grid gap-0 border-t border-[rgba(200,191,176,0.15)] pt-10"
+         style="grid-template-columns: repeat({{ specs.length }}, 1fr);">
+      {% for spec in specs %}
+      <div class="{% if not loop.last %}pr-8 border-r border-[rgba(200,191,176,0.12)]{% endif %}
+                  {% if not loop.first %}pl-8{% endif %}">
+        <p class="font-code text-[0.58rem] tracking-[0.16em] uppercase
+                  text-[rgba(245,242,237,0.3)] mb-1.5">
+          {{ spec.label }}
+        </p>
+        <p class="font-display font-light text-[rgba(245,242,237,0.75)] leading-snug"
+           style="font-size: 0.95rem;">
+          {{ spec.value | safe }}
+        </p>
+      </div>
+      {% endfor %}
+    </div>
+    {% endif %}
+
+  </div>
+</section>
+
+{# ══════════════════════════════════════════════════════════ #}
+{# PROJECT LINKS BAR                                          #}
+{# ══════════════════════════════════════════════════════════ #}
+{% include "partials/project-links.njk" %}
+
+{# ══════════════════════════════════════════════════════════ #}
+{# BODY — two-column: main + sidebar                          #}
+{# ══════════════════════════════════════════════════════════ #}
+<div class="px-6 md:px-14 max-w-6xl mx-auto py-16 md:py-20
+            grid grid-cols-1 lg:grid-cols-[1fr_300px] xl:grid-cols-[1fr_320px] gap-16 lg:gap-20
+            items-start">
+
+  {# ── MAIN COLUMN ── #}
+  <div>
+
+    {# Operational impact box #}
+    {% if impact %}
+    <div class="bg-[#0f1614] px-10 py-9 mb-14 relative">
+      <p class="font-code text-[0.58rem] tracking-[0.18em] uppercase
+                text-[#d4825c] mb-4">
+        Operational Impact
+      </p>
+      <p class="font-display font-light italic text-[#f5f2ed] leading-[1.65]"
+         style="font-size: clamp(1rem, 1.6vw, 1.2rem);">
+        {{ impact }}
+      </p>
+    </div>
+    {% endif %}
+
+    {# Article body — markdown renders here #}
+    <div class="portfolio-body font-reading">
+      {{ content | safe }}
+    </div>
+
+    {# ── Project nav ── #}
+    <div class="border-t border-[#C9BCA9] mt-20 pt-12
+                grid grid-cols-1 sm:grid-cols-2 gap-6">
+
+      <a href="/work/"
+         class="flex flex-col gap-1.5 p-6 border border-[#C9BCA9]
+                hover:border-[#1C5B72] transition-colors no-underline group">
+        <span class="font-code text-[0.58rem] tracking-[0.14em] uppercase text-[#8a8478]
+                     group-hover:text-[#1C5B72] transition-colors">
+          ← Back to
+        </span>
+        <span class="font-display font-light text-[#1A1510] leading-snug"
+              style="font-size: 1.05rem;">
+          All <em>Work</em>
+        </span>
+      </a>
+
+      {% if next_project %}
+      <a href="/work/{{ next_project.slug }}"
+         class="flex flex-col gap-1.5 p-6 border border-[#C9BCA9] text-right
+                hover:border-[#1C5B72] transition-colors no-underline group">
+        <span class="font-code text-[0.58rem] tracking-[0.14em] uppercase text-[#8a8478]
+                     group-hover:text-[#1C5B72] transition-colors">
+          Next project →
+        </span>
+        <span class="font-display font-light text-[#1A1510] leading-snug"
+              style="font-size: 1.05rem;">
+          {{ next_project.name | safe }}
+        </span>
+      </a>
+      {% endif %}
+
+    </div>
+
+  </div>
+
+  {# ── SIDEBAR ── #}
+  <aside class="flex flex-col gap-8 lg:top-24">
+
+    {# Theory lens — dark block #}
+    {% if theory %}
+    <div class="bg-[#0f1614] p-7">
+      <p class="font-code text-[0.58rem] tracking-[0.18em] uppercase
+                text-[#d4825c] pb-3 mb-5
+                border-b border-[rgba(200,191,176,0.15)]">
+        Theoretical lens
+      </p>
+      <p class="font-display font-light italic text-[#f5f2ed] leading-snug mb-3"
+         style="font-size: 1.05rem;">
+        {{ theory.name }}
+      </p>
+      <p class="font-reading text-[rgba(245,242,237,0.5)] leading-relaxed"
+         style="font-size: 0.85rem;">
+        {{ theory.desc | safe }}
+      </p>
+    </div>
+    {% endif %}
+
+    {# Flexible sidebar sections — each has label + items list #}
+    {% for section in sidebar %}
+    <div class="border border-[#C9BCA9] p-7">
+      <p class="font-code text-[0.58rem] tracking-[0.18em] uppercase
+                text-[#8a8478] pb-3 mb-5
+                border-b border-[#C9BCA9]">
+        {{ section.label }}
+      </p>
+      <ul class="flex flex-col gap-2.5 list-none m-0 p-0">
+        {% for item in section.items %}
+        <li class="flex gap-2 items-start font-reading leading-snug text-[#3a3530]"
+            style="font-size: 0.875rem; font-weight: 300;">
+          <span class="font-code text-[#C9BCA9] flex-shrink-0 mt-0.5 text-[0.65rem]">—</span>
+          {{ item }}
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+    {% endfor %}
+
+    {# Role tags — special treatment #}
+    {% if roles and roles.length %}
+    <div class="border border-[#C9BCA9] p-7">
+      <p class="font-code text-[0.58rem] tracking-[0.18em] uppercase
+                text-[#8a8478] pb-3 mb-5
+                border-b border-[#C9BCA9]">
+        Target roles
+      </p>
+      <div class="flex flex-wrap gap-2">
+        {% for role in roles %}
+        <span class="font-code text-[0.58rem] tracking-[0.1em] uppercase px-2.5 py-1.5
+                     border rounded-[2px]
+                     {% if role.target %}
+                     text-[#7a9e8e] border-[rgba(122,158,142,0.35)] bg-[rgba(122,158,142,0.06)]
+                     {% else %}
+                     text-[#8a8478] border-[#C9BCA9]
+                     {% endif %}">
+          {{ role.name }}
+        </span>
+        {% endfor %}
+      </div>
+    </div>
+    {% endif %}
+
+  </aside>
+
+</div>
+
+{% endblock %}

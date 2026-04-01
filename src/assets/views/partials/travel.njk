@@ -1,0 +1,129 @@
+<style>
+
+  .world-strip-inner {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 1.25rem 2rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
+  .world-strip-stats {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .world-strip-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .world-stat {
+    display: flex;
+    flex-direction: column;
+    gap: 0.15rem;
+  }
+
+  .world-stat-num {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1;
+  }
+
+  .world-stat-label {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.52rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: #7A6E65;
+  }
+
+  .world-divider {
+    width: 1px;
+    height: 2.5rem;
+    background: #2A2520;
+    flex-shrink: 0;
+  }
+
+  .world-flags {
+    display: flex;
+    gap: 0.6rem;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .world-flag {
+    font-size: 1.3rem;
+    line-height: 1;
+    cursor: default;
+  }
+
+  .world-map-link {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.54rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #7A6E65;
+    text-decoration: none;
+    border: 1px solid #2A2520;
+    padding: 0.3em 0.65em;
+    transition: color 0.15s, border-color 0.15s;
+    margin-left: 2rem;
+  }
+
+  .world-map-link:hover {
+    color: #1C5B72;
+    border-color: #1C5B72;
+  }
+
+  @media (max-width: 600px) {
+    .world-strip-inner { gap: 1.25rem; }
+  }
+</style>
+
+<div class="world-strip">
+  <div class="world-strip-inner">
+    <div class="world-strip-stats">
+      <div class="world-stat">
+        <span class="world-stat-num">8</span>
+        <span class="world-stat-label">Countries</span>
+      </div>
+      <div class="world-divider"></div>
+      <div class="world-stat">
+        <span class="world-stat-num">44</span>
+        <span class="world-stat-label">Cities</span>
+      </div>
+      <div class="world-divider"></div>
+      <div class="world-stat">
+        <span class="world-stat-num">103k</span>
+        <span class="world-stat-label">km traveled</span>
+      </div>
+      <div class="world-divider"></div>
+      <div class="world-stat">
+        <span class="world-stat-num">4%</span>
+        <span class="world-stat-label">of the world</span>
+      </div>
+    </div>
+    <div class="world-strip-bottom">
+      <div class="world-flags" title="United States, Mexico, Belize, Guatemala, Cayman Islands, Jamaica, Spain, France">
+        <span class="world-flag" title="United States">🇺🇸</span>
+        <span class="world-flag" title="Mexico">🇲🇽</span>
+        <span class="world-flag" title="Belize">🇧🇿</span>
+        <span class="world-flag" title="Guatemala">🇬🇹</span>
+        <span class="world-flag" title="Cayman Islands">🇰🇾</span>
+        <span class="world-flag" title="Jamaica">🇯🇲</span>
+        <span class="world-flag" title="Spain">🇪🇸</span>
+        <span class="world-flag" title="France">🇫🇷</span>
+      </div>
+      <a class="world-map-link" href="https://nomadlist.com/@m2creates/" target="_blank" rel="noopener">Full map ↗</a>
+    </div>
+  </div>
+</div>
+
+<hr class="border-none h-px bg-gradient-to-r from-transparent via-[#C9BCA9] to-transparent">
