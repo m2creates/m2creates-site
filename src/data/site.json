@@ -1,6 +1,6 @@
 {
   "name": "m2creates",
-  "description": "Let's Create!",
+  "description": "Systems · Spaces · Things — Melanie E. Magdalena, Austin",
   "meta": {
     "url": "https://melaniemagdalena.com",
     "domain": "melaniemagdalena.com",
@@ -10,7 +10,7 @@
   "author": {
     "name": "Melanie E Magdalena",
     "avatar": "/images/avatar-256.jpg",
-    "bio": "Equal parts coffee, creativity, and code. Let's create!",
+    "bio": "Systems · Spaces · Things — Austin, TX",
     "pronouns": {
       "text": "she/her",
       "link": "https://pronoun.is/she",
@@ -54,11 +54,6 @@
       "network": "LinkedIn",
       "handle": "mmagdalena",
       "url": "https://www.linkedin.com/in/mmagdalena"
-    },
-    {
-      "network": "Polywork",
-      "handle": "@m2creates",
-      "url": "https://www.polywork.com/m2creates"
     }
   ],
   "email": {
