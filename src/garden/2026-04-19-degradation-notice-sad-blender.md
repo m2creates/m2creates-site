@@ -2,7 +2,7 @@
 title: >-
   The Blender with a Heart Murmur
 tldr: >-
-  Some failures make noise before they happen. You have to know what to listen for.
+  Some failures announce themselves early and quietly. Whether the signal gets read depends on who is in the room.
 slug: blender-with-a-heart-murmur
 draft: false
 datePublish: 2026-04-19
@@ -11,11 +11,19 @@ seo:
     The Blender with a Heart Murmur
   desc: >-
     Some failures make noise before they happen. You have to know what to listen for.
+domain: operational-systems
+axes:
+  signal_model: signal
+  stability_drift: drift
+  internal_external: external
+intended_audience: curious-generalist
+growth_stage: seedling
 category: field-notes
-growth: seedling
 thread: from-the-field
 tags:
   - entropy
+  - maintenance
+  - signal-detection
 post_type: article
 ---
 

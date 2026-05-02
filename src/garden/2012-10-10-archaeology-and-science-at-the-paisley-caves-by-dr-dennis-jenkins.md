@@ -1,10 +1,26 @@
 ---
 title: >-
-  “Archaeology and Science at the Paisley Caves” By Dr. Dennis Jenkins (University of Oregon)
+  Archaeology and Science at the Paisley Caves
+tldr: >-
+  Pre-Clovis evidence sat in the ground for 14,000 years before anyone looked for it — the record is only as complete as the questions that drove the excavation.
 slug: archaeology-and-science-at-the-paisley-caves-dennis-jenkins
+draft: true
 datePublish: 2012-10-10
-legacyUrl: http://www.melaniemagdalena.com/blog-my-archaeolife/-archaeology-and-science-at-the-paisley-caves-by-dr-dennis-jenkins-university-of-oregon
-category: archive
+seo:
+  title: >-
+    Archaeology and Science at the Paisley Caves
+  desc: >-
+    Coprolite DNA, pre-Clovis dates, and the Coastal Migration hypothesis — what Paisley Caves reveals about evidence that was always there, waiting for someone to ask.
+  legacyUrl: http://www.melaniemagdalena.com/blog-my-archaeolife/-archaeology-and-science-at-the-paisley-caves-by-dr-dennis-jenkins-university-of-oregon
+domain: deep-time-systems
+axes:
+  signal_model: signal
+  stability_drift: drift
+  internal_external: external
+intended_audience: domain-insider
+growth_stage: soil
+category: soil
+thread: from-the-field
 post_type: article
 ---
 

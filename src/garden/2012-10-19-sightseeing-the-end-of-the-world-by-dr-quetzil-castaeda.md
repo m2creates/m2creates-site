@@ -1,24 +1,29 @@
 ---
 title: >-
-  “Sightseeing the End of the World! Or, Everything You are Dying to Ask about 2012” with Dr. Quetzil Castañeda
+  "Sightseeing the End of the World!" with Dr. Quetzil Castañeda
 tldr: >-
-  Discover the truth behind 2012's Maya mysteries! Dr. Castañeda debunks myths and explores Maya culture; plus my plans for an epic end-of-cycle journey!
+  The 2012 meme is a case study in model drift — a cultural narrative that lost contact with the system it claimed to describe.
 slug: sightseeing-the-end-of-the-world-or-everything-you-are-dying-to-ask-about-2012-quetzil-castaeda
+draft: false
 datePublish: 2012-10-19
 seo:
   title: >-
-    “Sightseeing the End of the World! Or, Everything You are Dying to Ask about 2012” with Dr. Quetzil Castañeda
+    "Sightseeing the End of the World!" with Dr. Quetzil Castañeda
   desc: >-
-    Discover the truth behind 2012's Maya mysteries! Dr. Castañeda debunks myths and explores Maya culture; plus my plans for an epic end-of-cycle journey!
+    Dr. Castañeda debunks 2012 Maya myths and shows how cultural narratives diverge from the systems they claim to describe.
   image:
     url:
     alt:
   legacyUrl: http://www.melaniemagdalena.com/blog-my-archaeolife/-sightseeing-the-end-of-the-world-or-everything-you-are-dying-to-ask-about-2012-by-dr-quetzil-castaeda-indiana-university
+domain: cultural-systems
+axes:
+  signal_model: signal
+  stability_drift: drift
+  internal_external: external
+intended_audience: curious-generalist
+growth_stage: seedling
 category: field-notes
-growth: seedling
 thread: from-the-field
-# tags:
-# uses:
 post_type: article
 ---
 

@@ -2,14 +2,14 @@
 title: >-
   7 Techniques to Navigate the Universe of Your Subconscious Mind
 tldr: >-
-  Embrace the art of introspection to navigate the rich landscape of your subconscious mind. Discover how techniques like positive affirmations, meditation, free association, daydream visualizations, creative hobbies, prioritizing sleep, and honoring your instincts can lead to profound personal growth and well-being.
+  Introspective techniques are attention-direction systems — each method is a different mechanism for redirecting conscious awareness toward subconscious signal.
 slug: navigate-subconscious
-draft: false
+draft: true
 datePublish: 2023-12-10
 image:
   url: /images/tangle-yarn-kier-in-sight-archives-unsplash.jpeg
   alt: >-
-    A grayscale image of tangled yarn, symbolizing the complex and intertwined nature of thoughts within the subconscious mind. The monochromatic tones highlight the yarn's intricate patterns and knots, visually representing the journey of unraveling and understanding one's inner thoughts and feelings through introspection.
+    A grayscale image of tangled yarn, symbolizing the complex and intertwined nature of thoughts within the subconscious mind.
 seo:
   title: >-
     7 Techniques to Navigate Your Subconscious Mind
@@ -17,13 +17,20 @@ seo:
     Boost personal growth with affirmations, meditation, daydreaming, creativity, good sleep, and trusting instincts.
   image:
     url: /images/tangle-yarn-kier-in-sight-archives-unsplash.jpeg
-    alt: A grayscale image of tangled yarn, symbolizing the complex and intertwined nature of thoughts within the subconscious mind. The monochromatic tones highlight the yarn's intricate patterns and knots, visually representing the journey of unraveling and understanding one's inner thoughts and feelings through introspection.
-category: field-notes
-growth: seedling
+    alt: A grayscale image of tangled yarn.
+domain: attention-systems
+axes:
+  signal_model: model
+  stability_drift: stability
+  internal_external: internal
+intended_audience: curious-generalist
+growth_stage: soil
+category: soil
 thread: the-unseen-operator
 tags:
   - mindfulness
   - introspection
+  - attention
 post_type: article
 ---
 

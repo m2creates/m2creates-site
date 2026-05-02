@@ -160,11 +160,10 @@
     <div class="h-enter d-1 flex items-center gap-2 mb-10
                 font-code text-[0.58rem] tracking-[0.16em] uppercase
                 text-[rgba(245,242,237,0.35)]">
-      <a href="/work/" class="hover:text-[rgba(245,242,237,0.7)] transition-colors">Work</a>
-      <span class="text-[rgba(245,242,237,0.2)]">/</span>
-      <span>Portfolio</span>
-      <span class="text-[rgba(245,242,237,0.2)]">/</span>
-      <span>{{ title }}</span>
+      <a href="/work/" class="hover:text-[rgba(245,242,237,0.7)] transition-colors">Work
+        <span class="text-[rgba(245,242,237,0.2)]">/</span>
+        <span>Portfolio</span>
+      </a>
     </div>
 
     {# Meta tags row #}
@@ -175,14 +174,19 @@
         {{ category }}
       </span>
       {% endif %}
-      {% if tags %}
-      {% for tag in tags %}
+      {% if industry %}
       <span class="font-code text-[0.58rem] tracking-[0.14em] uppercase
                    text-[rgba(245,242,237,0.4)] border border-[rgba(245,242,237,0.12)]
                    px-2.5 py-1 rounded-[2px]">
-        {{ tag }}
+        {{ industry }}
       </span>
-      {% endfor %}
+      {% endif %}
+      {% if location %}
+      <span class="font-code text-[0.58rem] tracking-[0.14em] uppercase
+                   text-[rgba(245,242,237,0.4)] border border-[rgba(245,242,237,0.12)]
+                   px-2.5 py-1 rounded-[2px]">
+        {{ location }}
+      </span>
       {% endif %}
       {% if status == "complete" %}
       <span class="font-code text-[0.58rem] tracking-[0.14em] uppercase
@@ -232,11 +236,6 @@
 </section>
 
 {# ══════════════════════════════════════════════════════════ #}
-{# PROJECT LINKS BAR                                          #}
-{# ══════════════════════════════════════════════════════════ #}
-{% include "partials/project-links.njk" %}
-
-{# ══════════════════════════════════════════════════════════ #}
 {# BODY — two-column: main + sidebar                          #}
 {# ══════════════════════════════════════════════════════════ #}
 <div class="px-6 md:px-14 max-w-6xl mx-auto py-16 md:py-20
@@ -265,44 +264,14 @@
       {{ content | safe }}
     </div>
 
-    {# ── Project nav ── #}
-    <div class="border-t border-[#C9BCA9] mt-20 pt-12
-                grid grid-cols-1 sm:grid-cols-2 gap-6">
-
-      <a href="/work/"
-         class="flex flex-col gap-1.5 p-6 border border-[#C9BCA9]
-                hover:border-[#1C5B72] transition-colors no-underline group">
-        <span class="font-code text-[0.58rem] tracking-[0.14em] uppercase text-[#8a8478]
-                     group-hover:text-[#1C5B72] transition-colors">
-          ← Back to
-        </span>
-        <span class="font-display font-light text-[#1A1510] leading-snug"
-              style="font-size: 1.05rem;">
-          All <em>Work</em>
-        </span>
-      </a>
-
-      {% if next_project %}
-      <a href="/work/{{ next_project.slug }}"
-         class="flex flex-col gap-1.5 p-6 border border-[#C9BCA9] text-right
-                hover:border-[#1C5B72] transition-colors no-underline group">
-        <span class="font-code text-[0.58rem] tracking-[0.14em] uppercase text-[#8a8478]
-                     group-hover:text-[#1C5B72] transition-colors">
-          Next project →
-        </span>
-        <span class="font-display font-light text-[#1A1510] leading-snug"
-              style="font-size: 1.05rem;">
-          {{ next_project.name | safe }}
-        </span>
-      </a>
-      {% endif %}
-
-    </div>
-
   </div>
 
   {# ── SIDEBAR ── #}
   <aside class="flex flex-col gap-8 lg:top-24">
+
+
+    {# Project links #}
+    {% include "partials/project-links.njk" %}
 
     {# Theory lens — dark block #}
     {% if theory %}
@@ -343,32 +312,46 @@
     </div>
     {% endfor %}
 
-    {# Role tags — special treatment #}
-    {% if roles and roles.length %}
-    <div class="border border-[#C9BCA9] p-7">
-      <p class="font-code text-[0.58rem] tracking-[0.18em] uppercase
-                text-[#8a8478] pb-3 mb-5
-                border-b border-[#C9BCA9]">
-        Target roles
-      </p>
-      <div class="flex flex-wrap gap-2">
-        {% for role in roles %}
-        <span class="font-code text-[0.58rem] tracking-[0.1em] uppercase px-2.5 py-1.5
-                     border rounded-[2px]
-                     {% if role.target %}
-                     text-[#7a9e8e] border-[rgba(122,158,142,0.35)] bg-[rgba(122,158,142,0.06)]
-                     {% else %}
-                     text-[#8a8478] border-[#C9BCA9]
-                     {% endif %}">
-          {{ role.name }}
-        </span>
-        {% endfor %}
-      </div>
-    </div>
-    {% endif %}
-
   </aside>
 
+</div>
+
+</div>
+
+{# ── Project nav — below both columns on all screen sizes ── #}
+<div class="max-w-6xl px-6 pb-16 mx-auto md:px-14 md:pb-20">
+  <div class="border-t border-[#C9BCA9] pt-12
+              grid grid-cols-1 sm:grid-cols-2 gap-6">
+
+    <a href="/work/"
+       class="flex flex-col gap-1.5 p-6 border border-[#C9BCA9]
+              hover:border-[#1C5B72] transition-colors no-underline group">
+      <span class="font-code text-[0.58rem] tracking-[0.14em] uppercase text-[#8a8478]
+                   group-hover:text-[#1C5B72] transition-colors">
+        ← Back to
+      </span>
+      <span class="font-display font-light text-[#1A1510] leading-snug"
+            style="font-size: 1.05rem;">
+        All <em>Work</em>
+      </span>
+    </a>
+
+    {% if next_project %}
+    <a href="/work/{{ next_project.slug }}"
+       class="flex flex-col gap-1.5 p-6 border border-[#C9BCA9] text-right
+              hover:border-[#1C5B72] transition-colors no-underline group">
+      <span class="font-code text-[0.58rem] tracking-[0.14em] uppercase text-[#8a8478]
+                   group-hover:text-[#1C5B72] transition-colors">
+        Next project →
+      </span>
+      <span class="font-display font-light text-[#1A1510] leading-snug"
+            style="font-size: 1.05rem;">
+        {{ next_project.name | safe }}
+      </span>
+    </a>
+    {% endif %}
+
+  </div>
 </div>
 
 {% endblock %}

@@ -1,19 +1,28 @@
 ---
 title: >-
   Aquatic Apes: True or False?
+tldr: >-
+  How we decide which evidence is enough to accept a paradigm is itself a system — one that's rarely made explicit.
 slug: aquatic-apes-true-or-false
+draft: true
 datePublish: 2011-01-12
 seo:
   title: >-
     Aquatic Apes: True or False?
   desc: >-
-    Did humans evolve from aquatic apes? Elaine Morgan thinks so.
+    Evaluating the Aquatic Ape Hypothesis — and what the debate reveals about how paradigms get accepted or rejected.
   archive: http://www.melaniemagdalena.com/blog-my-archaeolife/-aquatic-apes-true-or-false
 catalog:
   parent: academic
   course: life-on-earth
-category: field-notes
-growth: seedling
+domain: deep-time-systems
+axes:
+  signal_model: model
+  stability_drift: drift
+  internal_external: external
+intended_audience: domain-insider
+growth_stage: soil
+category: soil
 thread: from-the-field
 tags:
   - research

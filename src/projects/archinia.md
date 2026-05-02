@@ -2,26 +2,20 @@
 title: The Ministry of Architecture (formerly Archinia)
 tldr: Recovered a Drupal site from the Wayback Machine after it went offline, then used the rebuild as a forcing function to consolidate seven fragmented architecture properties into one static, accessible platform — WCAG AA compliant, no database dependencies, with earthship research and Acoma education materials preserved and publicly available.
 slug: archinia
-date: Last Modified
 datePublish: 2018-01-17
 status: complete
 category: consulting
+location: Santa Fe, New Mexico
+industry: Architecture
 tags:
-  - HTML
-  - CSS
-  - JavaScript
-  - jQuery
-  - PHP
-  - GitHub Pages
-  - Cloudflare
   - Accessibility
   - Content Strategy
   - Information Architecture
   - Data Migration
- 
+
 impact: >-
   Recovered the primary Archinia site from the Wayback Machine after Drupal took it offline, then used the rebuild as a forcing function to consolidate seven separate properties — Archinia, Architecture 4 Everybody, and five Blogspot collections — into a single static site under The Ministry of Architecture umbrella. Eliminated database dependencies by moving to GitHub Pages, removing the infrastructure vulnerability that caused the original failure. Achieved WCAG AA accessibility standards with a design constraint built around macular degeneration. Preserved the Acoma Architecture Education Portal (8-lesson curriculum + teacher's guide, spun off from the award-screened documentary Emergence: Sky City Cultural Center) so its teaching materials remain usable. Published the full site source on GitHub to enable ongoing community contribution toward AAA compliance and complete alt text transcription of the portfolio archive. Continued maintenance and feature development through at least 2021.
- 
+
 specs:
   - label: Sites consolidated
     value: "7 → 1 (2 Drupal + 5 Blogger properties)"
@@ -64,15 +58,13 @@ links:
     desc: Public source repository
     url: https://github.com/Archinia/archinia-com
     type: github
-
-image:
-  url: /images/portfolio-archinia.png
-  alt: The Ministry of Architecture website displayed across desktop, tablet, and mobile screens, showing the homepage portfolio grid.
-  credit:
  
 next_project:
   name: Congressional Hunger Center
   slug: congressional-hunger-center
+
+order: 9
+
 ---
 
 The project started with a Drupal site going offline.

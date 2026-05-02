@@ -2,23 +2,25 @@
 title: >-
   All Good Things Come in Good Time - A Letter to U.S. Congress
 tldr: >-
-  Ethical Dilemmas in Anthropology: Explore this award-winning essay on balancing research freedom with ethical standards. Discover how IRBs and government regulations impact the delicate study of human subjects and shape the future of anthropology. 
+  Uniform research ethics regulation fails the same way uniform inventory policy does — governance that ignores actual variation in what it governs will misfire.
 slug: all-good-things-come-in-good-time
+draft: true
 datePublish: 2012-12-05
 seo:
   title: >-
     All Good Things Come in Good Time - A Letter to U.S. Congress
   desc: >-
     Award-winning essay on ethical anthropology research, exploring IRB roles and the balance of government oversight in human studies.
-  # image:
-  #   url:
-  #   alt:
   legacyUrl: http://www.melaniemagdalena.com/blog-my-archaeolife/all-good-things-come-in-good-time
-category: field-notes
-growth: budding
+domain: cultural-systems
+axes:
+  signal_model: model
+  stability_drift: stability
+  internal_external: external
+intended_audience: domain-insider
+growth_stage: soil
+category: soil
 thread: on-systems
-# tags:
-# uses:
 post_type: article
 ---
 

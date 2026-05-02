@@ -1,10 +1,26 @@
 ---
 title: >-
-  “Neandertals and Folks Like Us” By Fred Smith (Loyola University)
+  Neandertals and Folks Like Us
+tldr: >-
+  The story of Neandertal inferiority was constructed from gaps in the evidence not from the evidence itself — and that construction lasted decades after better data arrived.
 slug: neandertals-and-folks-like-us-fred-smith
+draft: true
 datePublish: 2012-09-20
-legacyUrl: http://www.melaniemagdalena.com/blog-my-archaeolife/-neandertals-and-folks-like-us-by-fred-smith-loyola-university
-category: archive
+seo:
+  title: >-
+    Neandertals and the Problem of Evidence We Didn't Have
+  desc: >-
+    How the scientific community built a story of Neandertal inferiority from incomplete data — and what happened when the genome filled in the gaps.
+  legacyUrl: http://www.melaniemagdalena.com/blog-my-archaeolife/-neandertals-and-folks-like-us-by-fred-smith-loyola-university
+domain: deep-time-systems
+axes:
+  signal_model: model
+  stability_drift: drift
+  internal_external: external
+intended_audience: curious-generalist
+growth_stage: soil
+category: soil
+thread: from-the-field
 post_type: article
 ---
 

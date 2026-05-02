@@ -17,14 +17,10 @@
     --offwhite:   #d8d2c4;
     --muted:      #8a8478;
 
-    /* BMAC Branding */
-    --bmac-yellow: #ffde02;
-    --bmac-purple: #bd60ff;
-    --bmac-blue: #5f7fff;
-    --bmac-green: #41dca5;
-    --bmac-red: #ff605f;
-
-    --buymeacoffee: var(--bmac-purple);
+    --seedling:   #4a8c80 /* teal */;
+    --budding:    #8c6e3f /* amber */;
+    --evergreen:  #2c5f4a /* dark green */;
+    --soil:       #7a4f38 /* deep clay brown */;
   }
 
   html,

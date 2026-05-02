@@ -23,7 +23,7 @@ As of 2022, this textbook summary also links to examples from my field experienc
 
 ## What’s the Point? (pages ix-xii)
 
-Fieldwork is flexible. Without flexibility, archaeologists would be unable to address the past and its people with a variety of questions in archaeological deposits. It is difficult to learn when and how techniques should be used and there is no book that an archaeologist can open to address challenges; only experience combined with knowledge from books can build a framework for solving problems and making decisions. 
+Fieldwork is flexible. Without flexibility, archaeologists would be unable to address the past and its people with a variety of questions in archaeological deposits. It is difficult to learn when and how techniques should be used and there is no book that an archaeologist can open to address challenges; only experience combined with knowledge from books can build a framework for solving problems and making decisions.
 
 ## Chapter 1: Basic Definitions and Assumptions (pages 1-16)
 
@@ -45,7 +45,7 @@ The archaeological record does not directly reflect human behavior; archaeologis
 
 Preservation is conditioned by mechanical, chemical, and biological weathering. Depending on what the artifacts are made of and how they were made, the nature of the depositional environment, and the nature of the postdepositional environment, some things preserve better than others.
 
-Preservation is enhanced by intentional or quick burial and/or the removal of materials from exposed surfaces. Modern life also impacts archaeological record: any alteration to the environment and alter archaeological record.   
+Preservation is enhanced by intentional or quick burial and/or the removal of materials from exposed surfaces. Modern life also impacts archaeological record: any alteration to the environment and alter archaeological record.
   
 ### Recognizing Archaeological Evidence
 
@@ -73,7 +73,7 @@ In the United States (USA):
 - State Historic Preservation Officers (SHPO) oversee the preservation and management of listed resources.
 - Tribal Historic Preservation Officers (THPO) are responsible for Indian lands and the Advisory Council on Historic Preservation (ACHP) advises the President and Congress on preservation matters.
 
-Fieldwork consists of identifying and locating archaeological resources via research design: developing hypotheses, determining what data is needed to answer the hypotheses and how to collect the data, analyzing and evaluating the data collected, and ultimately answering the hypotheses or developing new ones that require further investigation. 
+Fieldwork consists of identifying and locating archaeological resources via research design: developing hypotheses, determining what data is needed to answer the hypotheses and how to collect the data, analyzing and evaluating the data collected, and ultimately answering the hypotheses or developing new ones that require further investigation.
 
 Budgets limit how much work can be done on a site, making sampling a very important element. Samples provide information about where sites may be so more effort is placed in those of high and medium probability levels. After identifying known elements (structures, land features, previous sites), samples may be taken by qualitative (intuition) or quantitative (statistical) samples, such as random grid units and stratified samples in order to address the areas of high and medium probability.
 
@@ -130,7 +130,7 @@ In a map, the name, a key, a scale, and topographic contour lines are displayed.
 
 Coordinate and grid systems used by archaeologists include latitude, longitude, degrees and minutes, and the UTM grid.
 
-Topographic map symbols include water, cultural features, land surface, vegetation, unsurveyed areas, major roads, urban area, and added features from aerial photographs. 
+Topographic map symbols include water, cultural features, land surface, vegetation, unsurveyed areas, major roads, urban area, and added features from aerial photographs.
 
 ### Surveying and Mapmaking
 
@@ -146,7 +146,7 @@ UMT grid units are used to depict in which unit a site is located.
 
 Transect lines are used to locate a general area for subsurface tests.
 
-Grids and units are placed according to the site datum point by means of triangulation. 
+Grids and units are placed according to the site datum point by means of triangulation.
 
 Plan maps and elevation for topographic maps are also part of the procedure.
 
@@ -166,7 +166,7 @@ Soil forms from a parent material and may receive additions that cause transform
 
 Color reflects the developmental process and texture reflects mechanical, chemical, and biological breakdown of materials.
 
-Soil structure (how peds separate from each other) may be weak, moderate, or strong and described as granular, crumb, platy, blocky, subangular blocky, prismatic, or columnar. 
+Soil structure (how peds separate from each other) may be weak, moderate, or strong and described as granular, crumb, platy, blocky, subangular blocky, prismatic, or columnar.
 
 Soil horizons are created by the processes that form soil: (i) O, organic matter, (ii) A, well-decomposed organic matter, (iii) E, mineral horizon zone of intense leeching, (iv), B, mineral horizon zone of illuviation, (v) C, unweathered and lacks characteristics of A and B horizon, and (vi) R, the bedrock.
 
@@ -190,9 +190,9 @@ Factors that can affect discovering artifacts include abundance, clustering, and
 
 Surface observations include topography, vegetation, drainage, sediment and soil color, above-ground construction, and artifacts.
 
-There are multiple types of exposures and disturbances that can be looked for and examined; some of these are trails, areas of construction, and arid environments with little vegetation. Signs of deposits that were once-buried are: “tight spatial clustering of artifacts, human remains, and patterned soil discolorations.”   
+There are multiple types of exposures and disturbances that can be looked for and examined; some of these are trails, areas of construction, and arid environments with little vegetation. Signs of deposits that were once-buried are: “tight spatial clustering of artifacts, human remains, and patterned soil discolorations.”
   
-Field notes should include field observations (table 8.4), the activities performed, why they were performed, the field conditions they were performed under (can affect the reliability of survey results), the results produced, how the results were interpreted, the relevance of the survey to the research design, and how future action should follow. 
+Field notes should include field observations (table 8.4), the activities performed, why they were performed, the field conditions they were performed under (can affect the reliability of survey results), the results produced, how the results were interpreted, the relevance of the survey to the research design, and how future action should follow.
 
 All artifacts and samples collected are listed in a field specimen catalog (figure 8.29) and photographs of the methodological work recorded in a photo log (figure 8.32).
 
@@ -204,7 +204,7 @@ Remote sensing techniques (e.g., aerial photography, ground penetrating radar) h
 
 ## Chapter 9: Subsurface Investigations (pages 239-318)
   
-Subsurface excavations require special excavation tools, such as digging tools (shovels), screening devices for dry screening (typically ¼ inch or ⅛ inch, size depends on the size of artifacts being recovered) or wet screening (break down sediments and soils), augers (drill into sediments for sample collections) and coring devices (vertical subsurface samples), and sometimes earth-moving machinery (e.g., backhoes, bulldozers, grandalls). 
+Subsurface excavations require special excavation tools, such as digging tools (shovels), screening devices for dry screening (typically ¼ inch or ⅛ inch, size depends on the size of artifacts being recovered) or wet screening (break down sediments and soils), augers (drill into sediments for sample collections) and coring devices (vertical subsurface samples), and sometimes earth-moving machinery (e.g., backhoes, bulldozers, grandalls).
 
 Unit dimensions are 1x1 meter, 5x5 meter, etc. The type of excavation determines unit size.
 
@@ -212,7 +212,7 @@ Excavations may be by natural strata, arbitrary levels in a natural strata, onl
   
 First a unit is measured and elevation is recorded below datum (BD).
 
-Materials recovered should never be mixed with different levels or contexts in the screen. 
+Materials recovered should never be mixed with different levels or contexts in the screen.
 
 Artifacts should try to be located _in situ_ before the screening so exact provenience can be recorded; once in the screen only the level in the unit is known.
 

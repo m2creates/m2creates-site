@@ -1,22 +1,29 @@
 ---
 title: >-
-  Resilience and Adaptation: Unveiling the Hopi Journey in “Beyond the Mesas” Documentary
+  Resilience and Adaptation: Unveiling the Hopi Journey in "Beyond the Mesas"
 tldr: >-
-  A Hopi-perspective documentary – by Dr. Matthew Sakiestewa Gilbert – on the challenging history of Hopi removal to boarding schools and their enduring spirit of resistance.
+  A system designed to erase a culture can fail — the Hopi survived forced assimilation by mastering the institutional language that was meant to replace their own.
 slug: beyond-the-mesas-matthew-sakiestewa-gilbert
+draft: true
 datePublish: 2012-10-24
 seo:
   title: >-
-    Resilience and Adaptation: Unveiling the Hopi Journey in “Beyond the Mesas” Documentary
+    Resilience and Adaptation: The Hopi Journey in "Beyond the Mesas"
   desc: >-
-    A Hopi-perspective documentary on the challenging history of Hopi removal to boarding schools and their enduring spirit of resistance.
+    What the Hopi boarding school experience reveals about how cultural systems survive institutional pressure designed to eliminate them.
   image:
     url:
     alt:
   legacyUrl: http://www.melaniemagdalena.com/blog-my-archaeolife/-beyond-the-mesas-by-dr-matthew-sakiestewa-gilbert
-category: archive
-# tags:
-# uses:
+domain: cultural-systems
+axes:
+  signal_model: signal
+  stability_drift: drift
+  internal_external: external
+intended_audience: curious-generalist
+growth_stage: soil
+category: soil
+thread: from-the-field
 post_type: article
 ---
 

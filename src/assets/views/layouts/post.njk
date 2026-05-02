@@ -1,8 +1,8 @@
 {% extends "layouts/base.njk" %}
 
-{%- set growthEmoji = { seedling: '🌱', budding: '🌿', evergreen: '🌳' } -%}
-{%- set growthNote = { seedling: 'Fresh observation, loosely held', budding: 'Argument forming, not yet complete', evergreen: 'Settled enough to stand on' } -%}
-{%- set threadLabel = { 'on-systems': 'On Systems', 'the-unseen-operator': 'The Unseen Operator', 'from-the-field': 'From the Field' } -%}
+{%- set growthEmoji = { seedling: '🌱', budding: '🌿', evergreen: '🌳', soil: '🪨' } -%}
+{%- set growthNote = { seedling: 'Fresh observation, loosely held', budding: 'Argument forming, not yet complete', evergreen: 'Settled enough to stand on', soil: 'Foundational inputs shaping perception' } -%}
+{%- set domainLabel = { 'operational-systems': 'Operational Systems', 'cultural-systems': 'Cultural Systems', 'deep-time-systems': 'Deep Time Systems', 'attention-systems': 'Attention Systems' } -%}
 
 {% block content %}
 
@@ -98,23 +98,14 @@
     {# Back link #}
     <div class="max-w-4xl mx-auto mb-10 h-enter d-1">
       <p class="h-enter d-2 font-code text-[0.6rem] tracking-[0.2em] uppercase text-[#1C5B72] mb-5 max-w-3xl mx-auto">
-      {% if catalog.type == "portfolio" %}
-      <a href="/work/portfolio/"
-         class="font-code text-[0.6rem] tracking-[0.16em] uppercase text-[#7A6E65]
-                hover:text-[#1C5B72] transition-colors inline-flex items-center gap-2">
-        <span aria-hidden="true">←</span> Work / Portfolio
-      </a>
-      {% else %}
       <a href="/the-garden/"
          class="font-code text-[0.6rem] tracking-[0.16em] uppercase text-[#7A6E65]
                 hover:text-[#1C5B72] transition-colors inline-flex items-center gap-2">
-        <span aria-hidden="true">←</span> The Garden
-      </a>
-      {% endif %}
+        <span aria-hidden="true">←</span> The Garden</a>
 
       {# Category / thread label #}
       {% if category %}
-        {% if thread %}• {{ threadLabel[thread] or thread }}{% endif %}
+        {% if domain %}• {{ domainLabel[domain] or domain }}{% endif %}
       {% endif %}
       </p>
     </div>
@@ -137,19 +128,20 @@
     {# Meta strip #}
     <div class="h-enter d-5 flex flex-wrap items-center gap-x-5 gap-y-2 max-w-3xl mx-auto
                 font-code text-[0.6rem] tracking-[0.1em] uppercase text-[#7A6E65]">
-      {% if growth %}
+      {% if growth_stage %}
       <span
         class="font-code text-[0.52rem] tracking-[0.1em] uppercase px-2 py-0.5 border rounded-sm flex-shrink-0
-          {% if growth == 'seedling' %}border-[#4a8c80] text-[#3d7569] bg-[#4a8c80]/[0.06]
-          {% elif growth == 'budding' %}border-[#8c6e3f] text-[#7a5e30] bg-[#8c6e3f]/[0.06]
-          {% elif growth == 'evergreen' %}border-[#2c5f4a] text-[#2c5f4a] bg-[#2c5f4a]/[0.06]
+          {% if growth_stage == 'seedling' %}border-[#4a8c80] text-[#3d7569] bg-[#4a8c80]/[0.06]
+          {% elif growth_stage == 'budding' %}border-[#8c6e3f] text-[#7a5e30] bg-[#8c6e3f]/[0.06]
+          {% elif growth_stage == 'evergreen' %}border-[#2c5f4a] text-[#2c5f4a] bg-[#2c5f4a]/[0.06]
+          {% elif growth_stage == 'soil' %}border-[#7a4f38] text-[#7a4f38] bg-[#7a4f38]/[0.06]
           {% endif %}"
-        title="{{ growthNote[growth] }}"
+        title="{{ growthNote[growth_stage] }}"
       >
-        {{ growthEmoji[growth] }} {{ growth }}
+        {{ growthEmoji[growth_stage] }} {{ growth_stage }}
       </span>
       {% endif %}
-      {% if growth %}
+      {% if growth_stage %}
       <span aria-hidden="true" class="text-[#C9BCA9]">·</span>
       {% endif %}
       {% if datePublish %}

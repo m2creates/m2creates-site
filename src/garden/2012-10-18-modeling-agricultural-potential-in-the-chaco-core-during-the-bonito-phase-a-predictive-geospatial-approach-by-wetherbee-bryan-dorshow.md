@@ -2,23 +2,28 @@
 title: >-
   Unearthing Ancient Agriculture: Geospatial Revelations in Chaco Canyon
 tldr: >-
-  Wetherbee Bryan Dorshow (University of New Mexico) intersects archaeology and technology with a predictive geospatial approach to mapping ancient agricultural landscapes in Chaco Canyon.
+  Predictive geospatial modeling layers environmental variables to surface probability — treating the landscape as a legible system if you ask the right questions.
 slug: modeling-agricultural-potential-chaco-predictive-geospatial-approach-wetherbee-bryan-dorshow
+draft: true
 datePublish: 2012-10-18
 seo:
   title: >-
     Unearthing Ancient Agriculture: Geospatial Revelations in Chaco Canyon
   desc: >-
-    Wetherbee Bryan Dorshow intersects archaeology and technology with a predictive geospatial approach to mapping ancient agricultural landscapes in Chaco Canyon.
+    A predictive geospatial approach to mapping ancient agricultural landscapes in Chaco Canyon.
   image:
     url:
     alt:
   legacyUrl: http://www.melaniemagdalena.com/blog-my-archaeolife/-modeling-agricultural-potential-in-the-chaco-core-during-the-bonito-phase-a-predictive-geospatial-approach-by-wetherbee-bryan-dorshow-university-of-new-mexico
-category: field-notes
-growth: budding
+domain: deep-time-systems
+axes:
+  signal_model: model
+  stability_drift: stability
+  internal_external: external
+intended_audience: domain-insider
+growth_stage: soil
+category: soil
 thread: on-systems
-# tags:
-# uses:
 post_type: article
 ---
 

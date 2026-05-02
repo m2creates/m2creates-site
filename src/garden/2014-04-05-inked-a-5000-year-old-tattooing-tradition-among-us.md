@@ -2,26 +2,35 @@
 title: >-
   Inked: A 5,000 Year Old Tattooing Tradition Among Us
 tldr: >-
-  From ancient symbols and cultural rites to modern expressions of identity and art. [Plus a 12-minute video from my AGSU presentation!]
+  Tattoos are identity infrastructure — the body as a system for encoding social position, spiritual belief, and group membership across 5,000 years.
 slug: inked-a-5000-year-old-tattooing-tradition-among-us
+draft: false
 datePublish: 2014-04-05
-blocks:
-  - youtube
 seo:
   title: >-
     Inked: A 5,000 Year Old Tattooing Tradition Among Us
   desc: >-
-    Take a look at the ancient art of tattooing with me, tracing its 5,000-year journey across cultures and meanings.
+    Take a look at the ancient art of tattooing, tracing its 5,000-year journey across cultures and meanings.
   image:
     url:
     alt:
   legacyUrl: http://www.melaniemagdalena.com/thoughts/inked-a-5000-year-old-tattooing-tradition-among-us
+domain: cultural-systems
+axes:
+  signal_model: model
+  stability_drift: stability
+  internal_external: external
+intended_audience: curious-generalist
+growth_stage: seedling
 category: field-notes
-growth: evergreen
 thread: from-the-field
 tags:
   - presentation
-# uses:
+  - tattoos
+  - cultural-identity
+  - body-modification
+blocks:
+  - youtube
 post_type: video
 ---
 

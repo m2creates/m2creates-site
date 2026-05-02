@@ -12,30 +12,32 @@ if(process.env.NODE_ENV === "production") {
 const isDevEnv = process.env.ELEVENTY_ENV !== 'production';
 const todaysDate = new Date();
 
-function showDraft(data) {
-    const isDraft = 'draft' in data && data.draft !== false;
-    const isFutureDate = data.page.datePublish > todaysDate;
-    return isDevEnv || (!isDraft && !isFutureDate);
-}
+// function showDraft(data) {
+//     const isDraft = 'draft' in data && data.draft !== false;
+//     const isFutureDate = data.page.datePublish > todaysDate;
+//     return isDevEnv || (!isDraft && !isFutureDate);
+// }
 
 module.exports = function() {
     return {
         eleventyComputed: {
             eleventyExcludeFromCollections: function(data) {
-                if(showDraft(data)) {
-                    return data.eleventyExcludeFromCollections;
-                }
-                else {
-                    return true;
-                }
+                // if(showDraft(data)) {
+                //     return data.eleventyExcludeFromCollections;
+                // }
+                // else {
+                //     return true;
+                // }
+                return data.eleventyExcludeFromCollections;
             },
             permalink: function(data) {
-                if(showDraft(data)) {
-                    return data.permalink;
-                }
-                else {
-                    return false;
-                }
+                // if(showDraft(data)) {
+                //     return data.permalink;
+                // }
+                // else {
+                //     return false;
+                // }
+                return data.permalink;
             },
             date: function(data) {
                 return data.date;

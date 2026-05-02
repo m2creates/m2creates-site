@@ -1,13 +1,25 @@
 ---
 title: Firewalking for Spring
+tldr: >-
+  Ancient ritual provides a container for intention — the ceremony converts private resolve into shared commitment.
 slug: firewalking-for-spring
+draft: false
 datePublish: 2012-03-18
-legacyUrl: http://www.melaniemagdalena.com/blog-my-archaeolife/firewalking-for-spring
+seo:
+  title: Firewalking for Spring
+  desc: Attending a spring equinox ceremony with firewalking — ancient tradition still alive in Austin.
+  legacyUrl: http://www.melaniemagdalena.com/blog-my-archaeolife/firewalking-for-spring
+domain: cultural-systems
+axes:
+  signal_model: signal
+  stability_drift: stability
+  internal_external: external
+intended_audience: curious-generalist
+growth_stage: seedling
+category: field-notes
+thread: from-the-field
 blocks:
   - youtube
-category: field-notes
-growth: seedling
-thread: from-the-field
 post_type: video
 ---
 
