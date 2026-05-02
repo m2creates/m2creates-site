@@ -2,14 +2,14 @@
 title: >-
   Describing the Broken & Brittle: potsherd, sherd, or shard
 tldr: >-
-  Linguistics is weird, and fun.
+  The same broken thing gets a different name depending on context and who finds it — terminology encodes the system it came from.
 slug: potsherd-sherd-and-shard
 draft: false
 datePublish: 2014-10-10
 image:
   url: /images/potsherds-at-lamanai.jpg
   alt: >-
-    Two potsherds found during a walkabout at Lamanai, Belize. 
+    Two potsherds found during a walkabout at Lamanai, Belize.
 seo:
   title: >-
     Describing the Broken & Brittle: potsherd, sherd, or shard
@@ -17,13 +17,21 @@ seo:
     Explore the subtle differences between potsherds, sherds, and shards, and their unique archaeological contexts.
   image:
     url: /images/potsherds-at-lamanai.jpg
-    alt: Two potsherds found during a walkabout at Lamanai, Belize. 
+    alt: Two potsherds found during a walkabout at Lamanai, Belize.
   legacyUrl: http://www.melaniemagdalena.com/blog-my-archaeolife/potsherd-sherd-and-shard
+domain: deep-time-systems
+axes:
+  signal_model: signal
+  stability_drift: stability
+  internal_external: external
+intended_audience: curious-generalist
+growth_stage: seedling
 category: field-notes
-growth: seedling
 thread: from-the-field
 tags:
   - language
+  - archaeology
+  - terminology
 post_type: article
 ---
 

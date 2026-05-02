@@ -1,10 +1,11 @@
-/#portfolio /projects
-/#projects /projects
+### Carrd to 11ty
+/#portfolio /work
+/#projects /work
 /#about /about
 /#tools /uses
 /#misc /highlights
-/#contact https://twitter.com/messages/compose?recipient_id=1232581862
-/contact https://twitter.com/messages/compose?recipient_id=1232581862
+/#contact https://linkedin.com/in/mmagdalena
+/contact https://linkedin.com/in/mmagdalena
 /#linkinbio /linkinbio
 ### External redirects
 /analytics https://app.usefathom.com/share/sdxtreof/melaniemagdalena.com
@@ -35,13 +36,14 @@
 /cs-cnm-mile https://drive.google.com/file/d/1ohApFhBU5AXSLqtQmcDeu6Ta9r2gwjm3/view?usp=sharing
 /cs-leadsites-signup https://drive.google.com/file/d/1soHsPGkoEJlohbELT1BZk-k5wFuMX4CN/view?usp=sharing
 /cs-leadsites-onboarding https://drive.google.com/file/d/1ksmDOj3BdlTaulkSMs_mmhGvoPn2ID2v/view?usp=sharing
-### Old blog
+### Old blog iterations
 /blog-my-archaeolife/evolution-of-the-napkin /posts/evolution-of-the-napkin/
 /thoughts/evolution-of-the-napkin /posts/evolution-of-the-napkin/
 /thoughts/inked-a-5000-year-old-tattooing-tradition-among-us /posts/inked-a-5000-year-old-tattooing-tradition-among-us/
 /thoughts/potsherd-sherd-and-shard /posts/potsherd-sherd-and-shard/
-## Archive
+### Archive
 /debug-ios-safari-xcode-simulator /the-garden/ 301
+/the-secret-garden-a-symbolism-analysis /the-garden/ 301
 /shatter-static-stream-package /projects/ 301
 /uplabs-challenge-weather-app-dashboard /projects/ 301
 /uplabs-challenge-todo-app /projects/ 301
@@ -49,9 +51,8 @@
 /daily-ui-calculator /projects/ 301
 /temperature-converter /projects/ 301
 /uplabs-challenge-material-design /projects/ 301
-/the-secret-garden-a-symbolism-analysis /the-garden/ 301
 ### New blog
-/posts/* /:splat
+/posts/*  /the-garden/:splat
 /posts/ /the-garden
-/projects /work
-/projects/* /work
+### Reframed slugs
+/how-cooking-made-us-human-richard-wrangham/    /the-garden/cooking-efficiency-system-restructuring/    301!

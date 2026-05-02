@@ -13,7 +13,7 @@ const isDevEnv = process.env.ELEVENTY_ENV !== 'production';
 const todaysDate = new Date();
 
 function showDraft(data) {
-    const isDraft = 'draft' in data && data.draft !== false;
+    // const isDraft = 'draft' in data && data.draft !== false;
     const isFutureDate = data.page.datePublish > todaysDate;
     return isDevEnv || (!isDraft && !isFutureDate);
 }

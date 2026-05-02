@@ -1,31 +1,35 @@
 ---
 title: Using Airtable as an Analytics Hub
 tldr: >-
-  How I built my analytics dashboard with Airtable for Twitter, LinkedIn, and more.
+  Distributed signal across platforms routed through a single aggregation layer — the dashboard as attention infrastructure.
 slug: airtable-analytics-hub
+draft: true
 datePublish: 2021-08-07
-blocks:
-  - youtube
-comments:
-  twitter: https://twitter.com/m2creates/status/1423888996975972356
 image:
   url: /images/airtable-hub-reports.jpg
   alt: Airtable Hub reports view
   credit: The Report table aggregates info from all the other tables.
 seo:
   title: Using Airtable as an Analytics Hub
-  desc: Discover how to build an analytics dashboard using Airtable, plus practical tips for tracking social media stats (like Twitter/ LinkedIn).
+  desc: Discover how to build an analytics dashboard using Airtable, plus practical tips for tracking social media stats.
   image:
     url: /images/airtable-hub-reports.jpg
     alt: Analytics overview in Airtable Hub
-category: field-notes
-growth: budding
+domain: operational-systems
+axes:
+  signal_model: signal
+  stability_drift: stability
+  internal_external: external
+intended_audience: domain-insider
+growth_stage: soil
+category: soil
 thread: on-systems
 tags:
   - analytics
   - dashboard
-uses:
   - airtable
+blocks:
+  - youtube
 post_type: article
 ---
 

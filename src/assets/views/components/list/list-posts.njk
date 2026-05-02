@@ -1,30 +1,32 @@
-{%- set growthEmoji = { seedling: '🌱', budding: '🌿', evergreen: '🌳' } -%}
-{%- set growthNote = { seedling: 'Fresh observation, loosely held', budding: 'Argument forming, not yet complete', evergreen: 'Settled enough to stand on' } -%}
-{%- set threadLabel = { 'on-systems': 'On Systems', 'the-unseen-operator': 'The Unseen Operator', 'from-the-field': 'From the Field' } -%}
+{%- set growthEmoji = { seedling: '🌱', budding: '🌿', evergreen: '🌳', soil: '🪨' } -%}
+{%- set growthNote = { seedling: 'Fresh observation, loosely held', budding: 'Argument forming, not yet complete', evergreen: 'Settled enough to stand on', soil: 'Foundational inputs shaping perception' } -%}
+{%- set domainLabel = { 'operational-systems': 'Operational Systems', 'cultural-systems': 'Cultural Systems', 'deep-time-systems': 'Deep Time Systems', 'attention-systems': 'Attention Systems' } -%}
+{%- set categoryLabel = { 'field-notes': 'Field Notes', 'analytical-portfolio': 'Analytical Portfolio', 'soil': 'Foundations' } -%}
 
 
 <ul class="grid grid-cols-1 gap-px" role="list">
 
   {%- for post in posts -%}
-  {% if post.data.draft !== true %}
+  {# {% if post.data.draft !== true %} #}
 
   <a href="{{ post.url }}" class="u-url border-transparent hover:border-[#1E1910] transition-colors border-2 border-spacing-4">
     <li class="p-6 text-[#2A2520]">
 
       <div class="flex items-center justify-between gap-4 mb-3">
         <p class="font-code text-[0.56rem] tracking-[0.16em] uppercase text-[#725e48]">
-          {% if post.data.thread %}{{ threadLabel[post.data.thread] or post.data.thread }}{% endif %}
+          {% if post.data.domain %}{{ domainLabel[post.data.domain] or post.data.domain }}{% endif %}{% if post.data.category%} • {{ categoryLabel[post.data.category] or post.data.category }}{% endif %}
         </p>
-        {% if post.data.growth %}
+        {% if post.data.growth_stage %}
         <span
           class="font-code text-[0.52rem] tracking-[0.1em] uppercase px-2 py-0.5 border rounded-sm flex-shrink-0
             {% if post.data.growth == 'seedling' %}border-[#4a8c80] text-[#3d7569] bg-[#4a8c80]/[0.06]
             {% elif post.data.growth == 'budding' %}border-[#8c6e3f] text-[#7a5e30] bg-[#8c6e3f]/[0.06]
             {% elif post.data.growth == 'evergreen' %}border-[#2c5f4a] text-[#2c5f4a] bg-[#2c5f4a]/[0.06]
+            {% elif growth_stage == 'soil' %}border-[#7a4f38] text-[#7a4f38] bg-[#7a4f38]/[0.06]
             {% endif %}"
-          title="{{ growthNote[post.data.growth] }}"
+          title="{{ growthNote[post.data.growth_stage] }}"
         >
-          {{ growthEmoji[post.data.growth] }} {{ post.data.growth }}
+          {{ growthEmoji[post.data.growth_stage] }} {{ post.data.growth_stage }}
         </span>
         {% endif %}
       </div>
@@ -40,7 +42,7 @@
     </li>
   </a>
 
-  {% endif %}
+  {# {% endif %} #}
   {%- endfor -%}
 
 </ul>

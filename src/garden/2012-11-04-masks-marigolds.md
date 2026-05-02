@@ -2,20 +2,26 @@
 title: >-
   Masks & Marigolds
 tldr: >-
+  Marigold scent as signal infrastructure — the flower's aroma is the mechanism that guides the dead back to the living.
 slug: masks-and-marigolds
+draft: false
 datePublish: 2012-11-04
 seo:
-  title:
-  desc:
+  title: Masks & Marigolds
+  desc: Day of the Dead marigold festival in Albuquerque, New Mexico.
   image:
     url:
     alt:
   legacyUrl: http://www.melaniemagdalena.com/blog-my-archaeolife/masks-marigolds
+domain: cultural-systems
+axes:
+  signal_model: signal
+  stability_drift: stability
+  internal_external: external
+intended_audience: curious-generalist
+growth_stage: seedling
 category: field-notes
-growth: seedling
 thread: from-the-field
-# tags:
-# uses:
 blocks:
   - youtube
 post_type: video

@@ -1,14 +1,15 @@
 ---
 title: >-
   Ostrom's Commons and Your Inventory
-tldr: Why differentiated governance rules outperform uniform policy
+tldr: >-
+  Governance rules should match the stakes of the asset — ABC segmentation is Ostrom's proportionality principle made operational.
 slug: abc-inventory-segmentation
 draft: false
 datePublish: 2026-03-10
 image:
   url:
-  alt: 
-  credit: 
+  alt:
+  credit:
 seo:
   title: >-
     Ostrom's Commons and Your Inventory
@@ -16,17 +17,25 @@ seo:
   image:
     url:
     alt:
-category: field-notes
-growth: budding
-thread: from-the-field
+domain: operational-systems
+axes:
+  signal_model: model
+  stability_drift: stability
+  internal_external: external
+intended_audience: bridge
+growth_stage: evergreen
+category: analytical-portfolio
+thread: supply-chain-analytics
 tags:
-  - analytics
+  - abc-segmentation
+  - ostrom
+  - commons
+  - inventory-management
+  - supply-chain
+  - institutional-design
+  - pareto
 post_type: article
 links:
-  # - label: Project breakdown
-  #   desc: ABC Segmentation
-  #   url: /work/portfolio-abc-segmentation
-  #   type: breakdown
   - label: Google Sheets
     desc: DataCo · 180k+ records
     url: https://docs.google.com/spreadsheets/d/1b_2eUZ4Z4jHYeswNNvz2vWW4XRR6mRE-MNIll28LSsQ/view

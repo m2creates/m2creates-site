@@ -1,11 +1,82 @@
-<ul class="w-full list">
-{%- for post in posts -%}
-  <li class="flex flex-col py-3">
-    <div class="flex flex-col justify-between mb-1 sm:flex-row flex-nowrap gap-x-4">
-      <a href="{{ post.data.showcase.link }}" target="_blank">{{ post.data.title }}</a>
-      <time class="flex-shrink-0" datetime="{{  post.data.datePublish | iso }}" itemProp="datePublished">{{ post.data.datePublish | format('dd LLL yyyy') }}</time>
-    </div>
-    {% if post.data.tldr %}<p class="mt-0"><em>{{ post.data.tldr | safe }}</em></p>{% endif %}
-  </li>
-{%- endfor -%}
+{%- set categoryLabel = { 'consulting': 'Consulting', 'training': 'Training' } -%}
+
+<ul class="grid grid-cols-1 gap-4 md:grid-cols-2" role="list">
+
+  {%- for project in postslist -%}
+  {% if project.data.draft !== true %}
+
+  <a href="{{ project.url }}"
+     class="group border border-[#C9BCA9] hover:border-[#1E1910] transition-colors no-underline flex flex-col">
+    <li class="flex flex-col flex-1 p-7">
+
+      {# ── Top meta row: category + status ── #}
+      <div class="flex items-center justify-between gap-3 mb-6">
+        <div class="flex flex-wrap gap-2">
+          {% if project.data.category %}
+          <span class="font-code text-[0.52rem] tracking-[0.12em] uppercase px-2 py-0.5 rounded-[2px]
+            {% if cat == 'consulting' %}
+              text-[#d4825c] border border-[rgba(212,130,92,0.35)] bg-[rgba(212,130,92,0.04)]
+            {% elif cat == 'training' %}
+              text-[#4a8c82] border border-[rgba(74,140,130,0.35)] bg-[rgba(74,140,130,0.04)]
+            {% else %}
+              text-[#8a8478] border border-[#C9BCA9]
+            {% endif %}">
+            {{ categoryLabel[cat] or project.data.category }}
+          </span>
+          {% endif %}
+        </div>
+        {% if project.data.status == 'complete' %}
+        <span class="font-code text-[0.52rem] tracking-[0.12em] uppercase
+                     text-[#8a8478] flex-shrink-0">
+          Complete
+        </span>
+        {% elif project.data.status == 'in-progress' %}
+        <span class="font-code text-[0.52rem] tracking-[0.12em] uppercase
+                     text-[#8c6e3f] flex-shrink-0">
+          In Progress
+        </span>
+        {% endif %}
+      </div>
+
+      {# ── Title ── #}
+      <p class="font-display font-light text-[#1A1510] leading-snug mb-3
+                group-hover:text-[#1C5B72] transition-colors"
+         style="font-size: clamp(1.1rem, 1.8vw, 1.3rem);">
+        {{ project.data.title | safe }}
+      </p>
+
+      {# ── tldr ── #}
+      {% if project.data.tldr %}
+      <p class="font-reading italic text-[#7A6E65] leading-relaxed mb-auto"
+         style="font-size: 0.875rem;">
+        {{ project.data.tldr | safe }}
+      </p>
+      {% endif %}
+
+      {# ── Bottom row: industry + location ── #}
+      <div class="flex items-center justify-between gap-4 mt-6 pt-5 border-t border-[#C9BCA9]">
+        <div class="flex flex-wrap gap-x-3 gap-y-1">
+          {% if project.data.industry %}
+          <span class="font-code text-[0.54rem] tracking-[0.12em] uppercase text-[#8a8478]">
+            {{ project.data.industry }}
+          </span>
+          {% endif %}
+          {% if project.data.location %}
+          <span class="font-code text-[0.54rem] tracking-[0.12em] uppercase text-[#C9BCA9]">·</span>
+          <span class="font-code text-[0.54rem] tracking-[0.12em] uppercase text-[#8a8478]">
+            {{ project.data.location }}
+          </span>
+          {% endif %}
+        </div>
+        <span class="font-code text-[0.65rem] text-[#C9BCA9]
+                     group-hover:text-[#1C5B72] transition-colors flex-shrink-0"
+              aria-hidden="true">→</span>
+      </div>
+
+    </li>
+  </a>
+
+  {% endif %}
+  {%- endfor -%}
+
 </ul>

@@ -1,9 +1,9 @@
 ---
 title: The Garden
 subtitle: >-
-  On Systems  ·  On Capacity  ·  From the Field
+  Systems of Perception
 tldr: >-
-  A collection of notes at different stages of growth, tended over time rather than published and left.
+  A collection of notes on systems of perception at different stages of growth, tended over time rather than published and left.
 slug: the-garden
 date: Last Modified
 datePublish: 2022-03-12
@@ -11,7 +11,7 @@ seo:
   title: >-
     The Garden
   desc: >-
-    A collection of notes at different stages of growth, tended over time rather than published and left.
+    A collection of notes on systems of perception at different stages of growth, tended over time rather than published and left.
 pagination:
   data: collections.posts
   size: 1000

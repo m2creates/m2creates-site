@@ -1,41 +1,37 @@
 ---
 title: Sea Otters (Enhydra lutris)
 tldr: >-
-  Dive into the intriguing life of sea otters, exploring their behaviors, diet, and vital ecological role, along with the conservation challenges they face.
+  A keystone species is a leverage point — remove the sea otter, lose the kelp forest, lose the carbon sink. One actor whose presence or absence restructures everything downstream.
 slug: sea-otters-enhydra-lutris
-draft: false
+draft: true
 datePublish: 2010-12-05
 image:
   url: /images/sea-otter-alaska.jpeg
   alt: Three sea otters playing in Gulf of Alaska, North Pacific Ocean in Kenai Fjords, Alaska
   credit: Kedar Gadge on Unsplash
-# blocks:
-#   css: youtube
-#   js: youtube
-# comments:
-#   twitter: 
-#   codepen:
-#   polywork: 
-#   linkedin: 
-#   uplabs:
 seo:
   title: Sea Otters (Enhydra lutris)
   desc: >-
-    Discover the fascinating world of sea otters! Dive into their unique traits, diet, and survival challenges in this detailed exploration. 
+    Sea otters as a keystone species — and what their presence or absence reveals about how ecosystems hold together.
   image:
     url: /images/sea-otter-alaska.jpeg
     alt: Three sea otters playing in Gulf of Alaska, North Pacific Ocean in Kenai Fjords, Alaska
   legacyUrl: http://www.melaniemagdalena.com/blog-my-archaeolife/-sea-otters-enhydra-lutris
-category: field-notes
-growth: seedling
+catalog:
+  parent: academic
+  course: life-on-earth
+domain: deep-time-systems
+axes:
+  signal_model: model
+  stability_drift: drift
+  internal_external: external
+intended_audience: curious-generalist
+growth_stage: soil
+category: soil
 thread: from-the-field
 tags:
   - research
   - essay
-# uses:
-catalog:
-  parent: academic
-  course: life-on-earth
 post_type: article
 ---
 

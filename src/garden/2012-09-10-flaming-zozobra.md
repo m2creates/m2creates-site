@@ -1,13 +1,25 @@
 ---
 title: Flaming Zozobra
+tldr: >-
+  Zozobra is collective grief infrastructure — burn the effigy, release the gloom, reset the community for another year.
 slug: flaming-zozobra
+draft: false
 datePublish: 2012-09-10
-legacyUrl: http://www.melaniemagdalena.com/blog-my-archaeolife/flaming-zozobra
+seo:
+  title: Flaming Zozobra
+  desc: The annual burning of Zozobra in Santa Fe — 300 years of collective grief ritual, still running.
+  legacyUrl: http://www.melaniemagdalena.com/blog-my-archaeolife/flaming-zozobra
+domain: cultural-systems
+axes:
+  signal_model: signal
+  stability_drift: stability
+  internal_external: external
+intended_audience: curious-generalist
+growth_stage: seedling
+category: field-notes
+thread: from-the-field
 blocks:
   - youtube
-category: field-notes
-growth: seedling
-thread: from-the-field
 post_type: video
 ---
 

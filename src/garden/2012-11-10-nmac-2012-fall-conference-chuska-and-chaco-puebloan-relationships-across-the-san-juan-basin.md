@@ -1,22 +1,26 @@
 ---
 title: >-
-  NMAC 2012 Fall Conference - “Chuska and Chaco: Puebloan Relationships Across the San Juan Basin”
+  NMAC 2012 Fall Conference — "Chuska and Chaco: Puebloan Relationships Across the San Juan Basin"
 tldr: >-
-  Discover the Secrets of Ancient Pueblo Pottery and Social Dynamics! Insights from the NMAC 2012 Fall Conference, exploring the unique ceramics, rituals, and social landscapes of the Chuska and Chaco regions.
+  Pottery temper traces social networks — the ceramic record is a map of who was in relationship with whom across the San Juan Basin.
 slug: nmac-2012-chuska-chaco-puebloan-relationships-san-juan-basin
+draft: true
 datePublish: 2012-11-10
 seo:
   title: >-
-    NMAC 2012 Fall Conference - “Chuska and Chaco: Puebloan Relationships Across the San Juan Basin”
+    NMAC 2012: Chuska and Chaco Puebloan Relationships
   desc: >-
-    Exploring Chuska and Chaco's impact on the cultural landscape of the San Juan Basin, revealing new insights into ancient Pueblo communities.
-  # image:
-  #   url:
-  #   alt:
+    Conference notes on ceramic distribution, social landscape, and the material record of ancient Puebloan relationships across the San Juan Basin.
   legacyUrl: http://www.melaniemagdalena.com/blog-my-archaeolife/-nmac-2012-fall-conference-chuska-and-chaco-puebloan-relationships-across-the-san-juan-basin
-category: archive
-# tags:
-# uses:
+domain: deep-time-systems
+axes:
+  signal_model: signal
+  stability_drift: stability
+  internal_external: external
+intended_audience: domain-insider
+growth_stage: soil
+category: soil
+thread: from-the-field
 post_type: article
 ---
 

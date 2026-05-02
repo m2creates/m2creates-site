@@ -1,11 +1,23 @@
 ---
 title: >-
   Thanksgiving & Being Vegetarian
+tldr: >-
+  Animal agriculture is a supply chain that externalizes most of its costs — the food system is only affordable if you don't count what it takes from the land, water, and air.
 slug: thanksgiving-being-vegetarian
+draft: true
 datePublish: 2011-11-22
-legacyUrl: http://www.melaniemagdalena.com/blog-my-archaeolife/thanksgiving-being-vegetarian
-category: field-notes
-growth: seedling
+seo:
+  title: Thanksgiving & Being Vegetarian
+  desc: A 2011 essay on animal agriculture as a food system with significant externalized environmental costs.
+  legacyUrl: http://www.melaniemagdalena.com/blog-my-archaeolife/thanksgiving-being-vegetarian
+domain: operational-systems
+axes:
+  signal_model: model
+  stability_drift: drift
+  internal_external: external
+intended_audience: curious-generalist
+growth_stage: soil
+category: soil
 thread: from-the-field
 post_type: article
 ---

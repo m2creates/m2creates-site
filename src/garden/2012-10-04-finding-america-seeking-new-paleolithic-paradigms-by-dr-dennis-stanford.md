@@ -1,10 +1,26 @@
 ---
 title: >-
-  “Finding America: Seeking New Paleolithic Paradigms” By Dr. Dennis Stanford (Curator of Archaeology, Smithsonian
+  Finding America: Seeking New Paleolithic Paradigms
+tldr: >-
+  A paradigm built on unexcavated sites and contested dates is still a paradigm — the Solutrean hypothesis shows how prior commitments shape what counts as sufficient evidence.
 slug: finding-america-seeking-new-paleolithic-paradigms-dennis-stanford
+draft: true
 datePublish: 2012-10-04
-legacyUrl: http://www.melaniemagdalena.com/blog-my-archaeolife/-finding-america-seeking-new-paleolithic-paradigms-by-dr-dennis-stanford-curator-of-archaeology-smithsonian
-category: archive
+seo:
+  title: >-
+    Finding America: The Solutrean Hypothesis and the Problem of Prior Commitments
+  desc: >-
+    Stanford's Atlantic Migration hypothesis and what it reveals about how researchers decide when evidence is sufficient to support a paradigm shift.
+  legacyUrl: http://www.melaniemagdalena.com/blog-my-archaeolife/-finding-america-seeking-new-paleolithic-paradigms-by-dr-dennis-stanford-curator-of-archaeology-smithsonian
+domain: deep-time-systems
+axes:
+  signal_model: model
+  stability_drift: drift
+  internal_external: external
+intended_audience: domain-insider
+growth_stage: soil
+category: soil
+thread: from-the-field
 post_type: article
 ---
 

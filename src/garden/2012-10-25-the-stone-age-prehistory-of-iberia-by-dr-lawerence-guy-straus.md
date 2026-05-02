@@ -2,21 +2,28 @@
 title: >-
   Echoes of Ancient Iberia: Tracing Human Evolution Through Millennia
 tldr: >-
-  Explore 150 years of Iberian Stone Age research, tracing human evolution from Homo antecessor to Homo sapiens, and uncovering fascinating insights into ancient life and culture.
+  The research record changes faster than the bones do — 150 years of Iberian archaeology is a history of frameworks that outlast the evidence that challenged them.
 slug: the-stone-age-prehistory-of-iberia-lawerence-guy-straus
+draft: true
 datePublish: 2012-10-25
 seo:
   title: >-
     Echoes of Ancient Iberia: Tracing Human Evolution Through Millennia
   desc: >-
-    Explore 150 years of Iberian Stone Age research, tracing human evolution from Homo antecessor to Homo sapiens, and uncovering fascinating insights into ancient life and culture.
+    150 years of Iberian Stone Age research — and what the shifting interpretations reveal about how frameworks outlast the evidence that challenged them.
   image:
     url:
     alt:
   legacyUrl: http://www.melaniemagdalena.com/blog-my-archaeolife/-the-stone-age-prehistory-of-iberia-by-dr-lawerence-guy-straus-unm-universidad-de-cantabria
-category: archive
-# tags:
-# uses:
+domain: deep-time-systems
+axes:
+  signal_model: model
+  stability_drift: drift
+  internal_external: external
+intended_audience: curious-generalist
+growth_stage: soil
+category: soil
+thread: from-the-field
 post_type: article
 ---
 

@@ -2,21 +2,28 @@
 title: >-
   Tracing the Footsteps of Time: The Seven Stages of Pre-Clovis to Clovis Cultures in the Americas
 tldr: >-
-  Spanning over 21,000 years, Dr. Michael B. Collins (Texas State University) identifies seven unique archaeological groups, painting a vivid picture of our ancient past and its evolution leading to the pivotal Clovis culture.
+  Calling Clovis the beginning was a paradigm choice not a finding — when you move it to the middle every question about the first Americans changes.
 slug: clovis-mid-point-in-cultural-history-americas-michael-collins
+draft: true
 datePublish: 2012-10-17
 seo:
   title: >-
-    Tracing the Footsteps of Time: The Seven Stages of Pre-Clovis to Clovis Cultures in the Americas
+    Clovis as Mid-Point: Rethinking the Cultural History of the Americas
   desc: >-
-    Spanning over 21,000 years, Dr. Michael B. Collins (Texas State University) identifies seven unique archaeological groups, painting a vivid picture of our ancient past and its evolution leading to the pivotal Clovis culture.
+    Collins's seven-group taxonomy reframes Clovis from beginning to midpoint — and shows how anchor points shape every question downstream.
   image:
     url:
     alt:
   legacyUrl: http://www.melaniemagdalena.com/blog-my-archaeolife/-clovis-the-mid-point-in-the-cultural-history-of-the-americas-by-michael-b-collins-texas-state-university
-category: archive
-# tags:
-# uses:
+domain: deep-time-systems
+axes:
+  signal_model: model
+  stability_drift: stability
+  internal_external: external
+intended_audience: domain-insider
+growth_stage: soil
+category: soil
+thread: from-the-field
 post_type: article
 ---
 

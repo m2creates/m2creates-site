@@ -1,10 +1,26 @@
 ---
 title: >-
-  “Science of Food” - Adult Night at Explora
+  Science of Food — Adult Night at Explora
+tldr: >-
+  Learning happens best when it is designed into the environment rather than delivered at people — Explora's Adult Night is infrastructure not entertainment.
 slug: science-of-food-adult-night-at-explora
+draft: true
 datePublish: 2012-09-21
-legacyUrl: http://www.melaniemagdalena.com/blog-my-archaeolife/-science-of-food-adult-night-at-explora
-category: archive
+seo:
+  title: >-
+    Learning as Infrastructure: What Explora's Adult Night Gets Right
+  desc: >-
+    What a science museum's adult programming reveals about how experiential environments distribute learning differently than instructional ones.
+  legacyUrl: http://www.melaniemagdalena.com/blog-my-archaeolife/-science-of-food-adult-night-at-explora
+domain: attention-systems
+axes:
+  signal_model: signal
+  stability_drift: stability
+  internal_external: internal
+intended_audience: curious-generalist
+growth_stage: soil
+category: soil
+thread: from-the-field
 post_type: article
 ---
 

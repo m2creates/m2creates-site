@@ -1,10 +1,22 @@
 ---
-title: Banned Gaza Children’s Art Exhibit Comes to UNM
+title: Banned Gaza Children's Art Exhibit Comes to UNM
+tldr: >-
+  Children's drawings are involuntary system documentation — the art records what a political system does to the people living inside it.
 slug: banned-gaza-childrens-art-exhibit-comes-to-unm
+draft: true
 datePublish: 2012-09-14
-legacyUrl: http://www.melaniemagdalena.com/blog-my-archaeolife/-banned-gaza-childrens-art-exhibit-comes-to-unm
-category: field-notes
-growth: seedling
+seo:
+  title: Banned Gaza Children's Art Exhibit Comes to UNM
+  desc: A 2012 exhibit of drawings by children in Gaza, and what the art says about the system they live inside.
+  legacyUrl: http://www.melaniemagdalena.com/blog-my-archaeolife/-banned-gaza-childrens-art-exhibit-comes-to-unm
+domain: cultural-systems
+axes:
+  signal_model: signal
+  stability_drift: drift
+  internal_external: external
+intended_audience: curious-generalist
+growth_stage: soil
+category: soil
 thread: from-the-field
 post_type: article
 ---

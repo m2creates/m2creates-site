@@ -25,18 +25,15 @@ module.exports = {
 		return collection.getFilteredByGlob('src/pages/*.md');
 	},
 
-	portfolio: function (collection) {
+	projects: function (collection) {
 		return collection
-			.getFilteredByGlob('src/portfolio/*.md')
-			.sort(function (a, b) {
-				return b.data.datePublish - a.data.datePublish; // sort by date - descending
-				//return a.data.datePublish - b.data.datePublish; // sort by date - ascending
-			});
+			.getFilteredByGlob('src/projects/*.md')
+			.sort((a, b) => (a.data.order || 99) - (b.data.order || 99));
 	},
 
 	portfolioFeatured: function (collection) {
 		const portfolio = collection
-			.getFilteredByGlob('src/portfolio/*.md')
+			.getFilteredByGlob('src/projects/*.md')
 			.filter(function (item) {
 				// Side-step tags and do your own filtering
 				return 'featured' in item.data;

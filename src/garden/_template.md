@@ -1,25 +1,59 @@
 ---
-title: 
-tldr:
-slug:
-draft: true
-datePublish:
+title: >-
+  Clear, specific title
+
+tldr: >-
+  1-line system insight
+
+slug: url-slug
+
+draft: false
+
+datePublish: YYYY-MM-DD
+
 image:
   url:
-  alt: 
-  credit: 
+  alt:
+  credit:
+
 seo:
-  title:
-  desc:
+  title: >-
+    [SEO title (can match title)]
+  desc: >-
+    SEO description
   image:
     url:
     alt:
-#category: field-notes
-#growth: seedling
-#thread: from-the-field
+
+domain: attention-systems | operational-systems | cultural-systems | deep-time-systems
+
+axes:
+  signal_model: signal | model]
+  stability_drift: stability | drift
+  internal_external: internal | external
+
+intended_audience: self | curious-generalist | domain-insider | bridge
+
+growth_stage: soil | seedling | budding | evergreen
+
+category: field-notes | analytical-portfolio | soil
+
+thread: series-or-theme-name
+
+tags:
+  - topic-tag-1
+  - topic-tag-2
+
+post_type: article
+
+# links:
+  # - label:
+  #   desc:
+  #   url:
+  #   type: [breakdown | sheets | looker | reference]
+
 permalink: false
 eleventyExcludeFromCollections: true
-post_type: article
 ---
 
 Image shortcode

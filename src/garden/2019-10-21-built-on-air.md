@@ -2,28 +2,32 @@
 title: >-
   Built on Air - Season 3, Episode 8
 tldr: >-
-  I was invited to Built on Air to showcase an Airtable base created to calculate student assessment scores; and explain how I get data in the right spots.
+  Assessment scoring as a data-routing problem — getting the right signal into the right field without manual intervention.
 slug: built-on-air-podcast-0308
+draft: true
 datePublish: 2019-10-21
 image:
   url: /images/built-on-air-episode.jpeg
   alt: Built on Air - Season 3, Episode 8 with Melanie Magdalena, Digital Consultant
-blocks: 
-  - youtube
-comments:
-  twitter: https://twitter.com/m2creates/status/1186293060554166272
-  polywork: https://poly.work/m2creates/highlights/dyUwo91v
 seo:
   title: Built on Air - Season 3, Episode 8
-  desc: I was invited to Built on Air to showcase an Airtable base created to calculate student assessment scores; and explain how I get data in the right spots.
+  desc: Showcasing an Airtable base built to calculate student assessment scores and route data correctly.
   image:
     url: /images/built-on-air-episode.jpeg
     alt: Built on Air - Season 3, Episode 8 with Melanie Magdalena, Digital Consultant
-category: field-notes
-growth: seedling
+domain: operational-systems
+axes:
+  signal_model: signal
+  stability_drift: stability
+  internal_external: external
+intended_audience: bridge
+growth_stage: soil
+category: soil
 thread: from-the-field
 uses:
   - airtable
+blocks:
+  - youtube
 post_type: podcast
 ---
 

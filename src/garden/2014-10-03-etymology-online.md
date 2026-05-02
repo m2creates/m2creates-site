@@ -2,23 +2,28 @@
 title: >-
   Etymology: Online
 tldr: >-
-  Wouldn't being "online" actually be "offline" these days?
+  Language encodes the system it came from — when the system changes faster than the word, the word starts lying.
 slug: etymology-online
+draft: false
 datePublish: 2014-10-03
 seo:
   title: >-
     Etymology: Online
   desc: >-
-    A short, thought-provoking piece questions how language adapts to technological advances.
+    A short, thought-provoking piece on how language adapts — or fails to — as technology changes.
   image:
     url:
     alt:
   legacyUrl: http://www.melaniemagdalena.com/blog-my-archaeolife/etymology-online
+domain: attention-systems
+axes:
+  signal_model: signal
+  stability_drift: drift
+  internal_external: external
+intended_audience: curious-generalist
+growth_stage: seedling
 category: field-notes
-growth: seedling
 thread: from-the-field
-# tags:
-# uses:
 post_type: article
 ---
 

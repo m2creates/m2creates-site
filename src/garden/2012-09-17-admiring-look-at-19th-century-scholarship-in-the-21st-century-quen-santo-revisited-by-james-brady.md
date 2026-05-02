@@ -1,10 +1,26 @@
 ---
 title: >-
-  “An Admiring Look at 19th Century Scholarship in the 21st Century: Quen Santo Revisited” By James Brady
+  An Admiring Look at 19th Century Scholarship in the 21st Century: Quen Santo Revisited
+tldr: >-
+  A scholar who misidentifies a sanctuary as a primitive campsite is not making an empirical error — he is reading the cave through a worldview that cannot see what it actually is.
 slug: quen-santo-revisited-james-brady
+draft: true
 datePublish: 2012-09-17
-legacyUrl: http://www.melaniemagdalena.com/blog-my-archaeolife/-an-admiring-look-at-19th-century-scholarship-in-the-21st-century-quen-santo-revisited-by-james-brady
-category: archive
+seo:
+  title: >-
+    Quen Santo Revisited: What Happens When the Framework Can't See the Evidence
+  desc: >-
+    Brady's revisit of Eduard Seler's 19th-century Quen Santo research — and what a century of interpretive distance reveals about how worldview shapes what evidence can mean.
+  legacyUrl: http://www.melaniemagdalena.com/blog-my-archaeolife/-an-admiring-look-at-19th-century-scholarship-in-the-21st-century-quen-santo-revisited-by-james-brady
+domain: cultural-systems
+axes:
+  signal_model: model
+  stability_drift: drift
+  internal_external: external
+intended_audience: domain-insider
+growth_stage: soil
+category: soil
+thread: from-the-field
 post_type: article
 ---
 

@@ -1,23 +1,25 @@
 ---
 title: Evolution of the Napkin
 tldr: >-
-  Think napkins are just for spills? Think again! Dive into the surprising history of this everyday item and see how it shaped dining, culture, and even the environment. Your view of the dinner table will never be the same!
+  Napkin form follows dining ritual — each evolution in material or size tracks a shift in who eats together and how.
 slug: evolution-of-the-napkin
+draft: false
 datePublish: 2013-10-18
 seo:
   title: >-
     Evolution of the Napkin
   desc: >-
     Explore the evolution of the napkin from ancient times to modern-day varieties, and its cultural and environmental significance.
-  # image:
-  #   url:
-  #   alt:
   legacyUrl: http://www.melaniemagdalena.com/blog-my-archaeolife/evolution-of-the-napkin
+domain: cultural-systems
+axes:
+  signal_model: model
+  stability_drift: stability
+  internal_external: external
+intended_audience: curious-generalist
+growth_stage: seedling
 category: field-notes
-growth: seedling
 thread: from-the-field
-# tags:
-# uses:
 post_type: article
 ---
 

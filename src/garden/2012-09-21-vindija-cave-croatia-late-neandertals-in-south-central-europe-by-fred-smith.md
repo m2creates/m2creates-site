@@ -1,10 +1,26 @@
 ---
 title: >-
-  “Vindija Cave (Croatia): Late Neandertals in South-Central Europe” By Fred Smith (Loyola University)
+  Vindija Cave: Late Neandertals in South-Central Europe
+tldr: >-
+  The same bones produce different timelines depending on which measurement method you trust — the past is stable but our models of it are not.
 slug: vindija-cave-croatia-late-neandertals-in-south-central-europe-fred-smith
+draft: true
 datePublish: 2012-09-21
-legacyUrl: http://www.melaniemagdalena.com/blog-my-archaeolife/-vindija-cave-croatia-late-neandertals-in-south-central-europe-by-fred-smith-loyola-university-a-specialized-seminar
-category: archive
+seo:
+  title: >-
+    Vindija Cave and the Problem of Stable Bones, Unstable Timelines
+  desc: >-
+    Neandertal remains at Vindija Cave were re-dated thousands of years earlier when measurement methods improved — without the bones changing at all.
+  legacyUrl: http://www.melaniemagdalena.com/blog-my-archaeolife/-vindija-cave-croatia-late-neandertals-in-south-central-europe-by-fred-smith-loyola-university-a-specialized-seminar
+domain: deep-time-systems
+axes:
+  signal_model: model
+  stability_drift: drift
+  internal_external: external
+intended_audience: domain-insider
+growth_stage: soil
+category: soil
+thread: from-the-field
 post_type: article
 ---
 

@@ -1,14 +1,15 @@
 ---
 title: >-
   Why Every Warehouse Needs a Little Hayek
-tldr: Safety stock as an operational response to the knowledge problem
+tldr: >-
+  Safety stock is not a technical fix — it is an institutional acknowledgment that your model cannot capture everything the system knows.
 slug: safety-stock-epistemological-problem
 draft: false
 datePublish: 2026-03-20
 image:
   url:
-  alt: 
-  credit: 
+  alt:
+  credit:
 seo:
   title: >-
     Why Every Warehouse Needs a Little Hayek
@@ -16,17 +17,24 @@ seo:
   image:
     url:
     alt:
-category: field-notes
-growth: budding
-thread: from-the-field
+domain: operational-systems
+axes:
+  signal_model: model
+  stability_drift: drift
+  internal_external: external
+intended_audience: bridge
+growth_stage: evergreen
+category: analytical-portfolio
+thread: supply-chain-analytics
 tags:
-  - analytics
+  - safety-stock
+  - hayek
+  - knowledge-problem
+  - inventory-management
+  - supply-chain
+  - uncertainty
 post_type: article
 links:
-  # - label: Project breakdown
-  #   desc: Safety Stock
-  #   url: /work/portfolio-safety-stock
-  #   type: breakdown
   - label: Google Sheets
     desc: DataCo · 180k+ records
     url: https://docs.google.com/spreadsheets/d/1b_2eUZ4Z4jHYeswNNvz2vWW4XRR6mRE-MNIll28LSsQ/view
@@ -39,7 +47,7 @@ links:
 
 There is a formula that gets taught in every supply chain fundamentals course, referenced in every inventory management job description, and used every day in warehouses that have never heard of Friedrich Hayek. It looks like this:
 
-**Safety Stock = Z × σ × √L**
+> Safety Stock = Z × σ × √L
 
 Where Z is your service level Z-score, σ is the standard deviation of demand, and L is your lead time in days. You pick a service level (95% is standard, which gives you a Z of 1.65), you calculate how much demand varies, you account for how long it takes to get more product, and you get a number. That number is the buffer you keep on hand to cover uncertainty.
 
