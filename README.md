@@ -9,9 +9,6 @@ My personal website powered by:
   - [postcss](https://tailwindcss.com/docs/using-with-preprocessors#using-post-css-as-your-preprocessor) for preprocessing
   - [@tailwindcss-typography](https://github.com/tailwindlabs/tailwindcss-typography) to "autostyle" markdown
   - [@tailwindcss-forms](https://github.com/tailwindlabs/tailwindcss-forms) to beautify form elements
-- [Static CMS](https://www.staticcms.org/docs/) with:
-  - [manual initialization](https://www.staticcms.org/docs/add-to-your-site-cdn#configuration)
-  - [custom previews](https://www.staticcms.org/docs/custom-previews)
 
 ## Structure Overview
 
@@ -19,15 +16,6 @@ My personal website powered by:
 example.com                     # → Root of your project
 |
 ├── src/                        # → Source directory
-│   │
-│   ├── admin/                  # → Static CMS
-│   │   ├── collections/
-│   │   ├── partials/
-│   │   │   └── fields/         # → Configure fields used in multiple places a single time (i.e. Hero Image)
-│   │   ├── previews/
-│   │   │   └── index.js        # → Register preview templates and styles
-│   │   ├── config.js           # → Manual initialization (https://www.staticcms.org/docs/add-to-your-site-cdn#configuration)
-│   │   └── index.html
 │   │
 │   ├── assets/                 # → Site assets
 │   │   ├── fonts/
@@ -318,28 +306,3 @@ The following resources assisted in the creation of my site!
   - **IMPORTANT**: You have to use version `^2.*` for the loader, not `^3.*` because Storybook uses Webpack 4. I only wasted an hour of my life with errors cuz I failed to read the nice notice on the loader's README. :face_palm:
 - Nunjucks-ifying: [eleventy-starter-storybook](https://github.com/MKlblangenois/eleventy-starter-storybook) is a great proof-of-concept for how to use njk components in stories. Plus it has [a cool macro output](https://github.com/MKlblangenois/eleventy-starter-storybook/blob/master/src/_includes/components/atoms/buttons/button.njk) that is [only used in the story](https://github.com/MKlblangenois/eleventy-starter-storybook/blob/master/src/stories/Button.stories.js#L7)!
 - [tailwind-ui-alpinejs-storybook](https://github.com/ylsideas/tailwind-ui-alpinejs-storybook) has a [great visual for **how** to add Tailwind and Alpine](https://github.com/ylsideas/tailwind-ui-alpinejs-storybook/blob/master/.storybook/preview.js) to Storybook and have the thing actually work.
-
-### CMS
-
-> This site started with Netlify CMS which was renamed to Decap CMS with new maintainers. I switched to the actively developed fork Static CMS due do its MOBILE support (since v3.0.0)! I've decided to keep the running log of resources for Netlify CMS because they did help me at one point in time :)
-
-Manual initialization:
-
-- [Netlify CMS] ["Consolidating Netlify CMS" by Zach Schnackel](https://zslabs.com/articles/consolidating-netlify-cms) is a quick introduction to Manual Initialization for Netlify CMS, instead of using YAML.
-- [Netlify CMS] ["DRY Netlify CMS config with Manual Initialization" by Wojciech Kałużny](https://mrkaluzny.com/blog/dry-netlify-cms-config-with-manual-initialization/) has great examples for how to create and use partials for collections.
-- [Netlify CMS] ["Splitting huge NetlifyCMS config.yml file to multiple JS files" by Ilias Trichopoulos](https://www.iliascreates.com/blog/post/splitting-netlifycms-config-to-multiple-js-files/) has more complex examples of partials. I haven't gone this deep yet... but it's an option.
-
-Customizing the preview pane:
-
-- [Official documentation](https://www.staticcms.org/docs/custom-previews) by Static CMS - they are [functional components](https://www.staticcms.org/docs/decap-migration-guide#custom-previews) now
-- [Decap CMS] [Official documentation](https://www.decapcms.org/docs/customization/)
-- [Netlify CMS] Inspiration, plus **how** to "query" data from the widgets so it shows up the preview: [eleventy-netlify-boilerplate](https://github.com/danurbanowicz/eleventy-netlify-boilerplate/tree/master/admin/preview-templates) and [spacebook](https://github.com/broeker/spacebook/tree/main/admin/preview-templates)
-
-Make your own widgets and editor components:
-
-- [Official documentation](https://www.staticcms.org/docs/custom-widgets) by Static CMS - they are [functional components](https://www.staticcms.org/docs/decap-migration-guide#custom-widgets) now
-- [Official documentation: Editor Shortcodes with Preview](https://www.staticcms.org/docs/widget-markdown#shortcodes) by Static CMS 
-- [Decap CMS] [Offical documentation](https://www.decapcms.org/docs/custom-widgets/)
-- [Netlify CMS] ["Master Netlify CMS: custom editor components" by Monica Norris](https://www.neotericdesign.com/articles/editor-components-with-netlify-cms/) explains how to make a custom Editor Component for video (Hugo-focused).
-- [Netlify CMS] ["Creating Custom Netlify Editor Components" by Lukas Murdock](https://lukasmurdock.com/custom-netlify-editor-component/) is an example of how to make a blockquote Editor Component.
-- [Netlify CMS] ["Styling custom Netlify CMS widgets is confusing" by Dave Meyer](https://todayilearned.io/til/styling-netlify-cms-widgets-is-confusing) expands on the official documentation to explain how to load stylesheets explictly into widgets and preview components.
