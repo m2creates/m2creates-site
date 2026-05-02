@@ -1,5 +1,5 @@
 ---
-title: The Congressional Hunger Center
+title: The Congressional Hunger Center - Digital Platform Redesign
 tldr: Full-service website redesign engagement for a federal hunger policy nonprofit — from discovery interviews through launch. Delivered information architecture, Figma design system, WordPress CMS with custom content types, 4-dimensional publication library, interactive global partner map, and full content migration with 301 redirects and CDN configuration.
 slug: congressional-hunger-center
 datePublish: 2019-11-01
