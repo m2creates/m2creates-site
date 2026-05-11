@@ -14,7 +14,7 @@ tags:
   - Civic Infrastructure
 
 impact: >-
-  Before this project, Will Meysing had no professionally produced video record of the SWPS experience as a live event. After it: 4K multi-camera footage of attendees engaging with the material, clean interview captures of participant responses, and footage of Will presenting the concept to a real audience — all recorded redundantly across three simultaneous output channels.
+  Before this project, the Inventor had no professionally produced video record of the SWPS experience as a live event. After it: 4K multi-camera footage of attendees engaging with the material, clean interview captures of participant responses, and footage presenting the concept to a real audience — all recorded redundantly across three simultaneous output channels.
 
 specs:
   - label: Timeline
@@ -24,7 +24,7 @@ specs:
   - label: Production
     value: 7 cameras · 3 decks · 4K ProRes 422
   - label: Crew
-    value: Jen Bechem (Producer) · Mel Magdalena · Elysia · Beth
+    value: 4 
 
 theory:
   name: Hayek — Tacit Knowledge Transfer
@@ -75,22 +75,22 @@ This infrastructure is available to the public. That matters.
 
 ## Why This Project Exists
 
-Jen Bechem needed a crew-certified operator to produce a live event at Austin Public for her client, Will Meysing. Austin Public requires producers to hold a Studio Crew Certification before booking studio time. Jen knew the production work could happen. I got certified. We booked Studio 1.
+The Producer needed a crew-certified operator to produce a live event at Austin Public for her client. Austin Public requires producers to hold a Studio Crew Certification before booking studio time. I got certified. We booked Studio 1.
 
 ## What the Event Was
 
-The SWPS is a thinking tool invented by Will Meysing. SWPS stands for Shared Wisdom Patterns Snapshots. Participants work through a structured choose-and-rank activity designed to engage both analytical and intuitive reasoning. The goal is to make habitual patterns of thinking visible so they can be examined.
+The SWPS (Shared Wisdom Patterns Snapshots) is a thinking tool. Participants work through a structured choose-and-rank activity designed to engage both analytical and intuitive reasoning. The goal is to make habitual patterns of thinking visible so they can be examined.
 
 The event ran from 6:30 to 8:30pm:
 
 | Time | What Was Happening |
 | ------ | ------------------- |
-| 6:30–7:00 | Jennifer welcomes attendees; Beth runs the welcome table; SWPS Series packets distributed |
-| 7:00 | Jennifer introduces Will to the room |
-| 7:05–7:15 | Will speaks: origin of SWPS, why he built it, how it has helped people over the years |
-| 7:15 | Jennifer introduces Elysia and the interview station |
+| 6:30–7:00 | Producer welcomes attendees; SWPS Series packets distributed from welcome table |
+| 7:00 | Producer introduces Inventor to the room |
+| 7:05–7:15 | Inventor speaks: origin of SWPS, why he built it, how it has helped people over the years |
+| 7:15 | Producer introduces the interview station |
 | 7:15–8:00 | Attendees complete activity packets; rotate to interview station for a recorded response |
-| 7:30–8:15 | Testimonials collected; additional raffle entries; Jen and Will circulate |
+| 7:30–8:15 | Testimonials collected for additional raffle entries |
 | 8:15–8:30 | Raffle, final conversations, wrap |
 
 ## Four Days
@@ -99,9 +99,9 @@ The event ran from 6:30 to 8:30pm:
 
 **March 5 — Planning.** Shot plan, camera assignments, and run-of-show drafted. Equipment inventory confirmed. Tasks assigned across crew.
 
-**March 11 — Rehearsal.** Set up the talking head station, positioned cameras, tested mics, tested video playback with and without audio. The flagged unknown: directing Will's speech and where he would stand. It stayed a variable.
+**March 11 — Rehearsal.** Set up the talking head station, positioned cameras, tested mics, tested video playback with and without audio. The flagged unknown: directing Inventor's speech and where he would stand. It stayed a variable.
 
-**April 15 — Live Day.** 4:30pm load-in. Lights set, cameras positioned, control room configured. Mics on Will and Beth by 6:00pm. Doors at 6:30. Equipment return complete by 9:15pm.
+**April 15 — Live Day.** 4:30pm load-in. Lights set, cameras positioned, control room configured. Mics on by 6:00pm. Doors at 6:30. Equipment return complete by 9:15pm.
 
 ## The Camera Map
 
@@ -129,9 +129,9 @@ All cameras recorded through three AJA Ki Pro Ultra 12G decks at 3840×2160p (4K
 
 ## Plan vs. Room
 
-**The entrance table camera** was framed for Beth sitting behind the table. After the first two people arrived, I ran from the control room to reframe. The camera was catching walk-ins from the shoulders down. A person standing at a table and a person sitting behind it are not at the same height. Fixed in two minutes. Easy problem once you understand the story you are trying to capture.
+**The entrance table camera** was framed for sitting behind the table. After the first two people arrived, I ran from the control room to reframe. The camera was catching walk-ins from the shoulders down. A person standing at a table and a person sitting behind it are not at the same height. Fixed in two minutes. Easy problem once you understand the story you are trying to capture.
 
-**Will moved. So did the audience.** He did not stay in one place — and nobody had rehearsed the attendees either. Once the event was live, I took over the Panasonic PTZ robocam via the AW-RP controller and followed the action manually: panning, tracking, zooming out to pull audience reaction shots when Will stepped toward the room. Physical control over a robotic arm gives smooth, continuous movement. The result was more dynamic than any locked-down frame could have been.
+**The Inventor moved. So did the audience.** He did not stay in one place — and nobody had rehearsed the attendees either. Once the event was live, I took over the Panasonic PTZ robocam via the AW-RP controller and followed the action manually: panning, tracking, zooming out to pull audience reaction shots when the Inventor stepped toward the room. Physical control over a robotic arm gives smooth, continuous movement. The result was more dynamic than any locked-down frame could have been.
 
 **The audio board** required active monitoring throughout. Three microphones on one combined track, a room full of people talking. During the interview segments, isolating the interviewee meant listening to the room and moving faders on the SQ-7 to push down whatever else was happening around them.
 
