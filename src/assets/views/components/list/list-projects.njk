@@ -20,6 +20,7 @@
       class="font-code text-[0.6rem] tracking-[0.14em] uppercase text-[#8a8478] mb-6 text-center">
     Finished Work
   </h2>
+  {% include "partials/attention-legend.njk" %}
   <ul class="grid grid-cols-1 gap-4 md:grid-cols-2" role="list">
     {%- for project in completed -%}
       {% include "partials/project-card.njk" %}

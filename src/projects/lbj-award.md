@@ -6,6 +6,11 @@ tldr: >-
 slug: lbj-foundation-award-website
 datePublish: 2019-07-15
 status: complete
+
+attention: encounter
+noticed: >-
+  An archive isn’t just stored information; it’s an experience of discovery.
+
 category: consulting
 location: Austin, Texas
 industry: Nonprofit

@@ -5,6 +5,11 @@ tldr: >-
 slug: lbj-summit-on-race-in-america
 datePublish: 
 status: complete
+
+attention: time
+noticed: >-
+  Information can become obsolete without becoming false.
+
 category: consulting
 location: Austin, Texas
 industry: Nonprofit

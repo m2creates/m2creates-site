@@ -1,5 +1,5 @@
-{%- set categoryLabel = { 'consulting': 'Consulting', 'training': 'Training', 'experiment': 'Experiment', 'analysis': 'Analysis' } -%}
-{%- set cat = project.data.category -%}
+{#- Attention vocabulary lives in _data/attention.json (shared with the legend). -#}
+{%- set att = attentionTypes[project.data.attention] -%}
 {%- set isExternal = project.data.external_url -%}
 {%- set href = project.data.external_url or project.data.link_url or project.url -%}
 {%- set cardClass = "border border-[#C9BCA9] transition-colors no-underline flex flex-col flex-1 p-7" -%}
@@ -13,32 +13,22 @@
   <div class="{{ cardClass }}">
   {% endif %}
 
-    {# ── Top meta row: category + status ── #}
+    {# ── Top meta row: attention + status ── #}
     <div class="flex items-center justify-between gap-3 mb-6">
       <div class="flex flex-wrap gap-2">
-        {% if cat %}
+        {% if att %}
+        <span class="font-code text-[0.52rem] tracking-[0.12em] uppercase px-2 py-0.5 rounded-[2px] border"
+              style="color: {{ att.color }}; border-color: {{ att.color }}59; background-color: {{ att.color }}0a;">
+          <span class="sr-only">Attention to </span>{{ att.label }}
+        </span>
+        {% elif project.data.status == 'in-progress' %}
         <span class="font-code text-[0.52rem] tracking-[0.12em] uppercase px-2 py-0.5 rounded-[2px]
-          {% if cat == 'consulting' %}
-            text-[#d4825c] border border-[rgba(212,130,92,0.35)] bg-[rgba(212,130,92,0.04)]
-          {% elif cat == 'training' %}
-            text-[#4a8c82] border border-[rgba(74,140,130,0.35)] bg-[rgba(74,140,130,0.04)]
-          {% elif cat == 'experiment' %}
-            text-[#1C5B72] border border-[rgba(28,91,114,0.35)] bg-[rgba(28,91,114,0.04)]
-          {% elif cat == 'analysis' %}
-            text-[#8b4a2f] border border-[rgba(139,74,47,0.35)] bg-[rgba(139,74,47,0.04)]
-          {% else %}
-            text-[#8a8478] border border-[#C9BCA9]
-          {% endif %}">
-          {{ categoryLabel[cat] or cat }}
+                     text-[#8a8478] border border-dashed border-[#C9BCA9]">
+          Still noticing
         </span>
         {% endif %}
       </div>
-      {% if project.data.status == 'complete' %}
-      <span class="font-code text-[0.52rem] tracking-[0.12em] uppercase
-                   text-[#8a8478] flex-shrink-0">
-        Complete
-      </span>
-      {% elif project.data.status == 'in-progress' %}
+      {% if project.data.status == 'in-progress' %}
       <span class="font-code text-[0.52rem] tracking-[0.12em] uppercase
                    text-[#8c6e3f] flex-shrink-0">
         In Progress
@@ -53,11 +43,12 @@
       {{ project.data.title | safe }}
     </p>
 
-    {# ── tldr ── #}
-    {% if project.data.tldr %}
+    {# ── What I noticed (falls back to tldr) ── #}
+    {%- set noticed = project.data.noticed or project.data.tldr -%}
+    {% if noticed %}
     <p class="font-reading italic text-[#7A6E65] leading-relaxed mb-auto"
        style="font-size: 0.875rem;">
-      {{ project.data.tldr | safe }}
+      {{ noticed | safe }}
     </p>
     {% endif %}
 

@@ -4,9 +4,15 @@ tldr: Full-service website redesign engagement for a federal hunger policy nonpr
 slug: congressional-hunger-center
 datePublish: 2019-11-01
 status: complete
+
+attention: connection
+noticed: >-
+  Information becomes more useful when its relationships are visible.
+
 category: consulting
 location: Washington, D.C.
 industry: Nonprofit
+
 tags:
   - Content Strategy
   - Information Architecture

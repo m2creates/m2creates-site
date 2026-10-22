@@ -5,9 +5,15 @@ tldr: >-
 slug: parelli-natural-horsemanship-auditions
 datePublish: 2019-05-01
 status: complete
+
+attention: practice
+noticed: >-
+  Important knowledge lives in people’s workarounds and accumulated habits.
+
 category: consulting
 location: Pagosa Springs, Colorado
 industry: Education
+
 tags:
   - Workflow Automation
   - Data Migration

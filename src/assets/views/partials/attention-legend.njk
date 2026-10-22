@@ -1,0 +1,12 @@
+{#- Attention legend: the sentence is the key. Terms read as prose, colored to match the card chips. -#}
+<p class="font-reading text-[#4A4038] text-center max-w-[40rem] mx-auto leading-relaxed mt-5 mb-14"
+   style="font-size: 1.05rem;">
+  Each piece is tagged by the kind of attention it took:<br>
+  {% for key, a in attentionTypes -%}
+    {%- if loop.last %} and {% endif -%}
+    <span class="whitespace-nowrap" style="color: {{ a.color }};"><span aria-hidden="true"
+      class="inline-block w-[0.38em] h-[0.38em] rounded-full align-middle mr-[0.3em]"
+      style="background-color: {{ a.color }};"></span>{{ a.label | lower }}</span>
+    {%- if loop.revindex > 2 %}, {% endif -%}
+  {%- endfor %}.
+</p>
