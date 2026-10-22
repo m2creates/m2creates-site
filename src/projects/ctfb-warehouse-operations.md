@@ -5,9 +5,15 @@ tldr: >-
 slug: ctfb-warehouse-operations
 datePublish: 2026-04-30
 status: complete
-category: Training
+
+attention: practice
+noticed: >-
+  The physical workflow reveals things the formal system doesn’t.
+
+category: training
 location: Austin, Texas
 industry: Nonprofit
+
 tags:
   - Warehouse Operations
   - Inventory Management

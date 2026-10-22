@@ -4,6 +4,11 @@
  */
 
 const { DateTime } = require('luxon');
+const util = require('util');
+
+const published = (item) => new Date(item.data.datePublish || 0).getTime();
+const byNewest = (a, b) => published(b) - published(a);
+const visible = (items) => items.filter((item) => item.data.draft !== true);
 
 module.exports = {
 	// Debug
@@ -13,7 +18,7 @@ module.exports = {
 
 	/**
 	 * Limit the amount of items returned from a collection
-	 * 
+	 *
 	 * usage/example:
 	 * {% set posts = collections.posts | limit(3) %}
 	 */
@@ -45,7 +50,7 @@ module.exports = {
 			format = 'dd MMMM yyyy';
 		}
 		return DateTime.fromJSDate(date, { zone: 'America/Chicago' }).toFormat(
-			format
+			format,
 		);
 	},
 
@@ -91,4 +96,49 @@ module.exports = {
 		return DateTime.fromJSDate(date).toISO();
 	},
 
+	/**
+	 * Workshop: in-progress items, newest first
+	 */
+	workshopShelf: function (items) {
+		return visible(items)
+			.filter((item) => item.data.status === 'in-progress')
+			.sort(byNewest);
+	},
+
+	/**
+	 * Workshop: completed items
+	 * Newest of each category first, then 3 by date : 1 by `order`
+	 */
+	workshopCompleted: function (items) {
+		const done = visible(items)
+			.filter((item) => item.data.status !== 'in-progress')
+			.sort(byNewest);
+
+		const seen = new Set();
+		const featured = [];
+		const remaining = [];
+
+		for (const item of done) {
+			const cat = item.data.category;
+			if (cat && !seen.has(cat)) {
+				seen.add(cat);
+				featured.push(item);
+			} else {
+				remaining.push(item);
+			}
+		}
+
+		const recent = remaining.filter((item) => item.data.order == null);
+		const curated = remaining
+			.filter((item) => item.data.order != null)
+			.sort((a, b) => a.data.order - b.data.order);
+
+		const braided = [];
+		while (recent.length || curated.length) {
+			braided.push(...recent.splice(0, 3));
+			if (curated.length) braided.push(curated.shift());
+		}
+
+		return [...featured, ...braided];
+	},
 };

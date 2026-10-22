@@ -5,9 +5,15 @@ tldr: >-
 slug: clear-cgi-room-configurator
 datePublish: 2020-12-15
 status: complete
+
+attention: boundaries
+noticed: >-
+  The parts that change and the parts that hold need to be kept apart.
+
 category: consulting
 location: West Yorkshire, United Kingdom
 industry: Interior Design
+
 tags:
   - Product Visualization
   - Multi-tenant Architecture

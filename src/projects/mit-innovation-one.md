@@ -5,6 +5,11 @@ tldr: >-
 slug: mit-innovation-one
 datePublish: 2020-08-15
 status: complete
+
+attention: boundaries
+noticed: >-
+  Systems can keep their own ways of working and still connect.
+
 category: consulting
 location: Cambridge, Massachusetts
 industry: Higher Education

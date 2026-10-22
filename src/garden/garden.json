@@ -1,4 +1,4 @@
 {
   "layout": "post.njk",
-  "permalink": "/the-garden/{{ slug }}/index.html"
+  "permalink": "/garden/{{ slug }}/index.html"
 }

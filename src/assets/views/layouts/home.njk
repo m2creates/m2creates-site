@@ -28,25 +28,15 @@
     {# Main hero content #}
     <div class="flex flex-col justify-center flex-1 max-w-6xl px-6 md:px-14">
 
-      <p class="h-enter d-1 font-code text-[0.6rem] tracking-[0.2em] uppercase text-[#1C5B72] mb-7">
-        Systems · Spaces · Things
-      </p>
-
       <h1 id="hero-heading"
           class="h-enter d-2 font-display font-light italic leading-[1.05] text-[#1A1510] mb-8"
           style="font-size: clamp(2.8rem, 8vw, 6.2rem); letter-spacing: -0.015em;">
-        The questions<br>
-        are always<br>
-        the same.
+        I create things<br>while I pay attention.
       </h1>
 
       <p class="h-enter d-3 font-display text-[#4A4035] mb-10"
          style="font-size: clamp(1rem, 2.2vw, 1.45rem); letter-spacing: 0.01em;">
-        Where are things?
-        <span class="mx-2 text-[#C9BCA9]">·</span>
-        Where should they be?
-        <span class="mx-2 text-[#C9BCA9]">·</span>
-        What is the gap telling us?
+        How things work, where information goes missing, what gets overlooked, and what happens when you look a little closer.
       </p>
 
       <p class="h-enter d-4 font-code text-[0.65rem] tracking-widest text-[#7A6E65]">
@@ -80,7 +70,7 @@
         <h2 id="throughline-heading"
             class="font-display font-light italic text-[#1A1510] leading-[1.1] mb-8"
             style="font-size: clamp(1.75rem, 3.2vw, 2.6rem);">
-          One way<br>of seeing.<br>Many places<br>to look.
+          Turns out, I keep doing this.
         </h2>
         <ul class="font-code text-[0.62rem] tracking-wider text-[#7A6E65]
                    leading-loose list-none m-0 p-0" aria-label="Career arc">
@@ -98,16 +88,11 @@
           At twenty, I published a spatial analysis of Maya settlements in Belize — mapping where people built, what moved between them, and what the gaps revealed about how a society organized itself around scarce resources.
         </p>
 
-        <p class="reveal reveal-d2">
-          I've been asking the same questions in every role since.
-          <strong class="font-normal text-[#1A1510]">Where are things? Where should they be? What is the gap telling us?</strong>
-        </p>
-
         <p class="reveal reveal-d3">
-          As a digital systems architect for nonprofits and universities, I built data structures by asking what an organization actually needed to know about itself — not what it was already tracking. As a security officer, I redesigned patrol routes around what the floor plan didn't show. Now, I've trained in a regional food bank's warehouse distributing 63 million meals annually, learning how physical goods move from dock to table — and where the process breaks down.
+          Since then, I've built data systems for nonprofits and universities, redesigned security patrol routes around what a floor plan left out, and trained in a food bank warehouse to understand how food actually moves through the building and out to the community.
         </p>
 
-        <p class="reveal reveal-d4">The tools change. The questions don't.</p>
+        <p class="reveal reveal-d4">Very different jobs. But I keep getting interested in the same sort of thing: what's happening, what's missing, and what you can learn by looking closer.</p>
 
         {# Timeline tick marks #}
         <div class="relative pt-10 mt-6 reveal reveal-d4">
@@ -145,105 +130,101 @@
   {# ══════════════════════════════════════════════════════════ #}
   {# THREE LENSES                                               #}
   {# ══════════════════════════════════════════════════════════ #}
-  <section class="bg-[#EDE5D4] px-6 md:px-14 py-24 md:py-32"
+  <div class="w-full bg-[#EDE5D4]">
+  <section class="max-w-6xl px-6 py-24 mx-auto md:px-14 md:py-32"
            aria-labelledby="lenses-heading">
-    <div class="max-w-6xl mx-auto">
-      <p class="s-label reveal font-code text-[0.58rem] tracking-[0.2em] uppercase text-[#1C5B72] mb-14">
-        How I work
-      </p>
+    <p class="s-label reveal font-code text-[0.58rem] tracking-[0.2em] uppercase text-[#1C5B72] mb-14">
+      What I tend to notice
+    </p>
 
-      <div class="grid grid-cols-1 md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-[#C9BCA9]">
+    <div class="grid grid-cols-1 md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-[#C9BCA9] [&>*:first-child]:pl-0 [&>*:last-child]:pr-0">
 
-        {% set lenses = [
-          {
-            num:   "01",
-            word:  "Systems",
-            intro: "Build. Audit. Ask why.",
-            body:  "I build them, document them, and ask why they were built this way in the first place. Not just: does it work — but what assumptions is this built on, and are those assumptions still true? Whether it's a data architecture for a nonprofit or a receiving workflow at a warehouse, the audit question is the same."
-          },
-          {
-            num:   "02",
-            word:  "Spaces",
-            intro: "Physical. Digital. Both.",
-            body:  "A warehouse floor is a spatial optimization problem. So is a nonprofit's information architecture. I move between them because the logic is the same at both scales: who needs to get to what, how fast, and what's in the way. The space changes. The method doesn't."
-          },
-          {
-            num:   "03",
-            word:  "Things",
-            intro: "Count. Move. Recover.",
-            body:  "Goods, data, people, ideas — things need to be tracked, moved, and found again when something goes wrong. Precision matters because it's how we know what's real versus what the system thinks is real. The distance between those two is where most operational problems actually live."
-          }
-        ] %}
+      {% set lenses = [
+        {
+          num:   "01",
+          word:  "What's missing",
+          body:  "The information nobody recorded. The relationship nobody mapped. The detail that doesn't fit the explanation."
+        },
+        {
+          num:   "02",
+          word:  "What happens in real life",
+          body:  "The spreadsheet says one thing. The warehouse floor says another. The plan meets the actual situation and something interesting happens."
+        },
+        {
+          num:   "03",
+          word:  "What shouldn't get lost",
+          body:  "Records worth keeping, knowledge worth preserving, and information that needs to make sense to someone who wasn't there when it was created."
+        }
+      ] %}
 
-        {% for lens in lenses %}
-        <div class="reveal reveal-d{{ loop.index }} px-0 py-10 md:px-10 md:py-0 {% if not loop.first %}md:pl-10{% endif %}">
-          <p class="font-code text-[0.58rem] tracking-[0.18em] text-[#C9BCA9] mb-4">
-            {{ lens.num }}
-          </p>
-          <h3 class="font-display font-semibold text-[#1C5B72] mb-1"
-              style="font-size: 1.6rem; letter-spacing: -0.01em;">
-            {{ lens.word }}
-          </h3>
-          <p class="font-display italic text-[#4A4035] mb-5" style="font-size: 1.05rem;">
-            {{ lens.intro }}
-          </p>
-          <p class="font-reading text-[0.93rem] leading-[1.8] text-[#4A4035]">
-            {{ lens.body }}
-          </p>
-        </div>
-        {% endfor %}
-
+      {% for lens in lenses %}
+      <div class="reveal reveal-d{{ loop.index }} px-0 py-10 md:px-10 md:py-0 {% if not loop.first %}md:pl-10{% endif %}">
+        <p class="font-code text-[0.58rem] tracking-[0.18em] text-[#C9BCA9] mb-4">
+          {{ lens.num }}
+        </p>
+        <h3 class="font-display font-semibold text-[#1C5B72] mb-1"
+            style="font-size: 1.6rem; letter-spacing: -0.01em;">
+          {{ lens.word }}
+        </h3>
+        <p class="font-reading text-[0.93rem] leading-[1.8] text-[#4A4035]">
+          {{ lens.body }}
+        </p>
       </div>
+      {% endfor %}
+
     </div>
   </section>
+  </div>
 
   <hr class="border-none h-px bg-gradient-to-r from-transparent via-[#C9BCA9] to-transparent">
 
   {# ══════════════════════════════════════════════════════════ #}
   {# WORK                                                       #}
   {# ══════════════════════════════════════════════════════════ #}
+  {#- Attention colors come from _data/attentionTypes.json, same as the Workshop cards. -#}
+  {%- set dot = "inline-block w-[0.45em] h-[0.45em] rounded-full align-middle mr-[0.5em] -translate-y-[0.05em]" -%}
+
   <section class="max-w-6xl px-6 py-24 mx-auto md:px-14 md:py-32"
            aria-labelledby="work-heading">
 
     <div class="flex items-baseline justify-between mb-14">
-      <p class="s-label reveal font-code text-[0.58rem] tracking-[0.2em] uppercase text-[#1C5B72]">
+      <p id="work-heading" class="s-label reveal font-code text-[0.58rem] tracking-[0.2em] uppercase text-[#1C5B72]">
         Selected work
       </p>
       <a href="/work/"
          class="font-code text-[0.6rem] tracking-[0.12em] uppercase text-[#7A6E65]
                 hover:text-[#1C5B72] transition-colors border-b border-[#C9BCA9]
                 hover:border-[#1C5B72]">
-        All work →
+        The Workshop →
       </a>
     </div>
 
     {# Work cards — SP-forward order:
        1. CHC (live, mission-driven, Lane 2 primary evidence)
-       2. MIT Innovation One (complex multi-stakeholder systems)
+       2. SWPS / Austin Public (place, hands-on)
        3. Maya paper (origin story, intellectual depth signal)
        4. Portfolio (analytical work)
+       Pattern: a sentence or two of situation, then the noticing in <strong>.
     #}
-    <div class="grid max-w-5xl grid-cols-1 gap-5 mx-auto md:grid-cols-2">
+    <div class="grid grid-cols-1 gap-5 mx-auto md:grid-cols-2">
 
       {# ── Card 1: CHC ── #}
+      {%- set a = attentionTypes.connection -%}
       <a href="/work/congressional-hunger-center/"
          class="work-card reveal reveal-d1
                 group block bg-white border border-[#DDD4C4]
                 p-8 no-underline"
-         aria-label="Congressional Hunger Center — Digital Platform Redesign">
-        <p class="font-code text-[0.56rem] tracking-[0.16em] uppercase text-[#1C5B72] mb-5">
-          Systems Implementation · Nonprofit
+         aria-label="Congressional Hunger Center — case study">
+        <p class="font-code text-[0.56rem] tracking-[0.16em] uppercase mb-5"
+           style="color: {{ a.color }};">
+          <span aria-hidden="true" class="{{ dot }}" style="background-color: {{ a.color }};"></span><span class="sr-only">Attention to </span>{{ a.label }}
         </p>
         <h3 class="font-display font-light italic text-[#1A1510] leading-tight mb-3"
             style="font-size: clamp(1.4rem, 2.5vw, 1.9rem);">
           Congressional Hunger Center
         </h3>
         <p class="font-reading text-[0.92rem] leading-[1.75] text-[#4A4035] mb-6">
-          Full digital platform redesign for a DC-based policy leadership organization.
-          40+ page information architecture, 13-template design system, structured
-          content management for non-technical staff, interactive global partner map.
-          <strong class="font-normal text-[#1A1510]">Staff can now update the site
-          without a developer.</strong>
+          How do you help fellows, partners, and alumni find their way through the same organization without flattening their different needs? I redesigned the digital platform around the relationships between its people, programs, and publications.
         </p>
         <p class="font-code text-[0.6rem] tracking-wider text-[#7A6E65]
                   group-hover:text-[#1C5B72] transition-colors">
@@ -252,19 +233,21 @@
       </a>
 
       {# ── Card 2: SWPS ── #}
+      {%- set a = attentionTypes.place -%}
       <a href="/work/swps-austin-public/"
         class="work-card reveal reveal-d2 group block no-underline
-                bg-[#EDE5D4] border border-[#DDD4C4] p-8">
-        <p class="font-code text-[0.56rem] tracking-[0.16em] uppercase text-[#1C5B72] mb-5">
-          Live Event Production · Data · Public Media
+                bg-[#EDE5D4] border border-[#DDD4C4] p-8"
+        aria-label="SWPS Experience Recording at Austin Public — case study">
+        <p class="font-code text-[0.56rem] tracking-[0.16em] uppercase mb-5"
+           style="color: {{ a.color }};">
+          <span aria-hidden="true" class="{{ dot }}" style="background-color: {{ a.color }};"></span><span class="sr-only">Attention to </span>{{ a.label }}
         </p>
         <h3 class="font-display font-light italic text-[#1A1510] leading-tight mb-3"
             style="font-size: clamp(1.4rem, 2.5vw, 1.9rem);">
           SWPS Experience Recording at Austin Public
         </h3>
         <p class="font-reading text-[0.92rem] leading-[1.75] text-[#4A4035] mb-6">
-          Live event production at Austin Public Studio 1 — seven cameras mapped, three recording decks running simultaneously in 4K, one robotic camera operated by hand in real time.
-          <strong class="font-normal text-[#1A1510]">First time on Blackmagic hardware. The footage came out clean.</strong>
+          Seven cameras, three recording decks, and a live room that wouldn't sit still. My first time on Blackmagic hardware wasn't my first time thinking about how to capture a story across multiple sources.
         </p>
         <p class="font-code text-[0.6rem] tracking-wider text-[#7A6E65]
                   group-hover:text-[#1C5B72] transition-colors">
@@ -272,51 +255,50 @@
         </p>
       </a>
 
-      {# ── Card 3: Maya Paper ── #}
+      {# ── Card 3: Maya Paper (dark card: label stays light for contrast) ── #}
+      {%- set a = attentionTypes.place -%}
       <a href="https://drive.google.com/file/d/1M_AnkZwVMGHtMyWK8DppgLErJVlz-nhD/view"
+         target="_blank" rel="noopener"
          class="work-card reveal reveal-d3
                 group block bg-[#1C5B72] border border-[#1C5B72]
                 p-8 no-underline"
-         aria-label="The Maya of Belize — spatial analysis, published 2012">
+         aria-label="The Maya of Belize — published 2012 (opens in a new tab)">
         <p class="font-code text-[0.56rem] tracking-[0.16em] uppercase text-[#D4E8EF]/70 mb-5">
-          Spatial Analysis · Archaeology · 2012
+          <span aria-hidden="true" class="{{ dot }} bg-[#D4E8EF]/70"></span><span class="sr-only">Attention to </span>{{ a.label }} · 2012
         </p>
         <h3 class="mb-3 italic font-light leading-tight text-white font-display"
             style="font-size: clamp(1.4rem, 2.5vw, 1.9rem);">
           The Maya of Belize
         </h3>
         <p class="font-reading text-[0.92rem] leading-[1.75] text-[#D4E8EF] mb-6">
-          Published at twenty. Spatial analysis of Maya settlement patterns — mapping
-          where people built, what resources moved between nodes, and what the gaps
-          revealed about societal organization. The origin of the question that runs
-          through everything else here.
+          At twenty, I published a spatial analysis of Maya settlements in Belize—mapping where people built, what moved between them, and what the patterns could tell us about how people lived.
         </p>
         <p class="font-code text-[0.6rem] tracking-wider text-[#D4E8EF]/70
                   group-hover:text-white transition-colors">
-          Read the paper →
+          Read the paper ↗
         </p>
       </a>
 
       {# ── Card 4: Portfolio / Analytical work ── #}
       <a href="/work/"
-         class="work-card reveal reveal-d4
-                  border border-dashed border-[#C9BCA9] p-8">
-        <p class="font-code text-[0.56rem] tracking-[0.16em] uppercase text-[#1C5B72] mb-5">
-          Inventory · Data · Operations Analytics
+         class="work-card reveal reveal-d4 group block no-underline
+                border border-dashed border-[#C9BCA9] p-8">
+        <p class="font-code text-[0.56rem] tracking-[0.16em] uppercase text-[#7A6E65] mb-5">
+          {%- for key in ['boundaries', 'uncertainty', 'connection'] %}
+          {%- set a = attentionTypes[key] %}
+          <span class="mr-3 whitespace-nowrap" style="color: {{ a.color }};"><span aria-hidden="true" class="{{ dot }}" style="background-color: {{ a.color }};"></span>{{ a.label }}</span>
+          {%- endfor %}
         </p>
         <h3 class="font-display font-light italic text-[#1A1510] leading-tight mb-3"
             style="font-size: clamp(1.4rem, 2.5vw, 1.9rem);">
-          Systems Portfolio
+          Inventory & Operations Analytics
         </h3>
         <p class="font-reading text-[0.92rem] leading-[1.75] text-[#4A4035] mb-6">
-          Eight analytical projects applying institutional theory to physical operations:
-          ABC inventory segmentation, safety stock modeling, vendor scorecards,
-          demand forecasting, and public asset audit simulation. Each one asks:
-          what does the system assume it can know?
+          I'm looking at what inventory systems capture, what they leave out, and what happens when the spreadsheet meets the warehouse floor.
         </p>
         <p class="font-code text-[0.6rem] tracking-wider text-[#7A6E65]
                   group-hover:text-[#1C5B72] transition-colors">
-          In progress — publishing through 2026
+          Explore the Workshop →
         </p>
       </a>
 

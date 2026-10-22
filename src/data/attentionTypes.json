@@ -1,0 +1,10 @@
+{
+  "place":       { "label": "Place",      "color": "#4a8c82" },
+  "continuity":  { "label": "Continuity", "color": "#8b4a2f" },
+  "connection":  { "label": "Connection", "color": "#1C5B72" },
+  "practice":    { "label": "Practice",   "color": "#d4825c" },
+  "encounter":   { "label": "Encounter",  "color": "#6b5b8c" },
+  "time":        { "label": "Time",       "color": "#6e7a3c" },
+  "boundaries":  { "label": "Boundaries", "color": "#5a6470" },
+  "uncertainty": { "label": "Uncertainty","color": "#a35d6a" }
+}

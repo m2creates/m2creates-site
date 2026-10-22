@@ -5,6 +5,9 @@ slug: archinia
 datePublish: 2018-01-17
 status: complete
 category: consulting
+attention: continuity
+noticed: >-
+  Institutional knowledge can outlive the infrastructure holding it.
 location: Santa Fe, New Mexico
 industry: Architecture
 tags:

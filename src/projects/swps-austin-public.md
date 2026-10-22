@@ -4,6 +4,11 @@ tldr: Live event production at Austin Public Studio 1 — seven cameras mapped, 
 slug: swps-austin-public
 datePublish: 2026-04-15
 status: complete
+
+attention: place
+noticed: >-
+  A digital system has to make sense in relation to the physical, public space it serves.
+
 category: consulting
 location: Austin, Texas
 industry: Public Media

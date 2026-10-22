@@ -28,7 +28,7 @@ module.exports = {
 	projects: function (collection) {
 		return collection
 			.getFilteredByGlob('src/projects/*.md')
-			.sort((a, b) => (a.data.order || 99) - (b.data.order || 99));
+			.sort((a, b) => b.date - a.date);
 	},
 
 	portfolioFeatured: function (collection) {

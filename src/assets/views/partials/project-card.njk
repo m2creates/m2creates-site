@@ -1,0 +1,82 @@
+{#- Attention vocabulary lives in _data/attention.json (shared with the legend). -#}
+{%- set att = attentionTypes[project.data.attention] -%}
+{%- set isExternal = project.data.external_url -%}
+{%- set href = project.data.external_url or project.data.link_url or project.url -%}
+{%- set cardClass = "border border-[#C9BCA9] transition-colors no-underline flex flex-col flex-1 p-7" -%}
+
+<li class="flex">
+  {% if href %}
+  <a href="{{ href }}"
+     {% if isExternal %}target="_blank" rel="noopener"{% endif %}
+     class="group hover:border-[#1E1910] {{ cardClass }}">
+  {% else %}
+  <div class="{{ cardClass }}">
+  {% endif %}
+
+    {# ── Top meta row: attention + status ── #}
+    <div class="flex items-center justify-between gap-3 mb-6">
+      <div class="flex flex-wrap gap-2">
+        {% if att %}
+        <span class="font-code text-[0.52rem] tracking-[0.12em] uppercase px-2 py-0.5 rounded-[2px] border"
+              style="color: {{ att.color }}; border-color: {{ att.color }}59; background-color: {{ att.color }}0a;">
+          <span class="sr-only">Attention to </span>{{ att.label }}
+        </span>
+        {% elif project.data.status == 'in-progress' %}
+        <span class="font-code text-[0.52rem] tracking-[0.12em] uppercase px-2 py-0.5 rounded-[2px]
+                     text-[#8a8478] border border-dashed border-[#C9BCA9]">
+          Still noticing
+        </span>
+        {% endif %}
+      </div>
+      {% if project.data.status == 'in-progress' %}
+      <span class="font-code text-[0.52rem] tracking-[0.12em] uppercase
+                   text-[#8c6e3f] flex-shrink-0">
+        In Progress
+      </span>
+      {% endif %}
+    </div>
+
+    {# ── Title ── #}
+    <p class="font-display font-light text-[#1A1510] leading-snug mb-3
+              group-hover:text-[#1C5B72] transition-colors"
+       style="font-size: clamp(1.1rem, 1.8vw, 1.3rem);">
+      {{ project.data.title | safe }}
+    </p>
+
+    {# ── What I noticed (falls back to tldr) ── #}
+    {%- set noticed = project.data.noticed or project.data.tldr -%}
+    {% if noticed %}
+    <p class="font-reading italic text-[#7A6E65] leading-relaxed mb-auto"
+       style="font-size: 0.875rem;">
+      {{ noticed | safe }}
+    </p>
+    {% endif %}
+
+    {# ── Bottom row: industry + location or tools ── #}
+    {%- set meta2 = project.data.location or project.data.tools -%}
+    <div class="flex items-center justify-between gap-4 mt-6 pt-5 border-t border-[#C9BCA9]">
+      <div class="flex flex-wrap gap-x-3 gap-y-1">
+        {% if project.data.industry %}
+        <span class="font-code text-[0.54rem] tracking-[0.12em] uppercase text-[#8a8478]">
+          {{ project.data.industry }}
+        </span>
+        {% endif %}
+        {% if project.data.industry and meta2 %}
+        <span class="font-code text-[0.54rem] tracking-[0.12em] uppercase text-[#C9BCA9]">·</span>
+        {% endif %}
+        {% if meta2 %}
+        <span class="font-code text-[0.54rem] tracking-[0.12em] uppercase text-[#8a8478]">
+          {{ meta2 }}
+        </span>
+        {% endif %}
+      </div>
+      {% if href %}
+      <span class="font-code text-[0.65rem] text-[#C9BCA9]
+                   group-hover:text-[#1C5B72] transition-colors flex-shrink-0"
+            aria-hidden="true">{% if isExternal %}↗{% else %}→{% endif %}</span>
+      {% if isExternal %}<span class="sr-only">(opens in a new tab)</span>{% endif %}
+      {% endif %}
+    </div>
+
+  {% if href %}</a>{% else %}</div>{% endif %}
+</li>
