@@ -4,7 +4,7 @@ subtitle: >-
   Systems of Perception
 tldr: >-
   A collection of notes on systems of perception at different stages of growth, tended over time rather than published and left.
-slug: the-garden
+slug: garden
 date: Last Modified
 datePublish: 2022-03-12
 seo:
@@ -17,7 +17,7 @@ pagination:
   size: 1000
   alias: posts
   addAllPagesToCollections: true
-permalink: "the-garden/index.html"
+permalink: "garden/index.html"
 layout: posts.njk
 collection: posts
 ---

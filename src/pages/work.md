@@ -1,7 +1,7 @@
 ---
 title: Workshop
 tldr: Things I've made, systems I've untangled, and patterns I've learned to notice.
-slug: work
+slug: workshop
 date: git Last Modified
 showProjects: true
 seo:

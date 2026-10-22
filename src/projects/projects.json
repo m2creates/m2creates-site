@@ -1,6 +1,6 @@
 {
   "layout": "portfolio.njk",
-  "permalink": "/work/{{ slug }}/index.html",
+  "permalink": "/workshop/{{ slug }}/index.html",
   "catalog": {
     "type": "portfolio"
   }
