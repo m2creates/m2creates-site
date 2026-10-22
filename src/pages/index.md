@@ -15,5 +15,8 @@ seo:
   #   url:
   #   alt:
 layout: home.njk
+
 showCurrently: true
+now: >-
+  Lately, I've been spending more time on the physical side of things.
 ---

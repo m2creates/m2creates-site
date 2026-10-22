@@ -1,25 +1,25 @@
 {
   "program": {
-    "label": "Central Texas Food Bank Warehouse Operations Program — Graduate",
-    "description": "Full warehouse lifecycle: receiving, inventory, manufacturing, forklift operation, last-mile delivery logistics, and food safety certification. 63 million meals annually. 21 Central Texas counties."
+    "label": "",
+    "description": "I completed the Central Texas Food Bank's Warehouse Operations Program, learning how food moves through a warehouse: from receiving and inventory to shipping and delivery. I'd spent years building digital systems around information. I wanted to understand the physical operation those systems are supposed to represent."
   },
   "stream": [
     {
       "type": "writing",
       "label": "Writing",
-      "item": "Systems portfolio — a series applying institutional theory to supply chain and inventory problems. Hayek, Ostrom, and what optimization misses.",
+      "item": "I'm working through inventory and supply-chain problems, looking at what the models capture, what they leave out, and what institutional theory can tell us about the difference.",
       "tags": "In progress"
     },
     {
       "type": "reading",
       "label": "Reading",
-      "item": "Soul of the Samurai: Modern Translations of Three Classic Works of Zen & Bushido",
-      "tags": "Thomas Cleary"
+      "item": "The Perfectionist's Guide to Losing Control",
+      "tags": "Katherine Morgan Schafler"
     },
     {
       "type": "volunteering",
       "label": "Volunteering",
-      "item": "Planting baby trees, spring pruning, spreading mulch, and (always) picking up (more) trash. Next up: Keep Austin Beautiful Day — lake shoreline cleanup.",
+      "item": "Planting baby trees, spring pruning, spreading mulch, and (always) picking up (more) trash. Next up: It's My Park Day!",
       "tags": "Austin Parks Foundation · Keep Austin Beautiful · Waterloo Greenway"
     }
   ]
