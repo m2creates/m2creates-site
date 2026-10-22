@@ -62,4 +62,4 @@ None of this work shows up in a dashboard. That is precisely what makes it inter
 
 Portfolio projects, case studies, and notes are all collected here — each one a different angle on the same underlying question. The tools and systems behind the work have their own page too.
 
-[Explore the work](/work) · [Read the Notes](/the-garden) · [Uses](/about/uses/)
+[Explore the work](/work) · [Read the Notes](/garden) · [Uses](/about/uses/)

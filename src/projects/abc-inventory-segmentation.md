@@ -1,7 +1,7 @@
 ---
 title: ABC Inventory Segmentation Dashboard
 tldr: Treating unequal assets equally is not neutral. It is a policy choice with real costs. Ostrom's institutional analysis applied to the warehouse floor.
-link_url: /the-garden/abc-inventory-segmentation/
+link_url: /garden/abc-inventory-segmentation/
 permalink: false
 datePublish: 2026-03-10
 status: complete
